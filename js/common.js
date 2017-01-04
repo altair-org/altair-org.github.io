@@ -1,13 +1,8 @@
 $(document).ready(function() {
-	var mycircle = document.getElementById("circle"),
-	mycircle2 = document.getElementById("circle2"),
-	opt = getComputedStyle(mycircle),
-	popt=opt.width;
-	mycircle2.style.height = popt;
-	mycircle2.style.width =popt;
 
-    
 
+
+	$("html").niceScroll();
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
 	//<div class="countdown" date-time="2015-01-07"></div>
@@ -37,36 +32,11 @@ $(document).ready(function() {
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	$("a.serv_nav").click(function() {
-		$.scrollTo($(".services"), 800, {
-			
-		});
-	});
-	$("a.port_nav").click(function() {
-		$.scrollTo($(".portfolio"), 800, {
+	$("a.scroll").click(function() {
+		$.scrollTo($(".olya_cont"), 800, {
 			offset: 0
 		});
 	});
-	$("a.about_nav").click(function() {
-		$.scrollTo($(".about"), 800, {
-			offset: 0
-		});
-	});
-	$("a.cont_nav").click(function() {
-		$.scrollTo($(".contacts"), 800, {
-			offset: 0
-		});
-	});
-	$("a.top").click(function() {
-		$.scrollTo($(".top"), 800, {
-			offset: 0
-		});
-	});
-
-
-
-
-
 
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
@@ -100,17 +70,6 @@ $(document).ready(function() {
 		return false;
 	});
 	
-	$("#but_to_menu").click(function(){
-		$(".mob_menu").toggleClass("mob_menu_d");
-		
-
-		
-	});
-
-
-
-
-
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
 	$("form").submit(function() {
@@ -126,6 +85,5 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-
 
 });
