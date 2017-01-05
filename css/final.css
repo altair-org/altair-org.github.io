@@ -32,6 +32,7 @@
     max-width: 100%;
     opacity: 0.8;
     width:100%;
+    height: auto;
 }
 .effect-steve img {
     opacity: 1;
@@ -52,5 +53,9 @@
 
 @media only screen and (min-width : 320px) and (max-width : 480px){
 .effect-steve {margin-top: 20px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+height:inherit;}
+.effect-steve img{
+    height: inherit;
+}
 }
