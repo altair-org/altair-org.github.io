@@ -26,6 +26,7 @@ header{
 	width:90%;
 	margin-bottom: 0px;
 	margin-top: 10px;
+	float: left;
 }
 .photo1{
 	margin-top: -15px;
@@ -51,6 +52,12 @@ footer{
 
 .olya_cont{
 	padding-top: 50px;
+}
+.content1{
+	padding-top: 120px;
+}
+.col-xs-6, .col-xs-8{
+	float: left;
 }
 }
 
