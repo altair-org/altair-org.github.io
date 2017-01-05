@@ -149,6 +149,7 @@ footer{
 .olya_cont{
 	padding-top: 100px;
 }
+
 }
 
 /* Small Devices, Tablets */
@@ -236,6 +237,9 @@ footer{
 .olya_cont{
 	padding-top: 130px;
 }
+.col-md-4, .col-md-8{
+	padding-left: 0;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -291,6 +295,10 @@ width:40%;
  margin-right: 0;
  
 	
+}
+.col-md-4, .col-md-8{
+	padding-left: 0;
+	padding-right: 0;
 }
 .photo9{
 
@@ -354,5 +362,8 @@ footer{
 .ph2_hor{
 	width:97.3%;
 }
-
+.col-md-4, .col-md-8{
+	padding-left: 0;
+	padding-right: 0;
+}
 }
