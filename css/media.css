@@ -45,8 +45,8 @@ footer{
 }
 .col-xs-6, .col-xs-8{
 	width: 100%;
+	float: none;
 	margin: 0;
-	height: auto;
 }
 
 .olya_cont{
