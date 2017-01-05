@@ -54,8 +54,10 @@
 @media only screen and (min-width : 320px) and (max-width : 480px){
 .effect-steve {margin-top: 20px;
     margin-bottom: 20px;
-height:inherit;}
+height:inherit;
+width:90%;}
 .effect-steve img{
     height: inherit;
 }
+
 }
