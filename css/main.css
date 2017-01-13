@@ -31,223 +31,594 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	outline:none;
 }
 /*Элемент выше для того, чтобы не было цвето у фокусированных*/
-
-body {
-	font-family: "RobotoRegular", sans-serif;
-	font-size: 16px;
-	background: #f7f7f7;
-}
-
 *{
-	margin: 0;padding: 0;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family:"M300",  sans-serif;
+	font-size: 14px;
+	background: url("../img/bg.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	text-shadow: 0px 0px 1px rgba(255,255,255,0.2)
+}
+.photo{
+  width: 100%;
+  background-color: rgb(19, 19, 19);
+  box-shadow: 0px 1px 27px 0px rgba(0, 0, 0, 0.39);
+
+}
+.container2{
+	padding-top: 46px;
+	padding-bottom: 50px;
+}
+.tel{
+	font-family: "M500", sans-serif;
+  font-size: 25px;
+  color: rgb(254, 254, 254);
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 1;
+
+}
+.sale span{
+	font-family: "M900", sans-serif;
 }
 
-
-header{
-	background: #f2f2f2;
-	padding: 20px;
-	position: fixed;
-	width:100%;
-	border-bottom: 1px solid #dadada;
-	outline-bottom: 1px solid #e0e0e0;
-	z-index:100;
+.skip{
+	font-family: "M100", sans-serif;
 }
-.soc{
-	display: block;
-	float:right;
+h3{
+	font-family: "M700", sans-serif;
+}
+.top_text{
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.727;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 6px;
+}
+.email{
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  text-align: right;
+  line-height: 1;
 }
 .logo{
-	font-family: "But", serif;
-	font-size: 75px;
-	color:#151515;
-	text-align: center;
-	letter-spacing: 0.02em;
-	margin-top: -10px;
-}
-.soc .fa,
-.soc2 .fa{
-	color:black;
-	font-size: 35px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-.fa:hover{
-	cursor: pointer;
-}
-
-.logo {
-  background: linear-gradient(#1c1c1c, #9b9b9b);  /* подробнее про градиенты */ 
-  -webkit-background-clip: text;  /* подробнее про background-clip */ 
-  color: transparent;
-}
-
-a{
-		color:#151515;
-;
-}
-.content1{
-	padding-top: 200px;
-}
-.rop{
-	width:100%;
-}
-.soc2{
-	display: none;
-}
-
-.photo1{
-	width:42%;
-	float:left;
-	margin-top: 50px;
-}
-.photo2{
-	width:23%;	
-	margin-left:4% ;
-	margin-right: 4%;
-	margin-top: 50px;
-	margin-bottom: -3%;
-}
-.photo3{
-	width:27%;
-	float: right;
-	margin-top: 50px;
-}
-.photo4{
-	width:45%;
-	float:left;
-	margin-bottom: -19%;
-}
-.photo5{
-	float: right;
-	width: 28%;
-	margin-right: 19%;
-	margin-bottom: 3%;
-}
-.photo6{
-	float:left;
-	width:50%;
-	margin-top: 22%;
-	margin-bottom: 3%;
-}
-.photo7{
-	width: 32%;
-	float: right;
-	margin-right: 3%;
-}
-
-
-
- .photo8{
- float: left;
-width:30%;
-}
-.photo9{
+	display: inline-block;
 	float: left;
-	width:28%;
-	margin-left: 3%;
-	margin-right: 3%;
+	margin-right: 10px;
+	margin-top: -3px;
+	vertical-align: bottom;
+}
+.cont{
+	display: inline-block;
+	float: right;
+	vertical-align: bottom;
+}
+.menu{
+	padding-top: 30px;
+}
+.main{
+	padding-left: 0;
+}
+.class1{
+  color: rgb(149, 100, 24);
+  line-height: 3.5;
 }
 
-footer{
-	height:200px;
-	background: #FFF;
-	background: #f2f2f2;
-	border-top: 1px solid #dadada;
-	outline-top: 1px solid #e0e0e0;
-	z-index:100;
-	margin-top: 100px;
-	padding-top: 130px;
+h3{
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+ }
+.questions{
+	margin-top: 26px;
+	margin-bottom: 25px;
+	position: relative;
+}
+.line{
+	padding: 0;
+	margin: 0;
+	margin-left: -25px;
+}
+.opt{
+	display: block;
+	width: 4px;
+	height: 4px;
+	position: absolute;
+	background: rgb(242,150,108);
+	border-radius: 50%;
+	top: 12px;
+}
+.active .semi{
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	background: rgba(242,150,108, 0.2);
+	border-radius: 50%;
+	top: -3.5px;
+	left: -3px;
+}
+.active .small{
+	display: block;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	background: rgba(242,150,108, 1);
+	border-radius: 50%;
+	top: 0.5px;
+	left: 1px;
+}
+.opt1{
+	left: 0px;
+}
+.opt2{
+	left: 30px;
+}
+.opt3{
+	left: 60px;
+}
+.opt4{
+	left: 90px;
+}
+.opt5{
+	left: 120px;
+}
+.opt6{
+	left: 150px;
+}
+.opt7{
+	left: 180px;
+}
+.opt8{
+	left: 210px;
+}
+.opt9{
+	left: 240px;
+}
+.opt10{
+	left: 270px;
+}
+.opt.active{
+	background: url("../img/opt_active.png");
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 10px;
+	height: 10px;
+	margin-left: -3px;
+	margin-top: -3px;
+}
+.main2{
+	padding-left: 50px;
 }
 
-.foot{
-	text-align: center;
-	font-size: 18px;
-	color: #868686;
-	font-family: "Can";
-	text-transform: uppercase;
-}
-img:hover{
-	cursor: pointer;
-}
 
 
-/* Стили для olya.html */
 
-
-.olya_cont{
-padding-top: 120px;}
-.arina_cont{
-	padding-top: 200px;
-}
 .ph{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-
-}/*
-rgba(0,0,0,0.3)
-rgba(8,8,8,0.75)- неплохой
-
-
-*/
-.ph2{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
+	padding-left: 15px;
+	padding-right: 0;
 }
-.logo{
-		-webkit-transition: color 0.6s;
-    transition: color 0.6s;
-	}
-.logo:hover{
-			color: #292929;
-		}
+
+
+.form1 .sale span{
+  font-size: 45px;
+  line-height: 1;
+  font-family: "M900";
+  color: rgb(248,191, 144 )
+}
+.form1 .sale{
+	background:#956418;
+font-size: 16px;
+  color: rgb(233, 190, 145);
+
+}
+.form2{
+  background-color: #4a403a;
+  box-shadow: 0px 1px 27px 0px rgba(0, 0, 0, 0.29);
+margin-bottom: 23px;
+padding-left: 25px;
+padding-top: 17px;
+padding-bottom: 17px;
+padding-right: 30px;
+}
+.form2 p{  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+
+}
+.form1{
+	width:100%;
+	padding-left: 25px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	background: #956418;
+	z-index:1000;
+}
+.form3{
+	padding-left: 25px;
+  background-color: rgb(62, 60, 61);
+  padding-bottom: 23px;
+  padding-right: 45px;
+}
+.form3	.class2{
+  font-size: 16px;
+  color: rgb(215, 215, 215);
+}
+.form3 .class3{ 
+margin-top: 10px;
+ font-size: 13px;
+  color: rgb(148, 148, 148);
+
+}
+.form_name, .form_tel{
+  color: rgb(226, 170, 111);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 25px;
+  position: relative;
+  border: none;
+  width: 218px;
+  display: inline-block;
+}
+.form_name{
+  background-color: rgba(42, 40, 41, 0.55);
+
+}
+.form_tel{
+  background-color: rgba(30, 28, 29, 0.55);
+
+}
+.form_name +.butbox, .form_tel +.butbox{
+position: absolute;
+width:45px;
+padding-bottom: 16px;
+border:none;
+text-align: center;
+padding-top:8px;
+display: inline-block;
+
+}
+.form_name +.butbox{
+ background: #252324;
+}
+.form_tel +.butbox{
+	background: #211f20;
+}
+.butbox button{
+border-radius:50%;
+border: 1px solid #7f6348;
+background: none;
+width:18px;
+height: 18px;
+}
+.form_name:focus{
+  background-color: rgba(42, 40, 41, 1);
+}
+.form_tel:focus{
+  background-color: rgba(30, 28, 29, 1);
+}
+.form_name_active +.butbox{
+  background-color: rgb(105, 130, 85);
+}
+.form_name_active +.butbox button,
+.form_tel_active +.butbox button{
+border: none;
+background: url("../img/galka.png") no-repeat;
+-webkit-background-size: 18px;
+background-size: 18px;
+}
+
+.form_tel_active +.butbox{
+  background-color: rgb(84, 108, 64);
+
+}
 
 
 
 
-.photo1, .photo2, .photo3,
-.photo4, .photo5, .photo6,
-.photo7, .photo8, .photo9{
+
+
+
+
+.sep{
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+
+}
+.another{
+	padding-left: 50px;
+	display: inline-block;
+
+}
+.another p{
+  color: rgb(226, 170, 111);
+  text-decoration: underline;
+margin-right: 35px;
+line-height: 1;
+display: inline-block;
+}
+.next{
+	display: inline-block;
+	width: 90px;
+	height: 32px;
+	border: none;
+	background: #999;
+	border-radius: 5px;
+}
+.next p{
+  color: rgb(119, 118, 118);
+}
+.next_active{
+  background-color: rgb(226, 170, 111);
+  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.24);
+vertical-align: middle;
+}
+.next_active p{
+  color: rgb(110, 71, 18);
+font-weight: 700;
+}
+
+
+
+.another a{
 	display: inline-block;
 }
-img{
+.skip{
+	display: inline-block;
+  font-size: 12px;
+  color: rgb(205, 205, 205);
+  text-decoration: underline;
+  line-height: 2.7;
+  float: right;
+  padding-right: 50px;
+}
+.options{
+	margin-bottom: 40px;
+}
+
+.option1, .option2, .option3,
+.option4, .option5, .option6{
+	/*padding-top: 11px;
+	padding-bottom: 11px;
+	padding-left: 50px;*/
+	z-index: 1100;
+	position: absolute;
+	top: -1px;
 	width: 100%;
+	left: 0px;
+	transition: background-color 1s ease-in,
+   box-shadow 1s ease-in,
+   margin 0s ease-in;
+	height:52px;
+	cursor:pointer;/*отвечает за анимацию после закрытия*/
+}
+.option1 .second_text, .option2 .second_text, .option3 .second_text,
+.option4 .second_text, .option5 .second_text, .option6 .second_text{
+opacity: 0;
+}
+.option:hover{
+	background: linear-gradient(to right, rgba(42,39,37,0.8), rgba(42,39,37,0));
+	transition: background 0.5s ease-in;
+}
+.option .first_text{
+	line-height: 3.3;	
 }
 
-/*
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+
+.buthid{
+position: absolute;
+height: 100%;
+right: 0px;
+top: 0;
+background-color: rgb(108, 88, 64);
+width:45px;
+display: none;
+text-align: center;
+padding-top:13px ;
+transition: all 0.5s ease-in;
+}
+.option{
+	position: relative;
+	height:  52px;
+	padding-top: 1px;
+	/*padding-top: 11px;
+	padding-bottom: 11px;*/
+	padding-left: 50px;
+}
+.buthid button{
+width: 28px;
+height: 28px;
+border-radius: 50%;
+background: none;
+border: 1px solid rgb(242, 172, 108);
+}
+.selected{
+  background-color: rgb(80, 66, 55);
+  box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.63);
+   transition: background-color 1s ease-in,
+   box-shadow 1s ease-in;
+   width:120%;/*анима*/
+}
+
+.selected .buthid{
+	display: block;
+}
+
+.selected:hover{
+background-color: rgb(80, 66, 55);
+}
+.selected .second_text{
+opacity: 0;	
+}
+
+.finalselected{
+	height: 220%;
+	top: -50%;
+	z-index: 1500;
+	transition: all 0.5s ease-in;
+	padding-top: 10px;
+	padding-left: 50px;
+	display: block;
+	padding-right: 80px;
+}
+.finalselected .buthid{
+	padding-top: 45px;
+}
+
+.finalselected .second_text{
+	opacity: 1;
+	z-index: 2000;
+  color: rgb(188, 188, 188);
+  line-height: 1.2;
+  transition: all 1s ease-in;
+}
+.finalselected .second_text span{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+
+.selected.greened{
+  background-color: rgb(68, 79, 54);
+
+}
+.selected.greened .buthid{
+  background-color: rgb(84, 108, 64);
+}
+.selected.greened .buthid button{
+	border: none;
+	background: url("../img/galka.png") no-repeat;
+}
+.selected.greened:hover{
+	 background-color: rgb(68, 79, 54);
+}
+.greened_option{
+  background: linear-gradient(to right, rgba(68, 79, 54,0.8), rgba(68, 79, 54,0));
+}
+.greened_option:hover{
+  background-color: rgba(68, 79, 54, 0.4);
+}
+.forms{
+	position: relative;
+}
+.sale_form{
+	opacity: 0;
+	position: absolute;
+top: 0px;
+width: 90%;
+transition:  all 2s ease-in;
+}
+.sale_form_show{
+	opacity: 1;
+}
+.sale2_form{
+	width: auto;
+	transition:  all 2s ease-in;
+	display: block;
+	position: relative;
+}
+.sale_form_show+.sale2_form{
+margin-top: 220px;
 }
 
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+.anotherone{
+	width: 0px;
+	border: none;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+height: 35px;
+display: inline-block;
+transition: all 0s ease-in;
+color: #000;
+vertical-align: middle;
 
-  to {
-    opacity: 0.8;
-  }
+}
+.anotherone_active{
+	width: 252px;
+	margin-right: 20px;
+	padding-top: 5px;
+	padding-left: 15px;
+	transition: all 1s ease-in;
+}
+.bottom{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+form{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.8;
-  }
+.send{
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(226, 170, 111);
+  box-shadow: 0px 1px 24px 0px rgba(0, 0, 0, 0.39);
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 11px 30px;
+  margin-top: 0px;	
+  color: rgb(110, 71, 18);
+font-weight: 700;
+line-height: 1;
 }
 
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+.send_active{
+	display: block;
 }
-*/
+.sale2_form_hid{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 900;
+  background-color: rgb(70, 108, 59);
+  padding-left: 22px;
+  padding-top: 27px;
+  padding-right: 20px;
+  display: none;
+
+}
+.sale2_form_hid .text1{
+  font-size: 22px;
+  font-family: "M100";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  margin-bottom: 10px;
+  display: block;
+  margin-top: 10px;
+}
+.sale2_form_hid .text2{
+  font-size: 14px;
+  font-family: "M100";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 30px;
+}
+.sale2_form_hid a{
+	text-decoration: underline;
+  font-size: 14px;
+  font-family: "M300";
+  color: rgb(226, 170, 111);
+}
+.sale2_form_hid.success{
+	display: block;
+}
