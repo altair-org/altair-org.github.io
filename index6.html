@@ -35,15 +35,15 @@
 <div class="container container2">
 	<div class="row">
 		<div class="col-xs-4 ph">
-			<img src="img/1.png" alt="photo" class="photo">
+			<img src="img/6.png" alt="photo" class="photo">
 		</div>
 		<div class="col-xs-5 main">
 		<div class="main2">
 			<p class="class1">Вопрос 1 из 11</p>
-			<h3>У вас был<br> раньше опыт<br> с аквариумами?</h3>
+			<h3>Есть ли коммуникации в зоне установки аквариума или возможность подключения?</h3>
 			<div class="questions">
 			<object type="image/svg+xml" data="img/line.svg" class="line"></object>
-				<div class="opt opt1 active">
+				<div class="opt opt1">
 					<div class="semi"></div>
 					<div class="small"></div>
 				</div>
@@ -63,7 +63,7 @@
 					<div class="semi"></div>
 					<div class="small"></div>
 				</div>
-				<div class="opt opt6">
+				<div class="opt opt6 active">
 					<div class="semi"></div>
 					<div class="small"></div>
 				</div>
@@ -89,7 +89,7 @@
 				</div>
 			</div>
 		</div>
-			<div class="options">
+			<!--<div class="options">
 				<div class="option" >
 					<div class="option1">
 						<p class="second_text">
@@ -169,13 +169,61 @@
 					<p class="first_text">Нет, не было</p>
 				</div>
 			</div>
-			<div class="bottom">
-			<div class="another">
-			<form action="echo"><input type="text" class="anotherone" id="another" oninput="inputfunc()"></form>
-					<p>Другой вариант</p>
+			<div class="radio_buttons">
+				<form action="post">
+				    <div class="radio_buttons_elem">
+				    	<input name="dzen" type="checkbox" id="r_button1" value="cold" class="radio_button">
+				    	<label for="r_button1"><span></span></label>
+				    	<p>Есть <span>холодная вода</span> или возможность подключения</p>
+				    </div>
+				    <object type="image/svg+xml" data="img/sep.svg" class="sep" align="left"></object>
+				    <div class="radio_buttons_elem">
+				    	<input name="dzen" type="checkbox" id="r_button2" value="canal" class="radio_button">
+				    	<label for="r_button2"><span></span></label>
+				    	<p>Есть <span>канализация </span> или возможность подключения</p></div>
+				    <object type="image/svg+xml" data="img/sep.svg" class="sep" align="left"></object>
+				    <div class="radio_buttons_elem">
+				    	<input name="dzen" type="checkbox" id="r_button3" value="electr" class="radio_button">
+				    	<label for="r_button3"><span></span></label>
+				    	<p>Есть <span>электричество </span> или возможность подключения</p></div>
+				    <object type="image/svg+xml" data="img/sep.svg" class="sep" align="left" class="radio_button"></object>
+				    <div class="radio_buttons_elem">
+				    	<input name="dzen" type="checkbox" id="r_button4" value="ventil" class="radio_button">
+				    	<label for="r_button4"><span></span></label>
+				    	<p>Есть <span>вентиляция</span> или возможность подключения</p></div>
+				  </form> 
+			</div>-->
+			<div class="formfor6">
+				<div class="row">
+					<a href="index6_1.html"><div class="col-xs-6 for6select for6select1">
+						<p class="descr">Прямоугольный</p>
+						<p class="choose">Отметить</p>
+						<button class="for6button"><span></span></button>
+					</div></a>
+					<div class="col-xs-6 for6select for6select2">
+						<p class="descr">Угловой</p>
+						<p class="choose">Отметить</p>
+						<button class="for6button"><span></span></button>
+					</div>
+					<div class="col-xs-6 for6select for6select3">
+						<p class="descr">Неправильной формы</p>
+						<p class="choose">Отметить</p>
+						<button class="for6button"><span></span></button>
+					</div>
+					<div class="col-xs-6 for6select for6select4">
+						<p class="descr">Встроенный</p>
+						<p class="choose">Отметить</p>
+						<button class="for6button"><span></span></button>
+					</div>
+				</div>
 			</div>
-			<button class="next"><p>Далее</p></button>
-			<a href="#" class="skip">Пропустить></a>
+			<div class="bottom">
+				<div class="another">
+				<form action="echo"><input type="text" class="anotherone" oninput="inputfunc()" id="another"></form>
+						<p>Другой вариант</p>
+				</div>
+				<button class="next"><p>Далее</p></button>
+				<a href="#" class="skip">Пропустить></a>
 			</div>
 		</div>
 		<div class="col-xs-3 forms">
@@ -222,6 +270,20 @@
 				</div>
 			</div>
 			<input type="button" class="send" value="Отправить">
+			<div class="upload_form">
+				<div class="left_upload">
+				<label for="uploadd" class="uploadd_label">
+					<div class="left_upload_mini">
+					
+						<input type="file" class="uploadd" id="uploadd">
+					</div>
+					<label for="uploadd"></label>
+				</div>
+				<div class="right_upload">
+					<p><span>Прикрепить</span><br>
+					чертеж, эскиз или проект, если есть</p>
+				</div>
+			</div>
 				
 		</div>
 	</div>

@@ -646,7 +646,8 @@ line-height: 1;
 	padding-top: 14px;
 	float: left;
 }
-.radio_buttons input+label span{
+.radio_buttons input+label span, 
+.for6select .for6button span{
 display: inline-block;
 width: 18px;
 height: 18px;
@@ -669,7 +670,7 @@ cursor: pointer;
 	font-family: "M500";
 }
 .radio_buttons input:checked +label span{
-border: none;
+	border: none;
 	background: url("../img/galka.png") no-repeat;
 	-webkit-background-size: 100%;
 	background-size: 100%;
@@ -677,4 +678,113 @@ border: none;
 .radio_buttons input:checked +label 
 {
 	  background-color: rgb(84, 108, 64);
+}
+.upload_form{
+	display: block;
+	width: 100%;
+	height: 90px;
+	padding: 0;
+	margin-top: 70px;
+
+	background: rgb(82, 65, 55);
+}
+.left_upload{
+	background: url("../img/upload.png") no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	width: 90px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	padding-top: 25px;
+	padding-left: 25px;
+cursor: pointer;
+}
+.left_upload_mini{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../img/upload_mini.png") no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.right_upload
+{
+	padding-top: 22px;
+	padding-left: 26px;
+	display: inline-block;
+	width: 160px;
+	float: left;
+
+}
+.right_upload p{
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+.right_upload p span{
+font-size: 18px;
+}
+.uploadd{
+	visibility: hidden;
+}
+.uploadd_label{
+cursor: pointer;
+}
+.formfor6{
+	padding-left: 50px;
+	margin-bottom: 50px;
+}
+.for6select{
+	height: 200px;	
+	padding: 22px;
+	position: relative;
+	cursor: pointer;
+}
+.for6select .descr{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+.for6select .choose, .for6button{
+	position: absolute;
+}
+.for6button{
+	background: rgb(47, 42, 41);
+	height: 46px;
+	width: 46px;
+	display: block;
+	text-align: center;
+	padding-top: 14px;
+	right: 0px;
+	bottom: 0px;
+	border: none;
+}
+.for6select .choose{
+	position: absolute;
+  color: rgb(226, 170, 111);
+font-size: 12px;
+font-family: "M100";
+text-decoration: underline;
+right: 60px;
+bottom: 16px;
+}
+.for6select1, .for6select4, .for6select1_1{
+	background: url("../img/6_1.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.for6select2, .for6select3, .for6select1_2{
+	background: url("../img/6_2.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+ .formfor6 .col-xs-12 .for6buttonfinal_active span{
+	border: none;
+	background: url("../img/galka.png") no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.for6buttonfinal_active{
+	 background-color: rgb(84, 108, 64);
 }

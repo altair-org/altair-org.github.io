@@ -176,6 +176,26 @@ if ( ($(".form_name").hasClass("form_name_active") ) && ($(".form_tel").hasClass
 }
 });
 
+
+
+
+
+$(".for6buttonfinal").click(function(){
+	$(".for6buttonfinal_active").removeClass("for6buttonfinal_active");
+	$(this).toggleClass("for6buttonfinal_active");
+$(".next").addClass("next_active");
+$(".sale_form").addClass("sale_form_show");
+$(".sale_form .sale span").text("6%");
+if($('.for6buttonfinal_active').length==0){
+	$(".sale_form").removeClass("sale_form_show");
+	$(".next").removeClass("next_active");
+	$(".sale_form .sale span").text("5%");
+};
+});
+
+
+
+
 $(".radio_button").click(function(){
 	$(this).toggleClass("radio_button_active");
 $(".next").addClass("next_active");
@@ -185,11 +205,9 @@ if($('.radio_button_active').length==0){
 	$(".sale_form").removeClass("sale_form_show");
 	$(".next").removeClass("next_active");
 	$(".sale_form .sale span").text("3%");
-}
+};
 
 });
-
-
 
 
 
@@ -208,13 +226,23 @@ var i=1,k=1,p=1;
 	});
 
 function inputfunc(){
-	$(".selected").removeClass("selected");
+	var i=document.getElementById("another").value;
+	
+	if(i==""){
+		$(".next").removeClass("next_active");
+		$(".sale_form").removeClass("sale_form_show");
+		$(".sale_form .sale span").text("5%");	
+	}
+	else{
+		$(".selected").removeClass("selected");
 	$(".finalselected").removeClass("finalselected");
 	$(".greened_option").removeClass("greened_option");
+	$(".for6buttonfinal_active").removeClass("for6buttonfinal_active");
 	$(".next").addClass("next_active");
 	$(".greened").removeClass("greened");
 	$(".sale_form").addClass("sale_form_show");
-	$(".sale_form .sale span").text("4%");
+	$(".sale_form .sale span").text("6%");
+	}
 };
 
 function inputname(){
