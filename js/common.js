@@ -6,7 +6,9 @@
 		$(".option1").addClass("selected");
 		$(".finalselected").removeClass("finalselected");
 		var ab2 =setTimeout(function () {
+			$(".finalselected").removeClass("finalselected");
 		$(".option1").addClass("finalselected");
+
 								}, 1200);
 	};
 		if ( $(".option1").hasClass("finalselected") ) {
@@ -33,6 +35,7 @@
 		$(".option2").addClass("selected");
 		$(".finalselected").removeClass("finalselected");
 		var ab2 =setTimeout(function () {
+			$(".finalselected").removeClass("finalselected");
 		$(".option2").addClass("finalselected");
 								}, 1200);
 	};
@@ -60,6 +63,7 @@
 		$(".option3").addClass("selected");
 		$(".finalselected").removeClass("finalselected");
 		var ab2 =setTimeout(function () {
+			$(".finalselected").removeClass("finalselected");
 		$(".option3").addClass("finalselected");
 								}, 1200);
 	};
@@ -87,6 +91,7 @@
 		$(".option4").addClass("selected");
 		$(".finalselected").removeClass("finalselected");
 		var ab2 =setTimeout(function () {
+			$(".finalselected").removeClass("finalselected");
 		$(".option4").addClass("finalselected");
 								}, 1200);
 	};
@@ -114,6 +119,7 @@
 		$(".option5").addClass("selected");
 		$(".finalselected").removeClass("finalselected");
 		var ab2 =setTimeout(function () {
+			$(".finalselected").removeClass("finalselected");
 		$(".option5").addClass("finalselected");
 								}, 1200);
 	};
@@ -141,6 +147,7 @@
 		$(".option6").addClass("selected");
 		$(".finalselected").removeClass("finalselected");
 		var ab2 =setTimeout(function () {
+			$(".finalselected").removeClass("finalselected");
 		$(".option6").addClass("finalselected");
 								}, 1200);
 	};
@@ -169,6 +176,30 @@ if ( ($(".form_name").hasClass("form_name_active") ) && ($(".form_tel").hasClass
 }
 });
 
+$(".radio_button").click(function(){
+	$(this).toggleClass("radio_button_active");
+$(".next").addClass("next_active");
+$(".sale_form").addClass("sale_form_show");
+$(".sale_form .sale span").text("4%");
+if($('.radio_button_active').length==0){
+	$(".sale_form").removeClass("sale_form_show");
+	$(".next").removeClass("next_active");
+	$(".sale_form .sale span").text("3%");
+}
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
 var i=1,k=1,p=1;
 
 	$(".another").click(function(){
@@ -183,7 +214,7 @@ function inputfunc(){
 	$(".next").addClass("next_active");
 	$(".greened").removeClass("greened");
 	$(".sale_form").addClass("sale_form_show");
-	$(".sale_form .sale span").text("1%");
+	$(".sale_form .sale span").text("4%");
 };
 
 function inputname(){
@@ -218,3 +249,6 @@ $(function(){
     inputtel(); }
   });
 });
+
+
+

@@ -622,3 +622,59 @@ line-height: 1;
 .sale2_form_hid.success{
 	display: block;
 }
+.radio_buttons{
+	padding-left: 46px;
+	margin-bottom: 50px;
+}
+.radio_buttons_elem{
+	height: 46px;
+	padding-left: 0;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+.radio_buttons input{
+	display: none;
+}
+.radio_buttons input+label{
+	background: rgb(47, 42, 41);
+	height: 100%;
+	width: 46px;
+	display: block;
+	margin-right: 10px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 14px;
+	float: left;
+}
+.radio_buttons input+label span{
+display: inline-block;
+width: 18px;
+height: 18px;
+background: none;
+border-radius: 50%;
+border: 1px solid rgb(147, 107, 74);
+cursor: pointer;
+}
+.radio_buttons .radio_buttons_elem + .sep{
+ margin-left: -45px;
+}
+.radio_buttons_elem p{
+	display: inline-block;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  line-height: 3;
+
+}
+.radio_buttons_elem p span{
+	font-family: "M500";
+}
+.radio_buttons input:checked +label span{
+border: none;
+	background: url("../img/galka.png") no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.radio_buttons input:checked +label 
+{
+	  background-color: rgb(84, 108, 64);
+}
