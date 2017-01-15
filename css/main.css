@@ -669,13 +669,13 @@ cursor: pointer;
 .radio_buttons_elem p span{
 	font-family: "M500";
 }
-.radio_buttons input:checked +label span{
+.radio_buttons .radio_button_active +label span{
 	border: none;
 	background: url("../img/galka.png") no-repeat;
 	-webkit-background-size: 100%;
 	background-size: 100%;
 }
-.radio_buttons input:checked +label 
+.radio_buttons .radio_button_active +label 
 {
 	  background-color: rgb(84, 108, 64);
 }
@@ -787,4 +787,152 @@ bottom: 16px;
 }
 .for6buttonfinal_active{
 	 background-color: rgb(84, 108, 64);
+}
+
+.formfor5{
+	padding-left: 50px;
+	position: relative;
+}
+.formfor5 .main5{
+	position: relative;
+	height: 300px;
+	width: 100%;
+}
+.for5button{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 46px;
+	height: 46px;
+	padding-top:14px;
+	padding-left: 14px;
+	background: rgb(47, 42, 41);
+}
+.for5button_active{
+	background-color: rgb(84, 108, 64);
+}
+.formfor5 .row .for5button_active span{
+	border: none;
+	background: url("../img/galka.png") no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.for5button span{
+	background: none;
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 1px solid rgb(147, 107, 74);
+	cursor: pointer;
+}
+.chooose{
+	position: absolute;
+  color: rgb(226, 170, 111);
+font-size: 12px;
+font-family: "M100";
+text-decoration: underline;
+right: 60px;
+top: 12px;
+}
+.main_choose{
+	display: none;
+	position: absolute;
+	width: 437.5px;
+	height: 100%;
+	background: #000;
+	padding-top: 18px;
+	padding-left: 25px;
+}
+.main_choose p{
+	color: rgb(200,200,200);
+}
+.main_choose.active{
+	display: block;
+}
+.main_choose1{
+	background: url("../img/for5_bg1.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.choosing{
+	height: 70px;
+	padding-top: 20px;
+	padding-left: 16px;
+	background: #242424;
+	width: 100%;
+}
+.my{
+	position: relative;
+}
+.my .col-xs-4{
+	padding-left: 0;padding-right: 0;
+}
+.my .first_deletepad{
+	padding-left: 15px;
+}
+.choosing p{
+	line-height: 1;
+}
+
+.choose4{
+	background-color: #242424;
+	background-image: url("../img/for5_min4.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+.choose5{
+	background-color: #242424;
+	background-image: url("../img/for5_min5.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+.choose1{
+	background-color: #242424;
+	background-repeat: no-repeat;
+}
+.choose2{
+	background-color: #242424;
+	background-image: url("../img/for5_min2.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+.choose3{
+	background-color: #242424;
+	background-image: url("../img/for5_min3.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+.nexxt{
+	padding-top: 20px;
+}
+.absol{
+	height: 110px;
+	display: block;
+	position: absolute;
+	width: 46px;
+	background: url("../img/morsk.png");
+	top: -22px;
+left: -31px;
+}
+.absol2{
+	height: 110px;
+	display: block;
+	position: absolute;
+	width: 46px;
+	background: url("../img/presn.png") no-repeat right bottom;
+	top: -41px;
+left: -31px;
+}
+.choosing:hover, .choose1:hover,
+.choose2:hover,
+.choose3:hover,
+.choose4:hover,
+.choose5:hover{
+	background-image: none;
+	cursor: pointer;
+  background-color: rgb(48, 46, 46);
+  box-shadow: 0px 1px 27px 0px rgba(0, 0, 0, 0.44);
+
 }
