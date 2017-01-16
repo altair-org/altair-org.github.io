@@ -936,3 +936,10 @@ left: -31px;
   box-shadow: 0px 1px 27px 0px rgba(0, 0, 0, 0.44);
 
 }
+
+#name_file{
+	font-size: 14px;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  margin-top: 15px
+}

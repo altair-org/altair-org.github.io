@@ -178,6 +178,17 @@ if ( ($(".form_name").hasClass("form_name_active") ) && ($(".form_tel").hasClass
 
 
 
+$(".next").click(function(){
+if ( $(".next").hasClass("next_active") ){
+$(".sale_form").removeClass("sale_form_show");
+	$(".next").removeClass("next_active");
+	$(".anotherone").removeClass("anotherone_active");
+	$(".skip, .another p").show();
+}
+});
+
+
+
 
 $(".for5button").click(function(){
 	$(".for5button").toggleClass("for5button_active");
@@ -193,18 +204,7 @@ if($('.for5button_active').length==0){
 };
 });
 
-$(".for6buttonfinal").click(function(){
-	$(".for6buttonfinal_active").removeClass("for6buttonfinal_active");
-	$(this).toggleClass("for6buttonfinal_active");
-$(".next").addClass("next_active");
-$(".sale_form").addClass("sale_form_show");
-$(".sale_form .sale span").text("6%");
-if($('.for6buttonfinal_active').length==0){
-	$(".sale_form").removeClass("sale_form_show");
-	$(".next").removeClass("next_active");
-	$(".sale_form .sale span").text("5%");
-};
-});
+
 
 
 
@@ -237,6 +237,94 @@ if($('.for5button_active').length==0){
 });
 
 
+$(".for6select1_1 .choose").click(function(){
+if($(".for6select1_2 .for6buttonfinal").hasClass("for6buttonfinal_active")){
+$(".for6select1_2 .for6buttonfinal").removeClass("for6buttonfinal_active");
+$(".for6select1_2 .choose").html("Выбрать");
+};
+$(".for6select1_1 .for6buttonfinal").toggleClass("for6buttonfinal_active");
+$(".for6select1_1 .choose").html("Отменить");
+$(".next").addClass("next_active");
+$(".sale_form").addClass("sale_form_show");
+$(".sale_form .sale span").text("6%");
+if($('.for6buttonfinal_active').length==0){
+$(".for6select1_1 .choose").html("Выбрать");
+$(".sale_form").removeClass("sale_form_show");
+	$(".next").removeClass("next_active");
+	$(".sale_form .sale span").text("5%");
+};
+});
+
+$(".for6select1_1 .for6buttonfinal").click(function(){
+if($(".for6select1_2 .for6buttonfinal").hasClass("for6buttonfinal_active")){
+$(".for6select1_2 .for6buttonfinal").removeClass("for6buttonfinal_active");
+$(".for6select1_2 .choose").html("Выбрать");
+};
+$(".for6select1_1 .for6buttonfinal").toggleClass("for6buttonfinal_active");
+$(".for6select1_1 .choose").html("Отменить");
+$(".next").addClass("next_active");
+$(".sale_form").addClass("sale_form_show");
+$(".sale_form .sale span").text("6%");
+if($('.for6buttonfinal_active').length==0){
+$(".for6select1_1 .choose").html("Выбрать");
+$(".sale_form").removeClass("sale_form_show");
+	$(".next").removeClass("next_active");
+	$(".sale_form .sale span").text("5%");
+};
+});
+
+
+$(".for6select1_2 .choose").click(function(){
+if($(".for6select1_1 .for6buttonfinal").hasClass("for6buttonfinal_active")){
+$(".for6select1_1 .for6buttonfinal").removeClass("for6buttonfinal_active");
+$(".for6select1_1 .choose").html("Выбрать");
+};
+$(".for6select1_2 .for6buttonfinal").toggleClass("for6buttonfinal_active");
+$(".for6select1_2 .choose").html("Отменить");
+$(".next").addClass("next_active");
+$(".sale_form").addClass("sale_form_show");
+$(".sale_form .sale span").text("6%");
+
+if($('.for6buttonfinal_active').length==0){
+
+$(".for6select1_2 .choose").html("Выбрать");
+$(".sale_form").removeClass("sale_form_show");
+	$(".next").removeClass("next_active");
+	$(".sale_form .sale span").text("5%");	
+};
+});
+
+
+
+$(".for6select1_2 .for6buttonfinal").click(function(){
+if($(".for6select1_1 .for6buttonfinal").hasClass("for6buttonfinal_active")){
+$(".for6select1_1 .for6buttonfinal").removeClass("for6buttonfinal_active");
+$(".for6select1_1 .choose").html("Выбрать");
+};
+$(".for6select1_2 .for6buttonfinal").toggleClass("for6buttonfinal_active");
+$(".for6select1_2 .choose").html("Отменить");
+$(".next").addClass("next_active");
+$(".sale_form").addClass("sale_form_show");
+$(".sale_form .sale span").text("6%");
+
+if($('.for6buttonfinal_active').length==0){
+
+$(".for6select1_2 .choose").html("Выбрать");
+$(".sale_form").removeClass("sale_form_show");
+	$(".next").removeClass("next_active");
+	$(".sale_form .sale span").text("5%");	
+};
+});
+
+
+
+
+
+
+
+
+
+
 
 
 $(".choose1").click(function(){
@@ -262,7 +350,10 @@ $(".main_choose5").addClass("active");
 
 
 
-
+function filefunc(){
+	var k=document.getElementById("uploadd").files[0].name;
+	$("#name_file").html(k);
+};
 
 
 
@@ -299,13 +390,18 @@ function inputfunc(){
 	}
 };
 
+
+
+
+
 function inputname(){
 	var n=document.getElementById("name").value;
 
 	if(n==""){
 		$(".form_name").removeClass("form_name_active")
 		i=i+1;
-$(".send").removeClass(".send_active");
+	$(".send").removeClass(".send_active");
+	$(".form_name +.butbox").css("background-color", "rgb(173, 50, 14)");
 	}
 	else{
 	$(".form_name").addClass("form_name_active");
@@ -322,6 +418,7 @@ $(".send").removeClass(".send_active");
 	}
 };
 function inputtel(){
+
 	$(".form_tel").addClass("form_tel_active");
 	k=k*0;
 	p=i+k;
@@ -336,12 +433,12 @@ function inputtel(){
 
 
 $(function(){
-  //Использование параметра completed
   $("#phone").mask("8 (999) 999-9999", {
     completed: function(){ 
-    inputtel(); }
+    inputtel(); },
   });
 });
+
 
 
 
