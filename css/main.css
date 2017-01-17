@@ -620,7 +620,7 @@ line-height: 1;
   color: rgb(226, 170, 111);
 }
 .sale2_form_hid.success{
-	display: block;
+
 }
 .radio_buttons{
 	padding-left: 46px;
@@ -779,7 +779,7 @@ bottom: 16px;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
- .formfor6 .col-xs-12 .for6buttonfinal_active span{
+ .formfor6 .for6buttonfinal_active span{
 	border: none;
 	background: url("../img/galka.png") no-repeat;
 	-webkit-background-size: 100%;
@@ -886,11 +886,13 @@ top: 12px;
 	background-color: #242424;
 	background-image: url("../img/for5_min5.png");
 	background-repeat: no-repeat;
-	background-position: bottom right;
+	background-position: 130% 0%;
 }
 .choose1{
 	background-color: #242424;
 	background-repeat: no-repeat;
+	background-image: url("../img/for5_min1.png");
+		background-position: 300% -40%;
 }
 .choose2{
 	background-color: #242424;
@@ -930,7 +932,6 @@ left: -31px;
 .choose3:hover,
 .choose4:hover,
 .choose5:hover{
-	background-image: none;
 	cursor: pointer;
   background-color: rgb(48, 46, 46);
   box-shadow: 0px 1px 27px 0px rgba(0, 0, 0, 0.44);
@@ -942,4 +943,7 @@ left: -31px;
   color: rgb(255, 255, 255);
   line-height: 1;
   margin-top: 15px
+}
+.choosing.active{
+background-color: #2A3920;
 }

@@ -172,7 +172,7 @@
 
 $(".send").click(function(){
 if ( ($(".form_name").hasClass("form_name_active") ) && ($(".form_tel").hasClass("form_tel_active") )){
- $(".sale2_form_hid").addClass("success");
+ $(".sale2_form_hid").fadeIn(1000); 
 }
 });
 
@@ -320,6 +320,32 @@ $(".sale_form").removeClass("sale_form_show");
 
 
 
+$(".href61").click(function(){
+$(".for6button1").addClass("for6buttonfinal_active");
+
+});
+
+
+
+
+$(".option1").mouseover(function(){
+	var a=	document.getElementsByClassName("photo")[0].src = 'img/1.png';
+});
+$(".option2").mouseover(function(){
+	var a=	document.getElementsByClassName("photo")[0].src = 'img/12.png';
+});
+$(".option3").mouseover(function(){
+	var a=	document.getElementsByClassName("photo")[0].src = 'img/13.png';
+});
+$(".option4").mouseover(function(){
+	var a=	document.getElementsByClassName("photo")[0].src = 'img/12.png';
+});
+$(".option5").mouseover(function(){
+	var a=	document.getElementsByClassName("photo")[0].src = 'img/1.png';
+});
+$(".option6").mouseover(function(){
+	var a=	document.getElementsByClassName("photo")[0].src = 'img/13.png';
+});
 
 
 
@@ -328,23 +354,33 @@ $(".sale_form").removeClass("sale_form_show");
 
 
 $(".choose1").click(function(){
+	$(".choosing.active").removeClass("active");
 	$(".main_choose.active").removeClass("active");
+	$(".choose1").addClass("active");
 $(".main_choose1").addClass("active");
 });
 $(".choose2").click(function(){
+	$(".choosing.active").removeClass("active");
 	$(".main_choose.active").removeClass("active");
+	$(".choose2").addClass("active");
 $(".main_choose2").addClass("active");
 });
 $(".choose3").click(function(){
+	$(".choosing.active").removeClass("active");
 	$(".main_choose.active").removeClass("active");
+	$(".choose3").addClass("active");
 $(".main_choose3").addClass("active");
 });
 $(".choose4").click(function(){
+	$(".choosing.active").removeClass("active");
 	$(".main_choose.active").removeClass("active");
+	$(".choose4").addClass("active");
 $(".main_choose4").addClass("active");
 });
 $(".choose5").click(function(){
+	$(".choosing.active").removeClass("active");
 	$(".main_choose.active").removeClass("active");
+	$(".choose5").addClass("active");
 $(".main_choose5").addClass("active");
 });
 
@@ -362,7 +398,6 @@ function filefunc(){
 
 
 
-var i=1,k=1,p=1;
 
 	$(".another").click(function(){
 		$(".anotherone").addClass("anotherone_active");
@@ -398,39 +433,50 @@ function inputname(){
 	var n=document.getElementById("name").value;
 
 	if(n==""){
-		$(".form_name").removeClass("form_name_active")
-		i=i+1;
-	$(".send").removeClass(".send_active");
+		$(".form_name").removeClass("form_name_active");
+			$(".send").removeClass("send_active1");
+				$(".send").removeClass("send_active");
 	$(".form_name +.butbox").css("background-color", "rgb(173, 50, 14)");
 	}
 	else{
 	$(".form_name").addClass("form_name_active");
-	i=i*0;
+	$(".send").addClass("send_active1");
+	$(".form_name +.butbox").css("background-color", "rgb(105, 130, 85)");
+	if($(".send").hasClass("send_active2")){
+		$(".send").addClass("send_active");
+	};
+
+
 	};
 	
-	p=i+k;
-
-	if(p==0 ){
-		$(".send").addClass(".send_active")
-	}
-	else{
-		$(".send").removeClass(".send_active")
-	}
 };
 function inputtel(){
+var k=document.getElementById("phone").value;
 
-	$(".form_tel").addClass("form_tel_active");
-	k=k*0;
-	p=i+k;
-	if(p==0){
-		$(".send").addClass("send_active")
+	if(k=="" || !(document.getElementById("phone").value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/
+))){
+	$(".form_tel").removeClass("form_tel_active");
+	$(".send").removeClass("send_active2");
+	$(".send").removeClass("send_active");
+	$(".form_tel +.butbox").css("background-color", "rgb(146, 42, 12)");
 	}
+	else{
+	$(".form_tel").addClass("form_tel_active");
+	$(".send").addClass("send_active2");
+	$(".form_tel +.butbox").css("background-color", "rgb(84, 108, 64)");
+	if($(".send").hasClass("send_active1")){
+		$(".send").addClass("send_active");
+
+	};
+	
+
+	};
 }
 /**/
 	
 
 
-
+/*
 
 $(function(){
   $("#phone").mask("8 (999) 999-9999", {
@@ -439,6 +485,6 @@ $(function(){
   });
 });
 
-
+*/
 
 
