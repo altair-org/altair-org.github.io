@@ -67,7 +67,7 @@ section, .section4, .partners,.section3, .groups{
 	display: inline-block;
 	float: right;
 }
-.top_menu {
+.top_menu li{
 	display: inline-block;
 	list-style: none;
 	padding: 5px 15px;
