@@ -74,37 +74,19 @@
 #youtube-field-player img{
 	padding-bottom: 0;
 }
-.views-row-3:hover img{
-	-webkit-transform: perspective(1000px) translate3d(0,0,21px);
-    transform: perspective(1000px) translate3d(0,0,21px);
-    box-shadow: 0 7px 40px rgba(0,0,0,0.8);
-    webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
 
-	}
-.views-row-2 img{
-
-filter:  brightness(0.7) contrast(1.1) grayscale(0.99)  invert(0.1) opacity(100%)  sepia(0.1) ;
-
-webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-}
-.views-row-2:hover img{
-
-filter: none;
-
-}
 body.sticky-menu-active #header{
 	padding: 12px 0px;
 }
-
-
+.clearfix::before{
+	content: " ";
+display: table;
+}
+.clearfix::after{
+	content: " ";
+display: table;
+clear: both;
+}
 
 @media only screen and (max-width : 992px) {
 	#header-top{
@@ -135,6 +117,9 @@ padding-right: 40px;
 #header .logo-sticky-active{
 	margin-top: 20px;
 }
+.views-row-last{
+	float: left;
+}
 }
 
 @media only screen and (max-width : 500px) {
@@ -149,6 +134,7 @@ padding-right: 40px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 }
 
 
@@ -329,12 +315,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 									<div id="block-system-main" class="block block-system">
 
 
-										<div class="content">
+										<div class="content ">
 											<div class="view view-otzyvy view-id-otzyvy view-display-id-page view-dom-id-8adb4895b1a4a82b74903b31664576ee">
 
 
 
-												<div class="view-content">
+												<div class="view-content clearfix">
 													<div class="views-row views-row-1 views-row-odd views-row-first col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
 														<div class="views-field views-field-field-youtube">        
@@ -345,6 +331,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 															</div>
 														</div>
 													</div>
+													
+
 													<div class="views-row views-row-2 views-row-even2 col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
 														<div class="views-field views-field-field-youtube">        
@@ -356,6 +344,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 														</div>
 													</div>
 													<div class="views-row views-row-3 views-row-odd col-lg-4 col-md-6 col-sm-6 col-xs-12">
+													
 
 														<div class="views-field views-field-field-youtube">        
 															<div class="field-content">
@@ -365,7 +354,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 															</div>
 														</div>
 													</div>
-													<div class="views-row views-row-4 views-row-even views-row-last col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													<div class="views-row views-row-4 views-row-even col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													
 
 														<div class="views-field views-field-field-youtube">        
 															<div class="field-content">
@@ -375,7 +365,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 															</div>
 														</div>
 													</div>
-													<div class="views-row views-row-4 views-row-even views-row-last col-lg-6 col-md-6 col-sm-6 col-xs-12">
+													<div class="views-row views-row-4 views-row-even col-lg-6 col-md-6 col-sm-6 col-xs-12">
+												
 
 														<div class="views-field views-field-field-youtube">        
 															<div class="field-content">
@@ -385,7 +376,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 															</div>
 														</div>
 													</div>
-													<div class="views-row views-row-4 views-row-even views-row-last col-lg-4 col-md-6 col-sm-6 col-xs-12">
+													<div class="views-row views-row-4 views-row-even col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
 														<div class="views-field views-field-field-youtube">        
 															<div class="field-content">
@@ -395,7 +386,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 															</div>
 														</div>
 													</div>
-													<div class="views-row views-row-4 views-row-even views-row-last col-lg-4 col-md-6 col-sm-6 col-xs-12">
+													<div class="views-row views-row-4 views-row-even col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
 														<div class="views-field views-field-field-youtube">        
 															<div class="field-content">
@@ -415,6 +406,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 															</div>
 														</div>
 													</div>
+													<div class="clearfix"></div>
 
 
 
