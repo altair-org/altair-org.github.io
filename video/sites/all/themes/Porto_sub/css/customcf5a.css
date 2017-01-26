@@ -1,0 +1,616 @@
+/*=======================================================================
+*** PORTO_SUB STYLE SHEET***
+========================================================================*/
+
+#withoutslider > h3 {
+color: white;
+}
+#withoutslider > p {
+color: white;
+}
+#withoutslider > h4 {
+color: white;
+}
+#mymainform {
+    border: 2px solid #4a4a4a;
+    padding: 15px;
+    padding-top: 0;
+    text-align: center !important;
+    margin-top: 0;
+    font-size: 1.4em;
+-webkit-box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.65);
+-moz-box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.65);
+box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.65);
+    transition: 0.5s ease;
+
+}
+#mymainform:hover {
+    border: 2px solid #4a4a4a;
+    padding: 15px;
+    padding-top: 0;
+    text-align: center !important;
+    margin-top: 0;
+    font-size: 1.4em;
+-webkit-box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.65);
+-moz-box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.65);
+box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.65);
+}
+/*#mymainform:hover {
+    border: 2px solid white;
+    -webkit-box-shadow: 10px 10px 20px -5px rgba(255,255,255,1);
+    -moz-box-shadow: 10px 10px 20px -5px rgba(255,255,255,1);
+    box-shadow: 10px 10px 20px -5px rgba(255,255,255,1);
+}*/
+.besplatno {
+    display: inline;
+    background: #4a4a4a;
+    /* color: black; */
+    padding-left: 5px;
+    padding-right: 2px;
+}
+.home-intro {
+background: transparent url(../img/main_bg.jpg) center center no-repeat;
+background-size: cover;
+}
+.mybg {
+color: white;
+}
+#withoutslider > p > a {
+    color: white;
+    text-decoration: underline;
+}
+div#mytop-phone {
+    width: 100%;
+    float: right;
+    font-size: 1.4em;
+    text-align: right;
+    padding-bottom: 20px;
+	padding-right: 40px;
+}
+h1.mainslide-title {
+    color: white;
+    text-align: center;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.myaddr {
+    color: white;
+    text-align: right;
+    font-size: 1.2em;
+}
+#ourspecs {
+    min-height: 300px;
+    height: 300px;
+    background: url("../img/specs_bg_2.jpg") no-repeat center center;
+    background-size: cover;
+    display: table;
+    overflow: hidden;
+}
+#ourspecs:hover {
+    min-height: 300px;
+    height: 300px;
+    background: url("../img/specs_bg_1.jpg") no-repeat center center;
+    background-size: cover;
+    display: table;
+    overflow: hidden;
+}
+
+#outprojects {
+    min-height: 300px;
+    height: 300px;
+    background: url("../img/projects_bg_2.jpg") no-repeat center center;
+    background-size: cover;
+    display: table;
+    overflow: hidden;
+}
+#outprojects:hover {
+    min-height: 300px;
+    height: 300px;
+    background: url("../img/projects_bg_1.jpg") no-repeat center center;
+    background-size: cover;
+    display: table;
+    overflow: hidden;
+}
+
+.centered {
+    width: 100%;
+    min-height: 300px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2em;
+    color: white;
+    line-height: 1;
+}
+.pryanic {
+    min-height: 300px;
+    height: 300px;
+    background: url(../../Sub_porto/img/pryanich.html) no-repeat;
+    background-size: cover;
+}
+#youtube-field-player > img {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+[id^="youtube-field-player-"] > img {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.mycell {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 1.8em;
+}
+.cell1 {
+    height: 349px;
+    min-height: 349px;
+    background-size: cover;
+    background: url(../img/otdel-dizaina.jpg) no-repeat center;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1px;
+
+}
+.cell1:hover {
+    height: 349px;
+    min-height: 349px;
+    background-size: cover;
+    background: url(../img/otdel-dizaina2.jpg) no-repeat center;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1px;
+
+}
+.cell2 {
+    height: 349px;
+    min-height: 349px;
+    background-size: cover;
+    background: url(../img/otdel-proizvodstva.jpg) no-repeat center;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1px;
+
+}
+.cell2:hover {
+    height: 349px;
+    min-height: 349px;
+    background-size: cover;
+    background: url(../img/otdel-proizvodstva2.jpg) no-repeat center;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1px;
+
+}
+.cell3 {
+    height: 349px;
+    min-height: 349px;
+    background-size: cover;
+    background: url(../img/otdel-ozvuchky.jpg) no-repeat center;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1px;
+
+
+}
+.cell3:hover {
+    height: 349px;
+    min-height: 349px;
+    background-size: cover;
+    background: url(../img/otdel-ozvuchky2.jpg) no-repeat center;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1px;
+
+
+}
+.cell4 {
+    height: 349px;
+    min-height: 349px;
+    background-size: cover;
+    background: url(../img/otdel-marketinga.jpg) no-repeat center;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+.cell4:hover {
+    height: 349px;
+    min-height: 349px;
+    background-size: cover;
+    background: url(../img/otdel-marketinga2.jpg) no-repeat center;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+
+div#withoutslider {
+    display: table;
+    font-size: 2em;
+    line-height: 1.3;
+    height: 340px;
+    text-align: center;
+}
+.mysitename {
+    position: relative;
+    left: 70px;
+    top: -35px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.cell1 > .mycell:hover {
+color: black !important;
+}
+
+div#withoutslider:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+div#block-webform-client-block-88 {
+    width: 80%;
+    text-align: center;
+}
+.mypad {
+padding: 0px !important;
+}
+
+.cell5 {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/privlech.jpg) no-repeat center;
+    background-size: cover;
+}
+.cell5:hover {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/privlech2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.cell6 {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/doverie2.jpg) no-repeat center;
+    background-size: cover;
+}
+.cell6:hover {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/doverie.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.cell7 {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/preim2.jpg) no-repeat center;
+    background-size: cover;
+}
+.cell7:hover {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/preim.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.cell8 {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/zakr2.jpg) no-repeat center;
+    background-size: cover;
+}
+.cell8:hover {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/zakr.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.cell9 {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/rasskaz_2.jpg) no-repeat center;
+    background-size: cover;
+}
+.cell9:hover {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/rasskaz_.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.cell10 {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/solid2.jpg) no-repeat center;
+    background-size: cover;
+}
+.cell10:hover {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/solid.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.cell11 {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/market2.jpg) no-repeat center;
+    background-size: cover;
+}
+.cell11:hover {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/market.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.cell12 {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/effect_2.jpg) no-repeat center;
+    background-size: cover;
+}
+.cell12:hover {
+    height: 300px;
+    min-height: 300px;
+    background-size: cover;
+    background: #4a4a4a;
+    font-size: 1.4em;
+    display: table;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px !important;
+    background: url(../img/effect_.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.nodisplay {
+display: none;
+}
+/*
+#bottomform input {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin: 10px;
+    text-align: center;
+}
+.bform {
+    width: 100%;
+    text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+.form-inline2 {
+    width: 30%;
+    display: inline-table;
+}
+#webform-client-form-110 > div > .form-actions {
+    width: 90% !important;
+    display: inline;
+}
+.bform {
+    border: 1px solid #9A9494;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.35);
+}
+.bform:hover {
+    border: 1px solid #9A9494;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+-webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.35);
+}
+
+div#bottomform {
+    text-align: center;
+
+}
+#bottomform input {
+border-color: black;
+}
+#webform-client-form-110 .form-actions {
+    position: relative;
+    top: -14px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    #webform-client-form-110 .form-actions {top:-2px;} 
+}
+
+@media all and (max-width: 500px) { /* screen size until 500px */
+    body {
+        font-size: 12px !important; /* 0.8x default size */
+        }
+	.mycell
+	{
+	font-size: 22px !important;
+	}
+	.mysitename {
+	font-size: 14px !important;
+	}
+	.myphones {
+	text-align: center !important;
+	width: 100%;
+	}
+    }
+
+img.teamimg {
+    width: 30%;
+}
+.mbg {
+    height: 100px;
+	width:100%;
+	display:table;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,0.6);
+}
+.mycell0 {
+    vertical-align: middle;
+    display: table-cell;
+}
+.sercell {
+    color: white;
+    background: grey;
+    border: 1px solid white;
+}
+
+
+@media (min-width: 1200px) {
+.sercell {
+    height: 300px;
+}
+}
+
+
+@media (min-width: 992px) {
+.sercell {
+    height: 300px;
+}
+}
+
