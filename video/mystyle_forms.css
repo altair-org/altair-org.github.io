@@ -1,0 +1,135 @@
+/*#type1{
+display: none;
+}
+#type1 + label button{
+width:40px;
+height:40px;
+background: #000;
+padding: 10px;
+border:none;
+}
+#type1 + label button span{
+width:20px;
+display: block;
+height:20px;
+border-radius:50%;
+border:1px solid white;
+}
+*/
+#type1::checked + label button{
+	background: red;
+}
+#type1 + label{
+	display: inline-block;
+}
+
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
+  line-height: 36px;
+  cursor: pointer;
+  font-size: 18px;
+}
+label::before {
+  content: " ";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  z-index: -1;
+}
+input[type="radio"] + label::before {
+  border-radius: 18px;
+}
+/* Checked */
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  padding-left: 10px;
+  color: #db4914;
+}
+input[type="checkbox"]:checked + label::before,
+input[type="radio"]:checked + label::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+/* Transition */
+label,
+label::before {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+
+
+.slider {
+width:250px;
+height:11px;
+background:url("slider-bg.png") no-repeat; // Фон ползунка.
+position:relative;
+margin:0;
+padding:0 10px;
+}
+
+.ui-slider-handle {
+width:24px;
+height:24px;
+position:absolute;
+top:-7px;
+margin-left:-12px;
+z-index:200;
+background:url("slider-button.png");
+}
+
+.ui-widget-header {
+background:url("fill.png") no-repeat left;
+height:8px;
+left:1px;
+top:1px;
+position:absolute;
+}
+
+.forms_all h6{
+	font-size: 1.6em;
+}
+.forms_all h4{
+	font-size: 1.8em;
+}
+.quest{
+	font-size: 20px;
+}
+.slider{
+	margin-left: auto;
+}
+.for_slider{
+	width: 300px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.slidervalue{
+	width: 30px;
+	height: 30px;
+	padding-left: 8px;
+	color: #000;
+	font-size: 18px;
+font-style: normal;
+line-height: 26px;
+font-weight: 700;
+float: left;
+}

@@ -10,9 +10,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="sites/default/files/logo_3.png" type="image/png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>Контактная информация | 2D Production</title>
+<title>Цены | 2D Production</title>
 <!-- Call bootstrap.css before $scripts to resolve @import conflict with respond.js -->
 <link rel="stylesheet" href="sites/all/themes/Porto/vendor/bootstrap/css/bootstrap.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-ui-1.10.3.custom.min.js"></script>
 <style type="text/css" media="all">
 @import url("modules/system/system.basecf5a.css?od8qir");
 @import url("modules/system/system.menuscf5a.css?od8qir");
@@ -66,6 +68,139 @@
 @import url("sites/all/themes/Porto_sub/css/customcf5a.css?od8qir");
 </style>
 <link type="text/css" rel="stylesheet" href="sites/default/files/less/N7urDZIqaWkQX94084_vuW_TMZ5pS5qKU60zYjI7lIc/sites/all/themes/Porto/css/less/skin.iZ2uBTHlUnTOJ4NhV5-h_40GiPSz5e9NJLAK-TbnTvEcf5a.css?od8qir" media="all" />
+<style>
+.tel-for-mob{
+	display: none;
+}
+.views-row{
+	padding: 20px;
+}
+.right_text{
+	padding-left: 40px;
+}
+#youtube-field-player img{
+	padding-bottom: 0;
+}
+.port_inside{
+width:100%; 
+margin-left:auto;
+ min-height:480px; 
+margin-right:auto; 
+background: url("sites/default/files/youtube/port_1.jpg") no-repeat center top; 
+background-size:contain;
+}
+.row-sm-2 .col-xs-6:hover{
+cursor: pointer;
+}
+.descr_text{
+	font-size: 1.3em;
+}
+body.sticky-menu-active #header{
+	padding: 12px 0px;
+}
+.name_h2{
+	text-align:left; font-size:36px; font-weight: 500;
+}
+.clearfix::before{
+	content: " ";
+display: table;
+}
+.clearfix::after{
+	content: " ";
+display: table;
+clear: both;
+}
+.row-sm{
+	display: none;
+}
+.port_inside:hover{
+	background: url("sites/default/files/youtube/port_2.jpg") no-repeat center top; 
+	 background-size:contain;
+}
+@media only screen and (max-width : 992px) {
+	#header-top{
+		margin-top: 20px;
+	}
+#header .container{
+	min-height: 70px;
+	height: auto;
+}
+.mysitename{
+	display: none;
+}
+#mytop-phone{
+	display: none;
+}
+.tel-for-mob{
+	display: block;
+	margin-top: 7px;
+float: right;
+font-size: 1.4em;
+text-align: right;
+padding-bottom: 20px;
+padding-right: 40px;
+}
+.sticky-menu-active #header-top{
+	margin-top: 55px;
+}
+#header .logo-sticky-active{
+	margin-top: 20px;
+}
+.views-row-last{
+	float: left;
+}
+.col-sm-hidden{
+	display: none;
+}
+.row-sm{
+	display: block;
+}
+}
+@media only screen and (max-width : 768px){
+.port_inside{
+	min-height: 300px;
+	margin-left: 50px;
+}
+.descr_text, .name_h2{
+	padding-left: 40px;
+}
+}
+@media only screen and (max-width : 500px) {
+ #header .logo{
+	float: none;
+	vertical-align: top;
+}
+#header .logo-sticky-active{
+	vertical-align: middle;	}
+.form-inline2{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.row-sm .col-xs-6, .row-sm2 .col-xs-6{
+	width: 100%;
+}
+.row-sm2 .col-xs-offset-3{
+	margin-left: 0px;
+}
+.port_inside{
+	min-height: 300px;
+	margin-left: 20px;
+}
+.descr_text, .name_h2{
+	padding-left: 15px;
+}
+
+}
+@media only screen and (max-width : 340px) {
+				.myaddr strong{
+					display: none;	
+				}
+			}
+
+
+</style>
+
 <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
@@ -142,7 +277,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 <!-- Web Fonts  -->
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="mystyle_forms.css">
   
 </head>
 <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-109 node-type-page ">
@@ -155,7 +290,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
             <div class="logo">
 	      <a href="index.html" title="Главная" rel="home" id="logo">
 	        <img src="sites/default/files/logo_2.png" alt="Главная" height="54" data-sticky-height="40" />
-		<div class="mysitename">Студия видеопроизводства</div>
+		<div class="mysitename">Студия видеопроизводства в Москве</div>
 	      </a>
       </div>
 	    	    
@@ -178,7 +313,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
     
   <div class="content">
-    <div id="mytop-phone"><a href=tel:+74993982911>+7 (499) 398-29-11</a></a>  </div>
+   <div id="mytop-phone"><a href="tel:+79777977822" style="color: #db4914;">+7 (977) 797-78-22</a>  </div>
 </div>
   </div>
       </div>
@@ -186,6 +321,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 	    <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
 				<i class="icon icon-bars"></i>
 			</button>
+			<div class="tel-for-mob"><a href="tel:+79777977822" style="color: #db4914;">+7 (977) 797-78-22</a></div>
       
     </div>
     
@@ -199,7 +335,13 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
     
   <div class="content">
-    <ul class="nav nav-pills nav-main" id="mainMenu"><li><a href="index.html" title="">Главная</a></li><li><a href="nasha-komanda.html">Наша команда</a></li><li><a href="portfolio.html" title="">Наши проекты</a></li><li><a href="video-otzyvy.html" title="">Отзывы</a></li><li class="active"><a href="kontaktnaya-informaciya.html" class="active-trail active">Контакты</a></li></ul>  </div>
+									<ul class="nav nav-pills nav-main" id="mainMenu">
+									<li><a href="index.html" title="">Главная</a></li>
+									<li><a href="portfolio.html" title="">Работы</a></li>
+									<li><a href="prices.html">Цены</a></li>
+									<li ><a href="nasha-komanda.html"  >Команда</a></li>
+									<li class="active"><a href="video-otzyvy.html" title="" class="active">Отзывы</a></li>
+									</ul>  </div>
 </div>
   </div>
         </nav>
@@ -216,81 +358,113 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 		  <div class="container">
 		    				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<h2>Контактная информация</h2>
+						<h2>Цены</h2>
 					</div>
 				</div>
 			</div>
 		</section>
 	  	  
 	  	  <div id="content" class="content full">
-	    <div class="full">
-	      <div class="row">
-	      			    			
-					<div class="col-md-9">
-					  
-			     				      			      		
-					    <div class="region region-content">
-    <div id="block-system-main" class="block block-system">
+	    <div class="full container	forms_all">
+	      <div class="row"><form action="echo">
+	      <div class="col-xs-12 col-sm-6">	
+	      			<h4>Ответьте на наши вопросы и получите полный расчёт стоимости Вашего проекта </h4> 
+	      			 <h6>Вопросы:</h6>
+	      			 	 
+	      			 <p class="quest">1. Выберите тип видео</p>
+	      		
+   <input type="radio" name="type" value="1" id="type1"><label for="type1">  Репортажное</label>
+   <input type="radio" name="type" value="2" id="type2"><label for="type2"> Постановочное</label> 
+ <p class="quest">2. Количество съемочных дней</p>
 
-    
-  <div class="content">
-    <div id="node-109" class="node node-page clearfix" about="/kontaktnaya-informaciya" typeof="foaf:Document">
+<div id="slider-result1" class="slidervalue">1</div>
+<div class="for_slider">
+<div class="slider1 slider"></div>
 
-  
-      <span property="dc:title" content="Контактная информация" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
-  
-  <div class="content">
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:401px;width:100%;'><div id='gmap_canvas' style='height:401px;100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:18,center:new google.maps.LatLng(56.6294519,47.88408939999999),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(56.6294519,47.88408939999999)});infowindow = new google.maps.InfoWindow({content:'<strong>2D Видеопроизводство</strong><br>Успенска, 11<br> Йошкар-Ола<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-
-</div></div></div>  </div>
-
-  
-  
 </div>
-  </div>
+<p class="quest">3. Количество съемочных локаций</p>
+<div id="slider-result2" class="slidervalue">1</div>
+<div class="for_slider">
+<div class="slider2 slider"></div>
+
 </div>
-  </div>
-			      
-					</div>
+<p class="quest">4. Количество интервью в видео</p>
+<div id="slider-result3" class="slidervalue">1</div>
+<div class="for_slider">
+<div class="slider3 slider"></div>
+
+</div>
+<p class="quest">5. Нужен ли закадровый голос?</p>
+	      		
+  <input type="radio" name="voice" value="1" id="type3"><label for="type3">  Да</label>
+   <input type="radio" name="voice" value="2" id="type4"><label for="type4"> Нет</label> 
+<p class="quest">6. Нужна ли аэросъемка?</p>
+	      		
+  <input type="radio" name="aero" value="1" id="type5"><label for="type5">  Да</label>
+   <input type="radio" name="aero" value="2" id="type6"><label for="type6"> Нет</label>
+<p class="quest">7. Предполагаемая длительность видео(в минутах)</p>
+<div id="slider-result4" class="slidervalue">1</div>
+<div class="for_slider">
+<div class="slider4 slider"></div>
+</div>
+<p class="quest">8. Нужен ли монтаж?</p>
+	      		
+  <input type="radio" name="mont" value="1" id="type7"><label for="type7">  Да</label>
+   <input type="radio" name="mont" value="2" id="type8"><label for="type8"> Нет</label>
+<p class="quest">9. Нужна ли цветокоррекция?</p>
+	      		
+  <input type="radio" name="color" value="1" id="type9"><label for="type9">  Да</label>
+   <input type="radio" name="color" value="2" id="type10"><label for="type10"> Нет</label>
+<p class="quest">8. Нужна ли графика?</p>
+	      		
+  <input type="radio" name="grafica" value="1" id="type11"><label for="type11">  Да</label>
+   <input type="radio" name="grafica" value="2" id="type12"><label for="type12"> Нет</label>
+   
+   </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"  data-sticky-container>
+  <div class="sticky" data-sticky data-anchor="foo">
+											<div class="get-started" id="mymainform">
+												<form class="webform-client-form webform-client-form-90" action="http://2d-pro.biz/" method="post" id="webform-client-form-90" accept-charset="UTF-8"><div><div  class="form-item webform-component webform-component-markup webform-component--shapka">
+													<div class="shapka"><center>Оставьте заявку и получите 3 идеи Вашего видео бесплатно</center></div>
+												</div>
+												<div  class="form-item webform-component webform-component-textfield webform-component--imya">
+													<label class="element-invisible" for="edit-submitted-imya">Имя </label>
+													<input placeholder="Ваше имя" type="text" id="edit-submitted-imya" name="submitted[imya]" value="" size="60" maxlength="128" class="form-text" />
+												</div>
+												<div  class="form-item webform-component webform-component-textfield webform-component--telefon">
+													<label class="element-invisible" for="edit-submitted-telefon">Телефон </label>
+													<input placeholder="Ваш телефон" type="text" id="edit-submitted-telefon" name="submitted[telefon]" value="" size="60" maxlength="128" class="form-text" />
+												</div>
+												<div  class="form-item webform-component webform-component-email webform-component--pochta">
+													<label class="element-invisible" for="edit-submitted-pochta">Почта <span class="form-required" title="Это поле обязательно для заполнения.">*</span></label>
+													<input required="required" class="email form-text form-email required" placeholder="Ваша эл. почта" type="email" id="edit-submitted-pochta" name="submitted[pochta]" size="60" />
+												</div>
+												<input type="hidden" name="details[sid]" />
+												<input type="hidden" name="details[page_num]" value="1" />
+												<input type="hidden" name="details[page_count]" value="1" />
+												<input type="hidden" name="details[finished]" value="0" />
+												<input type="hidden" name="form_build_id" value="form-scLJN8JmDkzajC9FDizWZ3-OU7HwtkIpwhD0yhtP3Cg" />
+												<input type="hidden" name="form_id" value="webform_client_form_90" />
+												<div class="form-actions"><input class="webform-submit button-primary btn-primary btn form-submit" type="submit" name="op" value="Получить 3 идеи видео" /></div></div></form>				</div>
+
+<div class="price_form" id="priceform" style="font-size: 30px; margin-top: 30px;">
+Цена от  
+	<span id="priceformvalue"></span> руб.
+</div>
+</div>
+
+											</div>
+
+
+
+
+
+
+  </form>
+
+					
 			  
-				  				  <div class="col-md-3">
-				      <div class="region region-sidebar-right">
-    
-<div id="block-block-44" class="block block-block">
-
-    
-  <div class="content">
-    <h2>
-+7 (499) 398-29-11
-</h2>  </div>
-</div>
-<div id="block-webform-client-block-88" class="block block-webform">
-
-    
-  <div class="content">
-    <form class="webform-client-form webform-client-form-88" action="http://2d-pro.biz/kontaktnaya-informaciya" method="post" id="webform-client-form-88" accept-charset="UTF-8"><div><div  class="form-item webform-component webform-component-markup webform-component--zakazhite-obratnyy-zvonok">
- <h2 class="lead center">Закажите обратный звонок</h2>
-</div>
-<div  class="form-item webform-component webform-component-markup webform-component--poluchite-besplatnuyu-konsultaciyu-po-telefonu">
- <center>Получите бесплатную консультацию по телефону</center>
-</div>
-<div  class="form-item webform-component webform-component-textfield webform-component--imya">
-  <label class="element-invisible" for="edit-submitted-imya">Имя </label>
- <input placeholder="Имя" type="text" id="edit-submitted-imya" name="submitted[imya]" value="" size="60" maxlength="128" class="form-text" />
-</div>
-<div  class="form-item webform-component webform-component-textfield webform-component--telefon">
-  <label class="element-invisible" for="edit-submitted-telefon">Телефон <span class="form-required" title="Это поле обязательно для заполнения.">*</span></label>
- <input required="required" placeholder="Телефон" type="text" id="edit-submitted-telefon" name="submitted[telefon]" value="" size="60" maxlength="128" class="form-text required" />
-</div>
-<input type="hidden" name="details[sid]" />
-<input type="hidden" name="details[page_num]" value="1" />
-<input type="hidden" name="details[page_count]" value="1" />
-<input type="hidden" name="details[finished]" value="0" />
-<input type="hidden" name="form_build_id" value="form-s9PlbNvXmaKAa_OqjPfYBlOs12iq5JsHEky0WCUR76c" />
-<input type="hidden" name="form_id" value="webform_client_form_88" />
-<div class="form-actions"><input class="webform-submit button-primary btn-primary btn form-submit" type="submit" name="op" value="Заказать видеосъёмку " /></div></div></form>  </div>
-</div>  </div>
-				  </div>
+				  				 
 				  			    
 			  </div>
 	    </div>  
@@ -304,33 +478,34 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 	  <div class="footer-copyright">  
 	    <div class="container">
 	      <div class="row">
-			    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
 			    
 					  					      <div class="region region-footer-bottom-left">
     <div id="block-block-13" class="block block-block">
 
     
   <div class="content">
-    <div class="social-icons">
-	<ul class="social-icons">
-		<li class="facebook"><a href="https://www.facebook.com/groups/243134549375929/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Facebook">Facebook</a></li>
-		<li class="instagram"><a href="https://www.instagram.com/2d_pro/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Instagram">Instagram</a></li>
-		<li class="vk"><a href="https://vk.com/2d_pro_biz" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="VK">VK</a></li>
-		<li class="youtube"><a href="https://www.youtube.com/channel/UCzB6IsSlbuiS9h-NGV8nyuw" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="YouTube">YouTube</a></li>
-	</ul>
-</div>  </div>
+							<div class="social-icons"><!--
+								<ul class="social-icons">
+									<li class="facebook"><a href="https://www.facebook.com/groups/243134549375929/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Facebook">Facebook</a></li>
+									<li class="instagram"><a href="https://www.instagram.com/2d_pro/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Instagram">Instagram</a></li>
+									<li class="vk"><a href="https://vk.com/2d_pro_biz" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="VK">VK</a></li>
+									<li class="youtube"><a href="https://www.youtube.com/channel/UCzB6IsSlbuiS9h-NGV8nyuw" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="YouTube">YouTube</a></li>
+								</ul>-->
+								<p class="email" style="color:white; font-size:1.2em; font-family:'PT Sans Caption', sans-serif";> info@kproduction.ru</p>
+							</div>  </div>
 </div>
   </div>
 					  			  
 			    </div>
-			    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
 			    
 					  					      <div class="region region-footer-bottom-right">
     <div id="block-block-12" class="block block-block">
 
     
   <div class="content">
-    <div class="myaddr"><i class="icon icon-map-marker"></i> <strong>Адрес: </strong>Россия, г. Йошкар-Ола, ул. Успенская, д. 11</div>
+    <div class="myaddr"> <strong>Телефон: </strong>+ 7 (977) 797-78-22</div>
   </div>
 </div>
   </div>
@@ -343,6 +518,145 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 	
 </div>	
 </body>
+
+<script>
+function   calc(){
+var i=0,
+sl1 = $( "#slider-result1" ).html(),
+sl2 = $( "#slider-result2" ).html(),
+sl3 = $( "#slider-result3" ).html(),
+sl4 = $( "#slider-result4" ).html();
+if ($('input:radio[name=type]:checked').val()==1)
+{
+	i=i+25000;
+}
+if($('input:radio[name=type]:checked').val()==2){
+i=i+35000;
+}
+if ($('input:radio[name=voice]:checked').val()==1)
+{
+	i=i+7000;
+}
+if ($('input:radio[name=aero]:checked').val()==1)
+{
+	i=i+30000;
+}
+if ($('input:radio[name=mont]:checked').val()==1)
+{
+	i=i+20000;
+}
+if ($('input:radio[name=color]:checked').val()==1)
+{
+	i=i+25000;
+}
+if ($('input:radio[name=grafica]:checked').val()==1)
+{
+	i=i+100000;
+}
+i=i+sl1*10000;
+i=i+sl2*10000;
+i=i+sl3*5000;
+i=i+sl4*5000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+$("#priceformvalue").text(i);
+};
+
+
+$("input:radio").click(function() {
+	calc();
+});
+
+
+
+$(document).ready(function(){
+              // Указываем class блока div где будет ползунок.
+     $( ".slider1" ).slider({
+        animate: true, // Анимация ползунка
+            range: "min", // Фон пути ползунка, если это свойство убрать, то синей линии не будет.
+            value: 1, // Значение по умолчанию.
+            min: 1, // Минимальная сумма.
+            max: 7, // Максимальная сумма.
+    step: 1, // Шаг диапазона.
+ 
+    // Вывод диапазона
+            slide: function( event, ui ) {
+                $( "#slider-result1" ).html(ui.value);
+            },
+ 
+    // Вывод диапазона в поле input
+            change: function(event, ui) {
+            $('#text1').attr('value', ui.value);
+            calc();
+            }
+ 
+     });
+     $( ".slider2" ).slider({
+        animate: true, // Анимация ползунка
+            range: "min", // Фон пути ползунка, если это свойство убрать, то синей линии не будет.
+            value: 1, // Значение по умолчанию.
+            min: 0, // Минимальная сумма.
+            max: 6, // Максимальная сумма.
+    step: 1, // Шаг диапазона.
+ 
+    // Вывод диапазона
+            slide: function( event, ui ) {
+                $( "#slider-result2" ).html(ui.value);
+              calc();
+            },
+ 
+ 
+     });
+     $( ".slider3" ).slider({
+        animate: true, // Анимация ползунка
+            range: "min", // Фон пути ползунка, если это свойство убрать, то синей линии не будет.
+            value: 1, // Значение по умолчанию.
+            min: 0, // Минимальная сумма.
+            max: 5, // Максимальная сумма.
+    step: 1, // Шаг диапазона.
+ 
+    // Вывод диапазона
+            slide: function( event, ui ) {
+                $( "#slider-result3" ).html(ui.value);
+                calc();
+            },
+ 
+ 
+     });
+     $( ".slider4" ).slider({
+        animate: true, // Анимация ползунка
+            range: "min", // Фон пути ползунка, если это свойство убрать, то синей линии не будет.
+            value: 1, // Значение по умолчанию.
+            min: 1, // Минимальная сумма.
+            max: 10, // Максимальная сумма.
+    step: 1, // Шаг диапазона.
+ 
+    // Вывод диапазона
+            slide: function( event, ui ) {
+                $( "#slider-result4" ).html(ui.value);
+                calc();
+            },
+ 
+    // Вывод диапазона в поле input
+            change: function(event, ui) {
+            $('#text1').attr('value', ui.value);
+            }
+ 
+     });
+  });
+
+</script>
 
 
 <!-- Mirrored from 2d-pro.biz/kontaktnaya-informaciya by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Jan 2017 14:09:55 GMT -->
