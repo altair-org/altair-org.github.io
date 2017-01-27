@@ -76,9 +76,22 @@
 #youtube-field-player img{
 	padding-bottom: 0;
 }
-
+.port_inside{
+width:90%; 
+margin-left:auto;
+ min-height:500px; 
+margin-right:auto; 
+background: url("sites/default/files/youtube/port_1.jpg") no-repeat; 
+background-size:contain;
+}
+.descr_text{
+	font-size: 1.3em;
+}
 body.sticky-menu-active #header{
 	padding: 12px 0px;
+}
+.name_h2{
+	text-align:left; font-size:36px; font-weight: 500;
 }
 .clearfix::before{
 	content: " ";
@@ -89,7 +102,13 @@ display: table;
 display: table;
 clear: both;
 }
-
+.row-sm{
+	display: none;
+}
+.port_inside:hover{
+	background: url("sites/default/files/youtube/port_2.jpg") no-repeat;
+	 background-size:contain;
+}
 @media only screen and (max-width : 992px) {
 	#header-top{
 		margin-top: 20px;
@@ -122,8 +141,21 @@ padding-right: 40px;
 .views-row-last{
 	float: left;
 }
+.col-sm-hidden{
+	display: none;
 }
-
+.row-sm{
+	display: block;
+}
+}
+@media only screen and (max-width : 768px){
+.port_inside{
+	min-height: 300px;
+}
+.descr_text, .name_h2{
+	padding-left: 40px;
+}
+}
 @media only screen and (max-width : 500px) {
  #header .logo{
 	float: none;
@@ -135,6 +167,9 @@ padding-right: 40px;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+}
+.row-sm .col-xs-6{
+	width: 100%;
 }
 
 }
@@ -321,17 +356,74 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 
 											<div class="content">
-												<div id="node-107" class="node node-page clearfix" about="/nasha-komanda" typeof="foaf:Document">
+												<div id="node-107" class="node node-page clearfix container-fluid" about="/nasha-komanda" typeof="foaf:Document">
 
 
 													<span property="dc:title" content="Наша команда" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+													<div class="row">
 
-													<div class="col-lg-4 col-sm-6 col-xs-12 portrait">
-														<img src="sites/default/files/youtube/port_1.jpg" alt="">
-													</div>
-													<div class="col-lg-8 col-sm-6 col-xs-12">
+													<div class="col-lg-4 col-sm-6 col-xs-12 portrait col-md-5">
+														<div class="port_inside">
+														</div>
+
 														
 													</div>
+													<div class="col-lg-8 col-sm-6 row col-md-7 col-xs-12" >
+														<h2 class="name_h2">Дмитрий Калягин</h2>
+														<p class="descr_text">Режиссёр, сценарист, клипмейкер, копирайтер, выпускник видеошколы №1 в России – NOVA, сертифицированный специалист в съёмке корпоративных мероприятий, рекламных роликов, клипов, концертов и семейных событий.</p>
+														<p class="descr_text">
+															Слушатель курса «Бизнес на видео», который проходил при поддержке Международной школы видеографии, Европейской ассоциации событийных видеографов, американской компании Adobe, а также при поддержке союза видеографов. Участник и победитель Международных кинематографических конкурсов.
+														</p>
+														
+															<div class="col-md-6 col-sm-hidden  col-xs-hidden" style="padding-left:0px; padding-right:30px;">
+																<div class="views-field views-field-field-youtube">        
+																	<div class="field-content">
+																		<a href="https://www.youtube.com/embed/5HAPPsNHbsA?width=720&amp;height=540&amp;autoplay=1&amp;loop=0&amp;showinfo=1&amp;controls=1&amp;autohide=0&amp;iv_load_policy=0&amp;iframe=1&amp;wmode=opaque" class="colorbox-load youtube-field-player" id="youtube-field-player">
+																			<img typeof="foaf:Image" src="sites/default/files/youtube/myself_1.jpg" alt="Embedded thumbnail for Ролик Москвариум" />
+																		</a>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6 col-sm-hidden  col-xs-hidden">
+																<div class="views-field views-field-field-youtube">        
+																	<div class="field-content">
+																		<a href="https://www.youtube.com/embed/Qt_CQY33JTo?width=720&amp;height=540&amp;autoplay=1&amp;loop=0&amp;showinfo=1&amp;controls=1&amp;autohide=0&amp;iv_load_policy=0&amp;iframe=1&amp;wmode=opaque" class="colorbox-load youtube-field-player" id="youtube-field-player">
+																			<img typeof="foaf:Image" src="sites/default/files/youtube/myself_2.jpg" alt="Embedded thumbnail for Ролик Москвариум" />
+																		</a>
+																	</div>
+																</div>
+															</div>
+														
+													</div>
+													</div>
+													<div class="row row-sm">
+													<h2 style="text-align:center">Видео о Дмитрие</h3>
+														<div class="col-sm-6 col-xs-6" style="padding:30px;">
+																<div class="views-field views-field-field-youtube">        
+																	<div class="field-content">
+																		<a href="https://www.youtube.com/embed/5HAPPsNHbsA?width=720&amp;height=540&amp;autoplay=1&amp;loop=0&amp;showinfo=1&amp;controls=1&amp;autohide=0&amp;iv_load_policy=0&amp;iframe=1&amp;wmode=opaque" class="colorbox-load youtube-field-player" id="youtube-field-player">
+																			<img typeof="foaf:Image" src="sites/default/files/youtube/myself_1.jpg" alt="Embedded thumbnail for Ролик Москвариум" />
+																		</a>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-6 col-xs-6" style="padding:30px;">
+																<div class="views-field views-field-field-youtube">        
+																	<div class="field-content">
+																		<a href="https://www.youtube.com/embed/Qt_CQY33JTo?width=720&amp;height=540&amp;autoplay=1&amp;loop=0&amp;showinfo=1&amp;controls=1&amp;autohide=0&amp;iv_load_policy=0&amp;iframe=1&amp;wmode=opaque" class="colorbox-load youtube-field-player" id="youtube-field-player">
+																			<img typeof="foaf:Image" src="sites/default/files/youtube/myself_2.jpg" alt="Embedded thumbnail for Ролик Москвариум" />
+																		</a>
+																	</div>
+																</div>
+															</div>
+													</div>
+													<div class="row" style="margin-top:40px;">
+													<h2 style="text-align:center">Сертификаты Дмитрия</h3>
+														<div class="col-sm-4 col-xs-6" style="padding:18px"><img src="sites/default/files/youtube/diplom_1.jpg" alt=""></div>
+														<div class="col-sm-4 col-xs-6" style="padding:25px"><img src="sites/default/files/youtube/diplom_2.jpg" alt=""></div>
+														<div class="col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0" style="padding:25px"><img src="sites/default/files/youtube/diplom_3.jpg" alt=""></div>
+													</div>
+													
 
 
 
