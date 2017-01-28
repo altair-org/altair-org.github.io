@@ -461,8 +461,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 												<div class="form-actions"><input class="webform-submit button-primary btn-primary btn form-submit" type="submit" name="op" value="Рассчитать стоимость" /></div></div></form>				</div>
 
 <div class="price_form" id="priceform" style="font-size: 30px; margin-top: 30px;">
-Цена от  
-	<span id="priceformvalue"></span> руб.
+
+	<span id="priceformvalue"></span> 
 </div>
 </div>
 
@@ -546,6 +546,8 @@ if ($('input:radio[name=type]:checked').val()==1)
 if($('input:radio[name=type]:checked').val()==2){
 i=i+30000;
 }
+
+
 if ($('input:radio[name=voice]:checked').val()==1)
 {
 	i=i+5000;
@@ -577,15 +579,16 @@ i=i+sl4*5000;
 
 
 
+if($('input:radio[name=type]:checked').val()==undefined){
+	$("#priceformvalue").text("Укажите тип видео");
+}
+else{
 
 
 
 
-
-
-$("#priceformvalue").text(i);
+$("#priceformvalue").text("Цена " + i + "руб");}
 };
-
 
 $("input:radio").click(function() {
 	calc();
