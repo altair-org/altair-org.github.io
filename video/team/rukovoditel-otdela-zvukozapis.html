@@ -66,6 +66,141 @@
 @import url("../sites/all/themes/Porto_sub/css/customcf5a.css?od8qir");
 </style>
 <link type="text/css" rel="stylesheet" href="../sites/default/files/less/N7urDZIqaWkQX94084_vuW_TMZ5pS5qKU60zYjI7lIc/sites/all/themes/Porto/css/less/skin.iZ2uBTHlUnTOJ4NhV5-h_40GiPSz5e9NJLAK-TbnTvEcf5a.css?od8qir" media="all" />
+	<style>
+.tel-for-mob{
+	display: none;
+}
+.views-row{
+	padding: 20px;
+}
+.right_text{
+	padding-left: 40px;
+}
+#youtube-field-player img{
+	padding-bottom: 0;
+}
+.port_inside{
+width:100%; 
+margin-left:auto;
+ min-height:480px; 
+margin-right:auto; 
+background: url("sites/default/files/youtube/port_1.jpg") no-repeat center top; 
+background-size:contain;
+}
+.row-sm-2 .col-xs-6:hover{
+cursor: pointer;
+}
+.descr_text{
+	font-size: 1.3em;
+}
+body.sticky-menu-active #header{
+	padding: 12px 0px;
+}
+.name_h2{
+	text-align:left; font-size:36px; font-weight: 500;
+}
+.clearfix::before{
+	content: " ";
+display: table;
+}
+.clearfix::after{
+	content: " ";
+display: table;
+clear: both;
+}
+.row-sm{
+	display: none;
+}
+.port_inside:hover{
+	background: url("sites/default/files/youtube/port_2.jpg") no-repeat center top; 
+	 background-size:contain;
+}
+@media only screen and (max-width : 992px) {
+	
+#header .container{
+	min-height: 70px;
+	height: auto;
+}
+.mysitename{
+	display: none;
+}
+#mytop-phone{
+	display: none;
+}
+.tel-for-mob{
+	display: block;
+	margin-top: 7px;
+float: right;
+font-size: 1.4em;
+text-align: right;
+padding-bottom: 20px;
+padding-right: 40px;
+}
+.sticky-menu-active #header-top{
+	margin-top: 55px;
+}
+#header .logo-sticky-active{
+	margin-top: 20px;
+}
+.views-row-last{
+	float: left;
+}
+.col-sm-hidden{
+	display: none;
+}
+.row-sm{
+	display: block;
+}
+}
+@media only screen and (max-width : 768px){
+.port_inside{
+	min-height: 300px;
+	margin-left: 50px;
+}
+.descr_text, .name_h2{
+	padding-left: 40px;
+}
+.team-item img{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;margin-bottom: 20px;
+}
+}
+@media only screen and (max-width : 500px) {
+ #header .logo{
+	float: none;
+	vertical-align: top;
+}
+#header .logo-sticky-active{
+	vertical-align: middle;	}
+.form-inline2{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.row-sm .col-xs-6, .row-sm2 .col-xs-6{
+	width: 100%;
+}
+.row-sm2 .col-xs-offset-3{
+	margin-left: 0px;
+}
+.port_inside{
+	min-height: 300px;
+	margin-left: 20px;
+}
+.descr_text, .name_h2{
+	padding-left: 15px;
+}
+
+}
+@media only screen and (max-width : 340px) {
+				.myaddr strong{
+					display: none;	
+				}
+			}
+
+
+</style>
 <script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
@@ -156,7 +291,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
             <div class="logo">
 	      <a href="../index.html" title="Главная" rel="home" id="logo">
 	        <img src="../sites/default/files/logo_2.png" alt="Главная" height="54" data-sticky-height="40" />
-		<div class="mysitename">Студия видеопроизводства</div>
+		<div class="mysitename">Студия видеопроизводства в Москве</div>
 	      </a>
       </div>
 	    	    
@@ -179,7 +314,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
     
   <div class="content">
-    <div id="mytop-phone"><a href=tel:+74993982911>+7 (499) 398-29-11</a></a>  </div>
+    <div id="mytop-phone"><a href="tel:+79777977822" style="color: #db4914;">+7 (977) 797-78-22</a>  </div>
 </div>
   </div>
       </div>
@@ -187,6 +322,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 	    <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
 				<i class="icon icon-bars"></i>
 			</button>
+			<div class="tel-for-mob"><a href="tel:+79777977822" style="color: #db4914;">+7 (977) 797-78-22</a></div>
       
     </div>
     
@@ -200,7 +336,13 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
     
   <div class="content">
-    <ul class="nav nav-pills nav-main" id="mainMenu"><li><a href="../index.html" title="">Главная</a></li><li><a href="../nasha-komanda.html">Наша команда</a></li><li><a href="../portfolio.html" title="">Наши проекты</a></li><li><a href="../video-otzyvy.html" title="">Отзывы</a></li><li><a href="../kontaktnaya-informaciya.html">Контакты</a></li></ul>  </div>
+									<ul class="nav nav-pills nav-main" id="mainMenu">
+									<li><a href="../index.html" title="">Главная</a></li>
+									<li><a href="../portfolio.html" title="">Работы</a></li>
+									<li><a href="../prices.html">Цены</a></li>
+									<li class="active"><a href="../nasha-komanda.html"  class="active">Команда</a></li>
+									<li><a href="../video-otzyvy.html" title="">Отзывы</a></li>
+									</ul>  </div>
 </div>
   </div>
         </nav>
@@ -448,22 +590,26 @@ jQuery(function ($) {
 	<div class="col-lg-12 col-md-12 h420">
 	    		<div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="row">
 <div class="row-height">
-<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-height col-md-height team-item">
-<a href="../sites/default/files/styles/myoriginal/public/dmitriy-rybakov.jpg" class="colorbox"><img class="img-responsive" src="../sites/default/files/styles/desature/public/dmitriy-rybakov.jpg"></a>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-lg-height col-md-height team-item">
+<a href="../sites/default/files/styles/myoriginal/public/alexey-avdeev.jpg" class="colorbox"><img class="img-responsive" src="../sites/default/files/styles/desature/public/alexey-avdeev.jpg"></a>
 </div>
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-height col-md-height col-lg-top col-md-top">
-<h3>Дмитрий Рыбаков</h3>
-<p>Звукорежиссёр, музыкант, исполнитель собственных авторских песен. <br>
-Профильное образование: Аудиовизуальная техника и звукотехническое обеспечение аудиовизуальных систем<br>
-Ключевые компетенции: мастеринг и сведение аудиофайлов, подбор дикторов, работа с аудиоэффектами. <br>
-Опыт в  сфере обработки звука: 4 года<br> 
-Опыт в сфере написания музыки: 6 лет <br>
-</p>
+<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 col-lg-height col-md-height col-lg-top col-md-top">
+<h3>Алексей Авдеев</h3>
+<ul>
+	<li>Видеограф</li>
+	<li>Фотограф</li>
+	<li>Выпускник школы кинематографии Movieband</li>
+	<li>Саунд-дизайнер</li>
+	<li>Режиссёр монтажа</li>
+	<li>Колорист</li>
+</ul><!--
+<p>Видеограф, фотограф, выпускник школы кинематографии Movieband, саунд-дизайнер, режиссёр монтажа, колорист.
+</p>-->
 
 </div>
-<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-height col-md-height col-lg-top col-md-top">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-lg-height col-md-height col-lg-top col-md-top">
 <div class="mybottoms mparent inside-full-height">
-	<a href="rukovoditel-otdela-videoproizvodstva.html"><div class="mchild">Отдел видеопроизводства</div></a>
+	<a href="../dmitriy.html"><div class="mchild">Отдел видеопроизводства</div></a>
 	<a href="rukovoditel-otdela-marketinga.html"><div class="mchild">Отдел маркетинга</div></a>
 	<a href="rukovoditel-otdela-dizayna.html"><div class="mchild">Отдел дизайна</div></a>
 
@@ -518,33 +664,34 @@ jQuery(function ($) {
 	  <div class="footer-copyright">  
 	    <div class="container">
 	      <div class="row">
-			    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
 			    
 					  					      <div class="region region-footer-bottom-left">
     <div id="block-block-13" class="block block-block">
 
     
   <div class="content">
-    <div class="social-icons">
-	<ul class="social-icons">
-		<li class="facebook"><a href="https://www.facebook.com/groups/243134549375929/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Facebook">Facebook</a></li>
-		<li class="instagram"><a href="https://www.instagram.com/2d_pro/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Instagram">Instagram</a></li>
-		<li class="vk"><a href="https://vk.com/2d_pro_biz" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="VK">VK</a></li>
-		<li class="youtube"><a href="https://www.youtube.com/channel/UCzB6IsSlbuiS9h-NGV8nyuw" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="YouTube">YouTube</a></li>
-	</ul>
-</div>  </div>
+    <div class="social-icons"><!--
+																	<ul class="social-icons">
+																		<li class="facebook"><a href="https://www.facebook.com/groups/243134549375929/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Facebook">Facebook</a></li>
+																		<li class="instagram"><a href="https://www.instagram.com/2d_pro/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Instagram">Instagram</a></li>
+																		<li class="vk"><a href="https://vk.com/2d_pro_biz" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="VK">VK</a></li>
+																		<li class="youtube"><a href="https://www.youtube.com/channel/UCzB6IsSlbuiS9h-NGV8nyuw" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="YouTube">YouTube</a></li>
+																	</ul>-->
+																	<p class="email" style="color:white; font-size:1.2em; font-family:'PT Sans Caption', sans-serif";> info@kproduction.ru</p>
+																</div>  </div>
 </div>
   </div>
 					  			  
 			    </div>
-			    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
 			    
 					  					      <div class="region region-footer-bottom-right">
     <div id="block-block-12" class="block block-block">
 
     
   <div class="content">
-    <div class="myaddr"><i class="icon icon-map-marker"></i> <strong>Адрес: </strong>Россия, г. Йошкар-Ола, ул. Успенская, д. 11</div>
+    <div class="myaddr"> <strong>Телефон: </strong>+ 7 (977) 797-78-22</div>
   </div>
 </div>
   </div>
