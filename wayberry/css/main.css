@@ -45,7 +45,7 @@ body {
 	font-size: 28px;
 	background: #fcfcfc;
 	text-transform: uppercase;
-	background: url("../img/bg_main.png") no-repeat;
+	background: url("../img/bg_main.png") no-repeat 100% auto;
 	-webkit-background-size: cover;
 	background-size: cover;
 	color: #fff;
@@ -368,3 +368,11 @@ footer p{
 .fact_icon:hover{
 	transform: rotate(360deg);
 }
+
+
+
+
+
+
+
+
