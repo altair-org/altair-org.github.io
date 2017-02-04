@@ -45,9 +45,9 @@ body {
 	font-size: 28px;
 	background: #fcfcfc;
 	text-transform: uppercase;
-	background: url("../img/bg_main.png") no-repeat 100% auto;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background: url("../img/bg_main.png") no-repeat 0px 0px;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
 	color: #fff;
 }
 a{
