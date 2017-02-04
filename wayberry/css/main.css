@@ -50,6 +50,12 @@ body {
 	background-size: cover;
 	color: #fff;
 }
+a{
+	color: #ffffff;
+}
+span{
+	color: #ffffff;
+}
 .menu_bar .menu li{
 	font-size: 36px;
 	color: #ffe400;
@@ -83,6 +89,7 @@ margin-top: 30px;
 .header_contacts .tel span{
 	font-size: 38px;
 	font-family: "BebasBold";
+	color: #ffffff;
 }
 .menu_bar{
 	padding-top: 15px;
@@ -320,7 +327,7 @@ margin-right: 18px;
 }
 footer{
 	min-height: 300px;
-	background: url("../img/footertop.png") no-repeat 0% -1px,
+	background: url("../img/footertop.png") no-repeat 0% -5px,
 	url("../img/footertop2.png") no-repeat 0% 12%;
 
 	-webkit-background-size: 100%;
