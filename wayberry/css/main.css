@@ -1,0 +1,363 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+    outline-offset: 0px;
+}
+*:focus{
+	outline:none;
+}
+*, p{
+	margin: 0;padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+	line-height: 1;
+	font-weight: 500;
+
+}
+/*Элемент выше для того, чтобы не было цвето у фокусированных*/
+
+body {
+	font-family: "BebasReg", sans-serif;
+	font-size: 28px;
+	background: #fcfcfc;
+	text-transform: uppercase;
+	background: url("../img/bg_main.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+}
+.menu_bar .menu li{
+	font-size: 36px;
+	color: #ffe400;
+	list-style: disc outside;
+	display: inline-block;
+	padding-left: 40px;
+}
+.menu_bar .menu li a{
+	padding-left: 10px;
+	color: #fff;
+}
+.menu_bar .menu{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 72px;
+margin-top: 30px;
+}
+.logo{
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+}
+.header_contacts{
+	display: inline-block;
+	float: right;
+	vertical-align: middle;
+}
+.header_contacts .tel{
+	font-size: 30px;
+}
+.header_contacts .tel span{
+	font-size: 38px;
+	font-family: "BebasBold";
+}
+.menu_bar{
+	padding-top: 15px;
+}
+.header_contacts button p{
+	color: #442671;
+	font-size: 30px;
+	font-family: "BebasBold";
+}
+.header_contacts button{
+	padding: 15px 25px;
+	background: #ffe400;
+	border: none;
+	border-radius: 10px;
+	border-bottom: 3px solid #c8a900;
+	box-shadow: 2px;
+
+}
+.line{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	opacity: 0.3;
+}
+h1{
+	text-align: center;
+	font-size: 60px;
+	font-family: "BebasBold";
+}
+h6{
+	text-align: center;
+	font-size: 30px;
+	width: 70%;
+	margin-left: auto;margin-right: auto;
+	line-height: 1.2;
+	margin-bottom: 25px;
+}
+header h6 span{
+	color: #ffe400;
+}
+.hr2{
+	margin-left: auto;
+	margin-right: auto;
+	border: none; /* Убираем границу */
+    background-color: #ffe400; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 4px; /
+}
+.socials{
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+display: block;
+}
+.send_but{
+	padding: 22px 50px;
+	border: none;
+	border-radius: 10px;
+	background: #000;
+	background: #ffe400;
+	border-bottom: 3px solid #c8a900;
+	box-shadow: 2px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+.send_but p{
+	color: #442671;
+	font-size: 42px;
+	font-family: "BebasBold";
+}
+.facts{
+	background: url("../img/cloudtop1.png") no-repeat 0% 0px,
+	url("../img/white.png") no-repeat 0% 210px,
+	url("../img/cloudbottom1.png") no-repeat 0% 100%;
+	
+	 padding-top: 180px;
+	 color: #4e316e;
+	 padding-bottom: 120px;
+}
+.facts h2, .services h2{
+	text-align: center;
+	font-size: 51px;
+	margin-bottom: 70px;
+	color: #ffe613;
+	text-decoration: underline;
+	line-height: 1.2;
+	font-family: "BebasReg";
+	font-weight: 300;
+}
+.facts h2 span{
+	color: #4e316e;
+}
+.services h2 span{
+	color: #ffffff;
+}
+.facts p{
+	font-size: 30px;
+	text-align: center;
+}
+.fact_icon{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.facts .col-xs-4{
+	margin-bottom: 30px;
+}
+.facts .col-xs-8{
+	padding-top: 40px;
+	margin-bottom: 120px;
+
+}
+.facts .col-xs-8 p{
+	text-align: left;
+margin-left: 40px;
+}
+.services h4{
+	color: #ffe400;
+	font-size: 48px;
+	margin-bottom: 25px;
+	vertical-align: middle;
+	line-height: 1.2;
+
+}
+.services .col-xs-6 img{
+margin-right: 18px;
+}
+.services .col-xs-6 p{
+  font-size: 31px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+
+.row{
+	padding-top: 40px;
+}
+.services .col-xs-6{
+	padding-bottom: 40px;
+}
+.secc{
+	margin-top: -70px;
+}
+.services h6{
+	margin-top: 40px;
+}
+.reviews{
+	padding-top: 180px;
+	background: url("../img/cloudtop1.png") no-repeat 0% 0px,
+	url("../img/white.png") no-repeat 0% 200px,
+	url("../img/white.png") no-repeat 0% 100%;
+}
+.reviews h2{
+	text-align: center;
+	color: #4e316e;
+}
+.reviews p{
+	color: #4e316e;
+	line-height: 1.2;
+}
+.reviews .col-xs-2 img{
+	width: 100%;
+	display: block;margin-left: auto;
+	margin-right: auto;
+}
+.reviews .col-xs-2 p{
+	font-size: 23px;
+}
+.reviews .col-xs-9 p:nth-child(2){
+	font-family: "BebasBold";
+}
+.logos{
+	padding-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form{
+	background: #ffffff;
+	padding-top: 70px;
+	padding-bottom: 0px;
+
+}
+.form form{
+	width: 650px;
+	padding-top: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 650px;
+	background: url("../img/form_bg.png") no-repeat 0% 0px;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.form input{
+	display: block;
+	width: 60%;
+	border-radius: 13px;
+	background: #ffffff;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 22px 35px;
+	border-top: 8px solid #532168;
+	color: #4e316e;
+}
+.form button{
+	display: block;
+	width: 60%;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	background: url("../img/button_bg.png") no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	height: 130px;
+	padding-top: 10px;
+}
+.form button p{
+	font-size: 60px;
+	line-height: 1;
+	margin-top: -35px;
+	font-family: "BebasBold";
+	color: #69146b;
+  text-shadow: 0px 4px 0px rgba(255, 255, 255, 0.004);
+
+
+}
+footer{
+	min-height: 300px;
+	background: url("../img/footertop.png") no-repeat 0% -1px,
+	url("../img/footertop2.png") no-repeat 0% 12%;
+
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	padding-top: 220px;
+	padding-bottom: 70px;
+}
+
+footer h6{
+	font-size: 51px;
+	color: #ffffff;
+	font-family: "BebasBold";
+	line-height: 1;
+	font-weight: 500;
+}
+
+footer h6:nth-child(1){
+font-family: "BebasReg";
+font-weight: 100;
+line-height: 1;
+margin-bottom: 0;
+}
+footer p{
+	font-size: 31px;
+	font-family: "BebasReg";
+	color: #ffffff;
+	text-align: center;
+}
+.footer_logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+.fact_icon{
+	transition: all 0.5s ease-in;
+}
+.fact_icon:hover{
+	transform: rotate(360deg);
+}

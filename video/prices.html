@@ -10,7 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="sites/default/files/logo_3.png" type="image/png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>Цены | 2D Production</title>
+<title>Цены | Видеостудия</title>
 <!-- Call bootstrap.css before $scripts to resolve @import conflict with respond.js -->
 <link rel="stylesheet" href="sites/all/themes/Porto/vendor/bootstrap/css/bootstrap.css">
 <script type="text/javascript" src="jquery.js"></script>
@@ -421,6 +421,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
    <input type="radio" name="grafica" value="2" id="type12"><label for="type12"> Нет</label>
    
    </div>
+   </form>
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"  data-sticky-container>
   <div class="free_offer">
   	<h4>Работая с нами, Вы бесплатно получите:</h5>
@@ -437,20 +438,20 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   </div>
   <div class="sticky" data-sticky data-anchor="foo">
 											<div class="get-started" id="mymainform">
-												<form class="webform-client-form webform-client-form-90" action="http://2d-pro.biz/" method="post" id="webform-client-form-90" accept-charset="UTF-8"><div><div  class="form-item webform-component webform-component-markup webform-component--shapka">
+												<form class="webform-client-form webform-client-form-90" id="form" accept-charset="UTF-8"><div><div  class="form-item webform-component webform-component-markup webform-component--shapka">
 													<div class="shapka"><center>Получить персонализированный расчёт стоимости в рамках Вашего бюджета</center></div>
 												</div>
 												<div  class="form-item webform-component webform-component-textfield webform-component--imya">
 													<label class="element-invisible" for="edit-submitted-imya">Имя </label>
-													<input placeholder="Ваше имя" type="text" id="edit-submitted-imya" name="submitted[imya]" value="" size="60" maxlength="128" class="form-text" />
+													<input placeholder="Ваше имя" type="text" id="edit-submitted-imya" name="name" value="" size="60" maxlength="128" class="form-text" />
 												</div>
 												<div  class="form-item webform-component webform-component-textfield webform-component--telefon">
 													<label class="element-invisible" for="edit-submitted-telefon">Телефон </label>
-													<input placeholder="Ваш телефон" type="text" id="edit-submitted-telefon" name="submitted[telefon]" value="" size="60" maxlength="128" class="form-text" />
+													<input placeholder="Ваш телефон" type="text" id="edit-submitted-telefon" name="phone" value="" size="60" maxlength="128" class="form-text" />
 												</div>
 												<div  class="form-item webform-component webform-component-email webform-component--pochta">
 													<label class="element-invisible" for="edit-submitted-pochta">Почта <span class="form-required" title="Это поле обязательно для заполнения.">*</span></label>
-													<input required="required" class="email form-text form-email required" placeholder="Ваша эл. почта" type="email" id="edit-submitted-pochta" name="submitted[pochta]" size="60" />
+													<input required="required" class="email form-text form-email required" placeholder="Ваша эл. почта" type="email" id="edit-submitted-pochta" name="email" size="60" />
 												</div>
 												<input type="hidden" name="details[sid]" />
 												<input type="hidden" name="details[page_num]" value="1" />
@@ -531,6 +532,25 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 	
 </div>	
 </body>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script>
+		$(document).ready(function() {
+
+	$("#form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form").trigger("reset");
+		});
+		return false;
+	});
+	
+});
+	</script>
 
 <script>
 function   calc(){

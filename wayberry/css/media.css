@@ -1,0 +1,237 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+.menu_bar .menu li{
+	padding-left: 0px;
+}
+.secc{
+	margin-top: 0px;
+}
+.services .col-md-4 p{
+	font-size: 27px;
+}
+.services .col-md-4 h4{
+	font-size: 46px;
+}
+.reviews .col-xs-3 p {
+    font-size: 19px;
+}
+.facts{
+	background: url("../img/cloudtop1.png") no-repeat 0% 0px,
+	url("../img/white.png") no-repeat 0% 320px,
+	url("../img/cloudbottom1.png") no-repeat 0% 100%;
+	
+	 padding-top: 180px;
+	 color: #4e316e;
+}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+.menu_bar .logo{
+	display: block;
+	width: 100%;
+}
+.menu_bar .logo img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.menu_bar .menu{
+	float: left;
+	margin-left: 0;
+}
+.menu_bar .menu li{
+	padding-left: 30px;
+}
+h6{
+	width: auto;
+}
+.facts{
+	background: url("../img/cloudtop1.png") no-repeat 0% 0px,
+	url("../img/white.png") no-repeat 0% 320px,
+	url("../img/cloudbottom1.png") no-repeat 0% 100%;
+	
+	 padding-top: 180px;
+	 color: #4e316e;
+}
+.secc{
+	margin-top: 0px;
+}
+.services .col-md-4 img{
+	height: 50px;
+	width: auto;
+}
+.services .col-md-4 h4{
+	font-size: 40px;
+}
+header .socials{
+	width: 60%;
+}
+.reviews p{
+	font-size: 26px;
+}
+.reviews .col-xs-3 p {
+    font-size: 19px;
+}
+.logos{
+	width: 90%;
+}
+footer h6{
+	font-size: 38px;
+}
+footer p{
+	font-size: 28px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.menu_bar .logo{
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+.menu_bar .logo img{
+	width: 80%;
+
+}
+.menu_bar .menu{
+	display: none;
+}
+header .socials{
+	width: 80%;
+}
+
+.facts{
+	background: url("../img/cloudtop1.png") no-repeat 0% 0px,
+	url("../img/white.png") no-repeat 0% 360px,
+	url("../img/white.png") no-repeat 0% 75%,
+	url("../img/cloudbottom1.png") no-repeat 0% 100%;
+	
+	 padding-top: 180px;
+	 color: #4e316e;
+	 padding-bottom: 120px;
+}
+.fact_icon{
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.services .col-md-4 h4{
+	font-size: 34px;
+}
+.services .col-md-4 p{
+	font-size: 25px;
+}
+body p{
+	font-size: 25px;
+}
+.reviews p{
+	font-size: 20px;
+}
+.form form{
+	width: 450px;
+	padding-top: 10px;
+	min-height: 480px;
+}
+.form input{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 12px 25px;
+}
+.form button p{
+	font-size: 40px;
+line-height: 1;
+margin-top: -56px;
+}
+footer h6{
+	font-size: 34px;
+}
+footer p{
+	font-size: 27px;
+}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+.services .col-xs-6{
+	width: 100%;
+}
+
+.facts .col-xs-6{
+	width: 100%;
+}
+.facts .col-xs-6 img{
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.services .col-xs-offset-3{
+	margin-left: 0px;
+}
+.facts .col-sm-8 img{
+display: none;
+}
+.facts .col-sm-8 p{
+text-align: left;
+font-size: 25px;
+}
+.reviews .col-xs-2{
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.reviews .col-xs-10{
+	width: 100%;
+}
+.form form{
+	width: 300px;
+	padding-top: 10px;
+	min-height: 320px;
+}
+.form input{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 8px 20px;
+	font-size: 18px;
+}
+.form button p{
+	font-size: 24px;
+line-height: 1;
+margin-top: -59px;
+}
+footer h6{
+	font-size: 30px;
+}
+footer p{
+	font-size: 25px;
+}
+.facts{
+	background: url("../img/cloudtop1.png") no-repeat 0% 0px,
+	url("../img/white.png") no-repeat 0% 390px,
+	url("../img/white.png") no-repeat 0% 50%,
+	url("../img/white.png") no-repeat 0% 88%,
+	url("../img/cloudbottom1.png") no-repeat 0% 100%;
+	
+	 padding-top: 180px;
+	 color: #4e316e;
+	 padding-bottom: 120px;
+}
+.reviews{
+	padding-top: 180px;
+	background: url("../img/cloudtop1.png") no-repeat 0% 0px,
+	url("../img/white.png") no-repeat 0% 200px,
+	url("../img/white.png") no-repeat 0% 80%,
+	url("../img/white.png") no-repeat 0% 100%;
+}
+}

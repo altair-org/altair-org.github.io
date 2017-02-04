@@ -1,0 +1,14 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "BebasBold";
+	src: url("../fonts/bebas-neue-bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "BebasReg";
+	src: url("../fonts/BebasNeueRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
