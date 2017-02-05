@@ -328,8 +328,8 @@ margin-right: 18px;
 }
 footer{
 	min-height: 300px;
-	background: url("../img/footertop.png") no-repeat 0% -5px,
-	url("../img/footertop2.png") no-repeat 0% 12%;
+	background: url("../img/footertop.png") no-repeat 0% -2px,
+	url("../img/footertop2.png") no-repeat 0% 30px;
 
 	-webkit-background-size: 100%;
 	background-size: 100%;
@@ -364,16 +364,36 @@ footer p{
 	margin-top: 40px;
 }
 .fact_icon{
-	transition: all 0.5s ease-in;
-}
+	transition: all 0.5s ease-out;
+}/*
 .fact_icon:hover{
 	transform: rotate(360deg);
+	cursor: pointer;
+}*/
+
+
+
+@keyframes rrot {
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
 }
 
 
 
 
 
-
-
-
+.fact_icon:hover{
+  animation-name: rrot;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  cursor: pointer;
+}
