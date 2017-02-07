@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Mirrored from studwork.org/forum/2989 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:58:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Настройка уведомлений по типам работ для авторов - тема 2989</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Настройка уведомлений по типам работ для авторов - тема 2989 / Предложения и пожелания"/>
+<meta name="mini-title" content="Тема форума"/>
+<meta name="webmoney.attestation.label" content="webmoney attestation label#3644DB51-0D2B-42B2-9D26-5CF2832FC5C1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+<meta name="mailru-verification" content="96d475315730d23c"/>
+<link rel="shortcut icon" href="https://studwork.org/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://studwork.org/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="https://studwork.org/css/A.style.min.css,qv=2.pagespeed.cf.9Wz6hzK2mp.css" media="all">
+<style>@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/pkYDSlCHbDnBWPT5PPFFTA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPi3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v8/7dSh6BcuqDLzS2qAASIeuqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkPOEPOIfcPv-fZ-WyMUtx48.ttf) format('truetype');
+}
+</style>
+<!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="/css/jquery.ui.1.10.0.ie.css"/>
+    <![endif]-->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://studwork.org/xapple-touch-icon-144x144-precomposed.png.pagespeed.ic.2b8ZYRX53K.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://studwork.org/xapple-touch-icon-120x120-precomposed.png.pagespeed.ic.6b_a2RtrbV.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://studwork.org/xapple-touch-icon-114x114-precomposed.png.pagespeed.ic.RsRKPewFg-.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://studwork.org/xapple-touch-icon-72x72-precomposed.png.pagespeed.ic.6SnOg1DvSA.png"/>
+<link rel="apple-touch-icon-precomposed" href="https://studwork.org/xapple-touch-icon-precomposed.png.pagespeed.ic.yjuuyHfypH.png"/>
+<link rel="yandex-tableau-widget" href="https://studwork.org/manifest.json"/>
+</head>
+<body>
+<audio id="sound-new-message" src="https://studwork.org/audio/message.mp3"></audio>
+<header class="stud-user-top-menu">
+<div class="stud-user-top-menu-area">
+<div class="left-side">
+<a href="#" class='menu-bar'><i class='fa fa-bars'></i></a>
+<ul class="stud-user-top-menu-left">
+<li><a href="https://studwork.org/">Лента</a>
+<li><a href="https://studwork.org/catalog">Авторы</a>
+<li><a href="https://studwork.org/shop">Магазин</a>
+<li><a href="https://studwork.org/forum">Форум<span class="stud-under stud-under-yellow cover" id="notice-forum"></span></a>
+<li><a href="https://studwork.org/faq">FAQ</a>
+<li><a href="https://studwork.org/partner-landing">Партнерская программа</a>
+</ul>
+</div>
+<span class="top-menu-title notAuth">
+Лента заказов
+</span>
+<div class="right-side">
+<form method="post" class="stud-auth-form line" id="auth_form" accept-charset="utf-8">
+<ul class="stud-user-top-menu-right">
+<li><input class="stud-input-icon form-icon-top-menu-men" type="text" name="login" id="login" placeholder="Логин"/>
+<li><input class="stud-input-icon form-icon-top-menu-pass" type="password" name="password" id="password" placeholder="Пароль"/>
+<li><input type="submit" value="Вход"/>
+<li><a href="https://studwork.org/reg" class="stud-user-top-menu-reg">Регистрация</a>
+</ul>
+</form>
+<a href="#" class='auth-menu'><i class='fa fa-key'></i></a>
+</div>
+<ul class="active-menu left scroll-y" data-menu-status="close" data-menu-position='left'>
+<li><a href="https://studwork.org/"><i class='fa fa-pencil'></i>Лента</a>
+<li><a href="https://studwork.org/catalog"><i class='fa fa-user'></i>Авторы</a>
+<li><a href="https://studwork.org/shop"><i class='fa fa-shopping-cart'></i>Магазин</a>
+<li><a href="https://studwork.org/forum"><i class='fa fa-comment'></i>Форум<span class="stud-under stud-under-yellow cover"></span></a>
+<li><a href="https://studwork.org/faq"><i class='fa fa-question-circle'></i> FAQ</a>
+<li><a href="https://studwork.org/partnership-landing"><i class='fa fa-briefcase'></i> Партнерам</a>
+</ul>
+<div class='auth-block scroll-y' data-menu-status="close" data-menu-position='right'>
+<form method="post" class="menu-auth-form" id="modal_auth_form" accept-charset="utf-8">
+<input type="text" name="login" id="login_modal" placeholder="Логин"/>
+<input type="password" name="password" id="password_modal" placeholder="Пароль"/>
+<input type="submit" class='stud-button middle' value="Вход"/>
+<a href="https://studwork.org/login-incorrect" class='reset-pass'>Не помню пароль?</a>
+<a href="https://studwork.org/reg" class="stud-button middle">Регистрация</a>
+</form>
+</div>
+</div>
+</header>
+<div id="after-main-menu"></div>
+<div class="stud-area">
+<div class="stud-main" id="stud-content">
+<div class="stud-user-area-left">
+<div class="stud-user-left-bloc stud-forum-theme">
+<div class="title-block">
+<span class="in-part">
+<span class="t-grey">в разделе</span>
+<a href="https://studwork.org/forum/suggestions-and-wishes">Предложения и пожелания</a>
+</span>
+<div class="title"><h1>Настройка уведомлений по типам работ для авторов</h1></div>
+</div>
+<div class="pre-text text-block"><p>Здравствуйте. Не знаю, как кому, а для меня все более актуальной становится проблема изучения той массы сообщений, которые приходят на почту. Думается, сервис сайта должен максимально способствовать удобству работы как заказчиков, так и авторов. Здесь более пишу об удобстве авторов. В чем суть. Мы в своих настройках на сайте можем выбрать дисциплины, заказы по которым будут отправляться нам на почту. Почему не сделать, чтобы была градация не только по дисциплинам, а и по типам работ? Т.е. была бы отметка &quot;реферат&quot;, &quot;эссе&quot;, &quot;задача&quot;, &quot;дипломная&quot; и т.п.
+Я вот, например, задачи вообще не беру в работы и тесты-онлайн тоже, и мне неудобно, когда такие заказы перемешиваются с другой массой уведомлений. Кто-то не пишет дипломные, тогда зачем его уведомлять о таких заказах? Кроме того, это наведет порядок в оформлении заказов, а то сейчас сплошной поток заказов в сфере &quot;Другое&quot; или вообще без указания, реферат это или диплом (видишь это, только перейдя по ссылке или вообще все спрятано в архиве, что отнимает время).
+Считаю, что внедрить это не сложно. Такая градация сохранит время авторов и повысит эффективность сайта. Как считаете, коллеги?</p> </div>
+<div class="vote-block">
+<div class="title">Согласны ли Вы с предложением?</div>
+<form action="javascript:void(0);" method="post" class="" id="">
+<div class="radios-line">
+<label class="radio font-normal radio-left">
+<input type="radio" name="votes-radio" value="1" data-toggle="radio">
+Да </label>
+</div>
+<div class="radios-line">
+<label class="radio font-normal radio-left">
+<input type="radio" name="votes-radio" value="2" data-toggle="radio">
+Нет </label>
+</div>
+<div class="radios-line">
+<label class="radio font-normal radio-left">
+<input type="radio" name="votes-radio" value="3" data-toggle="radio">
+И так сойдет </label>
+</div>
+<div class="sub-butt">
+<a class="stud-button top stud-button-blue stud-button-icon-thumbs-up-w" id="accept-my-vote">Голосовать</a>
+</div>
+</form>
+</div>
+<div class="theme-info">
+<div class="info-line">
+<div class="likes-block">
+<i class="fa fa-arrow-up" id="forum-theme-arrow-up"></i>
+<span class="t-green" id="value_voting">+4</span> <i class="fa fa-arrow-down" id="forum-theme-arrow-down"></i>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-clock-o'></i> 18 мар 2016 в 13:02 </div>
+<div class="info-line">
+<i class='fa fa-user t-orange'></i>
+<a href="https://studwork.org/info/19698" class="t-blue">Lexus-1983</a>
+</div>
+<div class="info-line">
+<div class="comments t-blue">
+<i class='fa fa-comment'></i>
+<span id="forum-theme-count-comments">14</span> ответ<span id="forum-theme-ending-count-comments">ов</span>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-eye'></i> 1357 просмотров </div>
+</div>
+<div class="comments-area">
+<div class="comment-line" data-next="0" data-id-level-report="47780" data-rec="12989">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/12989">
+<img src="https://studwork.org/uploads/avatar/60x60x12989.jpg,qrand=556314018.pagespeed.ic._JeBNTSNH1.jpg" width="60" height="60" alt="Пользователь 12989"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/12989">brutalmajority</a>
+<span class="in-block t-grey"> 18 мар 2016 в 15:27</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="12989" data-report="47780"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="12989" data-report="47780"></i>
+</div>
+</div>
+<div class="text"><p>Чем сложнее система, тем хуже она работает. Руководство studwork, думается мне, дает достаточно функционала. Например, можно успешно сортировать и распределять уведомления не только по заказчикам (с которыми не сложились отношения), так и по типам работ. Фильтры есть во всех почтовых сервисах, а про почтовые клиенты при должной настройке разве только борщ не готовят.</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="47781" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/19698">
+<img src="https://studwork.org/uploads/avatar/60x60x19698.jpg,qrand=253448452.pagespeed.ic.cNmcNZXfcW.jpg" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19698">Lexus-1983</a>
+<span class="in-block t-grey"> 18 мар 2016 в 15:29</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="47781"></i>
+<span class="t-green" data-class="user-arrow">+2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="47781"></i>
+</div>
+</div>
+<div class="text"><p>Такая функция не слишком усложнит скорость работы сайта, на то и новые технологии, что все ускорять и совершенствовать. Фильтрами пользуюсь, но не всегда сами заказчики пишут, задача у них или эссе, чтобы можно было отфильтровать нормально. Такая функция приведет все в порядок.</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="47782" data-rec="12989">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/12989">
+<img src="https://studwork.org/uploads/avatar/12989.jpg?rand=1514483879" width="60" height="60" alt="Пользователь 12989"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/12989">brutalmajority</a>
+<span class="in-block t-grey"> 18 мар 2016 в 15:41</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="12989" data-report="47782"></i>
+<span class="t-green" data-class="user-arrow">+2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="12989" data-report="47782"></i>
+</div>
+</div>
+<div class="text"><p>И то, что не отмечено заказчиком как &quot;диплом&quot;, а отмечено как &quot;задача&quot; или &quot;курсовая&quot; (у меня, например работы три таким образом выполнены - где диплом вместе отчета, где диплом вместо задачи) - не будут присланы.</p> </div>
+<div class="comment-line" data-next="3" data-id-level-report="47783" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/19698">
+<img src="https://studwork.org/uploads/avatar/19698.jpg?rand=718332729" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19698">Lexus-1983</a>
+<span class="in-block t-grey"> 18 мар 2016 в 15:54</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="47783"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="47783"></i>
+</div>
+</div>
+<div class="text"><p>Функционал должен предусматривать корректное создание заказа тоже. В т.ч. и заказчик должен быть грамотный, иначе, что за &quot;цирк&quot;: диплом вместо задачи? И работать так не хочется.
+В общем, мне неудобно. Вы приспособились по-своему. Посмотрим, что другие скажут. Не все, кто разбирается в истории или экономике, смогут так легко пользоваться настройками почты или спецпрограммами. И в этом, я считаю, мог бы помочь сайт, сразу всем пользователям сайта.</p> </div>
+<div class="comment-line" data-next="4" data-id-level-report="47785" data-rec="5008">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/5008">
+<img src="https://studwork.org/uploads/avatar/5008.jpg?rand=1810056789" width="60" height="60" alt="Пользователь 5008"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/5008">Soleares</a>
+<span class="in-block t-grey"> 18 мар 2016 в 17:50</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="5008" data-report="47785"></i>
+<span class="t-green" data-class="user-arrow">+7</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="5008" data-report="47785"></i>
+</div>
+</div>
+<div class="text"><p>&quot;Функционал должен предусматривать корректное создание заказа тоже. В т.ч. и заказчик должен быть грамотный&quot;
+Не думаю, что какие-то технические изменения помогут это исправить. Человеческий фактор.
+Хотя сама идея сортировки по типам работ, конечно, рациональная.</p> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="47788" data-rec="22659">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/22659">
+<img src="https://studwork.org/uploads/avatar/22659.jpg?rand=2036664237" width="60" height="60" alt="Пользователь 22659"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/22659">x-plainer</a>
+<span class="in-block t-grey"> 18 мар 2016 в 19:41</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="22659" data-report="47788"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="22659" data-report="47788"></i>
+</div>
+</div>
+<div class="text"><p>Кому как, а мне проще самому периодически заходить на сайт и просматривать новые заказы, чем постоянно отвлекаться на просмотр почтовых сообщений. Я, так же, как и Сергей &quot;Brutalmajority&quot;, пользуюсь фильтрами почтовых ящиков. Отфильтровал ящик таким образом, чтобы приходили только уведомления о личных сообщениях, либо ответы на комментарии, которые, соответственно, переадресовываются затем на телефон. Опять же, повторюсь, что это все индивидуально. Для меня эта деятельность далеко не основная, и времени на нее очень мало (пока).</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="47858" data-rec="822">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/822">
+<img src="https://studwork.org/uploads/avatar/822.jpg?rand=86864444" width="60" height="60" alt="Пользователь 822"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/822">liber</a>
+<span class="in-block t-grey"> 23 мар 2016 в 15:07</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="822" data-report="47858"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="822" data-report="47858"></i>
+</div>
+</div>
+<div class="text"><p>Виталий, подскажите, пожалуйста, можно ли настроить фильтр так, чтобы не приходили сообщения на почту о заказах одного конкретного заказчика? Если да, в какой программе и какой фильтр, был бы Вам очень благодарен.</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="47863" data-rec="1142">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/1142">
+<img src="https://studwork.org/uploads/avatar/1142.jpg?rand=1241510092" width="60" height="60" alt="Пользователь 1142"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/1142">blackfenyks</a>
+<span class="in-block t-grey"> 23 мар 2016 в 22:04</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="1142" data-report="47863"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="1142" data-report="47863"></i>
+</div>
+</div>
+<div class="text"><p>Например, в thunderbird есть такая возможность.
+Заходите в Инструменты - Фильтры сообщений.
+Создаёте фильтр: Тело содержит заказчик имя_заказчика
+В поле &quot;Производить следующие действия&quot; выбираете &quot;Переместить сообщение в&quot; и указываете папку &quot;Удалённые&quot;. Можно добавить еще одно действие - &quot;Отметить как прочитанное&quot;.</p> </div>
+<div class="comment-line" data-next="3" data-id-level-report="47864" data-rec="822">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/822">
+<img src="https://studwork.org/uploads/avatar/822.jpg?rand=1020219660" width="60" height="60" alt="Пользователь 822"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/822">liber</a>
+<span class="in-block t-grey"> 23 мар 2016 в 22:13</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="822" data-report="47864"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="822" data-report="47864"></i>
+</div>
+</div>
+<div class="text"><p>Огромное спасибо, попробую.</p> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="47808" data-rec="47190">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/47190">
+<img src="https://studwork.org/uploads/avatar/47190.jpg?rand=1426801763" width="60" height="60" alt="Пользователь 47190"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/47190">Ирина Ром</a>
+<span class="in-block t-grey"> 19 мар 2016 в 18:57</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="47190" data-report="47808"></i>
+<span class="t-green" data-class="user-arrow">+6</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="47190" data-report="47808"></i>
+</div>
+</div>
+<div class="text"><p>Я отписалась от уведомлений на почту обо всех размещенных заказах, получаю только информацию о личных сообщениях, комментариях и т.д., мне так удобнее. Очень хотелось бы, чтобы ленту заказов на сайте можно было сортировать, во-первых, по видам работ, а во-вторых - по срокам выполнения заказов.</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="47810" data-rec="37164">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/37164">
+<img src="https://studwork.org/uploads/avatar/37164.jpg?rand=1135402365" width="60" height="60" alt="Пользователь 37164"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/37164">Svetlana2082015</a>
+<span class="in-block t-grey"> 19 мар 2016 в 21:10</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="37164" data-report="47810"></i>
+<span class="t-green" data-class="user-arrow">+4</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="37164" data-report="47810"></i>
+</div>
+</div>
+<div class="text"><p>По срокам поддерживаю, смотреть заказ начинаю, если подходит срок.</p> </div>
+</div>
+<div class="comment-line" data-next="1" data-id-level-report="47857" data-rec="38873">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/38873">
+<img src="https://studwork.org/uploads/avatar/38873.jpg?rand=1409726617" width="60" height="60" alt="Пользователь 38873"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/38873">kattarina2</a>
+<span class="in-block t-grey"> 23 мар 2016 в 14:10</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="38873" data-report="47857"></i>
+<span class="t-green" data-class="user-arrow">+2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="38873" data-report="47857"></i>
+</div>
+</div>
+<div class="text"><p>да, вот в ленте такая сортировка очень нужна! поддерживаю!</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="47849" data-rec="15221">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/15221">
+<img src="https://studwork.org/img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 15221"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/15221">simax89</a>
+<span class="in-block t-grey"> 23 мар 2016 в 06:10</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="15221" data-report="47849"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="15221" data-report="47849"></i>
+</div>
+</div>
+<div class="text"><p>Если все это указывать в теме письма то посредством последовательного выполнения фильтров на почте майл.ру можно раскладывать по полочкам(по типам заказов, по логину заказчика, по теме) все заказы с сайта.</p>
+<p>Если формат входящего сообщения будет иным
+Сейчас он такой &quot;Новый заказ по предмету &quot;Другое&quot; №534685&quot;
+А если сделать
+Новый заказ по предмету &quot;Другое&quot; №534685&quot; Тип: Дипломная работа
+Тема: 3068_Дипломная работа_Промышленное и гражданское строительство Заказчик: winns</p>
+<p>Минусы - тема письма может быть довольно длинной</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="47855" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/19698">
+<img src="https://studwork.org/uploads/avatar/19698.jpg?rand=137245735" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19698">Lexus-1983</a>
+<span class="in-block t-grey"> 23 мар 2016 в 11:12</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="47855"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="47855"></i>
+</div>
+</div>
+<div class="text"><p>Тоже было бы хорошо, но на сайте все же хотелось бы видеть фильтры. Чем этот сайт хуже интернет-магазинов электроники, где фильтры на все, даже на цвет, материал корпуса и пр.</p> </div>
+</div>
+</div>
+</div>
+</div>
+<div class='order-help-block similar-themes similar-orders'>
+<div class='header'>Похожие темы</div>
+<div class='orders same-forum-themes'>
+<div>
+<div class='order'>
+<ul class='info'>
+<li><a href="https://studwork.org/forum/3458">Среднестатистические цены по стране</a></li>
+<li>
+<i class='fa fa-user t-orange'></i>
+<a href="https://studwork.org/info/6087" class="user-">studentf</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-5</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 65</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 3561</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="https://studwork.org/forum/3455">Когда-то я мечтала</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="https://studwork.org/info/37071" class="user-">Lana67</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-20</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 42</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 3027</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="https://studwork.org/forum/3440">Прогнозы в экономике</a></li>
+<li>
+<i class='fa fa-user t-orange'></i>
+<a href="https://studwork.org/info/6087" class="user-">studentf</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-16</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 18</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1555</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="https://studwork.org/forum/3388">Оповещения о новых событиях на сайте, чтобы было сразу видно</a></li>
+<li>
+<i class='fa fa-user t-orange'></i>
+<a href="https://studwork.org/info/2130" class="user-">ciberman</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+40</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 15</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 908</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="https://studwork.org/forum/3387">Отзывы пользователя и сообщения на форуме</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="https://studwork.org/info/57852" class="user-">Magistr math</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-4</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 23</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1741</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='more-themes' class='stud-user-dop-butt'>
+<div class="stud-user-dop-butt-ic"><i class="fa fa-refresh"></i></div>
+<span class='t-blue'>Показать еще похожие темы</span>
+<span class='t-blue covert'>Похожих тем больше нет</span>
+</div>
+</div>
+</div>
+<div class="stud-user-area-right">
+<div class="stud-user-right-bloc" id="stud-user-right-new-forum">
+<div class="stud-user-right-title">Темы форума <i class='t-grey head-fa fa fa-comments'></i></div>
+<div id="stud-user-right-for-adding-forum">
+<div class="stud-user-right-forum-theme">
+<a href="https://studwork.org/forum/3485">Продажа работа в авторском магазине</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 5 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 5</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="https://studwork.org/forum/3483">Дополнительная квалификация: переводчик</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 4 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 3</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="https://studwork.org/forum/3482">Вопрос к психологам, психотерапевтам</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 24</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="https://studwork.org/forum/3481">Памяти товарища.</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 27</div>
+</div>
+</div>
+<a class="stud-user-right-gotoforum" href="https://studwork.org/forum">Перейти на форум</a>
+</div>
+<a href='https://algebra24.ru/' target='_blank' class='partner-block blue clearfix'>
+<div class='logo not-hover'>
+<img src="https://studwork.org/img/xalgebra24-blue.png.pagespeed.ic.4oGWP_Jxbw.png" alt="">
+</div>
+<div class='logo hover'>
+<img src="https://studwork.org/img/xalgebra24-white.png.pagespeed.ic.Cweiz1GBgw.png" alt="">
+</div>
+<div class='title'>ALGEBRA24</div>
+<div class='sub-title'>Математические сервисы</div>
+</a>
+<a href='https://ultragold.org/' target='_blank' class='partner-block purple clearfix'>
+<div class='logo'>
+<img src="https://studwork.org/img/xultragold.png.pagespeed.ic.aeHJ4_TGOs.png" alt="">
+</div>
+<div class='title'>ULTRAGOLD</div>
+<div class='sub-title'>Обмен электронных валют</div>
+</a>
+</div>
+</div>
+</div>
+<div class="stud-modal" id="votes-modal">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Голосование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line">
+Не выбран вариант голосования!
+</div>
+</div>
+</div>
+</div>
+<div class="stud-modal stud-modal-is-open" id="forum-theme-editor">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Редактирование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line" id="forum-theme-editor-line">
+<form action="javascript:void(0);" method="post" class="" id="stud-forum-new-theme">
+<div class="stud-forum-new-line">
+<input type="text" name="" id="forum-theme-new-title" class="bott all-width" maxlength="100" placeholder="Введите название темы" disabled>
+<textarea class="all-width" id="forum-theme-new-text" rows="3" style="resize: none" disabled></textarea>
+<div class="stud-forum-new-textarea-butt">
+<a class="stud-button right stud-button-blue stud-button-icon-bubbles" id="forum-theme-save-change">Сохранить изменения</a>
+</div>
+</div>
+<div class="stud-forum-new-line stud-forum-new-vote-block">
+<input type="text" name="" id="vote-title-modal" class="all-width" maxlength="60" placeholder="Введите вопрос голосования">
+<div class="stud-forum-new-count-answer">
+<span class="t-grey">Количество вариантов ответа</span>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="2" data-toggle="radio" checked>
+2
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="3" data-toggle="radio">
+3
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="4" data-toggle="radio">
+4
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="5" data-toggle="radio">
+5
+</label>
+</div>
+<div class="stud-forum-new-variations">
+<div class="vote-input-div">
+<input type="text" name="new-variations-1" class="top all-width vote-input" maxlength="50" placeholder="Вариант 1">
+</div>
+<div class="vote-input-div">
+<input type="text" name="new-variations-2" class="top all-width vote-input" maxlength="50" placeholder="Вариант 2">
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div style="position: fixed"></div><div id="all-footer">
+<div id="stud-footer">
+<div class="stud-main">
+<div class="stud-footer-bloc">
+<div class="title">Служба поддержки</div>
+<div class="bloc tech">
+<div class="tm1">Бесплатный звонок</div>
+<div class="tm2 number">8 (800) 500-78-57</div>
+</div>
+<div class="bloc tech">
+<div class="tm1">Техническая поддержка</div>
+<div class="tm2"><a href="https://studwork.org/tech-support" class="stud-button stud-button-white stud-button-icon-mail-blue stud-footer-butt">Написать нам</a></div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">Статистика</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">84 500</div>
+<div class="stud-footer-circle-info">Пользователей <span class="t-green">+136</span></div>
+</div>
+</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">277</div>
+<div class="stud-footer-circle-info"><a href="https://studwork.org/catalog?checkbox_search_online_user=1">Сейчас на сайте</a></div>
+</div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">О проекте</div>
+<div class="bloc">
+<div>
+Проект studwork.org &#x2012; это интернет-сервис для
+выполнения любых видов учебных работ.
+</div>
+</div>
+<div class="bloc">
+<div class="tm3"><span class="t-blue">Принимаем к оплате</span></div>
+<div class="tm4 number">
+<img src="https://studwork.org/img/foot_icon-card-small.svg" alt="Иконка кредитной карты"/>
+<img src="https://studwork.org/img/foot_icon-qiwi.svg" alt="Иконка платежной системы Киви"/>
+<img src="https://studwork.org/img/foot_icon-ya.svg" alt="Иконка платежной системы Яндекс Деньги"/>
+<img src="https://studwork.org/img/foot_icon-wm.svg" alt="Иконка платежной системы Web Money"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="stud-footer-end">
+<div class="stud-main">
+<div class="stud-footer-end-left">
+<span>© 2011-2017 studwork.org</span>
+</div>
+<div class="stud-footer-end-right">
+<a href="https://studwork.org/oferta">Пользовательское соглашение</a>
+</div>
+<div class="stud-footer-end-right">
+<a href="https://studwork.org/api">API для интеграции</a>
+</div>
+</div>
+</div>
+</div> <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>const name_site_external='https://studwork.org/';const secret_hash_header='e83825f8d2ce57b74ca9ab81e85763a0';const secret_hash_ajax_new_notice='4a055295e0bfe051b5c03ae86bc4a758';const id_current_user='0';const secret_hash_file_upload='5cc66a5032e284ff277a243b26bc5190';const secret_hash_confirm_unknown_ip='89fd1ae49f680b435e6e6fc53dea0dd8';const id_forum_theme='2989';const array_id_report=[47780,47781,47782,47783,47785,47788,47808,47810,47849,47855,47857,47858,47863,47864];var array_id_report_diff={};if(typeof(localStorage)!='undefined'){Array.prototype.diff=function(a){return this.filter(function(i){return a.indexOf(i)<0;});};if(typeof(localStorage['forum'])!='undefined'){var forum=JSON.parse(localStorage['forum']);if(typeof(forum[id_forum_theme])!='undefined'){array_id_report_diff=array_id_report.diff(forum[id_forum_theme]);}forum[id_forum_theme]=array_id_report;localStorage.setItem('forum',JSON.stringify(forum));}else{localStorage.setItem('forum',JSON.stringify({}));}}</script>
+<script src="https://studwork.org/jscript/min/main.min.js,qv=5.pagespeed.jm.QG9mR3T0rH.js"></script>
+<script src="https://studwork.org/jscript/min/stud.forum.js+function,_show_votes.js+function,_JSBrowCorrect.js.pagespeed.jc.cTbmKxcX-k.js"></script><script>eval(mod_pagespeed_2wiWA4R362);</script>
+<script>eval(mod_pagespeed_BS0rq84xsD);</script>
+<script>eval(mod_pagespeed_VQeOvKVnHl);</script>
+</body>
+<!-- Mirrored from studwork.org/forum/2989 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:58:30 GMT -->
+</html>

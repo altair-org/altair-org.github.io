@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Mirrored from studwork.org/forum/3116 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:58:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Разделить при создании заказа уникальность по АП.ру и АП.ВУЗ - тема 3116</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Разделить при создании заказа уникальность по АП.ру и АП.ВУЗ - тема 3116 / Предложения и пожелания"/>
+<meta name="mini-title" content="Тема форума"/>
+<meta name="webmoney.attestation.label" content="webmoney attestation label#3644DB51-0D2B-42B2-9D26-5CF2832FC5C1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+<meta name="mailru-verification" content="96d475315730d23c"/>
+<link rel="shortcut icon" href="https://studwork.org/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://studwork.org/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="https://studwork.org/css/A.style.min.css,qv=2.pagespeed.cf.9Wz6hzK2mp.css" media="all">
+<style>@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/pkYDSlCHbDnBWPT5PPFFTA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPi3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v8/7dSh6BcuqDLzS2qAASIeuqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkPOEPOIfcPv-fZ-WyMUtx48.ttf) format('truetype');
+}
+</style>
+<!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="/css/jquery.ui.1.10.0.ie.css"/>
+    <![endif]-->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://studwork.org/xapple-touch-icon-144x144-precomposed.png.pagespeed.ic.2b8ZYRX53K.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://studwork.org/xapple-touch-icon-120x120-precomposed.png.pagespeed.ic.6b_a2RtrbV.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://studwork.org/xapple-touch-icon-114x114-precomposed.png.pagespeed.ic.RsRKPewFg-.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://studwork.org/xapple-touch-icon-72x72-precomposed.png.pagespeed.ic.6SnOg1DvSA.png"/>
+<link rel="apple-touch-icon-precomposed" href="https://studwork.org/xapple-touch-icon-precomposed.png.pagespeed.ic.yjuuyHfypH.png"/>
+<link rel="yandex-tableau-widget" href="https://studwork.org/manifest.json"/>
+</head>
+<body>
+<audio id="sound-new-message" src="https://studwork.org/audio/message.mp3"></audio>
+<header class="stud-user-top-menu">
+<div class="stud-user-top-menu-area">
+<div class="left-side">
+<a href="#" class='menu-bar'><i class='fa fa-bars'></i></a>
+<ul class="stud-user-top-menu-left">
+<li><a href="https://studwork.org/">Лента</a>
+<li><a href="https://studwork.org/catalog">Авторы</a>
+<li><a href="https://studwork.org/shop">Магазин</a>
+<li><a href="https://studwork.org/forum">Форум<span class="stud-under stud-under-yellow cover" id="notice-forum"></span></a>
+<li><a href="https://studwork.org/faq">FAQ</a>
+<li><a href="https://studwork.org/partner-landing">Партнерская программа</a>
+</ul>
+</div>
+<span class="top-menu-title notAuth">
+Лента заказов
+</span>
+<div class="right-side">
+<form method="post" class="stud-auth-form line" id="auth_form" accept-charset="utf-8">
+<ul class="stud-user-top-menu-right">
+<li><input class="stud-input-icon form-icon-top-menu-men" type="text" name="login" id="login" placeholder="Логин"/>
+<li><input class="stud-input-icon form-icon-top-menu-pass" type="password" name="password" id="password" placeholder="Пароль"/>
+<li><input type="submit" value="Вход"/>
+<li><a href="https://studwork.org/reg" class="stud-user-top-menu-reg">Регистрация</a>
+</ul>
+</form>
+<a href="#" class='auth-menu'><i class='fa fa-key'></i></a>
+</div>
+<ul class="active-menu left scroll-y" data-menu-status="close" data-menu-position='left'>
+<li><a href="https://studwork.org/"><i class='fa fa-pencil'></i>Лента</a>
+<li><a href="https://studwork.org/catalog"><i class='fa fa-user'></i>Авторы</a>
+<li><a href="https://studwork.org/shop"><i class='fa fa-shopping-cart'></i>Магазин</a>
+<li><a href="https://studwork.org/forum"><i class='fa fa-comment'></i>Форум<span class="stud-under stud-under-yellow cover"></span></a>
+<li><a href="https://studwork.org/faq"><i class='fa fa-question-circle'></i> FAQ</a>
+<li><a href="https://studwork.org/partnership-landing"><i class='fa fa-briefcase'></i> Партнерам</a>
+</ul>
+<div class='auth-block scroll-y' data-menu-status="close" data-menu-position='right'>
+<form method="post" class="menu-auth-form" id="modal_auth_form" accept-charset="utf-8">
+<input type="text" name="login" id="login_modal" placeholder="Логин"/>
+<input type="password" name="password" id="password_modal" placeholder="Пароль"/>
+<input type="submit" class='stud-button middle' value="Вход"/>
+<a href="https://studwork.org/login-incorrect" class='reset-pass'>Не помню пароль?</a>
+<a href="https://studwork.org/reg" class="stud-button middle">Регистрация</a>
+</form>
+</div>
+</div>
+</header>
+<div id="after-main-menu"></div>
+<div class="stud-area">
+<div class="stud-main" id="stud-content">
+<div class="stud-user-area-left">
+<div class="stud-user-left-bloc stud-forum-theme">
+<div class="title-block">
+<span class="in-part">
+<span class="t-grey">в разделе</span>
+<a href="https://studwork.org/forum/suggestions-and-wishes">Предложения и пожелания</a>
+</span>
+<div class="title"><h1>Разделить при создании заказа уникальность по АП.ру и АП.ВУЗ</h1></div>
+</div>
+<div class="pre-text text-block"><p>Здравствуйте. Все чаще сталкиваюсь с тем, что в заказе указан % уникальности с проверкой по системе &quot;Антиплагиат&quot;, который всеми воспринимается как &quot;АП.ру&quot;, но после написания работы оказывается, что у работу проверяют по &quot;Антиплагиат.ВУЗ&quot;.
+Возникает различной степени конфликт.
+Опытные заказчики указывают этот нюанс просто в тексте, если об этом известно сразу. Другие - упускают этот момент. Так почему не разделить эти программы при создании заказа? Меньше будет споров.
+Обращаюсь в т.ч. к менеджеру по тех. обеспечению. Спасибо.</p> </div>
+<div class="vote-block">
+<div class="title">Актуальна для Вас эта проблема?</div>
+<form action="javascript:void(0);" method="post" class="" id="">
+<div class="radios-line">
+<label class="radio font-normal radio-left">
+<input type="radio" name="votes-radio" value="1" data-toggle="radio">
+Да </label>
+</div>
+<div class="radios-line">
+<label class="radio font-normal radio-left">
+<input type="radio" name="votes-radio" value="2" data-toggle="radio">
+Нет </label>
+</div>
+<div class="sub-butt">
+<a class="stud-button top stud-button-blue stud-button-icon-thumbs-up-w" id="accept-my-vote">Голосовать</a>
+</div>
+</form>
+</div>
+<div class="theme-info">
+<div class="info-line">
+<div class="likes-block">
+<i class="fa fa-arrow-up" id="forum-theme-arrow-up"></i>
+<span class="t-green" id="value_voting">+12</span> <i class="fa fa-arrow-down" id="forum-theme-arrow-down"></i>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-clock-o'></i> 27 мая 2016 в 16:51 </div>
+<div class="info-line">
+<i class='fa fa-user t-orange'></i>
+<a href="https://studwork.org/info/19698" class="t-blue">Lexus-1983</a>
+</div>
+<div class="info-line">
+<div class="comments t-blue">
+<i class='fa fa-comment'></i>
+<span id="forum-theme-count-comments">23</span> ответ<span id="forum-theme-ending-count-comments">а</span>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-eye'></i> 1036 просмотров </div>
+</div>
+<div class="comments-area">
+<div class="comment-line" data-next="0" data-id-level-report="50292" data-rec="14645">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/14645">
+<img src="https://studwork.org/uploads/avatar/14645.jpg?rand=1558372776" width="60" height="60" alt="Пользователь 14645"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/14645">domus11</a>
+<span class="in-block t-grey"> 28 мая 2016 в 22:04</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="14645" data-report="50292"></i>
+<span class="t-green" data-class="user-arrow">+13</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="14645" data-report="50292"></i>
+</div>
+</div>
+<div class="text"><p>Полностью согласна с автором темы. Возникают потом споры с заказчиком. У меня лично был такой спор.</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="50294" data-rec="56965">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/56965">
+<img src="https://studwork.org/img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 56965"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/56965">fidel_castro</a>
+<span class="in-block t-grey"> 28 мая 2016 в 23:25</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="56965" data-report="50294"></i>
+<span class="t-green" data-class="user-arrow">+6</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="56965" data-report="50294"></i>
+</div>
+</div>
+<div class="text"><p>Согласен. Пишу диплом, защита 28 июня, а я не могу от девушки добиться четкого ответа, по какому же АП будут проверять работу. Впечатление, что она вообще не в курсе, что это такое.
+У меня вопрос, кто знает. Имеет ли право студент истребовать выгрузку полной проверки?</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="50296" data-rec="56965">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/56965">
+<img src="https://studwork.org/img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 56965"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/56965">fidel_castro</a>
+<span class="in-block t-grey"> 28 мая 2016 в 23:33</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="56965" data-report="50296"></i>
+<span class="t-green" data-class="user-arrow">+4</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="56965" data-report="50296"></i>
+</div>
+</div>
+<div class="text"><p>Разумеется, речь об АП.ВУЗ.</p> </div>
+</div>
+<div class="comment-line" data-next="1" data-id-level-report="50307" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/19698">
+<img src="https://studwork.org/uploads/avatar/19698.jpg?rand=1028318980" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19698">Lexus-1983</a>
+<span class="in-block t-grey"> 29 мая 2016 в 11:54</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="50307"></i>
+<span class="t-red" data-class="user-arrow">-3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="50307"></i>
+</div>
+</div>
+<div class="text"><p>Можно попросить, а там - на усмотрение преподавателя. Было, что отчет присылают или фото с экрана.</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="50299" data-rec="42591">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/42591">
+<img src="https://studwork.org/img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 42591"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/42591">vinavarova</a>
+<span class="in-block t-grey"> 29 мая 2016 в 05:23</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="42591" data-report="50299"></i>
+<span class="t-green" data-class="user-arrow">+5</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="42591" data-report="50299"></i>
+</div>
+</div>
+<div class="text"><p>У меня вообще недавно ситуация была...Сделали человеку диплом для ВГУЭСа (там проверяют все работы на Антиплагиат.ру)... а у нее препод проверил по text.ru и вышло так, что работа - это просто сокращенная диссертация...(мне ее прислали)...ну и студентка возмущена до предела...и теперь хочет, чтобы ей написали заново и проверили по text.ru...он ищет по диссертациям. А она постоянный клиент, вместе с ней пол группы заказывает...
+И вот ситуация...автор сказала перепишет...но по text.ru в любом случае вряд ли будет 70%...диплом юридический...</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="50308" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/19698">
+<img src="https://studwork.org/uploads/avatar/19698.jpg?rand=1055556618" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19698">Lexus-1983</a>
+<span class="in-block t-grey"> 29 мая 2016 в 11:58</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="50308"></i>
+<span class="t-green" data-class="user-arrow">+2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="50308"></i>
+</div>
+</div>
+<div class="text"><p>По Текст.ру и еТХТ проверять студенческие работы - это вообще нонсенс, как по мне. Диссертации, сочинения разве что нужно так проверять.</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="50309" data-rec="19258">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/19258">
+<img src="https://studwork.org/uploads/avatar/19258.jpg?rand=1040890276" width="60" height="60" alt="Пользователь 19258"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19258">youWork</a>
+<span class="in-block t-grey"> 29 мая 2016 в 12:45</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19258" data-report="50309"></i>
+<span class="t-green" data-class="user-arrow">+10</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19258" data-report="50309"></i>
+</div>
+</div>
+<div class="text"><p>ETXT еще куда ни шло, но только шингл нужно ставить 5 слов, а не 3, а то получается бред. На зеленом сайте приучили эту программу использовать) Теперь она мне больше нравится, чем АП. Особенно своей прозрачностью, в отличие от АП, где чтобы получить отчет, нужно заплатить)</p> </div>
+<div class="comment-line" data-next="3" data-id-level-report="50390" data-rec="20179">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/20179">
+<img src="https://studwork.org/img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 20179"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/20179">NN666</a>
+<span class="in-block t-grey"> 3 июн 2016 в 13:38</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="20179" data-report="50390"></i>
+<span class="t-red" data-class="user-arrow">-2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="20179" data-report="50390"></i>
+</div>
+</div>
+<div class="text"><p>Постоянно работаю с ЕТХТ, в том числе довольно часто и с 3 шинглом просят уникальность 70-75% по юридическим дисциплинам. Нормально получается, только, конечно, посидеть приходится подольше.
+Антиплагиат вообще не уважаю за отсутствие информативности и детсадовскую степень защиты от техподъема.</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="2" data-id-level-report="50311" data-rec="42591">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/42591">
+<img src="https://studwork.org/img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 42591"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/42591">vinavarova</a>
+<span class="in-block t-grey"> 29 мая 2016 в 12:52</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="42591" data-report="50311"></i>
+<span class="t-green" data-class="user-arrow">+4</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="42591" data-report="50311"></i>
+</div>
+</div>
+<div class="text"><p>ДВФУ проверяет по блекбоард...максимально приближенная к ней етхт...иногда преподаватели сразу по етхт проверяют.
+во ВГУЭС вообще по антиплагиат.ру проверяет...но тут преподаватель решил по техт.ру проверить...
+для преподавателя плюс в том, что проверка идет в том числе по базе диссератций</p> </div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="50303" data-rec="19258">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/19258">
+<img src="https://studwork.org/uploads/avatar/19258.jpg?rand=419146173" width="60" height="60" alt="Пользователь 19258"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19258">youWork</a>
+<span class="in-block t-grey"> 29 мая 2016 в 09:30</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19258" data-report="50303"></i>
+<span class="t-green" data-class="user-arrow">+8</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19258" data-report="50303"></i>
+</div>
+</div>
+<div class="text"><p>Полностью &quot;за&quot;! Давно пора это сделать, чтобы не возникало проблем.</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="50310" data-rec="42591">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/42591">
+<img src="https://studwork.org/img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 42591"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/42591">vinavarova</a>
+<span class="in-block t-grey"> 29 мая 2016 в 12:50</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="42591" data-report="50310"></i>
+<span class="t-green" data-class="user-arrow">+7</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="42591" data-report="50310"></i>
+</div>
+</div>
+<div class="text"><p>Насчет АП.ру не знаю...а вот в етхт выгрузил отчет в ворд с выделенным желтым текстом...и сиди себе спокойно переписывай...а как по АП поднять уникальность? Там же не понятно, какой текст считается плагиатным...</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="50312" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/19698">
+<img src="https://studwork.org/uploads/avatar/19698.jpg?rand=1078671741" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19698">Lexus-1983</a>
+<span class="in-block t-grey"> 29 мая 2016 в 12:53</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="50312"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="50312"></i>
+</div>
+</div>
+<div class="text"><p>Для своей работы, как автора, нужно пользоваться обеими программами. Но я лично заказы с проверкой по еТХТ и Текст.ру вообще не рассматриваю. Разве что если стоимость в 2 раза больше предлагается, чем средняя с проверкой по АП.ру.</p> </div>
+</div>
+<div class="comment-line" data-next="1" data-id-level-report="50313" data-rec="57185">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/57185">
+<img src="https://studwork.org/uploads/avatar/57185.jpg?rand=1932353089" width="60" height="60" alt="Пользователь 57185"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/57185">potappenko</a>
+<span class="in-block t-grey"> 29 мая 2016 в 13:14</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="57185" data-report="50313"></i>
+<span class="t-green" data-class="user-arrow">+5</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="57185" data-report="50313"></i>
+</div>
+</div>
+<div class="text"><p>Зачем себе усложнять работу проверкой в етхт, тем более если этого не требует заказчик?</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="50314" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/19698">
+<img src="https://studwork.org/uploads/avatar/19698.jpg?rand=585437795" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19698">Lexus-1983</a>
+<span class="in-block t-grey"> 29 мая 2016 в 13:24</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="50314"></i>
+<span class="t-green" data-class="user-arrow">+2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="50314"></i>
+</div>
+</div>
+<div class="text"><p>А кто об этом говорит? Это я к тому, что в еТХТ действительно удобно находить неуникальный текст, который потом можно отрерайтить.</p> </div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="50319" data-rec="1382">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/1382">
+<img src="https://studwork.org/uploads/avatar/1382.jpg?rand=1974903995" width="60" height="60" alt="Пользователь 1382"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/1382">teftonka</a>
+<span class="in-block t-grey"> 29 мая 2016 в 23:23</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="1382" data-report="50319"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="1382" data-report="50319"></i>
+</div>
+</div>
+<div class="text"><p>Вопрос-предложение немного не по теме....</p>
+<p>У меня есть доступ в АП,ВУЗ - Всероссийской академии внешней торговли (ВАВТ). Предлагаю ОБМЕН на Ваш доступ. Пишите в личное сообщение</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="50437" data-rec="2361">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/2361">
+<img src="https://studwork.org/uploads/avatar/2361.jpg?rand=1720492284" width="60" height="60" alt="Пользователь 2361"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/2361">svetlanamk</a>
+<span class="in-block t-grey"> 6 июн 2016 в 15:59</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="2361" data-report="50437"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="2361" data-report="50437"></i>
+</div>
+</div>
+<div class="text"><p>На АП вуз все равно автор проверить не сможет. Я не вижу смысла в разделении, потому что и так понятно, что преподаватель будет проверять в АП вуз, а автор сможет проверить только на обычном АП - это замкнутый круг. </p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="50441" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/19698">
+<img src="https://studwork.org/uploads/avatar/19698.jpg?rand=831004179" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19698">Lexus-1983</a>
+<span class="in-block t-grey"> 6 июн 2016 в 17:20</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="50441"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="50441"></i>
+</div>
+</div>
+<div class="text"><p>Почем это понятно? Множество преподавателей проверяют по АП.ру.
+И доступ к АП.ВУЗ есть у многих авторов, только т.к. сложность повышается, то и цена должна быть выше. + автор должен заранее знать, по какой программе проверять, чтобы подбирать соответствующий материал.</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="50448" data-rec="2361">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/2361">
+<img src="https://studwork.org/uploads/avatar/2361.jpg?rand=352308073" width="60" height="60" alt="Пользователь 2361"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/2361">svetlanamk</a>
+<span class="in-block t-grey"> 6 июн 2016 в 23:59</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="2361" data-report="50448"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="2361" data-report="50448"></i>
+</div>
+</div>
+<div class="text"><p>АП вуз разный, как раз teftonka предлагает поменяться, но на все вузы не наменяешь))
+А вот преподавателям сейчас практически в каждом вузе (по крайней мере в московском) дают свой доступ, либо конкретно преподаватель не проверяет, но перед защитой курсовых и дипломов сдают на проверку в деканат. Тут как раз и проблема преподаватель может еще и пропустит работу, а в деканате ее завернут.
+Преподавателей, пользующихся обычным бесплатным АП я не встречала уже года два как, в крайнем случае на etxt они проверяют</p> </div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="50438" data-rec="2361">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/2361">
+<img src="https://studwork.org/uploads/avatar/2361.jpg?rand=685082735" width="60" height="60" alt="Пользователь 2361"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/2361">svetlanamk</a>
+<span class="in-block t-grey"> 6 июн 2016 в 16:01</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="2361" data-report="50438"></i>
+<span class="t-red" data-class="user-arrow">-2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="2361" data-report="50438"></i>
+</div>
+</div>
+<div class="text"><p>Кстати, проверка по еТХТ сейчас очень лояльна, иногда и процент выше, чем в АП ру
+А вот на Текст.ру научные работы (особенно юридические) проверять бессмысленно.</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="50440" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/19698">
+<img src="https://studwork.org/uploads/avatar/19698.jpg?rand=1873762460" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19698">Lexus-1983</a>
+<span class="in-block t-grey"> 6 июн 2016 в 17:18</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="50440"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="50440"></i>
+</div>
+</div>
+<div class="text"><p>у меня такого не было ни разу (о первой фразе).</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="50447" data-rec="2361">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/2361">
+<img src="https://studwork.org/uploads/avatar/2361.jpg?rand=289131718" width="60" height="60" alt="Пользователь 2361"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/2361">svetlanamk</a>
+<span class="in-block t-grey"> 6 июн 2016 в 23:55</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="2361" data-report="50447"></i>
+<span class="t-red" data-class="user-arrow">-1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="2361" data-report="50447"></i>
+</div>
+</div>
+<div class="text"><p>у меня при использовании статей и книг в пдф такое сейчас постоянно, в АП богаче библиотека пдф-файлов + вся база elibrary есть в АП, а etxt многие пдф-файлы не видит как как плагиат</p> </div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="50457" data-rec="2361">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="https://studwork.org/info/2361">
+<img src="https://studwork.org/uploads/avatar/2361.jpg?rand=2003036793" width="60" height="60" alt="Пользователь 2361"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/2361">svetlanamk</a>
+<span class="in-block t-grey"> 7 июн 2016 в 14:27</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="2361" data-report="50457"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="2361" data-report="50457"></i>
+</div>
+</div>
+<div class="text"><p>В общем-то я против разграничения АП, объясню почему
+- у большинства авторов нет АП вуз, а они, будут брать работы все равно, и проверять при этом на обычном АП, в итоге начнется еще больше проблем;
+- если для заказчика очень принципиальна реальная уникальность, то надо ставить etxt и доплачивать соответственно, больше вероятности,что работа с высоким показателем по etxt пройдет прекрасно и АП вуз;
+- в заказе можно написать что проверка будет, именно по АП вуз и выставить как требование к заказу (зачем для этого отдельная кнопка) при этом никаких проблем передачи на доработку после проверки на АП вуз нет, любой вменяемый автор поправит работу .</p>
+<p>Тут вообще как бы дело не в разделении программ, а в стоимости заказа.
+опять же АП будь он вуз или не вуз гораздо легче обойти всякими шаманскими практиками, по сравнению с etxt, по этому особого смысла нет, кто мухлевал техническим подъемом, будет это делать несмотря на то, какой АП, и брать работы дешевле.</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="50458" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="https://studwork.org/info/19698">
+<img src="https://studwork.org/uploads/avatar/19698.jpg?rand=1696283907" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="https://studwork.org/info/19698">Lexus-1983</a>
+<span class="in-block t-grey"> 7 июн 2016 в 14:32</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="50458"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="50458"></i>
+</div>
+</div>
+<div class="text"><p>А я не понимаю вашей категоричности:
+- кто будет игнорировать требования - не должны здесь надолго задерживаться. Что значит &quot;все равно будут проверять в обычном АП?&quot; Недалекие здесь есть, но это редкость все же.
+- зачем усложнять работу. Часто посредник сам не знает, насколько важна уникальность для студента, но не переплачивать же за еТХТ.
+- отдельные кнопки есть у Адвего, еТХТ - почему не для АП.ВУЗ? И я, значит, невменяемый автор, раз не хочу бесплатно повышать уникальность по АП.ВУЗ, если изначально говорилось об АП.ру.</p> </div>
+</div>
+</div>
+</div>
+</div>
+<div class='order-help-block similar-themes similar-orders'>
+<div class='header'>Похожие темы</div>
+<div class='orders same-forum-themes'>
+<div>
+<div class='order'>
+<ul class='info'>
+<li><a href="https://studwork.org/forum/3458">Среднестатистические цены по стране</a></li>
+<li>
+<i class='fa fa-user t-orange'></i>
+<a href="https://studwork.org/info/6087" class="user-">studentf</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-5</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 65</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 3561</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="https://studwork.org/forum/3455">Когда-то я мечтала</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="https://studwork.org/info/37071" class="user-">Lana67</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-20</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 42</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 3027</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="https://studwork.org/forum/3440">Прогнозы в экономике</a></li>
+<li>
+<i class='fa fa-user t-orange'></i>
+<a href="https://studwork.org/info/6087" class="user-">studentf</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-16</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 18</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1555</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="https://studwork.org/forum/3388">Оповещения о новых событиях на сайте, чтобы было сразу видно</a></li>
+<li>
+<i class='fa fa-user t-orange'></i>
+<a href="https://studwork.org/info/2130" class="user-">ciberman</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+40</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 15</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 908</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="https://studwork.org/forum/3387">Отзывы пользователя и сообщения на форуме</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="https://studwork.org/info/57852" class="user-">Magistr math</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-4</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 23</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1741</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='more-themes' class='stud-user-dop-butt'>
+<div class="stud-user-dop-butt-ic"><i class="fa fa-refresh"></i></div>
+<span class='t-blue'>Показать еще похожие темы</span>
+<span class='t-blue covert'>Похожих тем больше нет</span>
+</div>
+</div>
+</div>
+<div class="stud-user-area-right">
+<div class="stud-user-right-bloc" id="stud-user-right-new-forum">
+<div class="stud-user-right-title">Темы форума <i class='t-grey head-fa fa fa-comments'></i></div>
+<div id="stud-user-right-for-adding-forum">
+<div class="stud-user-right-forum-theme">
+<a href="https://studwork.org/forum/3485">Продажа работа в авторском магазине</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 5 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 5</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="https://studwork.org/forum/3483">Дополнительная квалификация: переводчик</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 4 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 3</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="https://studwork.org/forum/3482">Вопрос к психологам, психотерапевтам</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 24</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="https://studwork.org/forum/3481">Памяти товарища.</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 27</div>
+</div>
+</div>
+<a class="stud-user-right-gotoforum" href="https://studwork.org/forum">Перейти на форум</a>
+</div>
+<a href='https://algebra24.ru/' target='_blank' class='partner-block blue clearfix'>
+<div class='logo not-hover'>
+<img src="https://studwork.org/img/xalgebra24-blue.png.pagespeed.ic.4oGWP_Jxbw.png" alt="">
+</div>
+<div class='logo hover'>
+<img src="https://studwork.org/img/xalgebra24-white.png.pagespeed.ic.Cweiz1GBgw.png" alt="">
+</div>
+<div class='title'>ALGEBRA24</div>
+<div class='sub-title'>Математические сервисы</div>
+</a>
+<a href='https://ultragold.org/' target='_blank' class='partner-block purple clearfix'>
+<div class='logo'>
+<img src="https://studwork.org/img/xultragold.png.pagespeed.ic.aeHJ4_TGOs.png" alt="">
+</div>
+<div class='title'>ULTRAGOLD</div>
+<div class='sub-title'>Обмен электронных валют</div>
+</a>
+</div>
+</div>
+</div>
+<div class="stud-modal" id="votes-modal">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Голосование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line">
+Не выбран вариант голосования!
+</div>
+</div>
+</div>
+</div>
+<div class="stud-modal stud-modal-is-open" id="forum-theme-editor">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Редактирование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line" id="forum-theme-editor-line">
+<form action="javascript:void(0);" method="post" class="" id="stud-forum-new-theme">
+<div class="stud-forum-new-line">
+<input type="text" name="" id="forum-theme-new-title" class="bott all-width" maxlength="100" placeholder="Введите название темы" disabled>
+<textarea class="all-width" id="forum-theme-new-text" rows="3" style="resize: none" disabled></textarea>
+<div class="stud-forum-new-textarea-butt">
+<a class="stud-button right stud-button-blue stud-button-icon-bubbles" id="forum-theme-save-change">Сохранить изменения</a>
+</div>
+</div>
+<div class="stud-forum-new-line stud-forum-new-vote-block">
+<input type="text" name="" id="vote-title-modal" class="all-width" maxlength="60" placeholder="Введите вопрос голосования">
+<div class="stud-forum-new-count-answer">
+<span class="t-grey">Количество вариантов ответа</span>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="2" data-toggle="radio" checked>
+2
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="3" data-toggle="radio">
+3
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="4" data-toggle="radio">
+4
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="5" data-toggle="radio">
+5
+</label>
+</div>
+<div class="stud-forum-new-variations">
+<div class="vote-input-div">
+<input type="text" name="new-variations-1" class="top all-width vote-input" maxlength="50" placeholder="Вариант 1">
+</div>
+<div class="vote-input-div">
+<input type="text" name="new-variations-2" class="top all-width vote-input" maxlength="50" placeholder="Вариант 2">
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div style="position: fixed"></div><div id="all-footer">
+<div id="stud-footer">
+<div class="stud-main">
+<div class="stud-footer-bloc">
+<div class="title">Служба поддержки</div>
+<div class="bloc tech">
+<div class="tm1">Бесплатный звонок</div>
+<div class="tm2 number">8 (800) 500-78-57</div>
+</div>
+<div class="bloc tech">
+<div class="tm1">Техническая поддержка</div>
+<div class="tm2"><a href="https://studwork.org/tech-support" class="stud-button stud-button-white stud-button-icon-mail-blue stud-footer-butt">Написать нам</a></div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">Статистика</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">84 499</div>
+<div class="stud-footer-circle-info">Пользователей <span class="t-green">+135</span></div>
+</div>
+</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">230</div>
+<div class="stud-footer-circle-info"><a href="https://studwork.org/catalog?checkbox_search_online_user=1">Сейчас на сайте</a></div>
+</div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">О проекте</div>
+<div class="bloc">
+<div>
+Проект studwork.org &#x2012; это интернет-сервис для
+выполнения любых видов учебных работ.
+</div>
+</div>
+<div class="bloc">
+<div class="tm3"><span class="t-blue">Принимаем к оплате</span></div>
+<div class="tm4 number">
+<img src="https://studwork.org/img/foot_icon-card-small.svg" alt="Иконка кредитной карты"/>
+<img src="https://studwork.org/img/foot_icon-qiwi.svg" alt="Иконка платежной системы Киви"/>
+<img src="https://studwork.org/img/foot_icon-ya.svg" alt="Иконка платежной системы Яндекс Деньги"/>
+<img src="https://studwork.org/img/foot_icon-wm.svg" alt="Иконка платежной системы Web Money"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="stud-footer-end">
+<div class="stud-main">
+<div class="stud-footer-end-left">
+<span>© 2011-2017 studwork.org</span>
+</div>
+<div class="stud-footer-end-right">
+<a href="https://studwork.org/oferta">Пользовательское соглашение</a>
+</div>
+<div class="stud-footer-end-right">
+<a href="https://studwork.org/api">API для интеграции</a>
+</div>
+</div>
+</div>
+</div> <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>const name_site_external='https://studwork.org/';const secret_hash_header='e83825f8d2ce57b74ca9ab81e85763a0';const secret_hash_ajax_new_notice='4a055295e0bfe051b5c03ae86bc4a758';const id_current_user='0';const secret_hash_file_upload='5cc66a5032e284ff277a243b26bc5190';const secret_hash_confirm_unknown_ip='89fd1ae49f680b435e6e6fc53dea0dd8';const id_forum_theme='3116';const array_id_report=[50292,50294,50296,50299,50303,50307,50308,50309,50310,50311,50312,50313,50314,50319,50390,50437,50438,50440,50441,50447,50448,50457,50458];var array_id_report_diff={};if(typeof(localStorage)!='undefined'){Array.prototype.diff=function(a){return this.filter(function(i){return a.indexOf(i)<0;});};if(typeof(localStorage['forum'])!='undefined'){var forum=JSON.parse(localStorage['forum']);if(typeof(forum[id_forum_theme])!='undefined'){array_id_report_diff=array_id_report.diff(forum[id_forum_theme]);}forum[id_forum_theme]=array_id_report;localStorage.setItem('forum',JSON.stringify(forum));}else{localStorage.setItem('forum',JSON.stringify({}));}}</script>
+<script src="https://studwork.org/jscript/min/main.min.js,qv=5.pagespeed.jm.QG9mR3T0rH.js"></script>
+<script src="https://studwork.org/jscript/min/stud.forum.js+function,_show_votes.js+function,_JSBrowCorrect.js.pagespeed.jc.cTbmKxcX-k.js"></script><script>eval(mod_pagespeed_2wiWA4R362);</script>
+<script>eval(mod_pagespeed_BS0rq84xsD);</script>
+<script>eval(mod_pagespeed_VQeOvKVnHl);</script>
+</body>
+<!-- Mirrored from studwork.org/forum/3116 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:58:29 GMT -->
+</html>

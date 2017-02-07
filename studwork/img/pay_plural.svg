@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="pay_plural"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="90px" height="90px"
+     	 viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+     <path style="fill-rule:evenodd;clip-rule:evenodd;fill:#E2F1F8;" d="M45.002,90.004c24.786,0,45.002-20.216,45.002-45.002
+     	C90.004,20.216,69.788,0,45.002,0S0,20.216,0,45.002C0,69.788,20.216,90.004,45.002,90.004z"/>
+     <path style="fill-rule:evenodd;clip-rule:evenodd;fill:#CCDFE7;" d="M45.002,0c24.854,0,45.002,20.148,45.002,45.002
+     	S69.856,90.004,45.002,90.004l-0.061-0.001V0.001L45.002,0z"/>
+</svg>

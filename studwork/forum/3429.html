@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Mirrored from studwork.org/forum/3429 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:29:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Работа с исполнителем на стороне. Печальный опыт. - тема 3429</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Работа с исполнителем на стороне. Печальный опыт. - тема 3429 / Помощь по общим вопросам"/>
+<meta name="mini-title" content="Тема форума"/>
+<meta name="webmoney.attestation.label" content="webmoney attestation label#3644DB51-0D2B-42B2-9D26-5CF2832FC5C1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+<meta name="mailru-verification" content="96d475315730d23c"/>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../css/A.style.min.css%2cqv%3d2.pagespeed.cf.9Wz6hzK2mp.css" media="all">
+<style>@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/pkYDSlCHbDnBWPT5PPFFTA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPi3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v8/7dSh6BcuqDLzS2qAASIeuqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkPOEPOIfcPv-fZ-WyMUtx48.ttf) format('truetype');
+}
+</style>
+<!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="/css/jquery.ui.1.10.0.ie.css"/>
+    <![endif]-->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../xapple-touch-icon-144x144-precomposed.png.pagespeed.ic.2b8ZYRX53K.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../xapple-touch-icon-120x120-precomposed.png.pagespeed.ic.6b_a2RtrbV.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../xapple-touch-icon-114x114-precomposed.png.pagespeed.ic.RsRKPewFg-.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../xapple-touch-icon-72x72-precomposed.png.pagespeed.ic.6SnOg1DvSA.png"/>
+<link rel="apple-touch-icon-precomposed" href="../xapple-touch-icon-precomposed.png.pagespeed.ic.yjuuyHfypH.png"/>
+<link rel="yandex-tableau-widget" href="../manifest.json"/>
+</head>
+<body>
+<audio id="sound-new-message" src="../audio/message.mp3"></audio>
+<header class="stud-user-top-menu">
+<div class="stud-user-top-menu-area">
+<div class="left-side">
+<a href="#" class='menu-bar'><i class='fa fa-bars'></i></a>
+<ul class="stud-user-top-menu-left">
+<li><a href="../index.html">Лента</a>
+<li><a href="../catalog.html">Авторы</a>
+<li><a href="../shop.html">Магазин</a>
+<li><a href="../forum.html">Форум<span class="stud-under stud-under-yellow cover" id="notice-forum"></span></a>
+<li><a href="../faq.html">FAQ</a>
+<li><a href="../partner-landing.html">Партнерская программа</a>
+</ul>
+</div>
+<span class="top-menu-title notAuth">
+Лента заказов
+</span>
+<div class="right-side">
+<form method="post" class="stud-auth-form line" id="auth_form" accept-charset="utf-8">
+<ul class="stud-user-top-menu-right">
+<li><input class="stud-input-icon form-icon-top-menu-men" type="text" name="login" id="login" placeholder="Логин"/>
+<li><input class="stud-input-icon form-icon-top-menu-pass" type="password" name="password" id="password" placeholder="Пароль"/>
+<li><input type="submit" value="Вход"/>
+<li><a href="../reg.html" class="stud-user-top-menu-reg">Регистрация</a>
+</ul>
+</form>
+<a href="#" class='auth-menu'><i class='fa fa-key'></i></a>
+</div>
+<ul class="active-menu left scroll-y" data-menu-status="close" data-menu-position='left'>
+<li><a href="../index.html"><i class='fa fa-pencil'></i>Лента</a>
+<li><a href="../catalog.html"><i class='fa fa-user'></i>Авторы</a>
+<li><a href="../shop.html"><i class='fa fa-shopping-cart'></i>Магазин</a>
+<li><a href="../forum.html"><i class='fa fa-comment'></i>Форум<span class="stud-under stud-under-yellow cover"></span></a>
+<li><a href="../faq.html"><i class='fa fa-question-circle'></i> FAQ</a>
+<li><a href="../partnership-landing.html"><i class='fa fa-briefcase'></i> Партнерам</a>
+</ul>
+<div class='auth-block scroll-y' data-menu-status="close" data-menu-position='right'>
+<form method="post" class="menu-auth-form" id="modal_auth_form" accept-charset="utf-8">
+<input type="text" name="login" id="login_modal" placeholder="Логин"/>
+<input type="password" name="password" id="password_modal" placeholder="Пароль"/>
+<input type="submit" class='stud-button middle' value="Вход"/>
+<a href="../login-incorrect.html" class='reset-pass'>Не помню пароль?</a>
+<a href="../reg.html" class="stud-button middle">Регистрация</a>
+</form>
+</div>
+</div>
+</header>
+<div id="after-main-menu"></div>
+<div class="stud-area">
+<div class="stud-main" id="stud-content">
+<div class="stud-user-area-left">
+<div class="stud-user-left-bloc stud-forum-theme">
+<div class="title-block">
+<span class="in-part">
+<span class="t-grey">в разделе</span>
+<a href="help-for-general-questions.html">Помощь по общим вопросам</a>
+</span>
+<div class="title"><h1>Работа с исполнителем на стороне. Печальный опыт.</h1></div>
+</div>
+<div class="pre-text text-block"><p>В общем друзья, расскажу Вам свою историю.
+Некоторое время назад у меня возникла необходимость заказа выпускной работы.
+Как положено разместил заказ в сети, начали поступать предложения от авторов.
+В общем один из авторов предложил сделать работу вне сайта, за N рублей.
+Уговорил меня перечислить ему часть денег, дал номер карты.
+И работа закипела... По прошествии нескольких дней он присылает мне готовый ответ, в которос присутствует большое количество ошибок. Элементарно не изменена версия рассматриваемого программного продукта, профиль организации не родственный тематике работы.
+Начинаю делать замечания исполнителю, он начинает истерить и отправлять повторно работу с ошибками, и что верное или нет, решает только преподаватель.
+Итогом всего этого печального опыта явилось то, что он в нецензурной форме меня оскорбил, деньги конечно отказался возвращать. Мне денег не жалко, никто меня не вынуждал ему платить и т.д.
+А Вы уважаемые заказчики знайте. На сайте администрация может заморозить деньги и ц Вас в крайнем случае появятся какие-то гарантии. А в реале Вас, за Ваши деньги!!! Прямо акцентирую &quot;За Ваши деньги!!!&quot;. Оскорбят в нецензурной форме и останетесь ни с чем. </p> </div>
+<div class="theme-info">
+<div class="info-line">
+<div class="likes-block">
+<i class="fa fa-arrow-up" id="forum-theme-arrow-up"></i>
+<span class="t-green" id="value_voting">+1</span> <i class="fa fa-arrow-down" id="forum-theme-arrow-down"></i>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-clock-o'></i> 7 янв 2017 в 00:59 </div>
+<div class="info-line">
+<i class='fa fa-user t-grey'></i>
+<a href="../info/46789.html" class="t-blue">Aspero</a>
+</div>
+<div class="info-line">
+<div class="comments t-blue">
+<i class='fa fa-comment'></i>
+<span id="forum-theme-count-comments">17</span> ответ<span id="forum-theme-ending-count-comments">ов</span>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-eye'></i> 1259 просмотров </div>
+</div>
+<div class="comments-area">
+<div class="comment-line" data-next="0" data-id-level-report="56717" data-rec="43273">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/43273.html">
+<img src="https://studwork.org/uploads/avatar/60x60x43273.jpg,qrand=1569885582.pagespeed.ic.KNpciMh9qQ.jpg" width="60" height="60" alt="Пользователь 43273"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/43273.html">444cvm</a>
+<span class="in-block t-grey"> 10 янв 2017 в 22:22</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="43273" data-report="56717"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="43273" data-report="56717"></i>
+</div>
+</div>
+<div class="text"><p>В реале все заказчики, которых знаю, никогда не работают по предоплате, а уж тем более с тем, кого не знают и впервые сотрудничают! Только работа, которая скинута и тщательно просмотрена хотя бы заказчиком самостоятельно, а то и вовсе проверена преподавателем и вот только потом деньги! Поэтому, в любом случае, как заказчик, так и исполнитель, если будут соблюдать простые правила безопасности вряд ли пострадают, ну или такой риск по крайней мере, сведен к минимуму. Хотя я знаю такую историю: знакомый заказчик-посредник пострадал от чересчур ушлого студента - тот подделал документ, подтверждающий денежный перевод остальной суммы - просто тупо скопировал с прошлого чека, подтверждающего, что прошла предоплата и сослался на то, что якобы &quot;система тормозит&quot;... Но а заказчик не проверил на свою голову - вот так то и получилось не очень приятно - остался лишь с предоплатой... Но никто не застрахован, как говорится... Все равно при должной внимательности, такие случаи будут единичными:-) Ну, в общем, не принимайте этот случай близко к сердцу - все равно недобросовестному исполнителю вернется его поступок боком)</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="56919" data-rec="68423">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/68423.html">
+<img src="../img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 68423"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/68423.html">netproblem2009</a>
+<span class="in-block t-grey"> 17 янв 2017 в 11:26</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="68423" data-report="56919"></i>
+<span class="t-green" data-class="user-arrow">+2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="68423" data-report="56919"></i>
+</div>
+</div>
+<div class="text"><p>В реале все заказчики прекрасно работают по 50% предоплате, а то и полной оплате, хотя это уже от суммы зависит. А насчет вы пришлите а &quot;я позже обязательно рассчитаюсь&quot; и &quot; пришлите ну не буду же я вас обманывать&quot;. Это такой детский развод, что смешно делается, а если обманет вас заказчик вы что сделаете? нажалуетесь на форуме на него
+<img class="sticker" src="../img/smiles/ha-ha.svg" alt="Стикер ha-ha">
+?</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="56924" data-rec="43273">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/43273.html">
+<img src="https://studwork.org/uploads/avatar/60x60x43273.jpg,qrand=1068819118.pagespeed.ic.KNpciMh9qQ.jpg" width="60" height="60" alt="Пользователь 43273"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/43273.html">444cvm</a>
+<span class="in-block t-grey"> 17 янв 2017 в 11:55</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="43273" data-report="56924"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="43273" data-report="56924"></i>
+</div>
+</div>
+<div class="text"><p>странно, что Вы пишите это в теме, где как раз Исполнитель обманул Заказчика:-)</p> </div>
+<div class="comment-line" data-next="3" data-id-level-report="56938" data-rec="68423">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/68423.html">
+<img src="../img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 68423"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/68423.html">netproblem2009</a>
+<span class="in-block t-grey"> 17 янв 2017 в 13:05</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="68423" data-report="56938"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="68423" data-report="56938"></i>
+</div>
+</div>
+<div class="text"><p>Вдвойне странно, что вы пишете замечание на ответ к ВАШЕМУ посту &quot;В реале все заказчики, которых знаю, никогда не работают по предоплате, а уж тем более с тем, кого не знают и впервые сотрудничают! &quot;</p> </div>
+<div class="comment-line" data-next="4" data-id-level-report="56939" data-rec="43273">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/43273.html">
+<img src="https://studwork.org/uploads/avatar/43273.jpg?rand=576712468" width="60" height="60" alt="Пользователь 43273"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/43273.html">444cvm</a>
+<span class="in-block t-grey"> 17 янв 2017 в 13:06</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="43273" data-report="56939"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="43273" data-report="56939"></i>
+</div>
+</div>
+<div class="text"><p>я отвечаю на Ваш комментарий:-)</p> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="56900" data-rec="77705">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/77705.html">
+<img src="../img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 77705"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/77705.html">lsr21</a>
+<span class="in-block t-grey"> 15 янв 2017 в 22:34</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="77705" data-report="56900"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="77705" data-report="56900"></i>
+</div>
+</div>
+<div class="text"><p>Я в процессе учебы всегда заказывала курсовые и другие работы на интернет-бирже студенческих работ Автор24 <a href="https://author24.ru/" target="_blank">https://author24.ru</a> . Всегда выполняли в срок за небольшую стоимость. Если надо, там могут вносить корректировки в работу. Но мне этого за 5 лет учебы не потребовалось)</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="57047" data-rec="14645">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/14645.html">
+<img src="https://studwork.org/uploads/avatar/14645.jpg?rand=1489348614" width="60" height="60" alt="Пользователь 14645"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/14645.html">domus11</a>
+<span class="in-block t-grey"> 19 янв 2017 в 07:04</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="14645" data-report="57047"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="14645" data-report="57047"></i>
+</div>
+</div>
+<div class="text"><p>Если вам там выполняли, так что же вы сюда то пришли?!</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="57639" data-rec="19244">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/19244.html">
+<img src="https://studwork.org/uploads/avatar/19244.jpg?rand=1970107728" width="60" height="60" alt="Пользователь 19244"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/19244.html">mara</a>
+<span class="in-block t-grey"> 29 янв 2017 в 21:00</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19244" data-report="57639"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19244" data-report="57639"></i>
+</div>
+</div>
+<div class="text"><p>оно просто рекламит свою контору таким манером</p> </div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="56901" data-rec="23926">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/23926.html">
+<img src="https://studwork.org/uploads/avatar/23926.jpg?rand=1624949177" width="60" height="60" alt="Пользователь 23926"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/23926.html">Aliss</a>
+<span class="in-block t-grey"> 16 янв 2017 в 10:23</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="23926" data-report="56901"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="23926" data-report="56901"></i>
+</div>
+</div>
+<div class="text"><p>Я работаю по форме &quot;сначала деньги, потом стулья&quot;, но разрыва не делаю - написала к/р, пишу &quot;перечисляйте деньги&quot;, потом сразу скидываю работу. Дипломы, курсовые также. Дипломы читают при мне или через принскрин. Сколько знаю ситуаций, когда диплом просят прислать, а &quot;расплачусь, когда проверят&quot;, а потом &quot;а я ничего и не заказывала&quot;, что с этим не экспериментирую. Проверят, исправляю. Всегда жду, когда оплата &quot;упадет&quot; на карту.</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="57640" data-rec="14645">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/14645.html">
+<img src="https://studwork.org/uploads/avatar/14645.jpg?rand=1002915992" width="60" height="60" alt="Пользователь 14645"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/14645.html">domus11</a>
+<span class="in-block t-grey"> 29 янв 2017 в 21:06</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="14645" data-report="57640"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="14645" data-report="57640"></i>
+</div>
+</div>
+<div class="text"><p>Администрация, удалите эту тему</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="57663" data-rec="46789">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/46789.html">
+<img src="https://studwork.org/uploads/avatar/46789.jpg?rand=1426929856" width="60" height="60" alt="Пользователь 46789"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/46789.html">Aspero</a>
+<span class="in-block t-grey"> 30 янв 2017 в 07:47</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="46789" data-report="57663"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="46789" data-report="57663"></i>
+</div>
+</div>
+<div class="text"><p>Тебя удалить пора</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="57679" data-rec="14645">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/14645.html">
+<img src="https://studwork.org/uploads/avatar/14645.jpg?rand=1052614036" width="60" height="60" alt="Пользователь 14645"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/14645.html">domus11</a>
+<span class="in-block t-grey"> 30 янв 2017 в 11:28</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="14645" data-report="57679"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="14645" data-report="57679"></i>
+</div>
+</div>
+<div class="text"><p>А вы лапотуля, безгуда неделя тут, и уже такие возгласы</p> </div>
+<div class="comment-line" data-next="3" data-id-level-report="57681" data-rec="46789">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/46789.html">
+<img src="https://studwork.org/uploads/avatar/46789.jpg?rand=1894471715" width="60" height="60" alt="Пользователь 46789"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/46789.html">Aspero</a>
+<span class="in-block t-grey"> 30 янв 2017 в 11:30</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="46789" data-report="57681"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="46789" data-report="57681"></i>
+</div>
+</div>
+<div class="text"><p>Так потроллить Вас за радость. ) Почему удалить, расскажите?</p> </div>
+<div class="comment-line" data-next="4" data-id-level-report="57687" data-rec="14645">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/14645.html">
+<img src="https://studwork.org/uploads/avatar/14645.jpg?rand=457705080" width="60" height="60" alt="Пользователь 14645"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/14645.html">domus11</a>
+<span class="in-block t-grey"> 30 янв 2017 в 12:38</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="14645" data-report="57687"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="14645" data-report="57687"></i>
+</div>
+</div>
+<div class="text"><p>Вы бы лучше работали, а не «пиняли» других</p> </div>
+<div class="comment-line" data-next="5" data-id-level-report="57699" data-rec="46789">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/46789.html">
+<img src="https://studwork.org/uploads/avatar/46789.jpg?rand=507354198" width="60" height="60" alt="Пользователь 46789"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/46789.html">Aspero</a>
+<span class="in-block t-grey"> 31 янв 2017 в 06:58</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="46789" data-report="57699"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="46789" data-report="57699"></i>
+</div>
+</div>
+<div class="text"><p>Шо вы такое говорите )))</p> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="57677" data-rec="14645">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/14645.html">
+<img src="https://studwork.org/uploads/avatar/14645.jpg?rand=331668410" width="60" height="60" alt="Пользователь 14645"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/14645.html">domus11</a>
+<span class="in-block t-grey"> 30 янв 2017 в 11:27</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="14645" data-report="57677"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="14645" data-report="57677"></i>
+</div>
+</div>
+<div class="text"><p>Администрация, примите меры.</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="57680" data-rec="46789">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/46789.html">
+<img src="https://studwork.org/uploads/avatar/46789.jpg?rand=1846388359" width="60" height="60" alt="Пользователь 46789"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/46789.html">Aspero</a>
+<span class="in-block t-grey"> 30 янв 2017 в 11:28</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="46789" data-report="57680"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="46789" data-report="57680"></i>
+</div>
+</div>
+<div class="text"><p>К чему? И объясните на каком основании удалять данную тему? Она актуальность утратила? Я возмущён</p> </div>
+</div>
+</div>
+</div>
+</div>
+<div class='order-help-block similar-themes similar-orders'>
+<div class='header'>Похожие темы</div>
+<div class='orders same-forum-themes'>
+<div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3475.html">Оформление работ в соответствии с требованиями</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/35601.html" class="user-">elena-metl</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+10</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 83</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 2061</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3473.html">РЕАЛИЗАЦИЯ доходов, полученных преступным путем - это их отмывание?</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/1274.html" class="user-">Troek_Net</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-3</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 3</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 625</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3471.html">синонимайзер?</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/75863.html" class="user-">Litron84</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+3</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 28</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1580</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3461.html">Рекомендуемые авторы</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/32777.html" class="user-">ElenaHigh</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+14</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 32</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 2760</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3453.html">Вместо текста - иероглифы</a></li>
+<li>
+<i class='fa fa-user t-orange'></i>
+<a href="../info/26596.html" class="user-">olga_arndt</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-grey" data-class="user-arrow">0</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 9</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1224</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='more-themes' class='stud-user-dop-butt'>
+<div class="stud-user-dop-butt-ic"><i class="fa fa-refresh"></i></div>
+<span class='t-blue'>Показать еще похожие темы</span>
+<span class='t-blue covert'>Похожих тем больше нет</span>
+</div>
+</div>
+</div>
+<div class="stud-user-area-right">
+<div class="stud-user-right-bloc" id="stud-user-right-new-forum">
+<div class="stud-user-right-title">Темы форума <i class='t-grey head-fa fa fa-comments'></i></div>
+<div id="stud-user-right-for-adding-forum">
+<div class="stud-user-right-forum-theme">
+<a href="3485.html">Продажа работа в авторском магазине</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 5 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 5</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3483.html">Дополнительная квалификация: переводчик</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 4 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 3</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3482.html">Вопрос к психологам, психотерапевтам</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 24</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3481.html">Памяти товарища.</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 27</div>
+</div>
+</div>
+<a class="stud-user-right-gotoforum" href="../forum.html">Перейти на форум</a>
+</div>
+<a href='https://algebra24.ru/' target='_blank' class='partner-block blue clearfix'>
+<div class='logo not-hover'>
+<img src="../img/xalgebra24-blue.png.pagespeed.ic.4oGWP_Jxbw.png" alt="">
+</div>
+<div class='logo hover'>
+<img src="../img/xalgebra24-white.png.pagespeed.ic.Cweiz1GBgw.png" alt="">
+</div>
+<div class='title'>ALGEBRA24</div>
+<div class='sub-title'>Математические сервисы</div>
+</a>
+<a href='https://ultragold.org/' target='_blank' class='partner-block purple clearfix'>
+<div class='logo'>
+<img src="../img/xultragold.png.pagespeed.ic.aeHJ4_TGOs.png" alt="">
+</div>
+<div class='title'>ULTRAGOLD</div>
+<div class='sub-title'>Обмен электронных валют</div>
+</a>
+</div>
+</div>
+</div>
+<div class="stud-modal" id="votes-modal">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Голосование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line">
+Не выбран вариант голосования!
+</div>
+</div>
+</div>
+</div>
+<div class="stud-modal stud-modal-is-open" id="forum-theme-editor">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Редактирование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line" id="forum-theme-editor-line">
+<form action="javascript:void(0);" method="post" class="" id="stud-forum-new-theme">
+<div class="stud-forum-new-line">
+<input type="text" name="" id="forum-theme-new-title" class="bott all-width" maxlength="100" placeholder="Введите название темы" disabled>
+<textarea class="all-width" id="forum-theme-new-text" rows="3" style="resize: none" disabled></textarea>
+<div class="stud-forum-new-textarea-butt">
+<a class="stud-button right stud-button-blue stud-button-icon-bubbles" id="forum-theme-save-change">Сохранить изменения</a>
+<label class="checkbox checkbox-left normal-font open-votes" id="label-open-vote">
+<input type="checkbox" name="" data-toggle="checkbox" id="check-open-vote"/>
+<span>Добавить в тему голосование</span>
+</label>
+</div>
+</div>
+<div class="stud-forum-new-line stud-forum-new-vote-block">
+<input type="text" name="" id="vote-title-modal" class="all-width" maxlength="60" placeholder="Введите вопрос голосования">
+<div class="stud-forum-new-count-answer">
+<span class="t-grey">Количество вариантов ответа</span>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="2" data-toggle="radio" checked>
+2
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="3" data-toggle="radio">
+3
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="4" data-toggle="radio">
+4
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="5" data-toggle="radio">
+5
+</label>
+</div>
+<div class="stud-forum-new-variations">
+<div class="vote-input-div">
+<input type="text" name="new-variations-1" class="top all-width vote-input" maxlength="50" placeholder="Вариант 1">
+</div>
+<div class="vote-input-div">
+<input type="text" name="new-variations-2" class="top all-width vote-input" maxlength="50" placeholder="Вариант 2">
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div style="position: fixed"></div><div id="all-footer">
+<div id="stud-footer">
+<div class="stud-main">
+<div class="stud-footer-bloc">
+<div class="title">Служба поддержки</div>
+<div class="bloc tech">
+<div class="tm1">Бесплатный звонок</div>
+<div class="tm2 number">8 (800) 500-78-57</div>
+</div>
+<div class="bloc tech">
+<div class="tm1">Техническая поддержка</div>
+<div class="tm2"><a href="../tech-support.html" class="stud-button stud-button-white stud-button-icon-mail-blue stud-footer-butt">Написать нам</a></div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">Статистика</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">84 498</div>
+<div class="stud-footer-circle-info">Пользователей <span class="t-green">+136</span></div>
+</div>
+</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">225</div>
+<div class="stud-footer-circle-info"><a href="../catalog60b8.html?checkbox_search_online_user=1">Сейчас на сайте</a></div>
+</div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">О проекте</div>
+<div class="bloc">
+<div>
+Проект studwork.org &#x2012; это интернет-сервис для
+выполнения любых видов учебных работ.
+</div>
+</div>
+<div class="bloc">
+<div class="tm3"><span class="t-blue">Принимаем к оплате</span></div>
+<div class="tm4 number">
+<img src="../img/foot_icon-card-small.svg" alt="Иконка кредитной карты"/>
+<img src="../img/foot_icon-qiwi.svg" alt="Иконка платежной системы Киви"/>
+<img src="../img/foot_icon-ya.svg" alt="Иконка платежной системы Яндекс Деньги"/>
+<img src="../img/foot_icon-wm.svg" alt="Иконка платежной системы Web Money"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="stud-footer-end">
+<div class="stud-main">
+<div class="stud-footer-end-left">
+<span>© 2011-2017 studwork.org</span>
+</div>
+<div class="stud-footer-end-right">
+<a href="../oferta.html">Пользовательское соглашение</a>
+</div>
+<div class="stud-footer-end-right">
+<a href="../api.html">API для интеграции</a>
+</div>
+</div>
+</div>
+</div> <script src="../../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>const name_site_external='../index.html';const secret_hash_header='e83825f8d2ce57b74ca9ab81e85763a0';const secret_hash_ajax_new_notice='4a055295e0bfe051b5c03ae86bc4a758';const id_current_user='0';const secret_hash_file_upload='5cc66a5032e284ff277a243b26bc5190';const secret_hash_confirm_unknown_ip='89fd1ae49f680b435e6e6fc53dea0dd8';const id_forum_theme='3429';const array_id_report=[56717,56900,56901,56919,56924,56938,56939,57047,57639,57640,57663,57677,57679,57680,57681,57687,57699];var array_id_report_diff={};if(typeof(localStorage)!='undefined'){Array.prototype.diff=function(a){return this.filter(function(i){return a.indexOf(i)<0;});};if(typeof(localStorage['forum'])!='undefined'){var forum=JSON.parse(localStorage['forum']);if(typeof(forum[id_forum_theme])!='undefined'){array_id_report_diff=array_id_report.diff(forum[id_forum_theme]);}forum[id_forum_theme]=array_id_report;localStorage.setItem('forum',JSON.stringify(forum));}else{localStorage.setItem('forum',JSON.stringify({}));}}</script>
+<script src="../jscript/min/main.min.js%2cqv%3d5.pagespeed.jm.QG9mR3T0rH.js"></script>
+<script src="../jscript/min/stud.forum.js%2bfunction%2c_show_votes.js%2bfunction%2c_JSBrowCorrect.js.pagespeed.jc.cTbmKxcX-k.js"></script><script>eval(mod_pagespeed_2wiWA4R362);</script>
+<script>eval(mod_pagespeed_BS0rq84xsD);</script>
+<script>eval(mod_pagespeed_VQeOvKVnHl);</script>
+</body>
+<!-- Mirrored from studwork.org/forum/3429 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:29:23 GMT -->
+</html>

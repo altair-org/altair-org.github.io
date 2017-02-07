@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Mirrored from studwork.org/forum/3321 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:04:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Автоматическая разблокировка средств - тема 3321</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Автоматическая разблокировка средств - тема 3321 / Технические проблемы"/>
+<meta name="mini-title" content="Тема форума"/>
+<meta name="webmoney.attestation.label" content="webmoney attestation label#3644DB51-0D2B-42B2-9D26-5CF2832FC5C1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+<meta name="mailru-verification" content="96d475315730d23c"/>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../css/A.style.min.css%2cqv%3d2.pagespeed.cf.9Wz6hzK2mp.css" media="all">
+<style>@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/pkYDSlCHbDnBWPT5PPFFTA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPi3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v8/7dSh6BcuqDLzS2qAASIeuqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkPOEPOIfcPv-fZ-WyMUtx48.ttf) format('truetype');
+}
+</style>
+<!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="/css/jquery.ui.1.10.0.ie.css"/>
+    <![endif]-->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../xapple-touch-icon-144x144-precomposed.png.pagespeed.ic.2b8ZYRX53K.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../xapple-touch-icon-120x120-precomposed.png.pagespeed.ic.6b_a2RtrbV.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../xapple-touch-icon-114x114-precomposed.png.pagespeed.ic.RsRKPewFg-.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../xapple-touch-icon-72x72-precomposed.png.pagespeed.ic.6SnOg1DvSA.png"/>
+<link rel="apple-touch-icon-precomposed" href="../xapple-touch-icon-precomposed.png.pagespeed.ic.yjuuyHfypH.png"/>
+<link rel="yandex-tableau-widget" href="../manifest.json"/>
+</head>
+<body>
+<audio id="sound-new-message" src="../audio/message.mp3"></audio>
+<header class="stud-user-top-menu">
+<div class="stud-user-top-menu-area">
+<div class="left-side">
+<a href="#" class='menu-bar'><i class='fa fa-bars'></i></a>
+<ul class="stud-user-top-menu-left">
+<li><a href="../index.html">Лента</a>
+<li><a href="../catalog.html">Авторы</a>
+<li><a href="../shop.html">Магазин</a>
+<li><a href="../forum.html">Форум<span class="stud-under stud-under-yellow cover" id="notice-forum"></span></a>
+<li><a href="../faq.html">FAQ</a>
+<li><a href="../partner-landing.html">Партнерская программа</a>
+</ul>
+</div>
+<span class="top-menu-title notAuth">
+Лента заказов
+</span>
+<div class="right-side">
+<form method="post" class="stud-auth-form line" id="auth_form" accept-charset="utf-8">
+<ul class="stud-user-top-menu-right">
+<li><input class="stud-input-icon form-icon-top-menu-men" type="text" name="login" id="login" placeholder="Логин"/>
+<li><input class="stud-input-icon form-icon-top-menu-pass" type="password" name="password" id="password" placeholder="Пароль"/>
+<li><input type="submit" value="Вход"/>
+<li><a href="../reg.html" class="stud-user-top-menu-reg">Регистрация</a>
+</ul>
+</form>
+<a href="#" class='auth-menu'><i class='fa fa-key'></i></a>
+</div>
+<ul class="active-menu left scroll-y" data-menu-status="close" data-menu-position='left'>
+<li><a href="../index.html"><i class='fa fa-pencil'></i>Лента</a>
+<li><a href="../catalog.html"><i class='fa fa-user'></i>Авторы</a>
+<li><a href="../shop.html"><i class='fa fa-shopping-cart'></i>Магазин</a>
+<li><a href="../forum.html"><i class='fa fa-comment'></i>Форум<span class="stud-under stud-under-yellow cover"></span></a>
+<li><a href="../faq.html"><i class='fa fa-question-circle'></i> FAQ</a>
+<li><a href="../partnership-landing.html"><i class='fa fa-briefcase'></i> Партнерам</a>
+</ul>
+<div class='auth-block scroll-y' data-menu-status="close" data-menu-position='right'>
+<form method="post" class="menu-auth-form" id="modal_auth_form" accept-charset="utf-8">
+<input type="text" name="login" id="login_modal" placeholder="Логин"/>
+<input type="password" name="password" id="password_modal" placeholder="Пароль"/>
+<input type="submit" class='stud-button middle' value="Вход"/>
+<a href="../login-incorrect.html" class='reset-pass'>Не помню пароль?</a>
+<a href="../reg.html" class="stud-button middle">Регистрация</a>
+</form>
+</div>
+</div>
+</header>
+<div id="after-main-menu"></div>
+<div class="stud-area">
+<div class="stud-main" id="stud-content">
+<div class="stud-user-area-left">
+<div class="stud-user-left-bloc stud-forum-theme">
+<div class="title-block">
+<span class="in-part">
+<span class="t-grey">в разделе</span>
+<a href="technical-troubles.html">Технические проблемы</a>
+</span>
+<div class="title"><h1>Автоматическая разблокировка средств</h1></div>
+</div>
+<div class="pre-text text-block"><p>Здравствуйте. Недавно на форуме и второй раз сталкиваюсь с одной и той же проблемой, а именно не работает автоматическая разблокировка средств. Приходится просить админа о помощи. Скажите это у всех так или только у меня? Если первый раз блокировку сняли без вопросов и отговорок (вместо 10 дней у меня вышло 12 дней блокировки), то сейчас заявляют, что администрация не решает такие вопросы. Таким сервисом, администрация, вы просто отталкиваете от дальнейшего сотрудничества!</p> </div>
+<div class="vote-block">
+<div class="title">Вы сталкивались с такой ситуацией?</div>
+<form action="javascript:void(0);" method="post" class="" id="">
+<div class="radios-line">
+<label class="radio font-normal radio-left">
+<input type="radio" name="votes-radio" value="1" data-toggle="radio">
+да </label>
+</div>
+<div class="radios-line">
+<label class="radio font-normal radio-left">
+<input type="radio" name="votes-radio" value="2" data-toggle="radio">
+нет </label>
+</div>
+<div class="sub-butt">
+<a class="stud-button top stud-button-blue stud-button-icon-thumbs-up-w" id="accept-my-vote">Голосовать</a>
+</div>
+</form>
+</div>
+<div class="theme-info">
+<div class="info-line">
+<div class="likes-block">
+<i class="fa fa-arrow-up" id="forum-theme-arrow-up"></i>
+<span class="t-green" id="value_voting">+2</span> <i class="fa fa-arrow-down" id="forum-theme-arrow-down"></i>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-clock-o'></i> 5 ноя 2016 в 04:10 </div>
+<div class="info-line">
+<i class='fa fa-user t-grey'></i>
+<a href="../info/66226.html" class="t-blue">SW_Developer</a>
+</div>
+<div class="info-line">
+<div class="comments t-blue">
+<i class='fa fa-comment'></i>
+<span id="forum-theme-count-comments">16</span> ответ<span id="forum-theme-ending-count-comments">ов</span>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-eye'></i> 1536 просмотров </div>
+</div>
+<div class="comments-area">
+<div class="comment-line" data-next="0" data-id-level-report="54133" data-rec="19698">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/19698.html">
+<img src="https://studwork.org/uploads/avatar/60x60x19698.jpg,qrand=498352153.pagespeed.ic.cNmcNZXfcW.jpg" width="60" height="60" alt="Пользователь 19698"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/19698.html">Lexus-1983</a>
+<span class="in-block t-grey"> 5 ноя 2016 в 17:49</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19698" data-report="54133"></i>
+<span class="t-green" data-class="user-arrow">+4</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19698" data-report="54133"></i>
+</div>
+</div>
+<div class="text"><p>С таким не сталкивался. Отмечено только, блокировка снимается на 2-3 часа позже, чем должна бы по времени покупки. А так - проблем нет.</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="54195" data-rec="14645">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/14645.html">
+<img src="https://studwork.org/uploads/avatar/14645.jpg?rand=1263722650" width="60" height="60" alt="Пользователь 14645"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/14645.html">domus11</a>
+<span class="in-block t-grey"> 7 ноя 2016 в 07:08</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="14645" data-report="54195"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="14645" data-report="54195"></i>
+</div>
+</div>
+<div class="text"><p>Аналогично.</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="54134" data-rec="66226">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/66226.html">
+<img src="https://studwork.org/uploads/avatar/66226.jpg?rand=1236761531" width="60" height="60" alt="Пользователь 66226"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/66226.html">SW_Developer</a>
+<span class="in-block t-grey"> 5 ноя 2016 в 17:54</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="66226" data-report="54134"></i>
+<span class="t-red" data-class="user-arrow">-3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="66226" data-report="54134"></i>
+</div>
+</div>
+<div class="text"><p>Уже разобрался. Да действительно в этот раз все произошло автоматом с опозданием в 2-3 часа. Спасибо всем кто остался не равнодушным к этой теме.</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="54135" data-rec="18841">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/18841.html">
+<img src="https://studwork.org/uploads/avatar/18841.jpg?rand=25142654" width="60" height="60" alt="Пользователь 18841"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/18841.html">1plus1</a>
+<span class="in-block t-grey"> 5 ноя 2016 в 18:39</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="18841" data-report="54135"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="18841" data-report="54135"></i>
+</div>
+</div>
+<div class="text"><p>у меня было на сутки опоздало</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="54136" data-rec="18841">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/18841.html">
+<img src="https://studwork.org/uploads/avatar/18841.jpg?rand=1546605434" width="60" height="60" alt="Пользователь 18841"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/18841.html">1plus1</a>
+<span class="in-block t-grey"> 5 ноя 2016 в 18:39</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="18841" data-report="54136"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="18841" data-report="54136"></i>
+</div>
+</div>
+<div class="text"><p>но было на старой версии сайта</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="54137" data-rec="374">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/374.html">
+<img src="../img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 374"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/374.html">dpv</a>
+<span class="in-block t-grey"> 5 ноя 2016 в 19:06</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="374" data-report="54137"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="374" data-report="54137"></i>
+</div>
+</div>
+<div class="text"><p>Задержки - обычное дело. Но не более 1-2 дня. Поэтому просто стоит немного подождать.</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="54141" data-rec="52059">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="../info/52059.html">
+<img src="https://studwork.org/uploads/avatar/52059.jpg?rand=546785020" width="60" height="60" alt="Пользователь 52059"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/52059.html">Laki</a>
+<span class="in-block t-grey"> 6 ноя 2016 в 07:30</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="52059" data-report="54141"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="52059" data-report="54141"></i>
+</div>
+</div>
+<div class="text"><p>Сталкивалась. Опоздание идет обычно позже на 1-1.5 суток. Ясного ответа добиться от администрации не удалось</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="54143" data-rec="42018">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/42018.html">
+<img src="https://studwork.org/uploads/avatar/42018.jpg?rand=263344806" width="60" height="60" alt="Пользователь 42018"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/42018.html">Marina Buznik</a>
+<span class="in-block t-grey"> 6 ноя 2016 в 14:31</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="42018" data-report="54143"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="42018" data-report="54143"></i>
+</div>
+</div>
+<div class="text"><p>было пару раз, максимум на 2 суток, писала админам и снимали сразу блокировку. ну эт обычно в разгар сезона</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="54199" data-rec="1732">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/1732.html">
+<img src="https://studwork.org/uploads/avatar/1732.jpg?rand=72615809" width="60" height="60" alt="Пользователь 1732"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/1732.html">Poryk82</a>
+<span class="in-block t-grey"> 7 ноя 2016 в 09:24</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="1732" data-report="54199"></i>
+<span class="t-green" data-class="user-arrow">+5</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="1732" data-report="54199"></i>
+</div>
+</div>
+<div class="text"><p>Здравствуйте. А мне непонятна сама суть подключения услуги автоматического вывода средств. В описании услуги сказано: &quot;Автоматический вывод не работает, если у вас есть открытая претензия; есть работы, ожидающие покупки или работы, находящиеся на выполнении; есть открытый долг&quot;. Из-за этого я уже продолжительное время не могу подключить услугу, так как работы на проверке или выполнении есть всегда, когда работаешь. Получается, нужно не брать работы, ждать, пока пройдет разблокировка уже выполненных (в некоторых случаях 30 дней), а потом уже пытаться подключить. Тоесть, сидеть месяц и ничего не делать. Или я что то не так понимаю?</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="54202" data-rec="62305">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/62305.html">
+<img src="https://studwork.org/uploads/avatar/62305.jpg?rand=693455282" width="60" height="60" alt="Пользователь 62305"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/62305.html">Daenerys</a>
+<span class="in-block t-grey"> 7 ноя 2016 в 10:04</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="62305" data-report="54202"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="62305" data-report="54202"></i>
+</div>
+</div>
+<div class="text"><p>Те же самые вопросы и у меня. Может быть кто-нибудь пояснит?))</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="54473" data-rec="41196">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/41196.html">
+<img src="../img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 41196"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/41196.html">Loreyleri</a>
+<span class="in-block t-grey"> 11 ноя 2016 в 03:38</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="41196" data-report="54473"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="41196" data-report="54473"></i>
+</div>
+</div>
+<div class="text"><p>Подключила уже давно автовывод. Все работает. Насколько я поняла, под работами на выполнении или ожидающими покупки, подразумеваются не работы, которые делаете Вы, а работы, которые делают Вам.</p> </div>
+<div class="comment-line" data-next="3" data-id-level-report="54478" data-rec="1732">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/1732.html">
+<img src="https://studwork.org/uploads/avatar/1732.jpg?rand=1056197847" width="60" height="60" alt="Пользователь 1732"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/1732.html">Poryk82</a>
+<span class="in-block t-grey"> 11 ноя 2016 в 10:45</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="1732" data-report="54478"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="1732" data-report="54478"></i>
+</div>
+</div>
+<div class="text"><p>Ну у меня такого быть не может, так как я автор, а не заказчик: у меня только те работы, которые я сам выполняю или уже выполнил. А по поводу попробовать, так уже три раза пробовал подключить с положительным балансом средств - никакого прогресса.</p> </div>
+<div class="comment-line" data-next="4" data-id-level-report="54479" data-rec="41196">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/41196.html">
+<img src="../img/avatars/default_user.svg" width="60" height="60" alt="Пользователь 41196"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/41196.html">Loreyleri</a>
+<span class="in-block t-grey"> 11 ноя 2016 в 10:52</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="41196" data-report="54479"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="41196" data-report="54479"></i>
+</div>
+</div>
+<div class="text"><p>А, Вы об этом) Мне тоже не с первого раза включили.. Видимо какие-то технические ограничения.</p> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="54929" data-rec="896">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="../info/896.html">
+<img src="https://studwork.org/uploads/avatar/896.jpg?rand=1554588860" width="60" height="60" alt="Пользователь 896"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/896.html">Beerman</a>
+<span class="in-block t-grey"> 18 ноя 2016 в 16:34</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="896" data-report="54929"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="896" data-report="54929"></i>
+</div>
+</div>
+<div class="text"><p>Зачем он вообще нужен ?</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="55203" data-rec="28805">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/28805.html">
+<img src="https://studwork.org/uploads/avatar/28805.jpg?rand=2008860143" width="60" height="60" alt="Пользователь 28805"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/28805.html">goodhelher</a>
+<span class="in-block t-grey"> 29 ноя 2016 в 15:15</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="28805" data-report="55203"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="28805" data-report="55203"></i>
+</div>
+</div>
+<div class="text"><p>Тоже не знаю, зачем... Не так уж и сложно подать заявку на вывод, тем более, что можно планировать когда и по сколько выводить.</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="54930" data-rec="896">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="../info/896.html">
+<img src="https://studwork.org/uploads/avatar/896.jpg?rand=573281546" width="60" height="60" alt="Пользователь 896"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/896.html">Beerman</a>
+<span class="in-block t-grey"> 18 ноя 2016 в 16:35</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="896" data-report="54930"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="896" data-report="54930"></i>
+</div>
+</div>
+<div class="text"><p>На ЯД выводить - сутки. Иногда у меня даже в течение получаса выводится.</p> </div>
+</div>
+</div>
+</div>
+<div class='order-help-block similar-themes similar-orders'>
+<div class='header'>Похожие темы</div>
+<div class='orders same-forum-themes'>
+<div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3272.html">Блокировка скачивания файлов браузером Google Chrome</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/292.html" class="user-">hohlloff</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+7</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 19</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1427</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3038.html">Перевести ссылки в сноски</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/46931.html" class="user-">зидан</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-2</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 7</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1227</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="2940.html">Помогите по вопросу с ноутбуком</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/9761.html" class="user-">pechencka</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+4</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 16</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1099</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="2789.html">Как узнать сколько денег на счету у заказчика?</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/4518.html" class="user-">alpha</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+4</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 38</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1959</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="2781.html">Защита авторов</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/6619.html" class="user-">LeMMak</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+1</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 81</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1702</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='more-themes' class='stud-user-dop-butt'>
+<div class="stud-user-dop-butt-ic"><i class="fa fa-refresh"></i></div>
+<span class='t-blue'>Показать еще похожие темы</span>
+<span class='t-blue covert'>Похожих тем больше нет</span>
+</div>
+</div>
+</div>
+<div class="stud-user-area-right">
+<div class="stud-user-right-bloc" id="stud-user-right-new-forum">
+<div class="stud-user-right-title">Темы форума <i class='t-grey head-fa fa fa-comments'></i></div>
+<div id="stud-user-right-for-adding-forum">
+<div class="stud-user-right-forum-theme">
+<a href="3485.html">Продажа работа в авторском магазине</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 5 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 5</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3483.html">Дополнительная квалификация: переводчик</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 4 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 3</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3482.html">Вопрос к психологам, психотерапевтам</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 24</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3481.html">Памяти товарища.</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 27</div>
+</div>
+</div>
+<a class="stud-user-right-gotoforum" href="../forum.html">Перейти на форум</a>
+</div>
+<a href='https://algebra24.ru/' target='_blank' class='partner-block blue clearfix'>
+<div class='logo not-hover'>
+<img src="../img/xalgebra24-blue.png.pagespeed.ic.4oGWP_Jxbw.png" alt="">
+</div>
+<div class='logo hover'>
+<img src="../img/xalgebra24-white.png.pagespeed.ic.Cweiz1GBgw.png" alt="">
+</div>
+<div class='title'>ALGEBRA24</div>
+<div class='sub-title'>Математические сервисы</div>
+</a>
+<a href='https://ultragold.org/' target='_blank' class='partner-block purple clearfix'>
+<div class='logo'>
+<img src="../img/xultragold.png.pagespeed.ic.aeHJ4_TGOs.png" alt="">
+</div>
+<div class='title'>ULTRAGOLD</div>
+<div class='sub-title'>Обмен электронных валют</div>
+</a>
+</div>
+</div>
+</div>
+<div class="stud-modal" id="votes-modal">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Голосование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line">
+Не выбран вариант голосования!
+</div>
+</div>
+</div>
+</div>
+<div class="stud-modal stud-modal-is-open" id="forum-theme-editor">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Редактирование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line" id="forum-theme-editor-line">
+<form action="javascript:void(0);" method="post" class="" id="stud-forum-new-theme">
+<div class="stud-forum-new-line">
+<input type="text" name="" id="forum-theme-new-title" class="bott all-width" maxlength="100" placeholder="Введите название темы" disabled>
+<textarea class="all-width" id="forum-theme-new-text" rows="3" style="resize: none" disabled></textarea>
+<div class="stud-forum-new-textarea-butt">
+<a class="stud-button right stud-button-blue stud-button-icon-bubbles" id="forum-theme-save-change">Сохранить изменения</a>
+</div>
+</div>
+<div class="stud-forum-new-line stud-forum-new-vote-block">
+<input type="text" name="" id="vote-title-modal" class="all-width" maxlength="60" placeholder="Введите вопрос голосования">
+<div class="stud-forum-new-count-answer">
+<span class="t-grey">Количество вариантов ответа</span>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="2" data-toggle="radio" checked>
+2
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="3" data-toggle="radio">
+3
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="4" data-toggle="radio">
+4
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="5" data-toggle="radio">
+5
+</label>
+</div>
+<div class="stud-forum-new-variations">
+<div class="vote-input-div">
+<input type="text" name="new-variations-1" class="top all-width vote-input" maxlength="50" placeholder="Вариант 1">
+</div>
+<div class="vote-input-div">
+<input type="text" name="new-variations-2" class="top all-width vote-input" maxlength="50" placeholder="Вариант 2">
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div style="position: fixed"></div><div id="all-footer">
+<div id="stud-footer">
+<div class="stud-main">
+<div class="stud-footer-bloc">
+<div class="title">Служба поддержки</div>
+<div class="bloc tech">
+<div class="tm1">Бесплатный звонок</div>
+<div class="tm2 number">8 (800) 500-78-57</div>
+</div>
+<div class="bloc tech">
+<div class="tm1">Техническая поддержка</div>
+<div class="tm2"><a href="../tech-support.html" class="stud-button stud-button-white stud-button-icon-mail-blue stud-footer-butt">Написать нам</a></div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">Статистика</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">84 495</div>
+<div class="stud-footer-circle-info">Пользователей <span class="t-green">+133</span></div>
+</div>
+</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">208</div>
+<div class="stud-footer-circle-info"><a href="../catalog60b8.html?checkbox_search_online_user=1">Сейчас на сайте</a></div>
+</div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">О проекте</div>
+<div class="bloc">
+<div>
+Проект studwork.org &#x2012; это интернет-сервис для
+выполнения любых видов учебных работ.
+</div>
+</div>
+<div class="bloc">
+<div class="tm3"><span class="t-blue">Принимаем к оплате</span></div>
+<div class="tm4 number">
+<img src="../img/foot_icon-card-small.svg" alt="Иконка кредитной карты"/>
+<img src="../img/foot_icon-qiwi.svg" alt="Иконка платежной системы Киви"/>
+<img src="../img/foot_icon-ya.svg" alt="Иконка платежной системы Яндекс Деньги"/>
+<img src="../img/foot_icon-wm.svg" alt="Иконка платежной системы Web Money"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="stud-footer-end">
+<div class="stud-main">
+<div class="stud-footer-end-left">
+<span>© 2011-2017 studwork.org</span>
+</div>
+<div class="stud-footer-end-right">
+<a href="../oferta.html">Пользовательское соглашение</a>
+</div>
+<div class="stud-footer-end-right">
+<a href="../api.html">API для интеграции</a>
+</div>
+</div>
+</div>
+</div> <script src="../../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>const name_site_external='../index.html';const secret_hash_header='e83825f8d2ce57b74ca9ab81e85763a0';const secret_hash_ajax_new_notice='4a055295e0bfe051b5c03ae86bc4a758';const id_current_user='0';const secret_hash_file_upload='5cc66a5032e284ff277a243b26bc5190';const secret_hash_confirm_unknown_ip='89fd1ae49f680b435e6e6fc53dea0dd8';const id_forum_theme='3321';const array_id_report=[54133,54134,54135,54136,54137,54141,54143,54195,54199,54202,54473,54478,54479,54929,54930,55203];var array_id_report_diff={};if(typeof(localStorage)!='undefined'){Array.prototype.diff=function(a){return this.filter(function(i){return a.indexOf(i)<0;});};if(typeof(localStorage['forum'])!='undefined'){var forum=JSON.parse(localStorage['forum']);if(typeof(forum[id_forum_theme])!='undefined'){array_id_report_diff=array_id_report.diff(forum[id_forum_theme]);}forum[id_forum_theme]=array_id_report;localStorage.setItem('forum',JSON.stringify(forum));}else{localStorage.setItem('forum',JSON.stringify({}));}}</script>
+<script src="../jscript/min/main.min.js%2cqv%3d5.pagespeed.jm.QG9mR3T0rH.js"></script>
+<script src="../jscript/min/stud.forum.js%2bfunction%2c_show_votes.js%2bfunction%2c_JSBrowCorrect.js.pagespeed.jc.cTbmKxcX-k.js"></script><script>eval(mod_pagespeed_2wiWA4R362);</script>
+<script>eval(mod_pagespeed_BS0rq84xsD);</script>
+<script>eval(mod_pagespeed_VQeOvKVnHl);</script>
+</body>
+<!-- Mirrored from studwork.org/forum/3321 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:04:07 GMT -->
+</html>

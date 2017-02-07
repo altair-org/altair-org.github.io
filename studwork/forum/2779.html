@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Mirrored from studwork.org/forum/2779 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:31:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Рейтинговая система на сайте - тема 2779</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Рейтинговая система на сайте - тема 2779 / Технические проблемы"/>
+<meta name="mini-title" content="Тема форума"/>
+<meta name="webmoney.attestation.label" content="webmoney attestation label#3644DB51-0D2B-42B2-9D26-5CF2832FC5C1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+<meta name="mailru-verification" content="96d475315730d23c"/>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../css/A.style.min.css%2cqv%3d2.pagespeed.cf.9Wz6hzK2mp.css" media="all">
+<style>@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/pkYDSlCHbDnBWPT5PPFFTA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPi3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v8/7dSh6BcuqDLzS2qAASIeuqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkPOEPOIfcPv-fZ-WyMUtx48.ttf) format('truetype');
+}
+</style>
+<!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="/css/jquery.ui.1.10.0.ie.css"/>
+    <![endif]-->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../xapple-touch-icon-144x144-precomposed.png.pagespeed.ic.2b8ZYRX53K.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../xapple-touch-icon-120x120-precomposed.png.pagespeed.ic.6b_a2RtrbV.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../xapple-touch-icon-114x114-precomposed.png.pagespeed.ic.RsRKPewFg-.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../xapple-touch-icon-72x72-precomposed.png.pagespeed.ic.6SnOg1DvSA.png"/>
+<link rel="apple-touch-icon-precomposed" href="../xapple-touch-icon-precomposed.png.pagespeed.ic.yjuuyHfypH.png"/>
+<link rel="yandex-tableau-widget" href="../manifest.json"/>
+</head>
+<body>
+<audio id="sound-new-message" src="../audio/message.mp3"></audio>
+<header class="stud-user-top-menu">
+<div class="stud-user-top-menu-area">
+<div class="left-side">
+<a href="#" class='menu-bar'><i class='fa fa-bars'></i></a>
+<ul class="stud-user-top-menu-left">
+<li><a href="../index.html">Лента</a>
+<li><a href="../catalog.html">Авторы</a>
+<li><a href="../shop.html">Магазин</a>
+<li><a href="../forum.html">Форум<span class="stud-under stud-under-yellow cover" id="notice-forum"></span></a>
+<li><a href="../faq.html">FAQ</a>
+<li><a href="../partner-landing.html">Партнерская программа</a>
+</ul>
+</div>
+<span class="top-menu-title notAuth">
+Лента заказов
+</span>
+<div class="right-side">
+<form method="post" class="stud-auth-form line" id="auth_form" accept-charset="utf-8">
+<ul class="stud-user-top-menu-right">
+<li><input class="stud-input-icon form-icon-top-menu-men" type="text" name="login" id="login" placeholder="Логин"/>
+<li><input class="stud-input-icon form-icon-top-menu-pass" type="password" name="password" id="password" placeholder="Пароль"/>
+<li><input type="submit" value="Вход"/>
+<li><a href="../reg.html" class="stud-user-top-menu-reg">Регистрация</a>
+</ul>
+</form>
+<a href="#" class='auth-menu'><i class='fa fa-key'></i></a>
+</div>
+<ul class="active-menu left scroll-y" data-menu-status="close" data-menu-position='left'>
+<li><a href="../index.html"><i class='fa fa-pencil'></i>Лента</a>
+<li><a href="../catalog.html"><i class='fa fa-user'></i>Авторы</a>
+<li><a href="../shop.html"><i class='fa fa-shopping-cart'></i>Магазин</a>
+<li><a href="../forum.html"><i class='fa fa-comment'></i>Форум<span class="stud-under stud-under-yellow cover"></span></a>
+<li><a href="../faq.html"><i class='fa fa-question-circle'></i> FAQ</a>
+<li><a href="../partnership-landing.html"><i class='fa fa-briefcase'></i> Партнерам</a>
+</ul>
+<div class='auth-block scroll-y' data-menu-status="close" data-menu-position='right'>
+<form method="post" class="menu-auth-form" id="modal_auth_form" accept-charset="utf-8">
+<input type="text" name="login" id="login_modal" placeholder="Логин"/>
+<input type="password" name="password" id="password_modal" placeholder="Пароль"/>
+<input type="submit" class='stud-button middle' value="Вход"/>
+<a href="../login-incorrect.html" class='reset-pass'>Не помню пароль?</a>
+<a href="../reg.html" class="stud-button middle">Регистрация</a>
+</form>
+</div>
+</div>
+</header>
+<div id="after-main-menu"></div>
+<div class="stud-area">
+<div class="stud-main" id="stud-content">
+<div class="stud-user-area-left">
+<div class="stud-user-left-bloc stud-forum-theme">
+<div class="title-block">
+<span class="in-part">
+<span class="t-grey">в разделе</span>
+<a href="technical-troubles.html">Технические проблемы</a>
+</span>
+<div class="title"><h1>Рейтинговая система на сайте</h1></div>
+</div>
+<div class="pre-text text-block"><p>Зачем нужна рейтинговая система на сайте?
+Что для Вас значит рейтинг?
+Ваши предложения по рейтингу?
+Должен ли рейтинг приносить какую-нибудь пользу?
+Жду любые мысли по этому поводу...</p> </div>
+<div class="vote-block">
+<div class="title">Что для Вас значит рейтинг на сайте?</div>
+<form action="javascript:void(0);" method="post" class="" id="">
+<div class="radios-line">
+<label class="radio font-normal radio-left">
+<input type="radio" name="votes-radio" value="1" data-toggle="radio">
+Абсолютно ничего </label>
+</div>
+<div class="radios-line">
+<label class="radio font-normal radio-left">
+<input type="radio" name="votes-radio" value="2" data-toggle="radio">
+Доверяю только людям с высоким рейтингом </label>
+</div>
+<div class="sub-butt">
+<a class="stud-button top stud-button-blue stud-button-icon-thumbs-up-w" id="accept-my-vote">Голосовать</a>
+</div>
+</form>
+</div>
+<div class="theme-info">
+<div class="info-line">
+<div class="likes-block">
+<i class="fa fa-arrow-up" id="forum-theme-arrow-up"></i>
+<span class="t-red" id="value_voting">-19</span> <i class="fa fa-arrow-down" id="forum-theme-arrow-down"></i>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-clock-o'></i> 18 ноя 2015 в 22:02 </div>
+<div class="info-line">
+<i class='fa fa-user t-grey'></i>
+<a href="../info/6619.html" class="t-blue">LeMMak</a>
+</div>
+<div class="info-line">
+<div class="comments t-blue">
+<i class='fa fa-comment'></i>
+<span id="forum-theme-count-comments">28</span> ответ<span id="forum-theme-ending-count-comments">ов</span>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-eye'></i> 1433 просмотра </div>
+</div>
+<div class="comments-area">
+<div class="comment-line" data-next="0" data-id-level-report="44819" data-rec="1232">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/1232.html">
+<img src="https://studwork.org/uploads/avatar/1232.jpg?rand=2089234571" width="60" height="60" alt="Пользователь 1232"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/1232.html">Nastic</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 12:06</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="1232" data-report="44819"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="1232" data-report="44819"></i>
+</div>
+</div>
+<div class="text"><ol>
+<li>В качестве одного из критериев оценки профессиональных и личностных качеств исполнителя, а также порядочности заказчика. Но на данном сайте рейтинг таким требованиям не отвечает, поскольку показывает лишь объем заработанных денег.</li>
+<li>см. п. 1</li>
+<li>Формировать рейтинг на основании отзывов, количества выполненных работ и сроков выполнения. Например, 1 пункт=1 положительному отзыву, 1 отрицательный отзыв отнимает 2 пункта рейтинга. По количеству выполненных работ: 1 пункт рейтинга=1 контрольная, 2 пункта=1 курсовая, 3 пункта=диплом и т.д. По срокам: 1 пункт=выполнение в срок, 2 пункта=выполнение раньше срока, минус 2 пункта=опоздание.
+4.см. п. 1</li>
+</ol> </div>
+<div class="comment-line" data-next="1" data-id-level-report="44825" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=718546528" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 12:12</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44825"></i>
+<span class="t-red" data-class="user-arrow">-1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44825"></i>
+</div>
+</div>
+<div class="text"><p>Весьма конструктивное предложение... Спасибо за Ваши мысли....</p> </div>
+</div>
+<div class="comment-line" data-next="1" data-id-level-report="44829" data-rec="5008">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="../info/5008.html">
+<img src="https://studwork.org/uploads/avatar/5008.jpg?rand=388298863" width="60" height="60" alt="Пользователь 5008"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/5008.html">Soleares</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 12:15</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="5008" data-report="44829"></i>
+<span class="t-green" data-class="user-arrow">+8</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="5008" data-report="44829"></i>
+</div>
+</div>
+<div class="text"><p>А почему по вашей схеме у авторов, выполняющих исключительно контрольные, рейтинг должен быть ниже? Это как раз несправедливо. Не стоит делать такое разделение по типу работ.</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="44833" data-rec="1232">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/1232.html">
+<img src="https://studwork.org/uploads/avatar/1232.jpg?rand=386635735" width="60" height="60" alt="Пользователь 1232"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/1232.html">Nastic</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 12:18</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="1232" data-report="44833"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="1232" data-report="44833"></i>
+</div>
+</div>
+<div class="text"><p>Когда написала, подумала об этом. Может и не стоит.</p> </div>
+</div>
+<div class="comment-line" data-next="2" data-id-level-report="44839" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=230760442" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 12:23</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44839"></i>
+<span class="t-green" data-class="user-arrow">+8</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44839"></i>
+</div>
+</div>
+<div class="text"><p>Да бывают контрольные похлеще курсовых....</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="1" data-id-level-report="44873" data-rec="38873">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/38873.html">
+<img src="https://studwork.org/uploads/avatar/38873.jpg?rand=1089430721" width="60" height="60" alt="Пользователь 38873"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/38873.html">kattarina2</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 16:11</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="38873" data-report="44873"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="38873" data-report="44873"></i>
+</div>
+</div>
+<div class="text"><p>При таком подходе у авторов появится возможность писать отрицательные отзывы конкурентам. Анархия настанет(</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="44876" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=841539760" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 16:13</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44876"></i>
+<span class="t-red" data-class="user-arrow">-3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44876"></i>
+</div>
+</div>
+<div class="text"><p>Для чего нужна тогда администрация?</p> </div>
+<div class="comment-line" data-next="3" data-id-level-report="44920" data-rec="38873">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/38873.html">
+<img src="https://studwork.org/uploads/avatar/38873.jpg?rand=1580948596" width="60" height="60" alt="Пользователь 38873"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/38873.html">kattarina2</a>
+<span class="in-block t-grey"> 20 ноя 2015 в 03:06</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="38873" data-report="44920"></i>
+<span class="t-green" data-class="user-arrow">+4</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="38873" data-report="44920"></i>
+</div>
+</div>
+<div class="text"><p>Администрация физически не сможет отследить каждое (!!!) сообщение</p> </div>
+<div class="comment-line" data-next="4" data-id-level-report="44955" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=1648769018" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 20 ноя 2015 в 13:25</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44955"></i>
+<span class="t-red" data-class="user-arrow">-3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44955"></i>
+</div>
+</div>
+<div class="text"><p>А должна...</p> </div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="2" data-id-level-report="44877" data-rec="1232">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/1232.html">
+<img src="https://studwork.org/uploads/avatar/1232.jpg?rand=1063131021" width="60" height="60" alt="Пользователь 1232"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/1232.html">Nastic</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 16:14</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="1232" data-report="44877"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="1232" data-report="44877"></i>
+</div>
+</div>
+<div class="text"><p>Значит нужно поставит запрет на написание отзывов тем, кто у данного автора работу не заказывал.</p> </div>
+</div>
+<div class="comment-line" data-next="2" data-id-level-report="44878" data-rec="1232">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/1232.html">
+<img src="https://studwork.org/uploads/avatar/1232.jpg?rand=363920099" width="60" height="60" alt="Пользователь 1232"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/1232.html">Nastic</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 16:22</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="1232" data-report="44878"></i>
+<span class="t-red" data-class="user-arrow">-3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="1232" data-report="44878"></i>
+</div>
+</div>
+<div class="text"><p>или же предусмотреть порядок обжалования таких отзывов. В общем, по-моему, это проблема высосана из пальца.</p> </div>
+<div class="comment-line" data-next="3" data-id-level-report="44880" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=558103197" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 16:24</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44880"></i>
+<span class="t-red" data-class="user-arrow">-5</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44880"></i>
+</div>
+</div>
+<div class="text"><p>Согласен, нужно предусмотреть порядок работы с отзывами...</p> </div>
+</div>
+<div class="comment-line" data-next="3" data-id-level-report="44928" data-rec="38873">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/38873.html">
+<img src="https://studwork.org/uploads/avatar/38873.jpg?rand=752222695" width="60" height="60" alt="Пользователь 38873"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/38873.html">kattarina2</a>
+<span class="in-block t-grey"> 20 ноя 2015 в 09:06</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="38873" data-report="44928"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="38873" data-report="44928"></i>
+</div>
+</div>
+<div class="text"><p>Тогда админы погрязнут в разбирании жалоб.</p> </div>
+<div class="comment-line" data-next="4" data-id-level-report="44930" data-rec="1232">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/1232.html">
+<img src="https://studwork.org/uploads/avatar/1232.jpg?rand=43258621" width="60" height="60" alt="Пользователь 1232"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/1232.html">Nastic</a>
+<span class="in-block t-grey"> 20 ноя 2015 в 09:35</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="1232" data-report="44930"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="1232" data-report="44930"></i>
+</div>
+</div>
+<div class="text"><p>Ой, да ладно. Что сейчас мешает конкурентам писать друг другу отрицательные отзывы? По-моему это бред. Ни один уважающий себя автор не будет этого делать.</p> </div>
+</div>
+<div class="comment-line" data-next="4" data-id-level-report="44956" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=1028857417" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 20 ноя 2015 в 13:25</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44956"></i>
+<span class="t-red" data-class="user-arrow">-5</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44956"></i>
+</div>
+</div>
+<div class="text"><p>А чем им ещё заниматься</p> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="44872" data-rec="22692">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="../info/22692.html">
+<img src="https://studwork.org/uploads/avatar/22692.jpg?rand=113791511" width="60" height="60" alt="Пользователь 22692"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/22692.html">annamakarova</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 15:50</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="22692" data-report="44872"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="22692" data-report="44872"></i>
+</div>
+</div>
+<div class="text"><p>Я всегда смотрю на рейтинг, но и новичкам доверяю, если заказ не срочный и сумма к примере маленькая мог отдать автор бей рейтинга</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="44875" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=786218696" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 16:13</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44875"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44875"></i>
+</div>
+</div>
+<div class="text"><p>Правильно, нужно давать возможность развиваться всем...</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="44874" data-rec="38873">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/38873.html">
+<img src="https://studwork.org/uploads/avatar/38873.jpg?rand=1005833604" width="60" height="60" alt="Пользователь 38873"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/38873.html">kattarina2</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 16:12</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="38873" data-report="44874"></i>
+<span class="t-green" data-class="user-arrow">+4</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="38873" data-report="44874"></i>
+</div>
+</div>
+<div class="text"><p>Добавьте в голосование пункт &quot;смотрю на рейтинг и учитываю его при прочих равных&quot; или что-то подобное, а то слишком категорично опрос выглядит</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="44879" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=566599500" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 16:24</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44879"></i>
+<span class="t-red" data-class="user-arrow">-4</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44879"></i>
+</div>
+</div>
+<div class="text"><p>Такова была концепция опроса...</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="44881" data-rec="6057">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6057.html">
+<img src="https://studwork.org/uploads/avatar/6057.jpg?rand=546635773" width="60" height="60" alt="Пользователь 6057"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6057.html">Ellys</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 16:41</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6057" data-report="44881"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6057" data-report="44881"></i>
+</div>
+</div>
+<div class="text"><p>да, слишком категорично. Конечно, больше доверия к автору с рейтингом, но однозначно сказать что отдаю работы только авторам с высоким - нет. Есть отзывы, по ним тоже ориентируюсь.</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="44900" data-rec="10058">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/10058.html">
+<img src="https://studwork.org/uploads/avatar/10058.jpg?rand=1101375521" width="60" height="60" alt="Пользователь 10058"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/10058.html">yuliygorobec</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 22:28</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="10058" data-report="44900"></i>
+<span class="t-green" data-class="user-arrow">+7</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="10058" data-report="44900"></i>
+</div>
+</div>
+<div class="text"><p>А я напишу с позиции автора. Неплохо бы иметь какие-либо привилегии по мере возрастания рейтинга. Ну допустим, комиссия снижалась бы за каждую 1000, хотя бы незначительно.</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="44904" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=1263473834" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 19 ноя 2015 в 22:53</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44904"></i>
+<span class="t-green" data-class="user-arrow">+2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44904"></i>
+</div>
+</div>
+<div class="text"><p>Действительно, что толку от рейтинга...</p> </div>
+</div>
+<div class="comment-line" data-next="1" data-id-level-report="56008" data-rec="36093">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/36093.html">
+<img src="https://studwork.org/uploads/avatar/36093.jpg?rand=623034083" width="60" height="60" alt="Пользователь 36093"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/36093.html">Dfkz</a>
+<span class="in-block t-grey"> 27 дек 2016 в 12:09</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="36093" data-report="56008"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="36093" data-report="56008"></i>
+</div>
+</div>
+<div class="text"><p>Я хочу задать вопрос. Поднимается рейтинг от зараболтанных средств. Какой порог перехода на следующий уровень рейтинга? Я работаю 3 года, рейтинг -начинающий автор. Может кто-то пояснит?</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="44931" data-rec="1232">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/1232.html">
+<img src="https://studwork.org/uploads/avatar/1232.jpg?rand=255792888" width="60" height="60" alt="Пользователь 1232"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/1232.html">Nastic</a>
+<span class="in-block t-grey"> 20 ноя 2015 в 09:35</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="1232" data-report="44931"></i>
+<span class="t-red" data-class="user-arrow">-1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="1232" data-report="44931"></i>
+</div>
+</div>
+<div class="text"><p>Минусов представили, а предложений конкретных ни у кого нет. Молодцы. Лучше обсуждать других, чем самим что-то предложить. Очень удобно.</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="44957" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=1183491635" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 20 ноя 2015 в 13:26</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44957"></i>
+<span class="t-red" data-class="user-arrow">-2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44957"></i>
+</div>
+</div>
+<div class="text"><p>Золотые Ваши слова!!!</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="44958" data-rec="6619">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/6619.html">
+<img src="https://studwork.org/uploads/avatar/6619.jpg?rand=1222655113" width="60" height="60" alt="Пользователь 6619"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/6619.html">LeMMak</a>
+<span class="in-block t-grey"> 20 ноя 2015 в 13:27</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="6619" data-report="44958"></i>
+<span class="t-red" data-class="user-arrow">-3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="6619" data-report="44958"></i>
+</div>
+</div>
+<div class="text"><p>Как видно из опроса, рейтинг всё-таки Важен для электората... но какой от него прок? какова польза обладателю высокого рейтинга? Эти вопросы остаются пока открытыми...</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="45059" data-rec="39283">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/39283.html">
+<img src="https://studwork.org/uploads/avatar/39283.jpg?rand=874091203" width="60" height="60" alt="Пользователь 39283"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/39283.html">Тичер</a>
+<span class="in-block t-grey"> 22 ноя 2015 в 15:59</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="39283" data-report="45059"></i>
+<span class="t-red" data-class="user-arrow">-2</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="39283" data-report="45059"></i>
+</div>
+</div>
+<div class="text"><p>можете удалить сообщение, можете меня забанить, я здесь больше развлекаюсь, работы нет. Итак. По большому счёту - сайт гавно. Хозяева сайта тупо гребут бабло на тупых авторах. Вот, кстати, нет у меня претензий к хозяевам сайта. Мне смешно на людей, которые их кормят.</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="45110" data-rec="13722">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/13722.html">
+<img src="https://studwork.org/uploads/avatar/13722.jpg?rand=1437143367" width="60" height="60" alt="Пользователь 13722"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/13722.html">ExpertProjects</a>
+<span class="in-block t-grey"> 24 ноя 2015 в 09:59</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="13722" data-report="45110"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="13722" data-report="45110"></i>
+</div>
+</div>
+<div class="text"><p>Тичер, весёлый ты мужик</p> </div>
+</div>
+</div>
+</div>
+</div>
+<div class='order-help-block similar-themes similar-orders'>
+<div class='header'>Похожие темы</div>
+<div class='orders same-forum-themes'>
+<div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3321.html">Автоматическая разблокировка средств</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/66226.html" class="user-">SW_Developer</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+2</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 16</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1536</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3272.html">Блокировка скачивания файлов браузером Google Chrome</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/292.html" class="user-">hohlloff</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+7</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 19</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1428</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3038.html">Перевести ссылки в сноски</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/46931.html" class="user-">зидан</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-2</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 7</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1228</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="2940.html">Помогите по вопросу с ноутбуком</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/9761.html" class="user-">pechencka</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+4</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 16</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1100</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="2789.html">Как узнать сколько денег на счету у заказчика?</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/4518.html" class="user-">alpha</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+4</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 38</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1960</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='more-themes' class='stud-user-dop-butt'>
+<div class="stud-user-dop-butt-ic"><i class="fa fa-refresh"></i></div>
+<span class='t-blue'>Показать еще похожие темы</span>
+<span class='t-blue covert'>Похожих тем больше нет</span>
+</div>
+</div>
+</div>
+<div class="stud-user-area-right">
+<div class="stud-user-right-bloc" id="stud-user-right-new-forum">
+<div class="stud-user-right-title">Темы форума <i class='t-grey head-fa fa fa-comments'></i></div>
+<div id="stud-user-right-for-adding-forum">
+<div class="stud-user-right-forum-theme">
+<a href="3485.html">Продажа работа в авторском магазине</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 5 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 5</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3483.html">Дополнительная квалификация: переводчик</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 4 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 3</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3482.html">Вопрос к психологам, психотерапевтам</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 24</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3481.html">Памяти товарища.</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 27</div>
+</div>
+</div>
+<a class="stud-user-right-gotoforum" href="../forum.html">Перейти на форум</a>
+</div>
+<a href='https://algebra24.ru/' target='_blank' class='partner-block blue clearfix'>
+<div class='logo not-hover'>
+<img src="../img/xalgebra24-blue.png.pagespeed.ic.4oGWP_Jxbw.png" alt="">
+</div>
+<div class='logo hover'>
+<img src="../img/xalgebra24-white.png.pagespeed.ic.Cweiz1GBgw.png" alt="">
+</div>
+<div class='title'>ALGEBRA24</div>
+<div class='sub-title'>Математические сервисы</div>
+</a>
+<a href='https://ultragold.org/' target='_blank' class='partner-block purple clearfix'>
+<div class='logo'>
+<img src="../img/xultragold.png.pagespeed.ic.aeHJ4_TGOs.png" alt="">
+</div>
+<div class='title'>ULTRAGOLD</div>
+<div class='sub-title'>Обмен электронных валют</div>
+</a>
+</div>
+</div>
+</div>
+<div class="stud-modal" id="votes-modal">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Голосование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line">
+Не выбран вариант голосования!
+</div>
+</div>
+</div>
+</div>
+<div class="stud-modal stud-modal-is-open" id="forum-theme-editor">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Редактирование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line" id="forum-theme-editor-line">
+<form action="javascript:void(0);" method="post" class="" id="stud-forum-new-theme">
+<div class="stud-forum-new-line">
+<input type="text" name="" id="forum-theme-new-title" class="bott all-width" maxlength="100" placeholder="Введите название темы" disabled>
+<textarea class="all-width" id="forum-theme-new-text" rows="3" style="resize: none" disabled></textarea>
+<div class="stud-forum-new-textarea-butt">
+<a class="stud-button right stud-button-blue stud-button-icon-bubbles" id="forum-theme-save-change">Сохранить изменения</a>
+</div>
+</div>
+<div class="stud-forum-new-line stud-forum-new-vote-block">
+<input type="text" name="" id="vote-title-modal" class="all-width" maxlength="60" placeholder="Введите вопрос голосования">
+<div class="stud-forum-new-count-answer">
+<span class="t-grey">Количество вариантов ответа</span>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="2" data-toggle="radio" checked>
+2
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="3" data-toggle="radio">
+3
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="4" data-toggle="radio">
+4
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="5" data-toggle="radio">
+5
+</label>
+</div>
+<div class="stud-forum-new-variations">
+<div class="vote-input-div">
+<input type="text" name="new-variations-1" class="top all-width vote-input" maxlength="50" placeholder="Вариант 1">
+</div>
+<div class="vote-input-div">
+<input type="text" name="new-variations-2" class="top all-width vote-input" maxlength="50" placeholder="Вариант 2">
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div style="position: fixed"></div><div id="all-footer">
+<div id="stud-footer">
+<div class="stud-main">
+<div class="stud-footer-bloc">
+<div class="title">Служба поддержки</div>
+<div class="bloc tech">
+<div class="tm1">Бесплатный звонок</div>
+<div class="tm2 number">8 (800) 500-78-57</div>
+</div>
+<div class="bloc tech">
+<div class="tm1">Техническая поддержка</div>
+<div class="tm2"><a href="../tech-support.html" class="stud-button stud-button-white stud-button-icon-mail-blue stud-footer-butt">Написать нам</a></div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">Статистика</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">84 498</div>
+<div class="stud-footer-circle-info">Пользователей <span class="t-green">+136</span></div>
+</div>
+</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">225</div>
+<div class="stud-footer-circle-info"><a href="../catalog60b8.html?checkbox_search_online_user=1">Сейчас на сайте</a></div>
+</div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">О проекте</div>
+<div class="bloc">
+<div>
+Проект studwork.org &#x2012; это интернет-сервис для
+выполнения любых видов учебных работ.
+</div>
+</div>
+<div class="bloc">
+<div class="tm3"><span class="t-blue">Принимаем к оплате</span></div>
+<div class="tm4 number">
+<img src="../img/foot_icon-card-small.svg" alt="Иконка кредитной карты"/>
+<img src="../img/foot_icon-qiwi.svg" alt="Иконка платежной системы Киви"/>
+<img src="../img/foot_icon-ya.svg" alt="Иконка платежной системы Яндекс Деньги"/>
+<img src="../img/foot_icon-wm.svg" alt="Иконка платежной системы Web Money"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="stud-footer-end">
+<div class="stud-main">
+<div class="stud-footer-end-left">
+<span>© 2011-2017 studwork.org</span>
+</div>
+<div class="stud-footer-end-right">
+<a href="../oferta.html">Пользовательское соглашение</a>
+</div>
+<div class="stud-footer-end-right">
+<a href="../api.html">API для интеграции</a>
+</div>
+</div>
+</div>
+</div> <script src="../../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>const name_site_external='../index.html';const secret_hash_header='e83825f8d2ce57b74ca9ab81e85763a0';const secret_hash_ajax_new_notice='4a055295e0bfe051b5c03ae86bc4a758';const id_current_user='0';const secret_hash_file_upload='5cc66a5032e284ff277a243b26bc5190';const secret_hash_confirm_unknown_ip='89fd1ae49f680b435e6e6fc53dea0dd8';const id_forum_theme='2779';const array_id_report=[44819,44825,44829,44833,44839,44872,44873,44874,44875,44876,44877,44878,44879,44880,44881,44900,44904,44920,44928,44930,44931,44955,44956,44957,44958,45059,45110,56008];var array_id_report_diff={};if(typeof(localStorage)!='undefined'){Array.prototype.diff=function(a){return this.filter(function(i){return a.indexOf(i)<0;});};if(typeof(localStorage['forum'])!='undefined'){var forum=JSON.parse(localStorage['forum']);if(typeof(forum[id_forum_theme])!='undefined'){array_id_report_diff=array_id_report.diff(forum[id_forum_theme]);}forum[id_forum_theme]=array_id_report;localStorage.setItem('forum',JSON.stringify(forum));}else{localStorage.setItem('forum',JSON.stringify({}));}}</script>
+<script src="../jscript/min/main.min.js%2cqv%3d5.pagespeed.jm.QG9mR3T0rH.js"></script>
+<script src="../jscript/min/stud.forum.js%2bfunction%2c_show_votes.js%2bfunction%2c_JSBrowCorrect.js.pagespeed.jc.cTbmKxcX-k.js"></script><script>eval(mod_pagespeed_2wiWA4R362);</script>
+<script>eval(mod_pagespeed_BS0rq84xsD);</script>
+<script>eval(mod_pagespeed_VQeOvKVnHl);</script>
+</body>
+<!-- Mirrored from studwork.org/forum/2779 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:31:28 GMT -->
+</html>

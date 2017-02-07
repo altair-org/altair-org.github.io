@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Mirrored from studwork.org/forum/2645 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:31:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Сбор информации о пользователях в Windows 7, 8 и 10 - тема 2645</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Сбор информации о пользователях в Windows 7, 8 и 10 - тема 2645 / Технические проблемы"/>
+<meta name="mini-title" content="Тема форума"/>
+<meta name="webmoney.attestation.label" content="webmoney attestation label#3644DB51-0D2B-42B2-9D26-5CF2832FC5C1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+<meta name="mailru-verification" content="96d475315730d23c"/>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../css/A.style.min.css%2cqv%3d2.pagespeed.cf.9Wz6hzK2mp.css" media="all">
+<style>@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/pkYDSlCHbDnBWPT5PPFFTA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPi3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v8/7dSh6BcuqDLzS2qAASIeuqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkPOEPOIfcPv-fZ-WyMUtx48.ttf) format('truetype');
+}
+</style>
+<!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="/css/jquery.ui.1.10.0.ie.css"/>
+    <![endif]-->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../xapple-touch-icon-144x144-precomposed.png.pagespeed.ic.2b8ZYRX53K.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../xapple-touch-icon-120x120-precomposed.png.pagespeed.ic.6b_a2RtrbV.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../xapple-touch-icon-114x114-precomposed.png.pagespeed.ic.RsRKPewFg-.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../xapple-touch-icon-72x72-precomposed.png.pagespeed.ic.6SnOg1DvSA.png"/>
+<link rel="apple-touch-icon-precomposed" href="../xapple-touch-icon-precomposed.png.pagespeed.ic.yjuuyHfypH.png"/>
+<link rel="yandex-tableau-widget" href="../manifest.json"/>
+</head>
+<body>
+<audio id="sound-new-message" src="../audio/message.mp3"></audio>
+<header class="stud-user-top-menu">
+<div class="stud-user-top-menu-area">
+<div class="left-side">
+<a href="#" class='menu-bar'><i class='fa fa-bars'></i></a>
+<ul class="stud-user-top-menu-left">
+<li><a href="../index.html">Лента</a>
+<li><a href="../catalog.html">Авторы</a>
+<li><a href="../shop.html">Магазин</a>
+<li><a href="../forum.html">Форум<span class="stud-under stud-under-yellow cover" id="notice-forum"></span></a>
+<li><a href="../faq.html">FAQ</a>
+<li><a href="../partner-landing.html">Партнерская программа</a>
+</ul>
+</div>
+<span class="top-menu-title notAuth">
+Лента заказов
+</span>
+<div class="right-side">
+<form method="post" class="stud-auth-form line" id="auth_form" accept-charset="utf-8">
+<ul class="stud-user-top-menu-right">
+<li><input class="stud-input-icon form-icon-top-menu-men" type="text" name="login" id="login" placeholder="Логин"/>
+<li><input class="stud-input-icon form-icon-top-menu-pass" type="password" name="password" id="password" placeholder="Пароль"/>
+<li><input type="submit" value="Вход"/>
+<li><a href="../reg.html" class="stud-user-top-menu-reg">Регистрация</a>
+</ul>
+</form>
+<a href="#" class='auth-menu'><i class='fa fa-key'></i></a>
+</div>
+<ul class="active-menu left scroll-y" data-menu-status="close" data-menu-position='left'>
+<li><a href="../index.html"><i class='fa fa-pencil'></i>Лента</a>
+<li><a href="../catalog.html"><i class='fa fa-user'></i>Авторы</a>
+<li><a href="../shop.html"><i class='fa fa-shopping-cart'></i>Магазин</a>
+<li><a href="../forum.html"><i class='fa fa-comment'></i>Форум<span class="stud-under stud-under-yellow cover"></span></a>
+<li><a href="../faq.html"><i class='fa fa-question-circle'></i> FAQ</a>
+<li><a href="../partnership-landing.html"><i class='fa fa-briefcase'></i> Партнерам</a>
+</ul>
+<div class='auth-block scroll-y' data-menu-status="close" data-menu-position='right'>
+<form method="post" class="menu-auth-form" id="modal_auth_form" accept-charset="utf-8">
+<input type="text" name="login" id="login_modal" placeholder="Логин"/>
+<input type="password" name="password" id="password_modal" placeholder="Пароль"/>
+<input type="submit" class='stud-button middle' value="Вход"/>
+<a href="../login-incorrect.html" class='reset-pass'>Не помню пароль?</a>
+<a href="../reg.html" class="stud-button middle">Регистрация</a>
+</form>
+</div>
+</div>
+</header>
+<div id="after-main-menu"></div>
+<div class="stud-area">
+<div class="stud-main" id="stud-content">
+<div class="stud-user-area-left">
+<div class="stud-user-left-bloc stud-forum-theme">
+<div class="title-block">
+<span class="in-part">
+<span class="t-grey">в разделе</span>
+<a href="technical-troubles.html">Технические проблемы</a>
+</span>
+<div class="title"><h1>Сбор информации о пользователях в Windows 7, 8 и 10</h1></div>
+</div>
+<div class="pre-text text-block"><p>------------------
+Операционная система Windows 10 вышла почти месяц назад и работает более чем на 50 миллионах компьютеров. Известно, что ОС собирает конфиденциальные данные пользователя и отправляет их на серверы в Редмонде, в том числе пароли от маршрутизаторов Wi-Fi, собранную информацию с кейлоггера, данные телеметрии и прочее. Отправка информации в Редмонд идет даже в том случае, если запретить это в настройках Windows 10.</p>
+<p>Ситуация усугубляется тем, что Microsoft имеет право в любой момент установить обновление для Windows 10, которое введет дополнительную функциональность по шпионажу или будет, к примеру, проверять наличие нелицензионных программ и блокировать «пиратские» игры. Такая функциональность прописана в условиях соглашения, которые принял каждый пользователь, который установил Windows 10.</p>
+<p>К сожалению, теперь опасность утечки данных угрожает не только обладателям Windows 10, но и более ранних версий Windows. Компания Microsoft решила добавить средство сбора телеметрии в операционные системы Windows 7 и 8/8.1. Для этого 23 августа 2015 года выпущены соответствующие обновления KB3080149 и KB3075249.</p>
+<p>После установки патчей система без уведомления пользователя начинает передавать данные телеметрии на следующие серверы:</p>
+<p>vortex-win.data.microsoft.com
+settings-win.data.microsoft.com</p>
+<p>Передача осуществляется через TCP по порту 443 с использованием SSL.</p>
+<p>Разумеется, на форумах сразу развернулись дискуссии о том, какие конкретно данные передаются (здесь единого мнения нет), как они собираются (через процесс consent.exe) и — самое главное — какие еще обновления для Windows потенциально могут представлять угрозу для безопасности.</p>
+<p>Предварительно составлен список подозрительных и нежелательных апдейтов:</p>
+<pre><code>KB2505438
+KB2670838 – только Windows 7 (нарушает работу Aero и смазывает шрифты на некоторых веб-сайтах)
+KB2952664
+KB2976978 – только Windows 8
+KB3021917
+KB3035583
+KB3075249
+KB3035583 – дает инвайт на Windows 10
+KB2952664 – подготавливает систему к обновлению на Windows 10 (отправляет массу данных телеметрии в Microsoft, может повредить системные файлы)
+KB2976978 – подготавливает систему к обновлению на Windows 10
+KB2977759 – подготавливает систему к обновлению на Windows 10, устанавливает средства сбора телеметрии
+KB2990214 – подготавливает систему к обновлению на Windows 10
+KB3021917 – подготавливает систему к обновлению на Windows 10
+KB3022345 – устанавливает сервис диагностического слежения, может повредить системные файлы
+KB3035583 – скачивает бесплатный апгрейд на Windows 10
+KB3044374 – подготавливает систему к обновлению на Windows 10
+KB3050265 – должен исправлять ошибки с обновлением Windows, но также изменяет системные файлы для будущей установки Windows 10
+KB3050267 – подготавливает систему к обновлению на Windows 10
+KB3068708 – устанавливает сервис телеметрии, подготавливает систему к обновлению на Windows 10
+KB2922324 – отозван, нужно деинсталлировать в любом случае
+KB3014460 – только Windows 8
+KB3015249 – добавляет еще больше телеметрии
+KB3065987 – производит «улучшения» клиента обновления Windows (на самом деле никаких улучшений не замечено)
+KB3075249 – добавляет еще телеметрии
+KB3075851 – производит «улучшения» клиента обновления Windows (на самом деле никаких улучшений не замечено)
+KB3080149 – добавляет еще телеметрии</code></pre>
+<p>Источник: <a href="https://xakep.ru/2015/08/25/windows-7-8-telemetry/" target="_blank">https://xakep.ru/2015/08/25/windows-7-8-telemetry/</a>
+------------------</p>
+<p>От себя добавлю: если вы беспокоитесь о том, что ваш компьютер собирает данные о вас, и хотите с этим что-то сделать, но не понимаете как, тогда попросите кого-то из знакомых компьютерных специалистов удалить обновления из перечня в статье с вашего компьютера, и запретить их установку в дальнейшем.</p>
+<p>Если у вас таких знакомых нет, тогда обратитесь в любую фирму по обслуживанию компьютеров в вашем городе (поищите таковую в интернет или в объявлениях в газете или на столбе) и узнайте: &quot;Сколько стоит удалить некоторые обновления Windows и запретить их установку в дальнейшем&quot;. Ко мне уже двое клиентов обратились с такой просьбой. Проблема имеет место быть, и некоторые люди предпочитают позаботиться о ней сейчас, чем посмотреть &quot;а что будет дальше&quot;.</p>
+<p>Также можете поискать в интернете инструкции &quot;Как удалить обновления Windows 7&quot; (или Windows 8).</p>
+<p>Если вы пользуетесь ещё Windows XP, тогда спите спокойно.
+Если вам кажется, что ничего особенного не происходит, тогда прочтите эту статью: <a href="http://habrahabr.ru/company/pt/blog/264763/" target="_blank">http://habrahabr.ru/company/pt/blog/264763/</a> &quot;Как Windows 10 собирает данные о пользователях&quot;, и после прочтения решайте, важно ли это для вас.</p>
+<p>Если вы вообще ничего не поняли из прочитанного, то могу вас успокоить:
+- ваши фото, личное видео и документы не окажутся в интернет в открытом доступе. Можете спать спокойно;
+- ваш компьютер создатели Windows не собираются отключать. Он продолжит работать так, как работал;
+- лицензионные ли у вас программы на компьютере или нет, - на процессы, описанные в статье, это никак не влияет.</p> </div>
+<div class="theme-info">
+<div class="info-line">
+<div class="likes-block">
+<i class="fa fa-arrow-up" id="forum-theme-arrow-up"></i>
+<span class="t-green" id="value_voting">+1</span> <i class="fa fa-arrow-down" id="forum-theme-arrow-down"></i>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-clock-o'></i> 29 авг 2015 в 02:27 </div>
+<div class="info-line">
+<i class='fa fa-user t-grey'></i>
+<a href="../info/16411.html" class="t-blue">anykey</a>
+</div>
+<div class="info-line">
+<div class="comments t-blue">
+<i class='fa fa-comment'></i>
+<span id="forum-theme-count-comments">16</span> ответ<span id="forum-theme-ending-count-comments">ов</span>
+</div>
+</div>
+<div class="info-line t-grey">
+<i class='fa fa-eye'></i> 3984 просмотра </div>
+</div>
+<div class="comments-area">
+<div class="comment-line" data-next="0" data-id-level-report="41785" data-rec="19184">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/19184.html">
+<img src="https://studwork.org/uploads/avatar/19184.jpg?rand=38503850" width="60" height="60" alt="Пользователь 19184"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/19184.html">mfrinaaafa</a>
+<span class="in-block t-grey"> 29 авг 2015 в 06:53</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19184" data-report="41785"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19184" data-report="41785"></i>
+</div>
+</div>
+<div class="text"><p>У меня похоже такая проблема на ноутбуке (Windows 7). При первоначальном запуске система оповестила, что работает только с лицензионными программами. В итоге ноут потерял свою функциональность, в том числе из-за того, что за каждую &quot;примочку&quot; система требует оплаты. Долго не могла ничего понять, пришла к выводу, что нужно ее снести и поменять на новую. Спасибо за ценную информацию!</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="41794" data-rec="16411">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/16411.html">
+<img src="../img/avatars/16411.svg" width="60" height="60" alt="Пользователь 16411"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/16411.html">anykey</a>
+<span class="in-block t-grey"> 29 авг 2015 в 14:25</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="16411" data-report="41794"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="16411" data-report="41794"></i>
+</div>
+</div>
+<div class="text"><p>Можете ли вы процитировать дословно сообщение о том, что система работает только с лицензионными программами? А также дословно сообщение, в котором требуются деньги за каждую примочку.</p>
+<p>Если не трудно, сделайте, пожалуйста, скриншоты, как написано в этой инструкции:
+<a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank">http://help.yandex.ru/common/support/screenshot.xml</a></p>
+<p>Также, сделайте, пожалуйста, скриншот окна свойств системы Windows.
+Как вызвать это окно.
+Способ 1: Нажмите сочетание клавиш [WinKey] и [Pause/Break] (если у вас ноутбук, то может дополнительно понадобиться нажать [Fn], чтобы клавиша [Pause/Break] сработала).</p>
+<p>[WinKey] - это клавиша со значком Windows.</p>
+<p>Способ 2: наведите стрелку на значок &quot;Компьютер&quot; (или пункт меню &quot;Компьютер&quot; в меню &quot;Пуск&quot;), нажмите правую кнопку мыши и выберите &quot;Свойства&quot;.</p>
+<p>При загрузке ссылки на скриншот не забывайте о пункте 1.1 пользовательского соглашения. Например, Яндекс.Диск в ссылке показывает логин почты пользователя. Публикация или передача на сайте таких ссылок не разрешается. Ссылка на текст пользовательского соглашения находится справа внизу любой страницы сайта <a href="../index.html" target="_blank">https://studwork.org/</a></p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="41795" data-rec="19184">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/19184.html">
+<img src="https://studwork.org/uploads/avatar/19184.jpg?rand=377796669" width="60" height="60" alt="Пользователь 19184"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/19184.html">mfrinaaafa</a>
+<span class="in-block t-grey"> 29 авг 2015 в 14:44</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19184" data-report="41795"></i>
+<span class="t-red" data-class="user-arrow">-1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19184" data-report="41795"></i>
+</div>
+</div>
+<div class="text"><p>Может я неправильно выразилась... ноутбук был куплен в 2012 году, сообщение о лицензионных программах было только в первоначальном пуске. Дословно конечно же не помню. В настоящее время Windows хотя пока и стоит заводской, но его уже существенно доработали). Не знаю нужно ли сейчас это делать(.</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="1" data-id-level-report="41800" data-rec="19244">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/19244.html">
+<img src="https://studwork.org/uploads/avatar/19244.jpg?rand=1933771125" width="60" height="60" alt="Пользователь 19244"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/19244.html">mara</a>
+<span class="in-block t-grey"> 29 авг 2015 в 22:57</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19244" data-report="41800"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19244" data-report="41800"></i>
+</div>
+</div>
+<div class="text"><p>Странно как-то у вас с Виндой. У меня тоже на двух ноутах и системнике стоит Виндовс 7, лицензионка. Так она жрет любые программы, крякнутый офис 2007 в том числе устанавливается без проблем. И все летает.</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="41802" data-rec="19244">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/19244.html">
+<img src="https://studwork.org/uploads/avatar/19244.jpg?rand=1701674641" width="60" height="60" alt="Пользователь 19244"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/19244.html">mara</a>
+<span class="in-block t-grey"> 29 авг 2015 в 23:17</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19244" data-report="41802"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19244" data-report="41802"></i>
+</div>
+</div>
+<div class="text"><p>Винда 7, 8 и 10 чекирит за нами. Но не возвращаться же на Вин ХР, ибо анахронизм.
+Макось? да - но это, на мой взгляд, не для работы с текстами. Что-то мне офис не нравится..поэтому макбук и аймак практически не рабочие - использую только для потыркать в нете и кино/социалка.
+Линукс мейби, не?</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="41805" data-rec="16411">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/16411.html">
+<img src="../img/avatars/16411.svg" width="60" height="60" alt="Пользователь 16411"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/16411.html">anykey</a>
+<span class="in-block t-grey"> 30 авг 2015 в 00:10</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="16411" data-report="41805"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="16411" data-report="41805"></i>
+</div>
+</div>
+<div class="text"><p>&quot;Чекирить&quot;, как вы выразились, может не только Windows 7..10: <a href="https://hi-tech.mail.ru/news/israeli-scientists-hacked-pc-without-internet-connection/" target="_blank">https://hi-tech.mail.ru/news/israeli-scientists-hacked-pc-without-internet-connection/</a></p>
+<p>Даже компьютер, не подключенный к Интернету, можно взломать</p>
+<p>Ученые из израильского университета им. Д. Бен-Гуриона нашли способ взлома персональных компьютеров, которые не подключены к сети Интернет, с последующей передачей с них данных. Вредоносное программное обеспечение GSMem, разработанное ими, устанавливается на съемный носитель, к примеру, на флешку. Затем ПО выполняет запуск на компьютер вируса, который собирает необходимую информацию, и она впоследствии передается по каналам GSM, UMTS и LTE.</p>
+<p>Исследователи утверждают, что отсутствие подключения к сети Интернет не является абсолютной гарантией того, что компьютер не будет взломан. Они также полагают, что вирусная атака Stuxnet, состоявшаяся в январе 2015 года и чуть не сорвавшая работу завода по обогащению урана в Иране, была реализована именно таким способом.</p>
+<p>Конечно же, в запуске вируса со съемного носителя нет ничего необычного. Интересно то, что ученые показали возможность контроля обмена сигналами между памятью и процессором с параллельным созданием радиоволн на частотах диапазонов GSM, UMTS и LTE. Если поблизости от взламываемого компьютера будет находиться устройство, способное принимать такие волны, к примеру, мобильный телефон или GSM-модем, то передача данных вполне реализуема.</p>
+<p>Правда, скорость обмена невысока – 1-2 бита в секунду на расстоянии до 5 м от компьютера. Но даже в этом случае технология эффективна, так как позволяет получить ключи шифрования или пароли, которые впоследствии могут использоваться для доступа к большим массивам данных.</p>
+<p>Изроел Мирски (Yisroel Mirsky), докторант института им. Д. Бен-Гуриона и один из авторов исследования, отмечает:
+Если кто-нибудь захочет получить доступ к чьему-то домашнему компьютеру дома – давайте будем говорить, что домашний компьютер не подключен к Интернету – вы сможете принять сигнал извне, из места за стенами этого дома.</p>
+<p>Это справедливо и для компьютеров в учреждениях. Пронести флешку или залить на носитель программное обеспечение, присланное на ПК с подключением к Интернету, а затем использовать его на неподключенном компьютере часто несложно. Данные же может получить другой человек, находящийся в соседнем кабинете или на улице.</p>
+<p>Для демонстрации находки ученые использовали флешку с установленным на нее вредоносным программным обеспечением GSMem и телефон Motorola C123, выпущенный в 2006 году. Устройство было выбрано потому, что имеет сравнительно слабую антенну и работает под управлением программного обеспечения OsmocomBB с открытым кодом. Кроме того, многие технологические компании и государственные учреждения, которые работают с секретной информацией, запрещают сотрудникам пользоваться смартфонами. Исследователи отмечают, что если в эксперименте задействовать более современные гаджеты, то скорость передачи данных и максимальное расстояние от ПК можно увеличить в несколько раз.</p> </div>
+</div>
+<div class="comment-line" data-next="1" data-id-level-report="41806" data-rec="16411">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/16411.html">
+<img src="../img/avatars/16411.svg" width="60" height="60" alt="Пользователь 16411"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/16411.html">anykey</a>
+<span class="in-block t-grey"> 30 авг 2015 в 00:31</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="16411" data-report="41806"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="16411" data-report="41806"></i>
+</div>
+</div>
+<div class="text"><p>Вижу пока такой комплекс мероприятий для выхода из ситуации без смены операционной системы:
+1) переустановить Windows 7, 8, и установить все обновления с датой публикации не позже июля 2015 года, а затем отключить автоматические обновления Windows;
+2) заблокировать на роутере (не уверен, что Windows не обойдёт ограничения программы-файрвола) доступ к любым серверам microsoft.com. Обновления ставить из набора обновлений пользователя Simplix <a href="http://update7.simplix.info/" target="_blank">http://update7.simplix.info/</a> (в самом низу страницы ссылка &quot;Загрузить набор обновлений&quot;). Если роутера с функцией файрвола нет - придётся приобрести. Разумеется, никто не застрахован от передачи данных на сервера, имеющие IP без hostname.</p>
+<p>Набор обновлений устанавливается на любую Windows 7 или Windows Server 2008 R2 любой разрядности, с любым языком интерфейса.</p>
+<p>Заодно можете загрузить программу для установки обновлений на любую Windows XP SP3 x32 <a href="http://simplix.info/updatepack/" target="_blank">http://simplix.info/updatepack/</a> (ссылка &quot;Скачать и обсудить UpdatePack на форуме&quot; вверху). Но это уже оффтопик.</p> </div>
+<div class="comment-line" data-next="2" data-id-level-report="46323" data-rec="16411">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/16411.html">
+<img src="../img/avatars/16411.svg" width="60" height="60" alt="Пользователь 16411"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/16411.html">anykey</a>
+<span class="in-block t-grey"> 30 янв 2016 в 21:17</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="16411" data-report="46323"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="16411" data-report="46323"></i>
+</div>
+</div>
+<div class="text"><p>Ещё одна популярная, на сегодня программа, которая отключает шпионские модули Windows 7, 8, 8.1 и 10: &quot;Destroy Windows 10 Spying&quot; - описание на русском <a href="http://rsload.net/soft/20097-destroy-windows-10-spying2.html" target="_blank">http://rsload.net/soft/20097-destroy-windows-10-spying2.html</a> и ссылки на загрузку (не знаю, насколько свежие там версии); - ссылка на страницу проекта на github, откуда новую версию программы можно скачать, щёлкнув &quot;DWS_lite.exe&quot; <a href="https://github.com/Nummer/Destroy-Windows-10-Spying/releases" target="_blank">https://github.com/Nummer/Destroy-Windows-10-Spying/releases</a></p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="1" data-id-level-report="41807" data-rec="19184">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/19184.html">
+<img src="https://studwork.org/uploads/avatar/19184.jpg?rand=1116346953" width="60" height="60" alt="Пользователь 19184"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/19184.html">mfrinaaafa</a>
+<span class="in-block t-grey"> 30 авг 2015 в 08:36</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="19184" data-report="41807"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="19184" data-report="41807"></i>
+</div>
+</div>
+<div class="text"><p>Не хотела продолжать участие в теме покуда являюсь дилетантом в этой сфере и рискую &quot;напроситься&quot;))) Как 100% пользователь не ставила цели гнаться за новинками в этой сфере и на рабочем компьютере осталась система и программы, которые не заставляли нервничать в самый не подходящий момент. Пусть это анахронизм, но уже несколько лет работает и не жужжит пара Вин ХР и Каспер-й. Может удивлю, но до сих пор работает Офис 2003 с поддержкой более поздних версий (больше по причине того, что многие ВУЗы все еще требуют этот формат). Ноут, который купила в 2012 году просто по уши напичкан рекламой. Производитель (Сам-г) почему то решил, что русский чел-к уже созрел, чтобы соблюдать порой многочисленные и не всегда удобные пользователю пункты и условия ПС. Один из первых ПК (486, наверное здесь есть кто помнит эту машину) я купила в 1996 году, тогда еще были у.е. Он был пустой и даже без оболочки, на тот момент этот была определенная проблема, так как рынок ПО еще был не развит. Но все же это было по крайней мере честно.</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="41850" data-rec="292">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/292.html">
+<img src="https://studwork.org/uploads/avatar/292.jpg?rand=405963204" width="60" height="60" alt="Пользователь 292"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/292.html">hohlloff</a>
+<span class="in-block t-grey"> 1 сен 2015 в 13:42</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="292" data-report="41850"></i>
+<span class="t-green" data-class="user-arrow">+3</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="292" data-report="41850"></i>
+</div>
+</div>
+<div class="text"><p>Вин ХР и Ворд 2003 - просто и удобно</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="41859" data-rec="11685">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/11685.html">
+<img src="https://studwork.org/uploads/avatar/11685.jpg?rand=203403576" width="60" height="60" alt="Пользователь 11685"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/11685.html">xcode</a>
+<span class="in-block t-grey"> 1 сен 2015 в 19:25</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="11685" data-report="41859"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="11685" data-report="41859"></i>
+</div>
+</div>
+<div class="text"><p>Средство приватности и борьбы с АНБ и Виндовс 10 -<a href="https://github.com/10se1ucgo/DisableWinTracking/releases/" target="_blank">https://github.com/10se1ucgo/DisableWinTracking/releases/</a> -</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="46322" data-rec="16411">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/16411.html">
+<img src="../img/avatars/16411.svg" width="60" height="60" alt="Пользователь 16411"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/16411.html">anykey</a>
+<span class="in-block t-grey"> 30 янв 2016 в 21:16</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="16411" data-report="46322"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="16411" data-report="46322"></i>
+</div>
+</div>
+<div class="text"><p>Ещё одна популярная, на сегодня программа, которая отключает шпионские модули Windows 7, 8, 8.1 и 10: &quot;Destroy Windows 10 Spying&quot;
+- описание на русском <a href="http://rsload.net/soft/20097-destroy-windows-10-spying2.html" target="_blank">http://rsload.net/soft/20097-destroy-windows-10-spying2.html</a> и ссылки на загрузку (не знаю, насколько свежие там версии);
+- ссылка на страницу проекта на github, откуда новую версию программы можно скачать, щёлкнув &quot;DWS_lite.exe&quot; <a href="https://github.com/Nummer/Destroy-Windows-10-Spying/releases" target="_blank">https://github.com/Nummer/Destroy-Windows-10-Spying/releases</a> </p>
+<p>У программы есть русский интерфейс.</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="42648" data-rec="230">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/230.html">
+<img src="https://studwork.org/uploads/avatar/230.jpg?rand=1796449684" width="60" height="60" alt="Пользователь 230"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/230.html">test</a>
+<span class="in-block t-grey"> 12 окт 2015 в 10:44</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="230" data-report="42648"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="230" data-report="42648"></i>
+</div>
+</div>
+<div class="text"><p>Спасибо, очень полезная информация.</p> </div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="46318" data-rec="68">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="../info/68.html">
+<img src="https://studwork.org/uploads/avatar/68.jpg?rand=873770372" width="60" height="60" alt="Пользователь 68"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/68.html">chudok</a>
+<span class="in-block t-grey"> 30 янв 2016 в 19:49</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="68" data-report="46318"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="68" data-report="46318"></i>
+</div>
+</div>
+<div class="text"><p>искать старую виндовс, или переходить на линукс)</p> </div>
+<div class="comment-line" data-next="1" data-id-level-report="46321" data-rec="16411">
+<div class="user-icon">
+<div class="icon-m ">
+<a href="../info/16411.html">
+<img src="../img/avatars/16411.svg" width="60" height="60" alt="Пользователь 16411"/> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/16411.html">anykey</a>
+<span class="in-block t-grey"> 30 янв 2016 в 21:06</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="16411" data-report="46321"></i>
+<span class="t-green" data-class="user-arrow">+1</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="16411" data-report="46321"></i>
+</div>
+</div>
+<div class="text"><p>Для исполнителей, которым нужен MathCad, AutoCAD, Mathlab, Micro-cap и большое количество программ для проектирования и расчётов - переход на Linux не подойдёт по той причине, что версий большинства таких программ под операционные системы не-Windows - пока ещё не существует. Онлайн-сервисами вроде <a href="https://ru.wikipedia.org/wiki/WolframAlpha" target="_blank">https://ru.wikipedia.org/wiki/WolframAlpha</a> пока что всё не заменишь. Возможно, настанет день, когда почти весь софт, включая AutoCAD переведут на веб-платформу, и чертить сборочный чертёж тракторного двигателя или проект Вавилонской башни можно будет в браузере.</p> </div>
+</div>
+</div>
+<div class="comment-line" data-next="0" data-id-level-report="46324" data-rec="68">
+<div class="user-icon">
+<div class="icon-m online">
+<a href="../info/68.html">
+<img src="https://studwork.org/uploads/avatar/68.jpg?rand=1614774646" width="60" height="60" alt="Пользователь 68"> </a>
+</div>
+</div>
+<div class="info">
+<a class="in-block td-blue name" href="../info/68.html">chudok</a>
+<span class="in-block t-grey"> 30 янв 2016 в 22:26</span>
+<div class="likes-block">
+<i class="fa fa-arrow-up user-arrow-up" data-rec="68" data-report="46324"></i>
+<span class="t-grey" data-class="user-arrow">0</span> <i class="fa fa-arrow-down user-arrow-down" data-rec="68" data-report="46324"></i>
+</div>
+</div>
+<div class="text"><p>спасибо, так же там нету полного аналога фотошопа.
+Зато есть среды разработки кода.</p> </div>
+</div>
+</div>
+</div>
+<div class='order-help-block similar-themes similar-orders'>
+<div class='header'>Похожие темы</div>
+<div class='orders same-forum-themes'>
+<div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3321.html">Автоматическая разблокировка средств</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/66226.html" class="user-">SW_Developer</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+2</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 16</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1536</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3272.html">Блокировка скачивания файлов браузером Google Chrome</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/292.html" class="user-">hohlloff</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+7</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 19</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1428</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="3038.html">Перевести ссылки в сноски</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/46931.html" class="user-">зидан</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-red" data-class="user-arrow">-2</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 7</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1228</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="2940.html">Помогите по вопросу с ноутбуком</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/9761.html" class="user-">pechencka</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+4</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 16</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1100</span>
+</li>
+</ul>
+</div>
+<div class='order'>
+<ul class='info'>
+<li><a href="2789.html">Как узнать сколько денег на счету у заказчика?</a></li>
+<li>
+<i class='fa fa-user t-grey'></i>
+<a href="../info/4518.html" class="user-">alpha</a>
+</li>
+<li class='activity'>
+<span class='t-grey likes'><i class="fa fa-thumbs-o-up"></i> <span class="t-green" data-class="user-arrow">+4</span></span>
+<span class='t-blue'><i class='fa fa-comment'></i> 38</span>
+<span class='t-grey'><i class="fa fa-eye"></i> 1960</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='more-themes' class='stud-user-dop-butt'>
+<div class="stud-user-dop-butt-ic"><i class="fa fa-refresh"></i></div>
+<span class='t-blue'>Показать еще похожие темы</span>
+<span class='t-blue covert'>Похожих тем больше нет</span>
+</div>
+</div>
+</div>
+<div class="stud-user-area-right">
+<div class="stud-user-right-bloc" id="stud-user-right-new-forum">
+<div class="stud-user-right-title">Темы форума <i class='t-grey head-fa fa fa-comments'></i></div>
+<div id="stud-user-right-for-adding-forum">
+<div class="stud-user-right-forum-theme">
+<a href="3485.html">Продажа работа в авторском магазине</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 5 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 5</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3483.html">Дополнительная квалификация: переводчик</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 4 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 3</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3482.html">Вопрос к психологам, психотерапевтам</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 24</div>
+</div>
+<div class="stud-user-right-forum-theme">
+<a href="3481.html">Памяти товарища.</a>
+<div class="stud-user-right-forum-date t-grey"> <i class="fa fa-calendar-minus-o"></i> 3 фев 2017</div>
+<div class="stud-user-right-forum-no-comments t-grey"><i class='fa fa-comment'></i> 27</div>
+</div>
+</div>
+<a class="stud-user-right-gotoforum" href="../forum.html">Перейти на форум</a>
+</div>
+<a href='https://algebra24.ru/' target='_blank' class='partner-block blue clearfix'>
+<div class='logo not-hover'>
+<img src="../img/xalgebra24-blue.png.pagespeed.ic.4oGWP_Jxbw.png" alt="">
+</div>
+<div class='logo hover'>
+<img src="../img/xalgebra24-white.png.pagespeed.ic.Cweiz1GBgw.png" alt="">
+</div>
+<div class='title'>ALGEBRA24</div>
+<div class='sub-title'>Математические сервисы</div>
+</a>
+<a href='https://ultragold.org/' target='_blank' class='partner-block purple clearfix'>
+<div class='logo'>
+<img src="../img/xultragold.png.pagespeed.ic.aeHJ4_TGOs.png" alt="">
+</div>
+<div class='title'>ULTRAGOLD</div>
+<div class='sub-title'>Обмен электронных валют</div>
+</a>
+</div>
+</div>
+</div>
+<div class="stud-modal" id="votes-modal">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Голосование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line">
+Не выбран вариант голосования!
+</div>
+</div>
+</div>
+</div>
+<div class="stud-modal stud-modal-is-open" id="forum-theme-editor">
+<div class="stud-modal-area">
+<div class="stud-modal-header">
+<div class="stud-modal-title">Редактирование темы</div>
+<div class="stud-modal-close"><i class="fa fa-times"></i></div>
+</div>
+<div class="stud-modal-content">
+<div class="stud-modal-line" id="forum-theme-editor-line">
+<form action="javascript:void(0);" method="post" class="" id="stud-forum-new-theme">
+<div class="stud-forum-new-line">
+<input type="text" name="" id="forum-theme-new-title" class="bott all-width" maxlength="100" placeholder="Введите название темы" disabled>
+<textarea class="all-width" id="forum-theme-new-text" rows="3" style="resize: none" disabled></textarea>
+<div class="stud-forum-new-textarea-butt">
+<a class="stud-button right stud-button-blue stud-button-icon-bubbles" id="forum-theme-save-change">Сохранить изменения</a>
+<label class="checkbox checkbox-left normal-font open-votes" id="label-open-vote">
+<input type="checkbox" name="" data-toggle="checkbox" id="check-open-vote"/>
+<span>Добавить в тему голосование</span>
+</label>
+</div>
+</div>
+<div class="stud-forum-new-line stud-forum-new-vote-block">
+<input type="text" name="" id="vote-title-modal" class="all-width" maxlength="60" placeholder="Введите вопрос голосования">
+<div class="stud-forum-new-count-answer">
+<span class="t-grey">Количество вариантов ответа</span>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="2" data-toggle="radio" checked>
+2
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="3" data-toggle="radio">
+3
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="4" data-toggle="radio">
+4
+</label>
+<label class="radio font-normal radio-left votes-lines">
+<input type="radio" name="votes-lines" value="5" data-toggle="radio">
+5
+</label>
+</div>
+<div class="stud-forum-new-variations">
+<div class="vote-input-div">
+<input type="text" name="new-variations-1" class="top all-width vote-input" maxlength="50" placeholder="Вариант 1">
+</div>
+<div class="vote-input-div">
+<input type="text" name="new-variations-2" class="top all-width vote-input" maxlength="50" placeholder="Вариант 2">
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div style="position: fixed"></div><div id="all-footer">
+<div id="stud-footer">
+<div class="stud-main">
+<div class="stud-footer-bloc">
+<div class="title">Служба поддержки</div>
+<div class="bloc tech">
+<div class="tm1">Бесплатный звонок</div>
+<div class="tm2 number">8 (800) 500-78-57</div>
+</div>
+<div class="bloc tech">
+<div class="tm1">Техническая поддержка</div>
+<div class="tm2"><a href="../tech-support.html" class="stud-button stud-button-white stud-button-icon-mail-blue stud-footer-butt">Написать нам</a></div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">Статистика</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">84 498</div>
+<div class="stud-footer-circle-info">Пользователей <span class="t-green">+136</span></div>
+</div>
+</div>
+<div class="bloc center">
+<div class="under">
+<div class="stud-footer-circle">225</div>
+<div class="stud-footer-circle-info"><a href="../catalog60b8.html?checkbox_search_online_user=1">Сейчас на сайте</a></div>
+</div>
+</div>
+</div>
+<div class="stud-footer-bloc">
+<div class="title">О проекте</div>
+<div class="bloc">
+<div>
+Проект studwork.org &#x2012; это интернет-сервис для
+выполнения любых видов учебных работ.
+</div>
+</div>
+<div class="bloc">
+<div class="tm3"><span class="t-blue">Принимаем к оплате</span></div>
+<div class="tm4 number">
+<img src="../img/foot_icon-card-small.svg" alt="Иконка кредитной карты"/>
+<img src="../img/foot_icon-qiwi.svg" alt="Иконка платежной системы Киви"/>
+<img src="../img/foot_icon-ya.svg" alt="Иконка платежной системы Яндекс Деньги"/>
+<img src="../img/foot_icon-wm.svg" alt="Иконка платежной системы Web Money"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="stud-footer-end">
+<div class="stud-main">
+<div class="stud-footer-end-left">
+<span>© 2011-2017 studwork.org</span>
+</div>
+<div class="stud-footer-end-right">
+<a href="../oferta.html">Пользовательское соглашение</a>
+</div>
+<div class="stud-footer-end-right">
+<a href="../api.html">API для интеграции</a>
+</div>
+</div>
+</div>
+</div> <script src="../../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>const name_site_external='../index.html';const secret_hash_header='e83825f8d2ce57b74ca9ab81e85763a0';const secret_hash_ajax_new_notice='4a055295e0bfe051b5c03ae86bc4a758';const id_current_user='0';const secret_hash_file_upload='5cc66a5032e284ff277a243b26bc5190';const secret_hash_confirm_unknown_ip='89fd1ae49f680b435e6e6fc53dea0dd8';const id_forum_theme='2645';const array_id_report=[41785,41794,41795,41800,41802,41805,41806,41807,41850,41859,42648,46318,46321,46322,46323,46324];var array_id_report_diff={};if(typeof(localStorage)!='undefined'){Array.prototype.diff=function(a){return this.filter(function(i){return a.indexOf(i)<0;});};if(typeof(localStorage['forum'])!='undefined'){var forum=JSON.parse(localStorage['forum']);if(typeof(forum[id_forum_theme])!='undefined'){array_id_report_diff=array_id_report.diff(forum[id_forum_theme]);}forum[id_forum_theme]=array_id_report;localStorage.setItem('forum',JSON.stringify(forum));}else{localStorage.setItem('forum',JSON.stringify({}));}}</script>
+<script src="../jscript/min/main.min.js%2cqv%3d5.pagespeed.jm.QG9mR3T0rH.js"></script>
+<script src="../jscript/min/stud.forum.js%2bfunction%2c_show_votes.js%2bfunction%2c_JSBrowCorrect.js.pagespeed.jc.cTbmKxcX-k.js"></script><script>eval(mod_pagespeed_2wiWA4R362);</script>
+<script>eval(mod_pagespeed_BS0rq84xsD);</script>
+<script>eval(mod_pagespeed_VQeOvKVnHl);</script>
+</body>
+<!-- Mirrored from studwork.org/forum/2645 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Feb 2017 06:31:30 GMT -->
+</html>

@@ -81,10 +81,11 @@
 <section class="facts">
 	<div class="container">
 		<h2><span>несколько фактов о нас</span></h2>
+		<hr class="hr2" width="36%">
 		<div class="row">
 			<div class="col-xs-6 col-sm-4 col-md-4">
 				<img src="img/facticon_1.png" alt="fact_icon" class="fact_icon">
-				<p>Более 4 лет опыта в бреднинге и визуальных коммуникациях</p>
+				<p>Более 4 лет опыта в брендинге и визуальных коммуникациях</p>
 			</div>
 			<div class="col-xs-6 col-sm-4 col-md-4">
 				<img src="img/facticon_2.png" alt="fact_icon" class="fact_icon">
@@ -103,7 +104,7 @@
 			<div class="clearfix visible-xs"></div>
 			<div class="col-xs-6 col-sm-4 col-md-4">
 				<img src="img/facticon_5.png" alt="fact_icon" class="fact_icon">
-				<p>исключение «неожиданностей» на всех этапах создания бренда"</p>
+				<p>исключение «неожиданностей» на всех этапах создания бренда</p>
 			</div>
 			
 			<div class="col-xs-6 col-sm-4 col-md-4">
@@ -125,6 +126,7 @@
 <section class="services">
 	<div class="container">
 	<h2><span>Услуги, которые мы оказываем</span></h2>
+	<hr class="hr2" width="48%">
 		<div class="row">
 			<div class="col-xs-6 col-md-4"><img src="img/service1.png" alt="" align="left">
 			<h4>Брендинг</h4>
@@ -163,7 +165,7 @@
 
 							<div class="col-xs-6 col-md-4"><img src="img/service7.png" alt="" align="left">
 							<h4>фирстиль</h4>
-								<p>разработка фирменного стиля <br> корпоративный ребрендинг <br> рейстайлинг вирменного стиля </p>
+								<p>разработка фирменного стиля <br> корпоративный ребрендинг <br> рестайлинг фирменного стиля </p>
 
 							</div>
 							<div class="col-xs-6 col-md-4 secc"><img src="img/service8.png" alt="" align="left">
@@ -213,7 +215,7 @@
 											
 		</div>
 		<h6>
-			Список наших услуг по-настоящему необъятен, в него входит более 20 масштаных услуг, а также свыше 100 подразделений в данных сферах! Мы можем как частично, так и масштабно помочь вашему бизнесу
+			Список наших услуг по-настоящему необъятен, в него входит более 20 масштабных услуг, а также свыше 100 подразделений в данных сферах! Мы можем как частично, так и масштабно помочь вашему бизнесу
 		</h6>
 	</div>
 </section>
@@ -260,7 +262,7 @@
 			</div>
 			<div class="col-xs-10 col-sm-9">
 				<p>
-					Спасибо WAYBERRY за отличный логотип. Сделали быстрее чем ожидал и с первого раза остался доволен результатом! по опыту в бизнесе скажу, такие профессионалы это редкость. других приходится по несколько роз просить что-то переделать, хотя деньги те же. Случай с Wayverry порадовал. Теперь только они на первом месте в моем списке дизайнеров.
+					Спасибо WAYBERRY за отличный логотип. Сделали быстрее чем ожидал и с первого раза остался доволен результатом! по опыту в бизнесе скажу, такие профессионалы это редкость. других приходится по несколько роз просить что-то переделать, хотя деньги те же. Случай с Wayberry порадовал. Теперь только они на первом месте в моем списке дизайнеров.
 				</p>
 				<p>
 					(vk.com/denisigorev)
@@ -283,7 +285,7 @@
 		<div class="form_place">
 			<input type="text" name="name" required placeholder="Ваше имя">
 			<input type="text" name="phone" required placeholder="Ваш телефон">
-			<input type="text" placeholder="Ваш заказ">
+			<input type="text" name="order" placeholder="Ваш заказ">
 			<button>
 				<p>Отправить</p>
 			</button>
@@ -317,7 +319,109 @@
 	<script src="libs/countdown/jquery.countdown.min.js"></script>
 	<script src="libs/countdown/jquery.countdown-ru.js"></script>
 	<script src="libs/landing-nav/navigation.js"></script>
-	<script src="js/common.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+	//Таймер обратного отсчета
+	//Документация: http://keith-wood.name/countdown.html
+	//<div class="countdown" date-time="2015-01-07"></div>
+	var austDay = new Date($(".countdown").attr("date-time"));
+	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
+
+	//Попап менеджер FancyBox
+	//Документация: http://fancybox.net/howto
+	//<a class="fancybox"><img src="image.jpg" /></a>
+	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
+	$(".fancybox").fancybox();
+
+	//Навигация по Landing Page
+	//$(".top_mnu") - это верхняя панель со ссылками.
+	//Ссылки вида <a href="#contacts">Контакты</a>
+	$(".top_mnu").navigation();
+
+	//Добавляет классы дочерним блокам .block для анимации
+	//Документация: http://imakewebthings.com/jquery-waypoints/
+	$(".block").waypoint(function(direction) {
+		if (direction === "down") {
+			$(".class").addClass("active");
+		} else if (direction === "up") {
+			$(".class").removeClass("deactive");
+		};
+	}, {offset: 100});
+
+	//Плавный скролл до блока .div по клику на .scroll
+	//Документация: https://github.com/flesler/jquery.scrollTo
+	$("a.toreviews").click(function() {
+		$.scrollTo($(".reviews"), 800, {
+			offset: 100
+		});
+	});
+	$("a.toservices").click(function() {
+		$.scrollTo($(".services"), 800, {
+			offset: 0
+		});
+	});
+	$("a.tofacts").click(function() {
+		$.scrollTo($(".facts"), 800, {
+			offset: 0
+		});
+	});
+	$("a.toform").click(function() {
+		$.scrollTo($(".form"), 800, {
+			offset: 0
+		});
+	});
+
+	//Каруселька
+	//Документация: http://owlgraphic.com/owlcarousel/
+	var owl = $(".carousel");
+	owl.owlCarousel({
+		items : 4
+	});
+	owl.on("mousewheel", ".owl-wrapper", function (e) {
+		if (e.deltaY > 0) {
+			owl.trigger("owl.prev");
+		} else {
+			owl.trigger("owl.next");
+		}
+		e.preventDefault();
+	});
+	$(".next_button").click(function(){
+		owl.trigger("owl.next");
+	});
+	$(".prev_button").click(function(){
+		owl.trigger("owl.prev");
+	});
+
+	//Кнопка "Наверх"
+	//Документация:
+	//http://api.jquery.com/scrolltop/
+	//http://api.jquery.com/animate/
+	$("#top").click(function () {
+		$("body, html").animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
+	
+	//Аякс отправка форм
+	//Документация: http://api.jquery.com/jquery.ajax/
+	$("form").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "mail.php",
+			data: $("form").serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
+
+});
+	</script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

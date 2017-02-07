@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.2" baseProfile="tiny" id="Слой_1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="60px"
+	 viewBox="0 0 60 60" xml:space="preserve">
+<path fill-rule="evenodd" fill="#495A6C" d="M11.52,7.439h36.977c1.77,0,3.215,1.447,3.215,3.216v45.818
+	c0,1.77-1.445,3.216-3.215,3.216H11.52c-1.769,0-3.214-1.446-3.214-3.216V10.655C8.305,8.886,9.751,7.439,11.52,7.439"/>
+<path fill-rule="evenodd" fill="#354859" d="M32.541,7.444L48.496,7.44c1.769-0.001,3.216,1.448,3.216,3.216v45.818
+	c0,1.769-1.447,3.217-3.216,3.217l-15.955,0.004V7.444z"/>
+<path fill-rule="evenodd" fill="#E7F2F8" d="M13.497,8.246h36.065c1.19,0,2.163,0.974,2.163,2.165v44.292
+	c0,1.19-0.973,2.164-2.163,2.164H13.497c-1.191,0-2.165-0.974-2.165-2.164V10.411C11.333,9.22,12.306,8.246,13.497,8.246"/>
+<path fill-rule="evenodd" fill="#C7D9E0" d="M32.541,8.25l17.021-0.004c1.19,0,2.163,0.974,2.163,2.164v44.294
+	c0,1.188-0.973,2.163-2.163,2.163L32.541,56.87V8.25z"/>
+<path fill-rule="evenodd" fill="#EFC849" d="M11.52,0.306h36.977c1.77,0,3.215,1.446,3.215,3.216v45.417
+	c0,1.769-1.445,3.216-3.215,3.216H11.52c-1.769,0-3.214-1.447-3.214-3.216V3.521C8.305,1.752,9.751,0.306,11.52,0.306"/>
+<path fill-rule="evenodd" fill="#D6AF2C" d="M32.541,0.306h15.955c1.77,0,3.216,1.447,3.216,3.216v45.417
+	c0,1.769-1.447,3.216-3.216,3.216H32.541V0.306z"/>
+<rect x="19.435" y="7.793" fill-rule="evenodd" fill="#E7F2F8" width="25.839" height="16.75"/>
+<rect x="32.581" y="7.793" fill-rule="evenodd" fill="#C7D9E0" width="12.692" height="16.75"/>
+<rect x="28.685" y="13.265" fill-rule="evenodd" fill="#495A6C" width="7.904" height="1.625"/>
+<rect x="32.531" y="13.266" fill-rule="evenodd" fill="#354859" width="4.058" height="1.625"/>
+<rect x="23.725" y="17.598" fill-rule="evenodd" fill="#495A6C" width="17.914" height="1.663"/>
+<rect x="32.576" y="17.598" fill-rule="evenodd" fill="#354859" width="9.063" height="1.663"/>
+<rect x="24.884" y="35.923" fill-rule="evenodd" fill="#495A6C" width="15.503" height="1.624"/>
+<rect x="32.544" y="35.923" fill-rule="evenodd" fill="#354859" width="7.843" height="1.625"/>
+<rect x="24.884" y="40.229" fill-rule="evenodd" fill="#495A6C" width="15.503" height="1.626"/>
+<rect x="32.544" y="40.229" fill-rule="evenodd" fill="#354859" width="7.843" height="1.626"/>
+<path fill-rule="evenodd" fill="#495A6C" d="M10.71,0.306h4.52v51.936h-4.52c-1.339,0-2.436-1.096-2.436-2.436V2.741
+	C8.274,1.403,9.37,0.306,10.71,0.306"/>
+</svg>
