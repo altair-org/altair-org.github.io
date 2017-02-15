@@ -1,8 +1,0 @@
-{
-    "api_version": 4,
-    "layout": {
-        "logo": "https://studwork.org/img/logotype.png",
-        "color": "#ffffff"
-    },
-    "feed": "https://studwork.org/yandex-feed.json"
-}

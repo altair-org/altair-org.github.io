@@ -1,0 +1,658 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+    outline-offset: 0px;
+}
+*:focus{
+	outline:none;
+}
+p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+/*Элемент выше для того, чтобы не было цвето у фокусированных*/
+
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;}
+	.head_top{
+		padding-top: 40px;
+		padding-bottom: 40px;
+		margin-bottom: 10px;
+	}
+header{
+	background: url("../img/header_bg.png") no-repeat 50% ;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 800px;
+	position: relative;
+}
+.logo{
+	float: left;
+}
+.offer{
+	float: right;
+}
+.logo_text{
+	display: inline-block;
+}
+.logo_text p{
+	font-size: 26px;
+	font-family: "FutBook";
+	line-height: 2.1;
+	margin-left: 20px;
+}
+.head_top span{
+	font-family: "FutBold";
+	font-weight: 900;
+}
+.offer{
+	float: right;
+}
+.logo img{
+	display: inline-block;
+	float: left;
+}
+.offer p{
+	font-size: 18px;
+	font-family: "FutBook";
+	line-height: 2.9;
+}
+.tel p{
+	font-size: 20px;
+	line-height: 2.7;
+}
+.top_b p{
+	font-size: 16px;
+	line-height: 1;
+	font-family: "FutHeavy";
+	color: #ffffff;
+}
+.top_b{
+  background-color: rgb(248, 112, 71);
+  box-shadow: 0px 5px 20px 0px rgba(40, 40, 40, 0.15);
+border: none;
+border-radius: 25px;
+padding: 18px 28px;
+float: right;
+
+}
+h1{
+	font-size: 46px;
+	text-transform: uppercase;
+	font-family: "MuseoCyr";
+}
+h1 span{
+	font-size: 56px;
+	font-family: "FutBold";
+}
+header h5{
+  font-size: 50px;
+  font-family: "FutHeavy";
+  color: rgb(94, 151, 0);
+}
+header h6{
+  font-size: 34px;
+  font-family: "FutBook";
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+}
+.num{
+  font-size: 21px;
+  font-family: "Futura New";
+  color: rgb(248, 112, 71);
+  font-weight: bold;
+  line-height: 1.905;
+}
+.benefits{
+  font-size: 21px;
+  font-family: "Futura New";
+  color: rgb(0, 0, 0);
+  line-height: 1.905;
+}
+.benefits span{
+	font-weight: bold;
+}
+.head_but{
+	padding-top: 25px;
+	position: relative;
+}
+.head_but button{
+  border-radius: 28px;
+  background-color: rgb(248, 112, 71);
+  box-shadow: 0px 5px 20px 0px rgba(40, 40, 40, 0.25);
+  padding: 20px 40px;
+  border: none;
+}
+.head_but button p{
+	font-size: 19px;
+	font-family: "FutHeavy";
+	color: #fff;
+	line-height: 1;
+}
+.section1 .col-xs-3{
+	width: 20%;
+}
+ .row2{
+padding-bottom: 20px;}
+.benefits{
+  font-size: 21px;
+  font-family: "FutBook";
+  color: rgb(0, 0, 0);
+  line-height: 1.905;
+
+}
+.benefits1{
+margin-left: 160px;
+}
+.benefits2{
+margin-left: 195px;
+}
+.benefits3{
+margin-left: 230px;
+}
+.cost_section{
+	margin-top: 85px;
+	margin-left: 230px;
+}
+.cost_before, .cost_now{
+  font-size: 20px;
+  font-family: "FutHeavy";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+
+}
+.cost_before{
+	  visibility: hidden;
+}
+.cost_before span{
+	visibility: visible;
+	font-size: 23px;
+	font-family: "FutBook";
+	text-decoration: none;
+}
+.cost_now span{
+	font-family: "FutBold";
+	font-size: 37px;
+}
+.header_arr{
+	position: absolute;
+	top: 20px;
+	left:350px;
+}
+.arr_down{
+	position: absolute;
+	bottom: 10px;
+	left: calc(50% - 9px);
+	cursor: pointer;
+}
+.use_arr{
+	position: absolute;
+	bottom: 10px;
+	left: -95px;
+	text-align: right;
+	color: #fff;
+	font-family: "FutBook";
+	font-size: 16px;
+}
+.section1{
+	padding-top: 30px;
+	padding-bottom: 80px;
+}
+.section1 .col-xs-3 img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+.section1 .col-xs-3 h6{
+	text-align: center;
+	font-family: "FutBold";
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+}
+.section1 .col-xs-3 p{
+  color: rgb(0, 0, 0);
+  line-height: 1.25;
+  text-align: center;
+  font-size: 16px;
+  font-family: "FutBook";
+}
+.service2, .service4{
+	padding-top: 30px;
+}
+.service3{
+	padding-top: 45px;
+}
+.bonus{
+	margin-top: 60px;
+  border-radius: 20px;
+  background-color: rgb(236, 240, 243);
+width: 60%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 30px 80px 25px 80px;
+}
+.bonus h4{
+  font-size: 26px;
+  font-family: "Futura New";
+  color: rgb(15, 20, 25);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.bonus p{
+  font-size: 18px;
+  font-family: "FutBook";
+  color: rgb(15, 20, 25);
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 10px;
+
+}
+.section2{
+	background: url("../img/section2_bg.png") no-repeat 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	height: 1100px;
+}
+.section2 h2{
+	font-size: 50px;
+	font-family: "FutBold";
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.1;
+	font-weight: 900;
+	color: #000;
+}
+.section2 h3{
+	font-size: 36px;
+	font-family: "MuseoCyr";
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.section2 .row1{
+	width:40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section2 .row1 button{
+ background: transparent;
+  box-shadow: 0px 5px 20px 0px rgba(40, 40, 40, 0.15);
+border: none;
+border-radius: 30px;
+padding: 18px 52px;
+border: 2px solid rgb(94, 151, 0);
+margin-left: 15px;
+margin-right: 15px;
+}
+.section2 .row1 button p{
+	line-height: 1;
+  font-size: 16px;
+  font-family: "FutHeavy";
+  color: rgb(94, 151, 0);
+
+}
+.section2 .row1 button.active ,
+.section2 .row1 button:hover
+{
+  background-color: rgb(94, 151, 0);}
+.section2 .row1 button.active p,
+.section2 .row1 button:hover p{
+	color: #fff;
+}
+.for_img{
+	height: 535px;
+	position: relative;
+}
+.bll{
+	position: absolute;
+	width: 100%;
+	top: 40px;
+	display: none;
+}
+.bll.active{
+	display: block;
+}
+.bll img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section2 .row_last{
+	padding-top: 40px;
+	position: relative;
+}
+.tech{
+  font-size: 16px;
+  font-family: "FutHeavy";
+  color: rgb(94, 151, 0);
+  line-height: 1.2;
+  text-decoration: underline;
+  display: inline-block;
+  margin-left: 200px;
+}
+.sect2_but, .sect4_but{
+	display: inline-block;
+  background-color: rgb(248, 112, 71);
+  box-shadow: 0px 5px 20px 0px rgba(40, 40, 40, 0.15);
+padding: 18px 33px;
+border: none;
+border-radius: 25px;
+margin-left: 30px;
+}
+.sect2_but p, .sect4_but p{
+	line-height: 1;
+  font-size: 16px;
+  font-family: "FutHeavy";
+  color: #fff;
+}
+
+.section3{
+	padding-top: 80px;
+	padding-bottom: 10px;
+}
+.section3 h2{
+  font-size: 40px;
+  font-family: "FutBold";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.section3 h2 span{
+	font-family: "MuseoCyr";
+	font-size: 36px;
+}
+.section3 .circle{
+	display: inline-block;
+	vertical-align: middle;
+  border-width: 2px;
+  border-color: rgb(189, 195, 199);
+  border-style: solid;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 27px;
+  height: 27px;
+  padding: 3px;
+  margin-right: 16px;
+}
+.section3 .circle_inside{
+
+  border-radius: 50%;
+  background-color: rgb(94, 151, 0);
+  width: 17px;
+  height: 17px;
+  display: none;
+}
+.section3 form .label{
+	margin-top: 24px;
+	margin-bottom: 24px;
+  font-size: 20px;
+  font-family: "FutBook";
+  color: rgb(0, 0, 0);
+
+}
+input[type="radio"]:checked+label .circle_inside{
+    display: block;
+}
+input[type="radio"]{
+	display: none;
+}
+.color_but{
+  background-color: rgb(248, 112, 71);
+  box-shadow: 0px 5px 20px 0px rgba(40, 40, 40, 0.15);
+padding: 18px 50px;
+border: none;
+border-radius: 32px;
+margin-top: 45px;
+}
+.color_but p{
+	line-height: 1;
+  font-size: 16px;
+  font-family: "FutHeavy";
+  color: #fff;
+}
+
+.section4{
+	background: url("../img/sect4_bg.png") no-repeat 50% 0%;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	padding-top: 110px;
+	position: relative;
+	min-height: 900px;
+}
+.section4 h2, .section5 h2, .section6 h2{
+	 font-size: 50px;
+  font-family: "FutBold";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: left;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section4 h2 span, .section5 h2 span, .section6 h2 span{
+	font-family: "MuseoCyr";
+	font-size: 36px;
+}
+.section4 .gallery{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.arrows{
+	position: absolute;
+	top: 240px;
+	left: 490px;
+}
+.sect4_but{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+.photo{
+	margin-bottom: 5px;
+	width: 285px;
+}
+.section5{
+	padding-bottom: 90px;
+}
+.section6 h2 span{
+	font-size: 50px;
+}
+.section6 {
+	background: url("../img/sect6_bg.png") no-repeat 50% 0%;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	padding-top: 120px;
+	padding-bottom: 80px;
+
+}
+.name{
+	font-family: "FutBook";
+	font-size: 22px;
+}
+.name span{
+  font-size: 22px;
+  font-family: "FutBold";
+  color: rgb(248, 112, 71);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.text{
+  font-size: 16px;
+  font-family: "FutBook";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+}
+.listen{
+  font-size: 16px;
+  font-family: "FutHeavy";
+  color: rgb(94, 151, 0);
+  text-decoration: underline;
+  line-height: 1.2;
+  text-align: left;
+margin-top: 15px;
+}
+
+.section7{
+	height: 540px;
+	background: url("../img/map.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.map_block{
+	min-height: 220px;
+	background: #fff;
+	margin-top: 200px;
+	padding: 37px;
+}
+.section7 p{
+	font-size: 20px;
+	color: #000;
+}
+.section7 .text1{
+	font-family: "FutBold";
+}
+.text2{
+	font-family: "FutBook";
+}
+.text3{
+	margin-top: 15px;
+	font-family: "FutBook";
+}
+.text3 span{
+	font-family: "FutHeavy";
+}
+.map_block button{
+	padding: 20px 37px;
+  background-color: rgb(248, 112, 71);
+  box-shadow: 0px 5px 20px 0px rgba(40, 40, 40, 0.15);
+border: none;
+border-radius: 35px;
+margin-top: 20px;
+}
+.map_block button p{
+	line-height: 1;
+  font-size: 16px;
+  font-family: "FutHeavy";
+  color: #fff;
+}
+.section8{
+	background: url("../img/sect8_bg.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 200px;
+	position: relative;
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+.section8 h2{
+	font-family: "FutBold";
+	font-weight: 900;
+	font-size: 86px;
+	color: #fff;
+	line-height: 1.1;
+}
+.section8 h3{
+	font-size: 43px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: "FutBold";
+	font-weight: 900;
+}
+.absol_img{
+	position: absolute;
+	display: block;
+	left: 100px;
+	bottom: 0px;
+	width: 500px;
+}
+
+.section8 .col-xs-5 p{
+font-size: 23px;
+  font-family: "FutBold";
+color: #fff;
+
+}
+.section8 button{
+	padding: 18px 30px;
+  border-radius: 24px;
+  background-color: rgb(248, 112, 71);
+  box-shadow: 0px 5px 20px 0px rgba(40, 40, 40, 0.15);
+border: none;
+display: block;
+}
+.section8 button p{
+	line-height: 1;
+  font-size: 16px;
+  font-family: "FutHeavy";
+  color: #fff;
+}
+footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+footer .head_top{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+footer .tel{
+	float: right;
+}
+footer .offer p{
+  font-size: 18px;
+  font-family: "FutBook";
+  color: rgb(248, 112, 71);
+  text-decoration: underline;
+  line-height: 1.2;
+}
+footer .offer span{
+	font-size: 18px;
+	 line-height: 1.2;
+color: #282828;
+text-decoration: none;
+font-family: "FutBook";
+font-weight: 100;
+}
+footer .top_b{
+	float: left;
+}

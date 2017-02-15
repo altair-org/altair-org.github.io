@@ -1,0 +1,44 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "FutBook";
+	src: url("../fonts/FuturaNewBook.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "FutHeavy";
+	src: url("../fonts/FuturaNewHeavy.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "FutExtra";
+	src: url("../fonts/futuraextra.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "FutBold";
+	src: url("../fonts/FuturaBold/ftn85.eot");
+	src:
+	url("../fonts/FuturaBold/ftn85.woff") format("woff"),
+	url("../fonts/FuturaBold/ftn85.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MuseoCyr";
+	src: url("../fonts/MuseoCyr.otf");
+	font-style: normal;
+	font-weight: normal;
+}
