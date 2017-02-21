@@ -1,0 +1,284 @@
+
+
+.calc_items .item{
+background:#fff;
+text-align:left;
+padding:10px 20px 20px 20px;
+margin-bottom:10px;
+position:relative;
+
+}
+.calc_items .item:last-child{
+margin-bottom:0px;
+}
+.calc_items .title{
+display:inline-block;
+font-size:20px;
+font-weight:600;
+width:250px;
+border-right:dashed 1px #ccc;
+vertical-align:top;
+margin-top: 10px;
+height: 115px;
+}
+.calc_items .title .man{
+position:absolute;
+bottom:7px;
+left:9px;
+}
+.calc_items .params{
+display:inline-block;
+height:50px;
+}
+.calc_items .item .params{
+max-height:155px;
+cursor:default;
+padding:4px 0 0 28px;
+width:265px;
+line-height:25px;
+font-size:13px;
+}
+.calc_items .item .params .rit{
+position:relative;
+padding-left:25px;
+}
+.calc_items .act{
+display:inline-block;
+width:250px;
+vertical-align:bottom;
+margin-bottom:-5px;
+}
+.calc_items .item .act img{
+margin-right:20px;
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-o-filter:grayscale(100%);
+-ms-filter: grayscale(100%);
+filter:grayscale(100%);
+opacity:.2;
+}
+.calc_items .item:hover .act img, #citems_block .calc_items .item .act img{
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+-o-filter:grayscale(0%);
+-ms-filter: grayscale(0%);
+filter:grayscale(0%);
+opacity:1;
+}
+.calc_items .act .top_txt{
+position:absolute;
+top:18px;
+width:300px;
+}
+.calc_items .prices{
+display:inline-block;
+float:right;
+margin-top:10px;
+}
+.calc_items .prices .submit{
+display:inline-block;
+padding:0 20px;
+margin-left:18px;
+}
+.calc_items .item:hover .submit a{
+color:#fff;
+}
+.calc_items .item:hover  .submit{
+background:#0077b3;
+}
+.calc_items .item:hover  .submit:hover{
+background:#2692c8;
+}
+.calc_items .prices .price{
+margin:0px;
+}
+.calc_items .prices .priced, .calc_items .prices .pricen {
+position:absolute;
+right:220px;
+white-space:nowrap;
+text-align:right;
+}
+.calc_items .prices.in_order .pricen {
+right:20px;
+}
+.calc_items .prices.in_order .submit {
+display:none;
+}
+.calc_items .prices .priced{
+display:none;
+}
+.calc_items .prices .dates{
+position:absolute;
+bottom:20px;
+right:20px;
+font-size:13px;
+line-height:13px;
+}
+.calc_items .prices .priced .price.old{
+color:#000;
+background:none;
+}
+.calc_items .prices .priced .price{
+background:#fa2323;
+color:#fff;
+}
+.slide_block{
+width:350px;
+display:inline-block;
+font-size:16px;
+margin:14px 30px 0 30px;
+vertical-align: top;
+}
+.slide_hdr{
+text-align:left;
+margin-bottom:5px;
+width:250px;
+display:inline-block;
+margin-top: -5px;
+}
+.slide_hdr b{
+margin-top: 5px;
+display:block;
+border:solid 1px #ccc;
+float:right;
+padding:6px 8px;
+}
+.slide_block b{
+font-size: 20px;
+float:right;
+}
+.slide_title{
+vertical-align:top;
+font-size: 32px;
+font-weight: 400;
+letter-spacing: -1px;
+margin-bottom:40px;
+}
+.slide_price{
+display:inline-block;
+text-align:right;
+vertical-align: top;
+}
+.calc_items .item .price, .slide_price .price {
+display:inline-block;
+font-weight:bold;
+font-size:20px;
+background:#ffd941;
+padding:7px 13px 8px 13px;
+color:#000;
+margin:0;
+position:relative;
+}
+
+.slide_price .price{
+margin-top:0px;
+width: 220px;
+text-align:center;
+padding-bottom:5px;
+font-weight:600;
+position:relative;
+}
+.slide_price .price .loading{
+position:absolute;
+display:none;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background:rgba(255, 217, 65,1) url('http://vipceiling.ru/DESIGN/SITE/images/calc_load.gif') center center no-repeat;
+}
+.slide_price .rub_s{
+font-weight:400;
+}
+.slide_price .submit{
+padding:0 20px;
+margin-left:15px;
+border-radius:4px;
+}
+.slide_price .submit:hover, .slide_price .submit.active{
+border-bottom-color:#0077b3;
+background:#0077b3;
+color:#fff;
+}
+.slide_price .submit.active:hover{
+background:#2692c8;
+}
+
+@media only screen and (max-width: 767px)  {
+
+
+	.slide_hdr{
+	margin:5px 0 15px 0;
+	line-height: 47px;
+	}
+	.slide_hdr b{
+	padding:0;
+	margin:0;
+	border:none;
+	font-size:20px;
+	line-height: 43px;
+	}
+	.slide_title, .slide_price{
+	display:block;
+	text-align:center;
+	width:95%;
+	margin:0 auto;
+	}
+	.slide_title{
+	font-size: 16pt;
+	line-height: 16pt;
+	font-weight: bold;
+	letter-spacing: -0.5pt;
+	}
+	.slide_price .from {
+	display:inline-block;
+	margin-top:7px;
+	}
+	.slide_price .from .pricemin{
+		font-weight:bold;
+	}
+	.slide_price .from .rub_s{
+		font-weight:100;
+	}
+	.slide_price .from .rub_s, .slide_price .from .pricemin{
+	font-size:30px;
+	letter-spacing:-1px;
+	}
+	.slide_price .submit {
+	width:50%;
+	float:right;
+	padding:0px;
+	margin-top:9px;
+	display:inline-block;
+	font-size:11px;
+	}
+	.callback .submit {
+	padding: 0 20px;
+	margin:10px auto 0 auto;
+	}
+	.slide_block .hdr {
+	margin: 25px 0;
+	text-align:center;
+	width:100%;
+	}
+	.slide_block .irs-min, .slide_block .irs-max {
+	display:none;
+	}
+	.slide_block {
+	width:95%;
+	margin: 0 auto 15px auto;
+	}
+
+	.slide_block .irs-slider {
+	}
+	.slide_block b {
+	font-size: 16px;
+	font-weight:normal;
+	border:solid 1px #333;
+	padding: 1px 10px;
+	margin:-2px 0 0 20px;
+	border-radius:4px;
+	float:none;
+	}
+
+}
