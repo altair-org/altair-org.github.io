@@ -382,6 +382,7 @@ h5{
 	bottom: 0%;
 }
 .box1:hover .circle1,
+.box1:focus .circle1,
 .box1:active .circle1{
   animation-name: slide1;
   animation-duration: 3s;
@@ -390,6 +391,7 @@ h5{
   animation-iteration-count: infinite;
 }
 .box1:hover .circle2,
+.box1:focus .circle2,
 .box1:active .circle2{
   animation-name: slide2;
   animation-duration: 3s;
@@ -398,6 +400,7 @@ h5{
   animation-iteration-count: infinite;
 }
 .box1:hover .circle3,
+.box1:focus .circle3,
 .box1:active .circle3{
   animation-name: slide3;
   animation-duration: 3s;
@@ -406,6 +409,7 @@ h5{
   animation-iteration-count: infinite;
 }
 .box1:hover .circle4,
+.box1:focus .circle4,
 .box1:active .circle4{
   animation-name: slide4;
   animation-duration: 3s;
@@ -475,7 +479,8 @@ height: 50px;
 
 
 .animate1_2 .bbox:hover .box1,
-.animate1_2 .bbox:active .box1{
+.animate1_2 .bbox:active .box1,
+.animate1_2 .bbox:focus .box1{
 
 	animation-name: deform;
   animation-duration: 7s;
