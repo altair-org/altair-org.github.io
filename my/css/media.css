@@ -9,6 +9,10 @@
 .menu{
 	padding-left: 0px;
 }
+.review_icon{
+	height: 60px;
+}
+
 }
 
 /* Medium Devices, Desktops */
@@ -64,7 +68,6 @@
 
 
 
-
 }
 
 /* Small Devices, Tablets */
@@ -84,6 +87,9 @@
 }
 .can h2{
 	padding-left: 15px;
+}
+.review_icon{
+	margin-left: 0;
 }
 }
 
@@ -170,7 +176,14 @@ margin-right: auto;}
 	display: block;
 	border-right: none;
 	border-bottom:  1px solid #ff5274;
+}
 
+.animate3 form{
+	width: 100%;
+}
+.animate3{
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .fa-bars{
 	display: block;
@@ -188,6 +201,19 @@ margin-right: auto;}
 	padding-top: 0;
 	padding-bottom: 0;
 }
+.reviews ul{
+	padding-left: 10px;
+}
+.reviews h6{
+	font-size: 20px;
+}
+.review_text{
+	font-size: 14px;
+}
+.reviews h2{
+	padding-left: 15px;
+	font-size: 26px;
+}
 #header .menu.menu_mob_active{
 height: 100px;
 transition: all 1s ease-in;
@@ -204,6 +230,10 @@ transition: all 1s ease-in;
 	margin-left: auto;
 	margin-right: auto;
 	float: none;
+}
+.animate4_bl{
+	width: 100%;
+	min-height: 220px;
 }
 }
 

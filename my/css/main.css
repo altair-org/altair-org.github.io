@@ -655,7 +655,7 @@ top: 60px;
 	min-height: 200px;
 	padding: 10px;
 }
-#ggo{
+#ggo, #form_true{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -741,3 +741,7 @@ width: 390px;
 	text-transform: uppercase;
 }
 .fa-bars{display: none;}
+
+.menu_wrap {
+	width: 100% !important;
+}
