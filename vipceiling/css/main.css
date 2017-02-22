@@ -1,0 +1,108 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+    outline-offset: 0px;
+}
+*:focus{
+	outline:none;
+}
+/*Элемент выше для того, чтобы не было цвето у фокусированных*/
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	color: rgb(0, 119, 179);
+	min-height: 2900px;
+}
+
+.main_menu{
+background: #fff;
+width: 100%;
+padding: 10px 30px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px 1px;
+position: fixed;
+}
+
+.main_menu .name{
+	display: inline-block;
+	text-transform: uppercase;
+}
+.main_menu .logo{
+	display: inline-block;
+}
+.main_menu .contacts_bl{
+	display: inline-block;
+	float: right;
+}
+.svgicon{
+height: 30px;
+display: inline-block;
+vertical-align: middle;
+margin-top: -10px;
+}
+.menu_list{
+position: absolute;
+height: 0px;
+overflow: hidden;
+background: #fff;
+
+top: 30px;
+left: 29px;
+padding-left: 0px;
+transition: all 1s ease-in;
+}
+.menu_list_active{
+	height: 200px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px 1px;
+}
+.menu_list li{
+list-style: none;
+padding: 5px 10px;
+
+}
+
+header{
+	min-height: 600px;
+}
+
+h1{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 60px;
+	color: rgb(0, 119, 179);
+text-transform: uppercase;
+}
+h2{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 48px;
+	color: #000;
+}
+
+h4{
+	text-align: center;
+}
