@@ -1,0 +1,754 @@
+*::-webkit-input-placeholder {
+	color: #000;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #000;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+    outline-offset: 0px;
+}
+*:focus{
+	outline:none;
+}
+/*Элемент выше для того, чтобы не было цвето у фокусированных*/
+
+body {
+	font-family: "ProbaPro-Regular", sans-serif;
+	font-size: 17px;
+}
+p,h1,h2,h3,h4,h5,h6{
+	margin: 0;padding: 0;
+}
+.logo, .fact_info, .cont_menu{
+	display: inline-block;
+}
+header{
+	min-height: 750px;
+	background: url("../img/header_bg.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 20px;
+}
+.head_menu{
+	text-align: center;
+}
+.logo{
+	width: 250px;
+	float: left;
+}
+.logo h6{
+	font-size: 34px;
+font-family: "ProbaProBold";
+color: #fff;
+text-align: left;}
+.logo img{
+	text-align: left;
+	margin-bottom: 50px;
+	margin-right: 20px;
+}
+.logo p{
+	font-size: 14px;
+  color: rgb(217, 208, 210);
+  line-height: 1.357;
+  text-align: left;
+}
+.fact_info{
+	padding-top: 20px;
+	 text-align: left;
+	 min-width: 250px;
+}
+.fact_info img{
+	margin-right: 10px;
+	margin-bottom: 20px;
+	 vertical-align: middle;
+}
+.fact_info p{
+	font-size: 17px;
+	color: #fff;
+	 line-height: 1.35;
+  text-align: left;
+
+
+}
+.fact_info .p2{
+	font-size: 17px;
+	font-family: "ProbaProSemiBold";
+	color: #fff;
+}
+.fact_info .p2 span{
+	color: #fed36e;
+}
+.cont_menu{
+	float: right;
+	text-align: left;
+}
+.cont_menu p{
+	color: #fff;
+	line-height: 1.24;
+}
+.cont_menu a{
+	font-size: 17px;
+	color: #fff;
+	text-decoration: underline;
+	line-height: 1.2;
+}
+.cont_menu .tel_menu{
+	font-family: "ProbaProSemiBold";
+	font-size: 24px;
+	color: #fff;
+	line-height: 1.3;
+	text-decoration: none;
+}
+h1{
+	font-size: 66px;
+  font-family: "ProbaProSemiBold";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: left;
+margin-top: 100px;
+margin-bottom: 80px;
+}
+.head_row p{
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  line-height: 1.333;
+}
+.head_row img{
+	margin-bottom: 20px;
+}
+.section1{
+	padding-top: 90px;
+	background: url("../img/sect1_bg.png");
+	min-height: 645px;
+}
+h2{
+  font-size: 42px;
+  color: rgb(255, 255, 255);
+  line-height: 1.248;
+  text-align: center;
+font-family: "ProbaProMedium";
+}
+h6{
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  line-height: 1.833;
+  text-align: center;
+
+}
+h6 span{
+	color: #fed36e;
+}
+.section1 h6{
+	margin-bottom: 90px;
+}
+.section1 .col-md-4 h5,
+.section5 .col-md-4 h5,
+.section9 .col-md-4 h5
+{
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+margin-bottom: 14px;
+font-weight: 300;
+}
+.sect1_input{
+	padding: 23px;
+	border: none;
+	background: #fff;
+	width: 300px;
+	font-size: 17px;
+	color: #000;
+	border-radius: 2px;
+	display: block;
+	width: 340px;
+	
+}
+.input_center{
+	margin-left: auto;
+	margin-right: auto;
+}
+.input_left{
+	margin-left: auto;
+}
+.input_right{
+	margin-right: auto;
+}
+form .row .col-md-4:nth-child(2) h5,
+form .row .col-md-4:nth-child(2) p{
+	padding-left: 10px;
+}
+
+form .row .col-md-4:nth-child(1) h5,
+form .row .col-md-4:nth-child(1) p{
+	padding-left: 20px;
+}
+
+
+.section1 .col-md-4 p, 
+.section5 .col-md-4 p{
+  font-size: 14px;
+  color: rgb(184, 184, 184);
+  line-height: 1.429;
+}
+.sect1_button{
+	margin-top: 48px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  border-radius: 5px;
+  background-image: -moz-linear-gradient( 90deg, rgb(46,147,110) 0%, rgb(18,205,139) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(46,147,110) 0%, rgb(18,205,139) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(46,147,110) 0%, rgb(18,205,139) 100%);
+  box-shadow: 0px 4px 0px 0px rgba(29, 120, 87, 0.004);
+padding: 25px 50px;
+border:none;
+border-bottom: 4px solid #1d7857;
+}
+.sect1_button p, .sect2_button p, .sect9_but p{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+.section2{
+	position: relative;
+	height: 735px;
+	padding-top: 90px;
+}
+.sect2_img{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 735px;
+	width: 46%;
+	background: url("../img/sect2_bg.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.section2 h2{
+	color: #000;
+	text-align: left;
+	letter-spacing: 0.01em;
+}
+.section2 h4{
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  	letter-spacing: 0.01em;
+  	margin-top: 20px;
+  	margin-bottom: 60px;
+}
+.for_caption{
+	padding-top: 17px;
+	padding-bottom: 23px;
+	border-bottom: 1px solid #eeeeee;
+	background: url("../img/sect2_but.png") no-repeat 98% 50%;
+	transition: all 1s ease-in;
+}
+.caption{
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+}
+.for_caption p{
+	overflow: hidden;
+  font-size: 18px;
+  color: rgb(33, 33, 33);
+  line-height: 1.444;
+width: 86%;
+height: 0px;
+transition: all 1s ease-in;
+}
+.for_caption.for_caption_active p{
+	display: block;
+	height: 120px;
+}
+.for_caption.for_caption_active{
+	background: url("../img/sect2_but2.png") no-repeat 98% 25px;
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+.for_caption.for_caption_active h6{
+color: #22ad7a;
+}
+
+.section3{
+	background: #f7f3ed;
+	padding-top: 100px;
+	padding-bottom: 120px;
+}
+.section3 h2{
+	color: #000;
+	text-align: left;
+	width: 60%;
+	margin-bottom: 25px;
+}
+.section3 h4{  font-size: 24px;
+	text-align: left;
+  color: rgb(0, 0, 0);
+}
+.num{
+	height: 75px;
+	margin-top: 70px;
+}
+.quality h5{
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1;
+margin-top: 27px;
+margin-bottom: 21px;
+}
+.quality p{
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  line-height: 1.529;
+width: 70%;
+}
+.section4{
+	padding-top: 90px;
+	padding-bottom: 120px;
+}
+.section4 h2{
+	text-align: left;
+	color: #000;
+	margin-bottom: 85px;
+	width: 50%;
+}
+.section4 .col-md-5:nth-child(2) h6{
+  font-size: 36px;
+  color: rgb(34, 173, 122);
+  font-weight: bold;
+  line-height: 0.9;
+  text-align: left;
+  padding-bottom: 0;
+  padding-left: 25px;
+}
+.section4 .col-md-5:nth-child(3) h6{
+  font-size: 36px;
+  color: #d03137;
+  font-weight: bold;
+  line-height: 0.9;
+  text-align: left;
+  padding-bottom: 0;
+  padding-left: 25px;
+}
+.section4 .why_bl{
+	padding-left: 40px;
+	padding-top: 48px;
+	padding-right: 80px;
+	height: 280px;
+}
+.why_bl2{
+	height: 280px
+}
+
+.col-md-5 p{
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  line-height: 1.471;
+}
+.col-md-2 p{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  line-height: 1.1;
+  text-align: center;
+}
+.why_bl_11 {
+	background: #7cc576;
+}
+.why_bl_21 {
+	background: #22ad7a;
+}
+.why_bl_31 {
+	background: #7cc576;
+}
+
+.why_bl_12{
+	background:  url("../img/why1_1.png") #f5f5f5 no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.why_bl_13{
+	background: url("../img/why1_2.png")  #ededed no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.why_bl_22{
+	background: url("../img/why2_1.png") #ededed no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.why_bl_23{
+	background:  url("../img/why2_2.png") #f5f5f5 no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.why_bl_32{
+	background: url("../img/why3_1.png") #ededed no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.why_bl_33{
+	background: url("../img/why3_2.png") #ededed no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.why_icon{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 90px;
+	margin-bottom: 20px;
+}
+
+.section5{
+	padding-top: 90px;
+	padding-bottom: 90px;
+	background: url("../img/sect5_bg.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.section5 h2{
+	width: 60%;
+	display: block;
+	margin-left: auto;margin-right: auto;
+}
+.section5 form{
+	padding-top: 80px;
+}
+.sect2_button{
+	margin-top: 35px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  border-radius: 5px;
+  background-image: -moz-linear-gradient( 90deg, rgb(46,147,110) 0%, rgb(18,205,139) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(46,147,110) 0%, rgb(18,205,139) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(46,147,110) 0%, rgb(18,205,139) 100%);
+  box-shadow: 0px 4px 0px 0px rgba(29, 120, 87, 0.004);
+padding: 25px 50px;
+border:none;
+border-bottom: 4px solid #1d7857;
+width: 340px;
+}
+
+.section6{
+	padding-top:90px ;
+	padding-bottom:70px ;
+
+}
+.section6 h2{
+	color: #000;
+	text-align: left;
+}
+.section7{
+	padding-bottom: 115px;
+}
+.section7 .container{
+	border-top: 1px solid #ededed;
+	padding-top: 65px;
+}
+.section7 .col-md-3 img{
+	display: block;
+	margin-bottom: 30px;
+	vertical-align: bottom;
+}
+
+.section7 h2{
+	color: #000;
+	text-align: left;
+	margin-bottom: 85px;
+}
+.section7 h6{
+  font-size: 22px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.091;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.section7 .col-md-3 p{
+  font-size: 17px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.529;
+	width: 85%;
+}
+.section8{
+	padding-top: 95px;
+	height: 780px;
+	background: #f7f2eb;
+}
+.section8 h2{
+	color: #000;
+	text-align: left;
+	margin-bottom: 80px;
+}
+.section8 .col-md-6 span{
+  font-size: 100px;
+  font-family: "Proba Pro";
+  color: rgb(254, 211, 110);
+  font-weight: bold;
+float: left;
+vertical-align: bottom;
+margin-right: 30px;
+width: 40px;
+}
+.section8 .col-md-6 h5{
+  font-size: 24px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.167;
+	width: 420px;
+	padding-top: 35px;
+	margin-bottom: 20px;
+}
+.section8 .col-md-6 p{
+	padding-left: 70px;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  line-height: 1.529;
+}
+.section8 h3{
+	margin-top: 100px;
+  font-size: 34px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.294;
+text-align: center;
+}
+.video{
+	position: absolute;
+	left: 25%;
+	width: 50%;
+	height: auto;
+}
+.section9{
+	padding-top: 300px;
+	background: url("../img/sect1_bg.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-bottom: 110px;
+}
+.section9 h2{
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section9 h6{
+	margin-bottom: 60px;
+}
+
+.sect9_but{
+  border-radius: 5px;
+  background-image: -moz-linear-gradient( 90deg, rgb(46,147,110) 0%, rgb(18,205,139) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(46,147,110) 0%, rgb(18,205,139) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(46,147,110) 0%, rgb(18,205,139) 100%);
+  box-shadow: 0px 4px 0px 0px rgba(29, 120, 87, 0.004);
+border: none;
+width: 300px;
+padding: 24px;
+display: block;
+border:none;
+border-bottom: 4px solid #1d7857;
+margin-top: -2px;
+}
+.section10{
+	padding-top: 80px;
+	padding-bottom: 90px;
+}
+.about_img{
+	width: 100%;
+}
+.line{
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-top: 40px;
+}
+.line +p{
+  font-size: 22px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.455;
+margin-top: 40px;
+}
+.section10 .clearfix{
+	margin-bottom: 60px;
+}
+
+.section10 .col-md-3 img{
+	vertical-align: middle;
+
+}
+.section10 .col-md-3 p{
+	margin-top: 20px;
+ font-size: 17px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.412;
+  width: 180px;
+}
+.for_img{
+	height: 70px;
+	vertical-align: bottom;
+	padding-top: 20px;
+}
+
+.sect_map{
+	height: 535px;
+	background: url("../img/map.png") no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	padding-top: 110px;
+}
+.map_block{
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.09);
+width: 470px;
+padding-left: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.map_block h5{
+  font-size: 34px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.294;
+}
+.map_block .call,.map_block .tel span{
+  font-size: 17px;
+  font-family: "Proba Pro";
+  color: rgb(70, 70, 70);
+  line-height: 2.588;
+  font-weight: normal;
+
+}
+.map_block .tel{
+  font-size: 32px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.375;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+.map_block hr+p{
+  font-size: 18px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.556;
+}
+address{
+	 font-size: 18px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  
+  line-height: 1.556;
+}
+footer{
+	padding-bottom: 35px;
+	vertical-align: bottom;
+	padding-top: 00px;
+}
+
+footer .copy{
+  font-size: 14px;
+  font-family: "Proba Pro";
+  color: rgb(112, 112, 112);
+  line-height: 1.429;
+}
+footer .copy2{
+  font-size: 15px;
+  font-family: "Proba Pro";
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  line-height: 1.333;
+}
+footer .email{
+  font-size: 15px;
+  font-family: "Proba Pro";
+  color: rgb(42, 181, 124);
+  text-decoration: underline;
+  line-height: 1.333;
+}
+.footer_img{
+	float: right;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -40px;
+}
