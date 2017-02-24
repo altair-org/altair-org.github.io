@@ -288,7 +288,7 @@ border-bottom: 4px solid #1d7857;
 .section2{
 	position: relative;
 	height: 735px;
-	padding-top: 90px;
+	padding-top: 70px;
 }
 .sect2_img{
 	position: absolute;
@@ -296,9 +296,9 @@ border-bottom: 4px solid #1d7857;
 	top: 0px;
 	height: 735px;
 	width: 46%;
-	background: url("../img/sect2_bg.png") no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background: url("../img/sect2_bg.png") no-repeat 90%;
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
 }
 .section2 h2{
 	color: #000;
@@ -310,7 +310,7 @@ border-bottom: 4px solid #1d7857;
   color: rgb(0, 0, 0);
   	letter-spacing: 0.01em;
   	margin-top: 20px;
-  	margin-bottom: 40px;
+  	margin-bottom: 35px;
 }
 .for_caption{
 	padding-top: 17px;
@@ -338,7 +338,7 @@ transition: all 1s ease-in;
 .for_caption.for_caption_active p{
 	padding-top: 10px;
 	display: block;
-	height: 170px;
+	height: 190px;
 }
 .for_caption.for_caption_active{
 	background: url("../img/sect2_but2.png") no-repeat 98% 25px;
@@ -380,7 +380,7 @@ margin-bottom: 21px;
   font-size: 17px;
   color: rgb(0, 0, 0);
   line-height: 1.529;
-width: 70%;
+width: 76%;
 }
 .section4{
 	padding-top: 90px;
@@ -400,7 +400,7 @@ width: 70%;
   text-align: left;
   padding-bottom: 0;
   padding-left: 25px;
-  margin-bottom: -1px;
+  margin-bottom: -3px;
 }
 .section4 .col-md-5:nth-child(3) h6{
   font-size: 36px;
@@ -411,7 +411,7 @@ width: 70%;
   padding-bottom: 0;
   padding-left: 25px;
 
-margin-bottom: -1px;
+margin-bottom: -3px;
 
 }
 .section4 .why_bl{
@@ -509,7 +509,7 @@ margin-bottom: -1px;
 	background-size: cover;
 }
 .section5 h2{
-	width: 60%;
+	width: 70%;
 	display: block;
 	margin-left: auto;margin-right: auto;
 }
@@ -574,7 +574,7 @@ width: 340px;
   font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 1.529;
-	width: 85%;
+	width: 75%;
 }
 .section8{
 	padding-top: 95px;
@@ -582,13 +582,14 @@ width: 340px;
 	background: url("../img/mont_bg.png") no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+	position: relative;
 }
 .section8 h2{
 	color: #000;
 	text-align: left;
 	margin-bottom: 80px;
 }
-.section8 .col-md-6 span{
+.section8 .col-md-6>span{
   font-size: 100px;
   font-family: "ProbaPro-Regular";
   color: rgb(254, 211, 110);
@@ -613,6 +614,10 @@ width: 40px;
   font-size: 17px;
   color: rgb(0, 0, 0);
   line-height: 1.529;
+  width: 85%;
+}
+.section8 .col-md-6 p span{
+	font-weight: bold;
 }
 .section8 h3{
 	margin-top: 100px;
@@ -624,8 +629,6 @@ text-align: center;
 }
 .video{
 	position: absolute;
-	left: 25%;
-	width: 50%;
 	height: auto;
 }
 .video img{
@@ -669,6 +672,16 @@ margin-top: -2px;
 	padding-top: 80px;
 	padding-bottom: 90px;
 }
+.section10 h2{
+	color: #000;
+	text-align: left;
+	padding-left: 15px;
+	margin-bottom: 80px;
+}
+.section10 .for_list{
+	min-height: 320px;
+	background: url("../img/list.png") no-repeat 100% 0px;
+}
 .about_img{
 	width: 100%;
 }
@@ -683,6 +696,7 @@ margin-top: -2px;
   color: rgb(0, 0, 0);
   line-height: 1.455;
 margin-top: 60px;
+width: 84%;
 }
 .section10 .clearfix{
 	margin-bottom: 60px;
@@ -880,7 +894,8 @@ footer .email{
 
 .for_review_text{
 	padding-top: 35px;
-	background: url("../img/blockquotes.png") no-repeat 90% 10px;
+	background: url("../img/blockquotes.png") no-repeat 100% 0px;
+	overflow: visible;
 }
 .review_text h4{
 	margin-bottom: 34px;
@@ -903,6 +918,7 @@ footer .email{
 	margin-left: 2px;
 	margin-right: 2px;
 	border-radius: 50%;
+	padding: 0;
 	display: inline-block;
 text-align: center;
 cursor: pointer;
@@ -910,7 +926,7 @@ cursor: pointer;
 .number p{
   font-size: 18px;
   color: rgb(0, 0, 0);
-  line-height: 2.444;
+  line-height: 45px;
 
 }
 .number.active{
