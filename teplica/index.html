@@ -22,6 +22,8 @@
 	<link rel="stylesheet" href="css/media.css" />
 </head>
 <body>
+
+<div class="popup_bg"></div>
 <header>
 	<div class="container">
 		<div class="head_menu">
@@ -38,7 +40,7 @@
 			<div class="cont_menu">
 				<p>Москва</p>
 				<a href="74996497623" class="tel_menu">8 499 649-76-23</a><br>
-				<a href="#">Перезвоните мне</a>
+				<p href="#" class="to_open_form">Перезвоните мне</a>
 			</div>
 		</div>
 		<div class="clearfix"></div>
@@ -402,6 +404,31 @@
 		
 	</div>
 </footer>
+
+
+<div class="popup">
+	<div class="close"><img src="img/close.png" alt=""></div>
+	<h3>Чтобы заказать звонок, заполните форму ниже</h3>
+	<form action="">
+		<input type="text" class="popup_form" id="popup_name" placeholder="Введите Ваше имя">
+		<input type="text" class="popup_form" id="popup_phone" placeholder="Введите Ваш телефон">
+		<button class="popup_but" type="button">
+			<p>Заказать звонок</p>
+		</button>
+		<hr>
+	</form>
+	<img src="img/popup_photo.png" alt="" align="left" class="popup_photo">
+	<p class="popup_text">Менеджер перезвонит Вам в течение 5 минут и ответит на все Ваши вопросы</p>
+</div>
+<div class="popup_hover">
+<div class="close"><img src="img/close.png" alt=""></div>
+		<h3>Спасибо за Вашу заявку</h3>
+		<h6>Менеджер свяжется с Вами в течение 5 минут</h6>
+		<hr>
+		<p class="popup_hover_text">А пока почитайте в группе ВКонтакте, как получить самый богатый урожай</p>
+		<a href="www.vk.com/public131964893" class="popup_vk">www.vk.com/public131964893</a>
+		<img src="img/popup_hov.png" alt="" class="popup_hov">
+	</div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -422,9 +449,26 @@
 		$(".for_caption").click(function(){
 			$(".for_caption_active").removeClass("for_caption_active");
 			$(this).toggleClass("for_caption_active");
+		});
+
+
+		$(".to_open_form").click(function(){
+			$(".popup_bg").addClass("popup_bg_active");
+			$(".popup").show();
+		});
+
+		$(".close").click(function(){
+			$(".popup").hide();
+			$(".popup_hover").hide();
+			$(".popup_bg").removeClass("popup_bg_active");
+		});
+		$(".popup_but").click(function(){
+			$(".popup").hide();
+			$(".popup_hover").show();
 		})
-	</script>
-	<script src="js/common.js"></script>
+
+	</script><!--
+	<script src="js/common.js"></script>-->
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
