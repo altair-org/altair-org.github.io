@@ -249,9 +249,12 @@ form .row .col-md-4:nth-child(1) p{
 	padding-left: 20px;
 }
 
-
+.to_open_form:hover{
+	color: #ededed;
+}
 .section1 .col-md-4 p, 
 .section5 .col-md-4 p{
+	margin-top:5px;
   font-size: 14px;
   color: rgb(184, 184, 184);
   line-height: 1.429;
@@ -269,6 +272,11 @@ form .row .col-md-4:nth-child(1) p{
 padding: 25px 50px;
 border:none;
 border-bottom: 4px solid #1d7857;
+}
+.sect1_button:hover, .sect2_button:hover, .sect9_but:hover, .popup_but:hover{
+	background-image: -moz-linear-gradient( 90deg, rgb(46,147,110) 50%, rgb(18,205,139) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(46,147,110) 50%, rgb(18,205,139) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(46,147,110) 50%, rgb(18,205,139) 100%);
 }
 .sect1_button p, .sect2_button p, .sect9_but p, .popup_but p{
   font-size: 20px;
@@ -300,7 +308,7 @@ border-bottom: 4px solid #1d7857;
   color: rgb(0, 0, 0);
   	letter-spacing: 0.01em;
   	margin-top: 20px;
-  	margin-bottom: 60px;
+  	margin-bottom: 40px;
 }
 .for_caption{
 	padding-top: 17px;
@@ -326,8 +334,9 @@ height: 0px;
 transition: all 1s ease-in;
 }
 .for_caption.for_caption_active p{
+	padding-top: 10px;
 	display: block;
-	height: 120px;
+	height: 170px;
 }
 .for_caption.for_caption_active{
 	background: url("../img/sect2_but2.png") no-repeat 98% 25px;
@@ -339,7 +348,7 @@ color: #22ad7a;
 }
 
 .section3{
-	background: #f7f3ed;
+	background: url("../img/mont_bg.png") repeat-y;
 	padding-top: 100px;
 	padding-bottom: 120px;
 }
@@ -389,6 +398,7 @@ width: 70%;
   text-align: left;
   padding-bottom: 0;
   padding-left: 25px;
+  margin-bottom: -1px;
 }
 .section4 .col-md-5:nth-child(3) h6{
   font-size: 36px;
@@ -398,6 +408,9 @@ width: 70%;
   text-align: left;
   padding-bottom: 0;
   padding-left: 25px;
+
+margin-bottom: -1px;
+
 }
 .section4 .why_bl{
 	padding-left: 40px;
@@ -435,7 +448,20 @@ width: 70%;
 	-webkit-background-size: 100%;
 	background-size: 100%;
 }
-
+.why_bl_12 span,
+.why_bl_22 span, 
+.why_bl_32 span  
+{
+	color: #22ad7a;
+	font-weight: bold;
+}
+.why_bl_13 span,
+.why_bl_23 span, 
+.why_bl_33 span  
+{
+	color: #d13137;
+	font-weight: bold;
+}
 .why_bl_13{
 	background: url("../img/why1_2.png")  #ededed no-repeat;
 	-webkit-background-size: 100%;
@@ -512,6 +538,7 @@ width: 340px;
 .section6 h2{
 	color: #000;
 	text-align: left;
+	margin-bottom: 85px;
 }
 .section7{
 	padding-bottom: 115px;
@@ -533,7 +560,7 @@ width: 340px;
 }
 .section7 h6{
   font-size: 22px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.091;
@@ -542,7 +569,7 @@ width: 340px;
 }
 .section7 .col-md-3 p{
   font-size: 17px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 1.529;
 	width: 85%;
@@ -550,7 +577,9 @@ width: 340px;
 .section8{
 	padding-top: 95px;
 	height: 780px;
-	background: #f7f2eb;
+	background: url("../img/mont_bg.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 .section8 h2{
 	color: #000;
@@ -559,7 +588,7 @@ width: 340px;
 }
 .section8 .col-md-6 span{
   font-size: 100px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(254, 211, 110);
   font-weight: bold;
 float: left;
@@ -569,7 +598,7 @@ width: 40px;
 }
 .section8 .col-md-6 h5{
   font-size: 24px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.167;
@@ -586,7 +615,7 @@ width: 40px;
 .section8 h3{
 	margin-top: 100px;
   font-size: 34px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 1.294;
 text-align: center;
@@ -596,6 +625,12 @@ text-align: center;
 	left: 25%;
 	width: 50%;
 	height: auto;
+}
+.video img{
+display:block;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
 }
 .section9{
 	padding-top: 300px;
@@ -642,10 +677,10 @@ margin-top: -2px;
 }
 .line +p{
   font-size: 22px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 1.455;
-margin-top: 40px;
+margin-top: 60px;
 }
 .section10 .clearfix{
 	margin-bottom: 60px;
@@ -658,10 +693,10 @@ margin-top: 40px;
 .section10 .col-md-3 p{
 	margin-top: 20px;
  font-size: 17px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 1.412;
-  width: 180px;
+  width: 240px;
 }
 .for_img{
 	height: 70px;
@@ -671,10 +706,7 @@ margin-top: 40px;
 
 .sect_map{
 	height: 535px;
-	background: url("../img/map.png") no-repeat;
-	-webkit-background-size: 100%;
-	background-size: 100%;
-	padding-top: 110px;
+	position: relative;
 }
 .map_block{
   border-radius: 2px;
@@ -684,16 +716,20 @@ width: 470px;
 padding-left: 50px;
 padding-top: 50px;
 padding-bottom: 50px;
+position:absolute;
+left:130px;
+top:100px;
+
 }
 .map_block h5{
   font-size: 34px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 1.294;
 }
 .map_block .call,.map_block .tel span{
   font-size: 17px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(70, 70, 70);
   line-height: 2.588;
   font-weight: normal;
@@ -701,7 +737,7 @@ padding-bottom: 50px;
 }
 .map_block .tel{
   font-size: 32px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.375;
@@ -710,14 +746,14 @@ padding-bottom: 50px;
 }
 .map_block hr+p{
   font-size: 18px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.556;
 }
 address{
 	 font-size: 18px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   
   line-height: 1.556;
@@ -725,25 +761,25 @@ address{
 footer{
 	padding-bottom: 35px;
 	vertical-align: bottom;
-	padding-top: 00px;
+	padding-top: 30px;
 }
 
 footer .copy{
   font-size: 14px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(112, 112, 112);
   line-height: 1.429;
 }
 footer .copy2{
   font-size: 15px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   text-decoration: underline;
   line-height: 1.333;
 }
 footer .email{
   font-size: 15px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(42, 181, 124);
   text-decoration: underline;
   line-height: 1.333;
@@ -755,12 +791,114 @@ footer .email{
 	margin-top: -40px;
 }
 
+.review_text{
+	display: none;
+}
+/*Slider*/
 
 
+.for_review_img, .for_review_text{
+	height: 400px;
+	overflow: hidden;
+}
 
+.review_bl_img{
+	display: none;
+	opacity: 0;
+	transition: all 1s ease-in;
+}
+.review_bl_img_active{
+	display: block;
+	opacity: 1;
+	transition: all 1s ease-in;
+}
 
+.review_text h4{
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.review_text p{
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  line-height: 1.529;
+}
+.review_text .name{
+	font-size: 17px;
+	color: #7d7d7d;
+}
+.review_text .name b{
+	font-size: 19px;
+	font-weight: bold;
+	color: #000;
+}
+.review_text_active{
+	display: block;
+}
+.review_img{
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.review_img1 .review_img{
+	height: 100%;
+	width: auto;
+}
+.section6 .prev{
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+}
+.section6 .next{
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: top;
+	cursor: pointer;
+}
 
+.section6 .col-md-6:nth-child(2){
+	padding-left: 60px;
+}
 
+.for_review_text{
+	padding-top: 35px;
+	background: url("../img/blockquotes.png") no-repeat 90% 10px;
+}
+.review_text h4{
+	margin-bottom: 34px;
+}
+.review_text p{
+	margin-bottom: 40px;
+}
+
+.numbers{
+	margin-top: 60px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+}
+.number{
+	width: 50px;
+	height: 50px;
+	margin-left: 2px;
+	margin-right: 2px;
+	border-radius: 50%;
+	display: inline-block;
+text-align: center;
+cursor: pointer;
+}
+.number p{
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  line-height: 2.444;
+
+}
+.number.active{
+	border: 2px solid #2db181;
+}
 
 
 
@@ -805,7 +943,7 @@ footer .email{
 }
 .popup h3,.popup_hover h3{
   font-size: 32px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 1.063;
   margin-bottom: 35px;
@@ -815,7 +953,7 @@ footer .email{
 }
 .popup_hover h6{
   font-size: 20px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 1.15;
   text-align: center;
@@ -831,7 +969,7 @@ padding: 26px 10px 25px 28px;
 width: 100%;
 border: none;
   font-size: 17px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 0;
   margin-bottom: 13px;
@@ -855,7 +993,7 @@ border-bottom: 4px solid #1d7857;
 }
 .popup .popup_text{
   font-size: 17px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 1.353;
 }
@@ -864,7 +1002,7 @@ border-bottom: 4px solid #1d7857;
 }
 .popup_hover_text{
   font-size: 18px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
   color: rgb(0, 0, 0);
   line-height: 1.444;
   text-align: center;
@@ -883,7 +1021,7 @@ margin-bottom: 30px;
 display: block;
 margin-left: auto;
 margin-right: auto;font-size: 16px;
-  font-family: "Proba Pro";
+  font-family: "ProbaPro-Regular";
 
 }
 .popup_hov{
