@@ -356,8 +356,10 @@
 		 	</div>
 		 </div>
 		 <h3>Посмотрите, как легко происходит процесс монтажа</h3>
-		 <div class="video">
-		 	<img src="img/vidos.png" alt="">
+		 <div class="video" style="width:45%; left:27.5%">
+		 	<!--<img src="img/vidos.png" alt="">-->
+		 	<div style="margin-left: auto;margin-right: auto; position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/gZhREzk1cK8?ecver=2" width="100%" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+
 		 </div>
 	</div>
 </section> 
@@ -430,8 +432,11 @@
 
 </section>
 
-<section class="sect_map">
+<section class="sect_map"><!--
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=oVg82fVrnyEu_zoFlfJOF5xrnMDg6FuO&amp;width=100%25&amp;height=535&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+<div class="container" style="position:relative">-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4471.377667495318!2d37.75713859967323!3d55.920095607435464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b531944f4b5183%3A0xccef58e04c25a2a6!2z0L_RgNC-0YHQvy4g0J7Qu9C40LzQv9C40LnRgdC60LjQuSwgMTPRgTEsINCc0YvRgtC40YnQuCwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTQxMDA2!5e0!3m2!1sru!2sru!4v1487960997637" width="100%" height="535" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="container" style="position:relative">
 	<div class="map_block">
 		<h5>Остались вопросы?</h5>
 		<p class="call">Позвоните по номеру</p>
@@ -442,19 +447,19 @@
 		<p>Наш адрес:</p>
 		<address>МО, Мытищи, Олимпийский пр., влад. 13, стр. 1</address>
 	</div>
-	
+	</div>
 
 </section>
 <footer>
 	<div class="container">
 	<div class="row">
 		<div class="col-md-6">
-			<p class="copy">© Все права защищены</p>
+			<p class="copy" >© Все права защищены</p>
 		<p class="copy">Использование материалов сайта только с согласия правообладателя</p>
 		</div>
 		<div class="col-md-3">
-			<p class="copy2">Реквизиты компании</p>
-			<p class="copy2">Политика конфидециальности</p>
+			<a href="doc.docx" download><p class="copy2">Реквизиты компании</p></a>
+			<a href="Politika.pdf" download><p class="copy2">Политика конфидециальности</p></a>
 		</div>
 		<div class="col-md-3">
 		<br>
@@ -484,7 +489,7 @@
 	<img src="img/popup_photo.png" alt="" align="left" class="popup_photo">
 	<p class="popup_text">Менеджер перезвонит Вам в течение 5 минут и ответит на все Ваши вопросы</p>
 </div>
-<div class="popup_hover">
+<div class="popup_hover popup_hover1">
 <div class="close"><img src="img/close.png" alt=""></div>
 		<h3>Спасибо за Вашу заявку</h3>
 		<h6>Менеджер свяжется с Вами в течение 5 минут</h6>
@@ -492,7 +497,16 @@
 		<p class="popup_hover_text">А пока почитайте в группе ВКонтакте, как получить самый богатый урожай</p>
 		<a href="https://vk.com/public131964893" class="popup_vk" target= _blank>www.vk.com/public131964893</a>
 		<img src="img/popup_hov.png" alt="" class="popup_hov">
-	</div>
+</div>
+<div class="popup_hover popup_hover2">
+<div class="close"><img src="img/close.png" alt=""></div>
+		<h3>Спасибо за Вашу заявку</h3>
+		<h6>Полный прайс будет отправлен Вам на почту в течение 5 минут</h6>
+		<hr>
+		<p class="popup_hover_text">А пока почитайте в группе ВКонтакте, как получить самый богатый урожай</p>
+		<a href="https://vk.com/public131964893" class="popup_vk" target= _blank>www.vk.com/public131964893</a>
+		<img src="img/popup_hov.png" alt="" class="popup_hov">
+</div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -544,15 +558,30 @@
 		});
 		$(".sect1_button").click(function(){
 			$(".popup_bg").addClass("popup_bg_active");
-			$(".popup_hover").show();
+			$(".popup_hover.popup_hover1").show();
+			var bc =setTimeout(function () {
+		$(".popup_hover.popup_hover1").hide();
+		$(".popup_bg").removeClass("popup_bg_active");
+								}, 1500);
+			
 		});
 		$(".sect2_button").click(function(){
 			$(".popup_bg").addClass("popup_bg_active");
-			$(".popup_hover").show();
+			$(".popup_hover.popup_hover2").show();
+			var bc =setTimeout(function () {
+		$(".popup_hover.popup_hover2").hide();
+		$(".popup_bg").removeClass("popup_bg_active");
+								}, 1500);
 		});
 		$(".sect9_but").click(function(){
 			$(".popup_bg").addClass("popup_bg_active");
-			$(".popup_hover").show();
+			$(".popup_hover.popup_hover1").show();
+			var bc =setTimeout(function () {
+		$(".popup_hover.popup_hover1").hide();
+		$(".popup_bg").removeClass("popup_bg_active");
+								}, 1500);
+	
+
 		});
 
 	</script>
