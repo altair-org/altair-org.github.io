@@ -48,6 +48,9 @@ form .row .col-md-4:nth-child(2) p{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.parallax{
+		display: none;
+	}
 .sect1_input, .sect2_button{
 	width: 200px;
 }
@@ -131,6 +134,9 @@ width: 70%;
 @media only screen and (max-width : 768px) {
 .fact_info{
 	display: none;
+}
+.head2{
+	padding-left: 0;
 }
 h1{
 	font-size: 49px;
@@ -302,7 +308,10 @@ header .container{
 	font-size: 15px;
 }
 h2{
-	font-size: 35px;
+	font-size: 28px;
+}
+h6{
+	font-size: 20px;
 }
 .num{
 	display: block;
@@ -316,7 +325,7 @@ h2{
 }
 
 .section4{
-	height: 2000px;
+	height: auto;
 }
 .for_review_img{
 	height: 200px;
@@ -340,11 +349,33 @@ h2{
 .section8 .col-md-6 h5{
 	width: auto;
 }
+.section4 .col-md-5:nth-child(2) h6, .section4 .col-md-5:nth-child(3) h6{
+	display: none;
+}
+.for_caption.for_caption1.for_caption_active p{
+	height: 160px;
+}
+.for_caption.for_caption2.for_caption_active p{
+	height: 190px;
+}
+.for_caption.for_caption3.for_caption_active p{
+	height: 210px;
+}
+.for_caption.for_caption4.for_caption_active p{
+	height: 170px;
+}
 .section8 h3{
 	width: 100%;
 }
 .section9{
 	padding-top: 100px;
+}
+.section4 .col-md-2, .section4 .col-md-5{
+	width: 100%;
+}
+.section4 .col-md-2{
+	display: block;
+	padding: 1px;
 }
 .video{
 	bottom: -85px;
@@ -358,9 +389,7 @@ h2{
 .map_block{
 	max-width: 320px;
 }
-.section4{
-	display: none;
-}
+
 .sect_map .container{
 	height: 350px;
 }
@@ -371,5 +400,9 @@ h2{
 }
 address{
 	width: 85%;
+}
+.popup{
+	display: block;
+	width: 320px;
 }
 }

@@ -24,6 +24,9 @@
 <body>
 
 <div class="popup_bg"></div>
+<img src="img/paral1.png" alt="" class="parallax parallax1">
+<img src="img/paral2.png" alt="" class="parallax parallax2">
+
 <header>
 	<div class="container">
 		<div class="head_menu">
@@ -47,11 +50,11 @@
 		<div class="row">
 			<div class="col-md-7 row head_row col-xs-12">
 				<h1>Красивые теплицы <br>из закаленного стекла<br> с гарантией 50 лет</h1>
-				<div class="col-md-4 col-xs-4">
+				<div class="col-md-4 col-xs-4 head1">
 					<img src="img/head1.png" alt="1">
 					<p>Высочайшая прочность: выдерживают снег, град, дождь и ветер</p>
 				</div>
-				<div class="col-md-4 col-xs-4">
+				<div class="col-md-4 col-xs-4 head2">
 					<img src="img/head2.png" alt="2">
 					<p>Безупречный<br> внешний вид</p>
 				</div>
@@ -196,6 +199,7 @@
 			<div class="col-md-5 col-sm-5 col-xs-6  why_bl_23 why_bl">
 				<p><span>Максимальный срок службы поликарбоната — 10 лет</span>, если толщина листа соответствует указанной при покупке. Но уже через несколько лет эксплуатации поликарбонат начинает мутнеть, трескаться и цвести, что существенно влияет на его качественные характеристики в худшую сторону.</p>
 			</div>
+			<div class="clearfix"></div>
 			<div class="col-md-2 col-sm-2  why_bl_31 why_bl2">
 				<img src="img/why3.png" alt="" class="why_icon">
 				<p>Красота</p>
@@ -638,8 +642,28 @@
 	});
 
 	</script>
+	<script>
+		$(window).scroll(function() {
+	var pp1 = $(this).scrollTop();
 
 
+	console.log(pp1);
+	$(".parallax1").css({
+		"transform": "translate(0% ,-" + pp1/2 + "px"});
+	$(".parallax2").css({
+		"transform": "translate(0% ,-" + pp1/4 + "px"})
+
+	});
+
+
+/*
+	$(".par1").css({
+		"transform": "translate(0% ,-" + pp/40 + "%"})
+
+	});*/
+	</script>
+
+	
 
 	<!--
 	<script src="js/common.js"></script>-->

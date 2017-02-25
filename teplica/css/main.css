@@ -132,7 +132,7 @@ line-height: 1.2;}
 .fact_info p{
 	font-size: 17px;
 	color: #fff;
-	 line-height: 1.35;
+	 line-height: 1.48;
   text-align: left;
 
 
@@ -340,6 +340,20 @@ transition: all 1s ease-in;
 	display: block;
 	height: 190px;
 }
+.for_caption.for_caption1.for_caption_active p{
+	height: 120px;
+}
+.for_caption.for_caption2.for_caption_active p{
+	height: 140px;
+}
+.for_caption.for_caption3.for_caption_active p{
+	height: 160px;
+}
+.for_caption.for_caption4.for_caption_active p{
+	height: 120px;
+}
+
+
 .for_caption.for_caption_active{
 	background: url("../img/sect2_but2.png") no-repeat 98% 25px;
 	border-bottom: none;
@@ -1055,14 +1069,15 @@ display: block;
 margin-left: auto;
 margin-right: auto;font-size: 16px;
   font-family: "ProbaPro-Regular";
-
+}
+.popup_vk:hover{
+	background: #7090B5;
 }
 .popup_hov{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
-
 
 .popup_bg{
 	display: block;
@@ -1093,10 +1108,12 @@ margin-right: auto;font-size: 16px;
 	text-decoration: underline;
 	cursor: pointer;
 }
-.head_row .col-md-4:nth-child(2){
+.head2{
 	padding-left:50px;
 }
-
+.head1{
+	padding-left: 0;
+}
 
 .video{
 	width: 730px; left: 50%; bottom: -210px; margin-left: -365px;
@@ -1108,4 +1125,19 @@ section{
 section .container{
 	padding-top: 1px;
 	padding-bottom: 1px;
+}
+
+.parallax{
+	display: block;
+	position: absolute;
+	z-index: 99999;
+}
+.parallax1{
+	right: 250px;
+	top: 1700px;
+}
+.parallax2{
+	right: 200px;
+	top: 10100px;
+
 }
