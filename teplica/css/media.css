@@ -282,6 +282,42 @@ padding-bottom: 5px;
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+.popup{
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 30px;
+	padding-bottom: 1px;
+}
+.popup h3{
+	font-size: 27px;
+}
+.popup_photo, .popup_text{
+	display: none;
+}
+.close{
+	right: 0px;
+	top: -30px;
+	color: #22ad7a;
+}
+.popup_hover{
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 30px;
+	padding-bottom: 1px;
+}
+.popup_hov{
+	display: none;
+}
+
+
+
 	.for_caption.for_caption_active p{
 	height: 280px;}
 .sect1_input, .sect2_button{
@@ -401,8 +437,5 @@ h6{
 address{
 	width: 85%;
 }
-.popup{
-	display: block;
-	width: 320px;
-}
+
 }
