@@ -1093,3 +1093,19 @@ margin-right: auto;font-size: 16px;
 	text-decoration: underline;
 	cursor: pointer;
 }
+.head_row .col-md-4:nth-child(2){
+	padding-left:50px;
+}
+
+
+.video{
+	width: 730px; left: 50%; bottom: -210px; margin-left: -365px;
+}
+section{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+section .container{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
