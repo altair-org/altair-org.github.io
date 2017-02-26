@@ -518,4 +518,16 @@ form .row .col-md-4:nth-child(1) h5, form .row .col-md-4:nth-child(2) h5,
 .section1 .col-md-4:nth-child(3) h5{
 	margin-top: 0;
 }
+.sect1_button{
+	width: 95%;
+	display: block;
+	padding: 25px 0px;
+	margin-top: 30px;
+}
+.sect9_but{
+	margin-top: 10px;
+	width: 90%;
+	padding: 25px 0px;
+}
+
 }
