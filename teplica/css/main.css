@@ -1141,3 +1141,6 @@ section .container{
 	top: 10100px;
 
 }
+.for_sm{
+	display: none;	
+}
