@@ -44,6 +44,7 @@ form .row .col-md-4:nth-child(2) p{
   .section5 h2{
   	width: 90%;
   }
+
 }
 
 /* Medium Devices, Desktops */
@@ -52,6 +53,12 @@ form .row .col-md-4:nth-child(2) p{
 		display: none;	
 	}
 	.parallax{
+		display: none;
+	}
+	.parallax1{
+		display: none;
+	}
+	.parallax2{
 		display: none;
 	}
 .sect1_input, .sect2_button{

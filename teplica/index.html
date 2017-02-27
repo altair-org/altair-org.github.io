@@ -649,9 +649,12 @@
 
 	console.log(pp1);
 	$(".parallax1").css({
-		"transform": "translate(0% ,-" + pp1/2 + "px"});
+		"transform": "translate(0% ,-" + pp1/2 + "px",
+	"-webkit-transform" : "translate(0% ,-" + pp1/2 + "px"});
 	$(".parallax2").css({
-		"transform": "translate(0% ,-" + pp1/4 + "px"})
+		"transform": "translate(0% ,-" + pp1/4 + "px",
+		"-webkit-transform" : "translate(0% ,-" + pp1/2 + "px"
+	})
 
 	});
 

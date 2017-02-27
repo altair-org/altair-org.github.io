@@ -1133,12 +1133,14 @@ section .container{
 	z-index: 99999;
 }
 .parallax1{
-	right: 250px;
+	right: 50px;
 	top: 1700px;
+	width: 200px;
 }
 .parallax2{
 	right: 200px;
 	top: 10100px;
+	width: 200px;
 
 }
 .for_sm{
