@@ -128,7 +128,8 @@ h1{
 }
 .slider_li button{
 	background: #FAD519;
-	width: 200px;
+	min-width: 200px;
+   width: auto;
 	text-align: center;
 	border: none;
 	padding-top: 15px;
