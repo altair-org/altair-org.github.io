@@ -1,0 +1,140 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+input:focus, textarea:focus, keygen:focus, select:focus {
+    outline-offset: 0px;
+}
+*:focus{
+	outline:none;
+}
+/*Элемент выше для того, чтобы не было цвето у фокусированных*/
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	min-height: 2900px;
+}
+.slider_li{
+	min-height: 800px;
+}
+.sslide1{
+	background: url("../img/bg1.jpg") no-repeat 50%;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.sslide2{
+	background: url("../img/bg2.jpg") no-repeat 50%;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.sslide3{
+	background: url("../img/bg3.jpg") no-repeat 50%;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.sslide4{
+	background: url("../img/bg1.jpg") no-repeat 50%;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+.unslider-arrow.next{
+	right: 50px;
+	top: 220px;
+	font-size: 0px;
+	display: block;
+	width: 30px;
+	height: 60px;
+	background: url(../img/arr-r.png) no-repeat 50%;
+	-webkit-background-size: contain;
+	background-size: contain;
+	border-radius: 50%;
+
+}
+.unslider-arrow.prev{
+	left: 50px;
+	top: 220px;
+	font-size: 0px;
+	display: block;
+	width: 30px;
+	height: 60px;
+	background: url(../img/arr-l.png) no-repeat 50%;
+	-webkit-background-size: contain;
+	background-size: contain;
+	border-radius: 50%;
+}
+.unslider{
+position: relative;
+}
+.unslider-nav{
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	z-index: 2000;
+	margin-left: -40px;
+}
+.unslider-nav ol li{
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	border-color: #000;
+}
+.unslider-nav ol li.unslider-active{
+	background: #000;
+}
+h1{
+	margin-top: 200px;
+	font-size: 100px;
+	background: rgba(255,255,255,0.3);
+}
+.sslide2 h1{
+	font-size: 80px;
+	margin-top: 100px
+}
+.sslide3 h1{
+	margin-top: 100px;
+}
+.slider_li button{
+	background: #FAD519;
+	width: 200px;
+	text-align: center;
+	border: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.slider_li button p{
+	font-size: 25px;
+	color: #000;
+}
