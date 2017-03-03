@@ -349,3 +349,72 @@ border-bottom: 2px solid #FAD519;
 }
 
 
+.photos{
+	min-height: 800px;
+	background: url("../img/photos_bg.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.photos .col-xs-4{
+	height: 200px;
+	padding: 5px;
+}
+.photo1 .photto{
+	background: url("../img/11.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.photos .photo1{
+	height: 400px;
+}
+.photo2 .photto{
+	background: url("../img/12.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.photo3 .photto{
+	background: url("../img/13.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.photo4 .photto{
+	background: url("../img/14.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.photo5 .photto{
+	background: url("../img/15.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.photo6 .photto{
+	background: url("../img/16.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.photo7 .photto{
+	background: url("../img/17.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.photos .photo5{
+	height: 400px;
+	float: right;
+}
+.photto{
+	width: 100%;
+	display: block;
+	height: 100%;
+}
+.photos h2{
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
