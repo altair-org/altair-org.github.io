@@ -1,35 +1,5 @@
 
 @font-face {
-	font-family: "ProbaPro-Regular";
-	src: url("../fonts/ProbaPro-Regular.otf");	
-	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-	font-family: "ProbaProBold";
-	src: url("../fonts/ProbaProBold.otf");	
-	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-	font-family: "ProbaProLight";
-	src: url("../fonts/ProbaProLight.otf");	
-	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-	font-family: "ProbaProMedium";
-	src: url("../fonts/ProbaProMedium.otf");	
-	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-	font-family: "ProbaProSemiBold";
-	src: url("../fonts/ProbaProSemiBold.otf");	
-	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
 	font-family: 'PFSquareSansProLight';
 	src: url('../fonts/PFSquareSansProLight.eot');
 	src: url('../fonts/PFSquareSansProLight.eot?#iefix') format('embedded-opentype'), url('../fonts/PFSquareSansProLight.woff') format('woff'), url('../fonts/PFSquareSansProLight.ttf') format('truetype');
