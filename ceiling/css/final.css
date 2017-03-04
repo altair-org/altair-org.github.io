@@ -1,0 +1,79 @@
+header{
+	display: block;
+	padding-bottom: 10px;
+	height: auto;
+}
+.menu_div{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	float: none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: sans-serif !important;
+	font-style: normal !important;
+}
+.our_benefits li p{
+	font-family: "Avenir";
+}
+.form_but p{
+	font-family: "Avenir";
+}
+section{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.photos{
+	padding-top: 0;
+}
+.section1{
+	padding-bottom: 0px;
+	height: auto;
+}
+.photos h2{
+	text-transform: none;
+}
+.section1 h3{
+    font-size: 35px;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.for_useful_video{
+	display: block;
+	padding: 20px;
+	height: 360px;
+}
+
+
+    /*To move navigation buttons outside use these settings:*/
+
+    .owl-theme .owl-controls .owl-buttons div {
+      position: absolute;
+    }
+
+    .owl-theme .owl-controls .owl-buttons .owl-prev{
+      left: -45px;
+      top: 55px; 
+    }
+
+    .owl-theme .owl-controls .owl-buttons .owl-next{
+      right: -45px;
+      top: 55px;
+    }
+
+   .icon-chevron-left {
+  background-position: -432px -72px;
+}
+
+
+.icon-white{
+  background-image: url("../img/glyphicons-halflings-white.png");
+}
+.icon-chevron-right {
+  background-position: -456px -72px;
+}

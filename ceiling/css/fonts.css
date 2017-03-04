@@ -1,35 +1,77 @@
-
+/* font-family: "RobotoRegular"; *
 @font-face {
-	font-family: 'PFSquareSansProLight';
-	src: url('../fonts/PFSquareSansProLight.eot');
-	src: url('../fonts/PFSquareSansProLight.eot?#iefix') format('embedded-opentype'), url('../fonts/PFSquareSansProLight.woff') format('woff'), url('../fonts/PFSquareSansProLight.ttf') format('truetype');
-	font-weight: normal;
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
 	font-style: normal;
-}
-@font-face {
-	font-family: 'PFSquareSansProRegular';
-	src: url('../fonts/PFSquareSansProRegular.eot');
-	src: url('../fonts/PFSquareSansProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/PFSquareSansProRegular.woff') format('woff'), url('../fonts/PFSquareSansProRegular.ttf') format('truetype');
 	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'PFSquareSansProMedium';
-	src: url('../fonts/PFSquareSansProMedium.eot');
-	src: url('../fonts/PFSquareSansProMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/PFSquareSansProMedium.woff') format('woff'), url('../fonts/PFSquareSansProMedium.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'font1';
-	src: url('../fonts/font1.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'font2';
-	src: url('../fonts/font2.ttf');
-	font-weight: normal;
-	font-style: normal;
 }
 
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RobotoBold";
+	src: url("../fonts/RobotoBold/RobotoBold.eot");
+	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}*/
+
+@font-face {
+    font-family: 'Droid';
+    src: url('../fonts/Droid/droidserif-italic-webfont.woff2') format('woff2'),
+         url('../fonts/Droid/droidserif-italic-webfont.woff') format('woff'),
+         url('../fonts/Droid/DroidSerif-Italic.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/AvenirNextCyr-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNextCyr-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../fonts/RobotoSlab/robotoslabregular.woff2') format('woff2'),
+     url('../fonts/RobotoSlab/robotoslabregular.woff') format('woff'),
+      url('../fonts/RobotoSlab/robotoslabregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Wisdom';
+	src: url('../fonts/Wisdom/WisdomScriptAJ.eot');
+	src: url('../fonts/Wisdom/WisdomScriptAJ.woff') format('woff'),
+	 url('../Wisdom/WisdomScriptAJ.ttf') format('truetype');
+}
