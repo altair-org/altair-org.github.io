@@ -49,31 +49,11 @@ section{
 	height: 360px;
 }
 
-
-    /*To move navigation buttons outside use these settings:*/
-
-    .owl-theme .owl-controls .owl-buttons div {
-      position: absolute;
-    }
-
-    .owl-theme .owl-controls .owl-buttons .owl-prev{
-      left: -45px;
-      top: 55px; 
-    }
-
-    .owl-theme .owl-controls .owl-buttons .owl-next{
-      right: -45px;
-      top: 55px;
-    }
-
-   .icon-chevron-left {
-  background-position: -432px -72px;
+.contacts h2{
+	margin-bottom: 50px;
 }
-
-
-.icon-white{
-  background-image: url("../img/glyphicons-halflings-white.png");
-}
-.icon-chevron-right {
-  background-position: -456px -72px;
+.about .caption{
+	font-size: 14px;
+	line-height: 1.3;
+	font-weight: 300;
 }
