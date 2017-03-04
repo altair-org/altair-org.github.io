@@ -6,6 +6,7 @@
 <html lang="ru">
 <!--<![endif]-->
 <head>
+	
 	<meta charset="utf-8">
 	<title>Мой сайт</title>
 	<meta name="description" content="">
@@ -18,27 +19,30 @@
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main2.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 <body>
 <div class="container-fluid header">
 
-	<div id="header-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 76.7167px;"><div class="container menu_wrap" id="header" style="width: 578px; position: fixed; top: 0px;">
+	<div id="header-sticky-wrapper" class="sticky-wrapper"><div class="container menu_wrap" id="header" >
 		<div class="contacts">
 			<a href="tel:+1234567890" class="tel"> +7 985 979 68 29</a>
-			<a href="tg://resolve?domain=Evgeen" class="soc_tg"><i class="fa fa-vk" aria-hidden="true"></i></a>
+			<a href="https://vk.com/write357684060" class="soc_tg">
+			<i class="fa fa-vk" aria-hidden="true"></i></a>
+			<a href="tg://resolve?domain=Evgeen" class="soc_tg">
+			<i class="fa fa-telegram" aria-hidden="true"></i></a>
 			<a href="#" class="soc_ema">jacking98@bk.ru</a>
 		</div>
 		<div class="to_show_menu_mob">
 			<i class="fa fa-bars"></i>
 		</div>
 		<ul class="menu">
-			<li><a href="#services">Что я предлагаю</a></li>
+			<li><a class="to_services">Что я предлагаю</a></li>
 	
-			<li><a href="#can">Что я могу</a></li>
-			<li><a href="#portfolio">Портфолио</a></li>
+			<li><a class="to_can">Что я могу</a></li>
+			<li><a class="to_portfolio">Портфолио</a></li>
 			<li class="desk_contacts"><a href="#contacts" class="cont">Контаты</a>
 			<div class="mob_contacts">
 			<div class="mob_contacts_inside">
@@ -55,7 +59,7 @@
 
 					<li><img src="img/circle-10.png" alt="1" class="marker">+7 985 979 68 29</li>
 					<li><img src="img/circle-10.png" alt="1" class="marker"><a href="https://vk.com/write357684060"><i class="fa fa-vk"></i></a></li>
-					<li><img src="img/circle-10.png" alt="1" class="marker"><a href="#">Оставить заявку</a></li>
+					<li><img src="img/circle-10.png" alt="1" class="marker"><a href="#" class="to_form">Оставить заявку</a></li>
 				</ul>
 
 			</div>
@@ -63,7 +67,8 @@
 			</div></li>
 
 		</ul>
-	</div></div>
+	</div>
+	</div>
 	<div class="container">
 		<h1>Здравствуйте!</h1>
 		<h6>Меня зовут Евгений и я веб-разработчик</h6>
@@ -307,7 +312,7 @@
 </section>
 
 
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
 	<div class="container">
 	<h2>Мои последние работы</h2>
 	</div>
@@ -322,16 +327,24 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery.sticky.js"></script>
+	<script src="js/typed.js"></script>
 	<script src="libs/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		
+    $("#header").sticky({topSpacing:0});
+  });
+	</script>
+
 	<script>
 	$('.desk_contacts').click(function(){
 		$('.mob_contacts').addClass('mob_contacts_active');
 		$('.desk_contacts').addClass('desk_contacts_active');
 	})
 </script>
-	<script src="js/typed.js"></script>
+	
 <script>
    $("#ggo").click(function(){
         $("#typed").typed({
@@ -341,12 +354,35 @@
     });
    $(".fa-bars").click(function(){
    	$(".menu").toggleClass('menu_mob_active');
-   })
+   });
+
+
+   $("a.to_services").click(function() {
+		$.scrollTo($("#services"), 800, {
+			offset: 0
+		});
+	});
+   $("a.to_can").click(function() {
+		$.scrollTo($("#can"), 800, {
+			offset: 0
+		});
+	});
+   $("a.to_portfolio").click(function() {
+		$.scrollTo($("#portfolio"), 800, {
+			offset: 0
+		});
+	});
+
+
+
+
+
  </script>
 	<script src="libs/waypoints/jquery.waypoints.min.js"></script>
 	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	<script src="libs/jquery.sticky.js"></script>
+	<!--<script src="js/prefixfree.min.js"></script>-->
+	
 	<script type="text/javascript">
 		$(function() {
 			var counter =0;
@@ -377,11 +413,11 @@
 	
 });
 	</script>
-	<script>
-    $(document).ready(function(){
-      $("#header").sticky({ topSpacing: 0 });
-    });
-  </script>
+	
+	
+	
+	
+	
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 

@@ -47,7 +47,6 @@ p,h1,h2,h3,h4,h5,h6{
 .header{
 	min-height: 800px;
 	background: url("../img/bg1.jpg") no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 	padding-left: 0;
 	padding-right: 0;
@@ -167,7 +166,6 @@ color: #fff;
 }
 .services .see:hover .search_icon{
 	background: url("../img/search2.svg") no-repeat 0px 0px;
-	-webkit-background-size: 18px;
 	background-size: 18px;
 }
 .services .see p{
@@ -181,7 +179,6 @@ color: #fff;
 	width: 15px;
 	height: 15px;
 	background: url("../img/search.svg") no-repeat 0px 0px;
-	-webkit-background-size: 18px;
 	background-size: 18px;
 	display: inline-block;
 	vertical-align: middle;
@@ -245,6 +242,36 @@ h5{
 	position: relative;
 }
 
+@-webkit-keyframes slide1 {
+  0% {
+    left: 0%;
+    bottom: 0%;
+  }
+  20% {
+    left: calc(50% - 15px);
+    bottom: calc(100% - 30px);
+
+  }
+  40% {
+    left: calc(100% - 30px);
+    bottom: 0%;
+  }
+  60% {
+    left: 0%;
+    bottom: calc(50% - 15px);
+
+  }
+  80% {
+    left: calc(100% - 30px);
+    bottom: calc(50% - 15px);
+
+  }
+  100% {
+    left: 0%;
+    bottom: 0%;
+  }
+  }
+
 @keyframes slide1 {
   0% {
     left: 0%;
@@ -268,6 +295,34 @@ h5{
     left: calc(100% - 30px);
     bottom: calc(50% - 15px);
 
+  }
+  100% {
+    left: 0%;
+    bottom: 0%;
+  }
+  }
+  @-webkit-keyframes slide2 {
+  0% {
+    left: 0%;
+    bottom: 0%;
+  }
+  20% {
+  	  left: calc(100% - 30px);
+    bottom: calc(50% - 15px);
+      }
+  40% {
+   left: 0%;
+    bottom: calc(50% - 15px);
+  }
+  60% {
+  	  left: calc(100% - 30px);
+    bottom: 0%;
+   
+
+  }
+  80% {
+  	 left: calc(50% - 15px);
+    bottom: calc(100% - 30px);
   }
   100% {
     left: 0%;
@@ -303,6 +358,36 @@ h5{
   }
   }
 
+@-webkit-keyframes slide3 {
+  0% {
+    left: 0%;
+    bottom: 0%;
+  }
+  20% {
+    left: calc(100% - 30px);
+    bottom: calc(50% - 15px);
+
+  }
+  40% {
+    left: 0%;
+     bottom: calc(100% - 30px);
+
+  }
+  60% {
+    left: calc(50% - 15px);
+    bottom: 0%;
+  }
+  80% {
+    left: calc(50% - 15px);
+    bottom: calc(100% - 30px);
+
+  }
+  100% {
+    left: 0%;
+    bottom: 0%;
+  }
+  }
+
 @keyframes slide3 {
   0% {
     left: 0%;
@@ -325,6 +410,36 @@ h5{
   80% {
     left: calc(50% - 15px);
     bottom: calc(100% - 30px);
+
+  }
+  100% {
+    left: 0%;
+    bottom: 0%;
+  }
+  }
+
+@-webkit-keyframes slide4 {
+  0% {
+    left: 0%;
+    bottom: 0%;
+  }
+  20% {
+    left: calc(50% - 15px);
+    bottom: calc(100% - 30px);
+
+  }
+  40% {
+    left: calc(50% - 15px);
+    bottom: 0%;
+
+  }
+  60% {
+    left: 0%;
+     bottom: calc(100% - 30px);
+  }
+  80% {
+    left: calc(100% - 30px);
+    bottom: calc(50% - 15px);
 
   }
   100% {
@@ -363,6 +478,16 @@ h5{
   }
   }
 
+@-webkit-keyframes r21{
+    from {
+        box-shadow: 0 0 8px 6px rgba(35, 39, 49, 0.1), 0 0 12px 14px rgba(35, 39, 49, 0.1);
+    }
+    to {
+        box-shadow: 0 0 18px 6px rgba(35, 39, 49, 0), 0 0 4px 71px rgba(35, 39, 49, 0);
+    }
+
+}
+
 @keyframes r21{
     from {
         box-shadow: 0 0 8px 6px rgba(35, 39, 49, 0.1), 0 0 12px 14px rgba(35, 39, 49, 0.1);
@@ -373,11 +498,16 @@ h5{
 
 }
 button:hover{
-	animation-name: r21;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
+	-webkit-animation-name: r21;
+	        animation-name: r21;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 .circle1, .circle3{
 	display: block;
@@ -402,38 +532,58 @@ button:hover{
 .box1:hover .circle1,
 .box1:focus .circle1,
 .box1:active .circle1{
-  animation-name: slide1;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: slide1;
+          animation-name: slide1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .box1:hover .circle2,
 .box1:focus .circle2,
 .box1:active .circle2{
-  animation-name: slide2;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: slide2;
+          animation-name: slide2;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .box1:hover .circle3,
 .box1:focus .circle3,
 .box1:active .circle3{
-  animation-name: slide3;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: slide3;
+          animation-name: slide3;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .box1:hover .circle4,
 .box1:focus .circle4,
 .box1:active .circle4{
-  animation-name: slide4;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: slide4;
+          animation-name: slide4;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .bbox .box1{
 	width: 100%;
@@ -446,6 +596,54 @@ button:hover{
 	margin-left: auto;
 	margin-right: auto;
 }
+@-webkit-keyframes deform {
+  0% {
+    border-radius: 4px;
+    width: 100%;
+    left: 0px;
+    background: rgba(61, 67, 81, 0);
+    bottom: 0px;
+  }
+  20% {
+  	bottom: 75px;
+    border-radius: 50px;
+    left: calc(50% - 25px);
+width: 50px;
+height: 50px;
+ background: rgba(61, 67, 81, 1);
+  }
+  40% {
+background: none;
+border: none;
+width: 0px;
+height: 0px;
+bottom: 200px;
+	left: 100% ;
+  }
+  41% {
+left: 0px;
+width: 0px;
+height: 0px;
+bottom: 0px;
+border: 2px solid #3d4351;
+background: #3d4351;
+  }
+  80% {
+    bottom: 75px;
+    border-radius: 50px;
+    left: calc(50% - 25px);
+width: 50px;
+height: 50px;
+ background: rgba(61, 67, 81, 1);
+  }
+  100% {
+     border-radius: 4px;
+    width: 100%;
+    left: 0px;
+    background: rgba(61, 67, 81, 0);
+    bottom: 0px;
+  }
+  }
 @keyframes deform {
   0% {
     border-radius: 4px;
@@ -500,11 +698,17 @@ height: 50px;
 .animate1_2 .bbox:active .box1,
 .animate1_2 .bbox:focus .box1{
 
-	animation-name: deform;
-  animation-duration: 7s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
+	-webkit-animation-name: deform;
+
+	        animation-name: deform;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 
 }
 
@@ -543,7 +747,6 @@ height: 50px;
 	height: 10px;
 	position: absolute;
 	background: url("../img/index.jpg");
-	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
 	border-radius: 50%;
 }
@@ -655,7 +858,6 @@ top: 60px;
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
 @keyframes blink{
@@ -664,11 +866,6 @@ top: 60px;
     100% { opacity:1; }
 }
 @-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
@@ -705,12 +902,14 @@ display: none;
 	height: 20px;
 	width: 0px;
 	display: inline-block;
+	-webkit-transition: 1s all ease-in;
 	transition: 1s all ease-in;
 	overflow: hidden;
 	vertical-align: middle;
 }
 .mob_contacts_active{
 	width: 390px;
+	-webkit-transition: 1s all ease-in;
 	transition: 1s all ease-in;
 	height: 22.85px;
 	vertical-align: top;
