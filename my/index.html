@@ -173,7 +173,7 @@
 			<div class="col-md-6 col-md-offset-1 col-xs-12 col-sm-offset-0">
 				<div class="col-xs-6 animate1_1">
 					<div class="box1">
-						<div class="circle1"></div>
+						<div class="circle1 circle_active"></div>
 						<div class="circle2"></div>
 						<div class="circle3"></div>
 						<div class="circle4"></div>
@@ -372,6 +372,13 @@
 			offset: 0
 		});
 	});
+
+   $(".box1").click(function(){
+   	$(".circle1").toggleClass("circle_active");
+   	$(".circle2").toggleClass("circle_active");
+   	$(".circle3").toggleClass("circle_active");
+
+   })
 
 
 

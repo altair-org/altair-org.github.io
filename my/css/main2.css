@@ -531,7 +531,8 @@ button:hover{
 }
 .box1:hover .circle1,
 .box1:focus .circle1,
-.box1:active .circle1{
+.box1:active .circle1,
+.circle1.circle_active{
   -webkit-animation-name: slide1;
           animation-name: slide1;
   -webkit-animation-duration: 3s;
@@ -545,7 +546,8 @@ button:hover{
 }
 .box1:hover .circle2,
 .box1:focus .circle2,
-.box1:active .circle2{
+.box1:active .circle2,
+.circle2.circle_active{
   -webkit-animation-name: slide2;
           animation-name: slide2;
   -webkit-animation-duration: 3s;
@@ -559,7 +561,8 @@ button:hover{
 }
 .box1:hover .circle3,
 .box1:focus .circle3,
-.box1:active .circle3{
+.box1:active .circle3,
+.circle3.circle_active{
   -webkit-animation-name: slide3;
           animation-name: slide3;
   -webkit-animation-duration: 3s;
