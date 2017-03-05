@@ -10,7 +10,7 @@ header{
 	text-align: center;
 	float: none;
 }
-h1,h2,h3,h4,h5,h6{
+h2,h3,h4,h5,h6{
 	font-family: sans-serif !important;
 	font-style: normal !important;
 }
@@ -56,4 +56,101 @@ section{
 	font-size: 14px;
 	line-height: 1.3;
 	font-weight: 300;
+}
+h1{
+	text-transform: none;
+	text-align: left;
+}
+.question h4{
+	border-bottom: none;
+	font-weight: 100;
+	text-transform: none;
+}
+.question p{
+	font-size: 17px;
+}
+.quesstions{
+	padding-top: 80px;
+	background: #f7f7f7;
+}
+.quesstions h2{
+	margin-bottom: 70px;
+}
+.question{
+	padding: 10px 15px;
+
+}
+.question1.active p{
+	height: 210px;
+}
+.question2.active p{
+	height: 230px;
+}
+.question3.active p{
+	height: 110px;
+}
+.question4.active p{
+	height: 150px;
+}
+.question5.active p{
+	height: 110px;
+}
+.question6.active p{
+	height: 60px;
+}
+.question7.active p{
+	height: 90px;
+}
+.question8.active p{
+	height: 300px;
+}
+.question9.active p{
+	height: 200px;
+}
+.question10.active p{
+	height: 200px;
+}
+.for_formm{
+	background: #222;
+	padding: 15px;
+	border-radius: 8px;
+	height: auto;
+}
+.tac3{
+	color: #fff;
+}
+.tac4{
+	color: #fff;
+}
+.inputt2{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+textarea{
+	display: block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+textarea + .form_but{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fed136;
+padding: 20px 40px;
+display: block;
+border: none;
+margin-top: 40px;
+}
+textarea + .form_but:hover{
+	background: #f7f7f7;
+}
+textarea + .form_but p{
+	color: white;
+font-size: 18px;
+font-family: "Montserrat";
+text-align: center;
+text-transform: uppercase;
+margin: 0;
 }

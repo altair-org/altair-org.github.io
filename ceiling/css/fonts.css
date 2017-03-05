@@ -75,3 +75,38 @@
 	src: url('../fonts/Wisdom/WisdomScriptAJ.woff') format('woff'),
 	 url('../Wisdom/WisdomScriptAJ.ttf') format('truetype');
 }
+
+@font-face {
+	font-family: 'PFSquareSansProLight';
+	src: url('../fonts/PFSquareSansProLight.eot');
+	src: url('../fonts/PFSquareSansProLight.eot?#iefix') format('embedded-opentype'), url('../fonts/PFSquareSansProLight.woff') format('woff'), url('../fonts/PFSquareSansProLight.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PFSquareSansProRegular';
+	src: url('../fonts/PFSquareSansProRegular.eot');
+	src: url('../fonts/PFSquareSansProRegular.woff') format('woff'), url('../fonts/PFSquareSansProRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PFSquareSansProMedium';
+	src: url('../fonts/PFSquareSansProMedium.eot');
+	src: url('../fonts/PFSquareSansProMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/PFSquareSansProMedium.woff') format('woff'), url('../fonts/PFSquareSansProMedium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'font1';
+	src: url('../fonts/font1.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'font2';
+	src: url('../fonts/font2.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+

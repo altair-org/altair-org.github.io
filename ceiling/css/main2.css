@@ -497,30 +497,7 @@ line-height: 1.2;
 	font-weight: 600;
 	border-bottom: 2px solid rgba(67,67,67,0.2);
 }
-.question3.active p{
-	height: 150px;
-}
-.question4.active p{
-	height: 200px;
-}
-.question5.active p{
-	height: 150px;
-}
-.question6.active p{
-	height: 100px;
-}
-.question7.active p{
-	height: 100px;
-}
-.question8.active p{
-	height: 410px;
-}
-.question9.active p{
-	height: 250px;
-}
-.question10.active p{
-	height: 250px;
-}
+
 .ok_img{
 	width: 20px;
 	display: inline-block;
@@ -579,4 +556,132 @@ textarea + .form_but {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+.myth_img{
+	opacity: 0;
+transition: all 1s ease-in;
+}
+.myth_img.myth_img_active{
+	opacity: 1;
+}
+.myth_text{
+	position: absolute;
+	opacity: 0;
+	transition: all 1s ease-in;
+}
+.myth_text.myth_text_active{
+	display: block;
+	opacity: 1;
+}
+.for_myth_text{
+	padding-top: 40px;
+}
+.myth_text h5{
+	font-size: 25px;
+	font-family: "Montserrat";
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.myth_text p{
+	padding-left: 0px;
+	padding-top: 20px;
+	font-size: 17px;
+	font-family: Open Sans;
+	line-height: 1.2;
+	text-align: justify;
+	padding-right: 25px;
+}
+.myth_text .numm{
+	font-size: 22px;
+	color: #000;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.myth_text .numm span{
+	font-weight: bold;
+}
+.myth_img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	opacity: 0;
+}
+.for_myth_img{
+	padding-top: 180px;
+	position: relative;
+	height: 560px;
+	overflow: hidden;
+	transition: 1s ease-in all;
+}
+.for_left{
+	position: absolute;
+	width:40px;
+	height:40px;
+	top:70px;
+	left:0px;}
+.for_right{
+	position: absolute;
+	width:40px;
+	height:40px;
+	top:70px;
+	left:60px;}
+.fa-chevron-left,
+.fa-chevron-right{
+	font-size: 26px;
+	cursor: pointer;
+}
+.mythes{
+	min-height: 700px;
+}
+address{
+	font-size: 24px;
+	color: #fff;
+	font-family: "Montserrat";
+	font-style: normal;
+	padding-top: 25px;
+}
+address .fa{
+	margin-right: 15px;
+}
+.contacts .teleph{
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+	font-size: 24px;
+}
+.contacts{
+	padding-bottom: 0px;
+}
+.img-responsive{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 165px;
+	width: auto;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 10px solid #e7e7e7;
+}
+.for_but{
+	width: 29%;
+}
+.descr{
+	width: 30%;
+}
+.descr p{
+	font-size: 16px;
+}
+.logoo{
+	display: inline-block;
+	width: 15%;
+}
+.descr .logo_text{
+	text-transform: uppercase;
+	font-family: "Montserrat";
+	font-size: 20px;
+
+}
+a:hover{
+	cursor: pointer;
 }
