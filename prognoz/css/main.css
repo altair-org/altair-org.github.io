@@ -1,0 +1,359 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+	background-color: #3b4753;
+	min-height: 2000px;
+	padding-top: 15px;
+}
+.menu{
+	text-align: center;
+}
+.cap{
+	font-family: "BuletBI";
+	font-size: 40px;
+	color:white;
+	text-transform: uppercase;
+	display: inline-block;
+	line-height: 1;
+	margin:0;
+	margin-top: 5px;
+	margin-left:10%;
+	border-bottom: 2px dashed #1ac9bd;
+}
+.soc{
+	display:inline-block;
+	vertical-align: top;
+	padding:5px 10px;
+	float:right;
+}
+.fa{
+	display:inline-block;
+	color:#3b4753;
+	font-size: 32px;
+	background-color: #1ac9bd;
+	border-bottom: 4px solid #0c8e88;
+	margin-left: -4px;
+	padding:5px 10px;
+}
+.fa:hover{
+	color: #fff;
+	background-color: #3b4753;
+	border-bottom: 4px solid #3b4753;
+}
+.fa-vk{
+	border-right:0px solid #0c8e88;
+}
+.fa-skype{
+	border-right: 0px solid #0c8e88;
+}
+
+.main{
+position:relative;
+padding-top: 50px;
+	}
+
+
+
+
+.hr1{
+	margin: 0;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+/*.main2{
+	position:absolute;
+	bottom: -50px;
+  width: 0; height: 0;
+  border-top: 50px solid red;
+border-right: 550px solid transparent;
+border-left:550px solid transparent;
+}*/
+.bg{position:absolute;
+width:100%;
+max-width:100%;
+top:10px;}
+.left-column,
+.right-column{
+	text-align: center;
+	color:white;
+	text-transform: uppercase;
+	padding-top:110px;
+}
+.right-column{
+	padding-top: 150px;
+}
+.main p{
+	margin:0;
+}
+.left1{
+font-size: 38px;
+font-family: "BuletI";
+text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+line-height: 0.5;
+}
+
+
+.left2{
+font-size: 63px;
+font-family: "BuletBl";
+text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+line-height: 1;
+}
+.left3{
+	font-size:34px;
+	font-family: "BuletI";
+	  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+	  line-height: 0.6;
+	  padding-top: 20px;
+
+}
+.left4{
+font-size: 55px;
+font-family: "BuletBl";
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  line-height: 0.9;
+}
+.right1{
+font-size: 46px;
+font-family: "BuletB";
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  line-height: 0.9;
+}
+
+.right2{
+font-size: 45px;
+font-family: "BuletI";
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  line-height: 0.9;
+}
+.right3{
+font-size: 46px;
+font-family: "BuletBI";
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  line-height: 0.9;
+}
+.align-center{
+	text-align: center;
+}
+.buying{
+	padding-top: 200px;
+	color:white;
+	text-transform: uppercase;
+}
+.buying h3{
+	font-family: "CondB";
+font-size: 70px;
+margin:0;
+font-style: Italic;
+}
+.buying p{
+	font-family: "BuletL";
+	margin: 0;
+	font-size: 46px;
+	line-height: 0.8;
+}
+
+.buying2 .row>p{
+	font-size: 46px;
+	font-family: "BuletBl";
+	color:white;
+	text-transform: uppercase; 
+	text-align: center;
+}
+.spisok{
+	text-align: left;
+}
+.spisok li{
+	list-style: none;
+}
+.list{
+font-size: 23px;
+font-family: "BuletL";
+  color: rgb(236, 237, 238);
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom:5px;
+
+}
+.spisok_sp{
+	font-family: "BuletB";
+}
+.choice{
+	font-size: 36px;
+	color: white;
+	text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+	font-family: "BuletL";
+	text-transform: uppercase;
+	text-align: center;
+}
+.choice span{
+	font-family: "BuletB";
+}
+
+.text-center{
+	text-align: center;
+	position:relative;
+}
+.bot{
+	position:absolute;
+	bottom:-20px;
+	left:45%;
+	padding-left: 20px;
+}
+.buttons{
+	padding-top: 40px;
+}
+.but1{
+	display:block;
+	background: #1ac9bd;
+	border-radius:25px; 
+	border:none;
+	border-bottom: 5px solid #03a79c;
+	padding:15px 30px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.but1 p{
+	color:white;
+font-size: 32px;
+font-family: "BuletB";
+text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+margin: 0;
+text-transform: uppercase;
+
+}
+
+.podpiska{
+	padding-top: 100px;
+}
+.but2{
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+	background: #1ac9bd;
+	border-radius:22px ;
+	border:none;
+	border-bottom: 7px solid #03a79c;
+	width:80%;
+}
+.but2 p{
+font-size: 36px;
+color: rgb(59, 71, 83);
+font-family: "BuletBl";
+text-transform: uppercase;
+margin: 0;
+line-height: 1.4;
+}
+.but2 p span{
+	font-size: 60px;
+}
+.hr{padding-top: 50px;
+width:100%;}
+
+.but2:hover{
+	border-bottom-color: #1ac9bd;
+}
+
+.circles{
+	padding-top: 200px;
+}
+.but_circle{
+	display:block;
+	width:380px;
+	height:350px;
+	border-radius: 50%;
+	background-color:#1ac9bd;
+	border:none;
+	border-bottom: 10px solid #03a79c;
+position: relative;
+margin-left: auto;margin-right: auto;
+}
+.but_circle .p1{
+	font-family: "BuletBl";
+	font-size: 48px;
+	color:#3b4753;
+	text-transform: uppercase;
+	margin: 0;
+	position: absolute;
+	top:75px;
+	left:70px;
+	line-height: 0.8;
+	text-align: left;
+
+}
+.but_circle span{
+	font-size:218px;
+	position: absolute;
+	top:30px;
+	left: 130px;
+	font-family: "BuletBl";
+	color:#3b4753;
+}
+.but_circle .p2{
+font-size: 47px;
+font-family: "BuletL";
+font-style: italic;
+color:#3b4753;
+text-transform: uppercase;
+position: absolute;
+right:60px;}
+
+.last{
+	padding-top: 100px;
+}
+
+.last p{
+	font-size: 48px;
+	font-family: "BuletL";
+	font-style:italic ;
+
+	font-weight: 100;
+	color: white;
+	text-align: center;
+	margin: 0;
+	border:none;
+	line-height: 1.1;
+}
+.last p span{
+	font-family: "BuletI";
+	font-weight: 800;
+	font-style: normal;
+}
+
+.footer {
+	text-align: center;
+
+}
+

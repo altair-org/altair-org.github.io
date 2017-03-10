@@ -1,0 +1,253 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+    outline-offset: 0px;
+}
+*:focus{
+	outline:none;
+}
+/*Элемент выше для того, чтобы не было цвето у фокусированных*/
+
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+	background: #f7f7f7;
+}
+
+*{
+	margin: 0;padding: 0;
+}
+
+
+header{
+	background: #f2f2f2;
+	padding: 20px;
+	position: fixed;
+	width:100%;
+	border-bottom: 1px solid #dadada;
+	outline-bottom: 1px solid #e0e0e0;
+	z-index:100;
+}
+.soc{
+	display: block;
+	float:right;
+}
+.logo{
+	font-family: "But", serif;
+	font-size: 75px;
+	color:#151515;
+	text-align: center;
+	letter-spacing: 0.02em;
+	margin-top: -10px;
+}
+.soc .fa,
+.soc2 .fa{
+	color:black;
+	font-size: 35px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.fa:hover{
+	cursor: pointer;
+}
+
+.logo {
+  background: linear-gradient(#1c1c1c, #9b9b9b);  /* подробнее про градиенты */ 
+  -webkit-background-clip: text;  /* подробнее про background-clip */ 
+  color: transparent;
+}
+
+a{
+		color:#151515;
+;
+}
+.content1{
+	padding-top: 200px;
+}
+.rop{
+	width:100%;
+}
+.soc2{
+	display: none;
+}
+
+.photo1{
+	width:42%;
+	float:left;
+	margin-top: 50px;
+}
+.photo2{
+	width:23%;	
+	margin-left:4% ;
+	margin-right: 4%;
+	margin-top: 50px;
+	margin-bottom: -3%;
+}
+.photo3{
+	width:27%;
+	float: right;
+	margin-top: 50px;
+}
+.photo4{
+	width:45%;
+	float:left;
+	margin-bottom: -19%;
+}
+.photo5{
+	float: right;
+	width: 28%;
+	margin-right: 19%;
+	margin-bottom: 3%;
+}
+.photo6{
+	float:left;
+	width:50%;
+	margin-top: 22%;
+	margin-bottom: 3%;
+}
+.photo7{
+	width: 32%;
+	float: right;
+	margin-right: 3%;
+}
+
+
+
+ .photo8{
+ float: left;
+width:30%;
+}
+.photo9{
+	float: left;
+	width:28%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+footer{
+	height:200px;
+	background: #FFF;
+	background: #f2f2f2;
+	border-top: 1px solid #dadada;
+	outline-top: 1px solid #e0e0e0;
+	z-index:100;
+	margin-top: 100px;
+	padding-top: 130px;
+}
+
+.foot{
+	text-align: center;
+	font-size: 18px;
+	color: #868686;
+	font-family: "Can";
+	text-transform: uppercase;
+}
+img:hover{
+	cursor: pointer;
+}
+
+
+/* Стили для olya.html */
+
+
+.olya_cont{
+padding-top: 120px;}
+.arina_cont{
+	padding-top: 200px;
+}
+.ph{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+
+}/*
+rgba(0,0,0,0.3)
+rgba(8,8,8,0.75)- неплохой
+
+
+*/
+.ph2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+.logo{
+		-webkit-transition: color 0.6s;
+    transition: color 0.6s;
+	}
+.logo:hover{
+			color: #292929;
+		}
+
+
+
+
+.photo1, .photo2, .photo3,
+.photo4, .photo5, .photo6,
+.photo7, .photo8, .photo9{
+	display: inline-block;
+}
+img{
+	width: 100%;
+}
+
+/*
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+*/
