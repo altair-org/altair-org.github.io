@@ -109,7 +109,10 @@ h6{
 .next p{
 	font-size: 18px;
 	line-height: 1;
-
+  color: #fff;
+}
+.next:hover{
+  background: #ff5274;
 }
 /*закончили первый*/
 /*начали второй*/
@@ -974,4 +977,117 @@ width: 390px;
 
 .menu_wrap {
 	width: 100% !important;
+}
+
+.phone{
+  position: absolute; 
+  height: 70%;
+  bottom: 0px;
+  right: 40%;
+}
+.tablet{
+  position: absolute; 
+  height: 100%;
+  bottom: 0px;
+  right: 0%;
+}
+.block_for_imgs{
+  position: relative;
+  height: 450px;
+}
+.item{
+  height: 800px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+    transition: all 0.5s ease-in;
+}
+.work{
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  vertical-align: middle;
+  border: 2px solid #3d4351;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+.item.center{
+  padding-top: 20px;
+  padding-bottom: 20px;
+    transition: all 0.5s ease-in;
+}
+.item.center .work{
+  width: 100%;
+    transition: all 0.5s ease-in;
+}
+.work1{
+  background: url("../img/site1.jpg") no-repeat 50% 0px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.work2{
+  background: url("../img/site2.jpg") no-repeat 50% 0px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.work3{
+  background: url("../img/site3.jpg") no-repeat 50% 0px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.work4{
+  background: url("../img/site4.jpg") no-repeat 50% 0px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.work5{
+  background: url("../img/site5.jpg") no-repeat 50% 0px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.work6{
+  background: url("../img/site6.jpg") no-repeat 50% 0px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.work7{
+  background: url("../img/site7.jpg") no-repeat 50% 0px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.work8{
+  background: url("../img/site8.jpg") no-repeat 50% 0px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.work9{
+  background: url("../img/site9.jpg") no-repeat 50% 0px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.container{
+  width: 1400px;
+}
+/*.center .work:hover{
+  background-position: 50% 0%;
+  -webkit-background-size: 140% auto;
+  background-size: 120% auto;
+}*/
+.about_site{
+  position: absoulte;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  bottom: 0px;
+  transition: 0.3s all ease-in;
+  background: rgba(48, 57, 73,0.7);
+  text-align: center;
+}
+.work:hover .about_site{
+height: 100%;
+transition: 0.3s all ease-in;
+}
+.about_site ul li{
+  text-align: left;
 }

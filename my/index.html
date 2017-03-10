@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css">
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
-	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main2.css">
@@ -72,9 +72,9 @@
 	<div class="container">
 		<h1>Здравствуйте!</h1>
 		<h6>Меня зовут Евгений и я веб-разработчик</h6>
-		<button class="next">
+		<a class="to_services"><button class="next">
 			<p>далее</p>
-		</button>
+		</button></a>
 	</div>
 </div>
 
@@ -196,7 +196,8 @@
 				<p>Вы собрали <span id="outt"></span> монет</p>
 			</div>
 			<div class="col-md-6 col-md-offset-1 col-xs-12 col-sm-offset-0">
-				<div class="box2">
+
+				<div class="box2 box2_for_desk">
 					
 					<div class="coin coin1 ui-droppable"></div>
 					<div class="coin coin2 ui-droppable"></div>
@@ -214,10 +215,14 @@
 					<div class="text_hidden">Вы выиграли!</div>
 					<a class="toform"></a><button class="but_hidden">
 							<p>Заказать с 10% скидкой</p>
-					</button></div>
-					
+					</button>
+				</div>
+				<div class="box3 box_for_mob">
 					
 				</div>
+					
+					
+			</div>
 
 
 
@@ -239,7 +244,7 @@
 				<h4>Форма</h4>
 					<input name="name" placeholder="Ваше имя" id="Name" class="input input_name" type="text">
 					<input name="name" placeholder="Ваш телефон" id="Phone" class="input input_phone" type="text">
-					<button type="submit" class="form_but">
+					<button type="button" class="form_but send_form">
 						<p>Отправить</p>
 					</button>
 				</form>
@@ -262,10 +267,11 @@
 				<div class="animate4_bl">
 					<div id="typed-strings">
 					<p>Бьуеф</p>
-	    <p>&lt;meta name="description" content="Компания TaxConsult предлагает бухгалтерские услуги в Алматы. Для Вас: консультирование в области налогообложения, постановка и ведение бухгалтерского учета, регистрация ИП и многое другое." /&gt;</p>
+	    <p>&lt;meta name="description" content="Компания TaxConsult предлагает бухгалтерские услуги в Москве. Для Вас: консультирование в области...." /&gt;</p>
 					    
 					</div>
 					<span id="typed"></span>
+					<span class="justtrue"></span>
 				</div>
 			</div>
 		</div>
@@ -277,7 +283,7 @@
 <section class="reviews">
 	<div class="container">
 		<h2>Каждый сайт перед сдачей проходит несколько проверок</h2>
-		<div class="row">
+		<div class="row" style="position: relative;">
 			<div class="col-md-5">
 				<ul>
 					<li class="review">
@@ -303,10 +309,13 @@
 					</p>
 				</ul>
 			</div>
-			<div class="col-md-6">
-				<img src="img/tel.png" alt="telephone" class="phone">
-				<img src="img/tab.png" alt="tablet" class="tablet">
+			<div class="col-md-6" 	>
+				<div class="block_for_imgs">
+					<img src="img/ipad.png" alt="tablet" class="tablet">
+					<img src="img/iphone6.png" alt="telephone" class="phone">
+				</div>
 			</div>
+			<div class="clearfix">	</div>
 		</div>
 	</div>
 </section>
@@ -315,9 +324,94 @@
 <section class="portfolio" id="portfolio">
 	<div class="container">
 	<h2>Мои последние работы</h2>
+		<div class="row">
+			<div id="owl-demo" class="owl-carousel owl-theme">
+  				<div class="item clearfix">
+  					<div class="work work1">
+  						<div class="about_site">
+  							<h5>Landing page</h5>
+  							<ul>
+  								<li>Кроссбраузерность</li>
+  								<li>Адаптивность</li>
+  								<li>Аккордеон</li>
+  								<li>Слайдер</li>
+  								<li>Формы заявки</li>
+  							</ul>
+  							<a href="teplicavictory.ru"><button class="go_site">
+  								<p>Перейти</p>
+  							</button>
+  							</a>
+  						</div>
+  					</div>
+  					
+				</div>
+  				<div class="item clearfix center">
+  					<div class="work work2">
+  						<div class="about_site"></div>
+  					</div>
+  					
+				</div>
+  				
+				<div class="item clearfix">
+  					<div class="work work3">
+  						<div class="about_site"></div>
+  					</div>
+  				
+				</div>
+				<div class="item clearfix">
+  					<div class="work work4">
+  						<div class="about_site"></div>
+  					</div>
+  					
+				</div>
+  				<div class="item clearfix">
+  					<div class="work work5">
+  						<div class="about_site">
+  							
+  						</div>
+  					</div>
+  					
+				</div>
+  				
+				<div class="item clearfix">
+  					<div class="work work6">
+  						<div class="about_site">
+  							
+  						</div>
+  					</div>
+  				
+				</div>
+				<div class="item clearfix">
+  					<div class="work work7">
+  						<div class="about_site">
+  							
+  						</div>
+  					</div>
+  				
+				</div>
+				<div class="item clearfix">
+  					<div class="work work8">
+  						<div class="about_site">
+  							
+  						</div>
+  					</div>
+  				
+				</div>
+				<div class="item clearfix">
+  					<div class="work work9">
+  						<div class="about_site">
+  							
+  						</div>
+  					</div>
+  				
+				</div>
+
+				
+ 
+			</div>
+		</div>
 	</div>
 </section>
-
 
 
 	<!--[if lt IE 9]>
@@ -339,6 +433,8 @@
 	</script>
 
 	<script>
+	var aname, bphone;
+
 	$('.desk_contacts').click(function(){
 		$('.mob_contacts').addClass('mob_contacts_active');
 		$('.desk_contacts').addClass('desk_contacts_active');
@@ -352,9 +448,34 @@
             typeSpeed: 0
         });
     });
+   
+   
    $(".fa-bars").click(function(){
    	$(".menu").toggleClass('menu_mob_active');
    });
+
+   $(document).mouseup(function (e) {
+    var container = $(".fa-bars");
+    if (container.has(e.target).length === 0){
+        $(".menu").removeClass('menu_mob_active');
+    }
+});
+
+
+
+
+   $(".send_form").click(function(){
+   	aname = $('#Name').val(),
+   	bphone = $('#Phone').val();
+
+   });
+
+   $("#form_true").click(function(){
+   		$(".justtrue").text("Имя: " + aname + "Телефон:" + bphone );
+   	});
+
+   
+  
 
 
    $("a.to_services").click(function() {
@@ -391,6 +512,47 @@
 	<!--<script src="js/prefixfree.min.js"></script>-->
 	
 	<script type="text/javascript">
+
+		var owl = $('.owl-carousel');
+      owl.owlCarousel(
+      	{
+      		loop:true,
+      		nav:true,
+      		responsive:{
+        0:{
+            items:1
+        },
+        700:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    },
+      		 onDragged: callback
+      	})
+      function callback(event) {
+    // Provided by the core
+    var element   = event.target;         // DOM element, in this example .owl-carousel
+    var name      = event.type;           // Name of the event, in this example dragged
+    var namespace = event.namespace;      // Namespace of the event, in this example owl.carousel
+    var items     = event.item.count;     // Number of items
+    var item      = event.item.index;     // Position of the current item
+    // Provided by the navigation plugin
+    var pages     = event.page.count;     // Number of pages
+    var page      = event.page.index;     // Position of the current page
+    var size      = event.page.size;  // Number of items per page
+    
+    	//alert("item " + item);
+    var k=item+1;
+    $(".center").removeClass("center");
+    $(".item").eq(k).addClass("center");
+     
+     }
+
+
+
+
 		$(function() {
 			var counter =0;
 	
@@ -419,6 +581,10 @@
 
 	
 });
+
+
+
+
 	</script>
 	
 	

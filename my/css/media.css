@@ -91,6 +91,10 @@
 .review_icon{
 	margin-left: 0;
 }
+.box2_for_desk{
+	display: none;
+}
+
 }
 
 
@@ -203,6 +207,7 @@ margin-right: auto;}
 	transition: all 1s ease-in;
 	padding-top: 0;
 	padding-bottom: 0;
+	padding-right: 0;
 }
 .reviews ul{
 	padding-left: 10px;
@@ -220,6 +225,7 @@ margin-right: auto;}
 #header .menu.menu_mob_active{
 height: 100px;
 transition: all 1s ease-in;
+padding-right: 0;
 }
 .contacts .soc_ema{
 	display: none;
